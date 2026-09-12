@@ -81,7 +81,7 @@ export default function Header() {
           />
           <div className="hidden sm:block min-w-0">
             {isSolid ? (
-              <div className="flex items-center">
+              <div className="flex items-center gap-2">
                 <Image
                   src="/IDEAS_LOGO2.png"
                   alt="IDEAS Logo"
@@ -95,11 +95,21 @@ export default function Header() {
                   }}
                   loading="eager"
                 />
+                <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase bg-amber-500/15 text-amber-700 border border-amber-500/30">
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
+                  BETA
+                </span>
               </div>
             ) : (
-              <h1 className="font-bold text-lg sm:text-xl transition-colors text-white">
-                IDEAS <span className="text-gold-400">4.0</span>
-              </h1>
+              <div className="flex items-center gap-2">
+                <h1 className="font-bold text-lg sm:text-xl transition-colors text-white">
+                  IDEAS <span className="text-gold-400">4.0</span>
+                </h1>
+                <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase bg-amber-400/20 text-amber-300 border border-amber-400/40">
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
+                  BETA
+                </span>
+              </div>
             )}
             <p
               className={cn(
@@ -113,25 +123,37 @@ export default function Header() {
           {/* Mobile logo / text */}
           <div className="sm:hidden min-w-0 flex items-center">
             {isSolid ? (
-              <Image
-                src="/IDEAS_LOGO2.png"
-                alt="IDEAS Logo"
-                width={140}
-                height={40}
-                className="h-8 w-auto opacity-90"
-                style={{ filter: "brightness(1.05) contrast(0.95)" }}
-                priority
-                loading="eager"
-              />
+              <div className="flex items-center gap-1.5">
+                <Image
+                  src="/IDEAS_LOGO2.png"
+                  alt="IDEAS Logo"
+                  width={140}
+                  height={40}
+                  className="h-8 w-auto opacity-90"
+                  style={{ filter: "brightness(1.05) contrast(0.95)" }}
+                  priority
+                  loading="eager"
+                />
+                <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full text-[9px] font-bold tracking-wider uppercase bg-amber-500/15 text-amber-700 border border-amber-500/30">
+                  <span className="w-1 h-1 rounded-full bg-amber-500 animate-pulse" />
+                  BETA
+                </span>
+              </div>
             ) : (
-              <h1
-                className={cn(
-                  "font-bold text-base transition-colors",
-                  isSolid ? "text-royal-900" : "text-white",
-                )}
-              >
-                IDEAS <span className="text-gold-400">4.0</span>
-              </h1>
+              <div className="flex items-center gap-1.5">
+                <h1
+                  className={cn(
+                    "font-bold text-base transition-colors",
+                    isSolid ? "text-royal-900" : "text-white",
+                  )}
+                >
+                  IDEAS <span className="text-gold-400">4.0</span>
+                </h1>
+                <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full text-[9px] font-bold tracking-wider uppercase bg-amber-400/20 text-amber-300 border border-amber-400/40">
+                  <span className="w-1 h-1 rounded-full bg-amber-400 animate-pulse" />
+                  BETA
+                </span>
+              </div>
             )}
           </div>
         </Link>
