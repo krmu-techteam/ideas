@@ -1,0 +1,46 @@
+name: Deploy via rsync over SSH
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build Next.js project
+        run: pnpm run build
+
+      - name: Setup SSH key
+        run: |
+          echo "${{ secrets.SFTP_PRIVATE_KEY }}" > id_rsa
+          chmod 600 id_rsa
+
+      - name: Test SSH connection
+        env:
+          SSH_USERNAME: ${{ secrets.SFTP_USERNAME }}
+          SSH_HOST: ${{ secrets.SFTP_HOST }}
+        run: |
+          ssh -i id_rsa -o StrictHostKeyChecking=no ${SSH_USERNAME}@${SSH_HOST} "echo SSH Connected"
+
+      - name: Deploy via rsync to public_html
+        env:
+          SSH_USERNAME: ${{ secrets.SFTP_USERNAME }}
+          SSH_HOST: ${{ secrets.SFTP_HOST }}
+        run: |
+          rsync -avz -e "ssh -i id_rsa -o StrictHostKeyChecking=no" out/ ${SSH_USERNAME}@${SSH_HOST}:public_html/
