@@ -276,3 +276,5 @@ This project is maintained by the **IDEAS KRMU** team at K.R. Mangalam Universit
 <div align="center">
   Made with ❤️ for <strong>K.R. Mangalam University</strong>
 </div>
+#   i d e a s  
+ 
