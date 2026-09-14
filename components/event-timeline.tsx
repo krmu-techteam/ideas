@@ -15,7 +15,7 @@ const timelineEvents = [
       "20+ competitions across disciplines",
       "3 successful startup incubations",
     ],
-    image: "/IDEAS 1.0.webp",
+    image: "/ideas-version/Ideas 1.0.png",
   },
   {
     year: 2024,
@@ -28,7 +28,7 @@ const timelineEvents = [
       "Robotics & drone arenas introduced",
       "Increased cross-university participation & mentorship engagements",
     ],
-    image: "/IDEAS 2.0.webp",
+    image: "/ideas-version/Ideas 2.0.png",
   },
   {
     year: 2025,
@@ -41,7 +41,7 @@ const timelineEvents = [
       "Talent recognition and collaboration opportunities",
       "Long-term memorable impact and experience",
     ],
-    image: "/3.0.jpeg",
+    image: "/ideas-version/Ideas 3.0.png",
   },
   {
     year: 2026,
@@ -54,7 +54,7 @@ const timelineEvents = [
       "Grand cultural performances and industry-academia networking",
       "Substantial prize pool and national recognition",
     ],
-    image: "/4.0.jpeg",
+    image: "/ideas-version/Ideas 4.0.png",
     isCurrent: true,
   },
 ];
@@ -124,9 +124,7 @@ export default function EventTimeline() {
                 key={event.year}
                 initial={{ opacity: 0, y: 30 }}
                 animate={
-                  isInView
-                    ? { opacity: 1, y: 0 }
-                    : { opacity: 0, y: 30 }
+                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }
                 }
                 transition={{
                   delay: index * 0.25,
@@ -139,7 +137,7 @@ export default function EventTimeline() {
                 {/* Content Box (Left or Right) */}
                 <div className="w-full md:w-1/2 px-2 sm:px-4 md:px-8 flex">
                   <Card
-                    className={`w-full h-full flex flex-col justify-between shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-1 overflow-hidden backdrop-blur-md rounded-2xl ${
+                    className={`w-full h-full flex flex-col justify-between shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-1 overflow-hidden backdrop-blur-md rounded-[10px] ${
                       event.isCurrent
                         ? "border-2 border-gold-400/80 bg-gradient-to-br from-[#1d2c3c] to-[#121c26] shadow-[0_0_30px_rgba(245,158,11,0.15)]"
                         : "bg-[#121b24]/90 border border-slate-700/60 shadow-slate-950/50 hover:border-royal-500/40"
@@ -217,18 +215,11 @@ export default function EventTimeline() {
                     transition={{ delay: index * 0.25 + 0.15, duration: 0.7 }}
                     className="w-full h-full flex group relative"
                   >
-                    <div
-                      className={`w-full h-full min-h-[300px] sm:min-h-[360px] md:min-h-full rounded-2xl overflow-hidden relative shadow-2xl transition-all duration-500 group-hover:-translate-y-1 ${
-                        event.isCurrent
-                          ? "border-2 border-gold-400/80 shadow-[0_0_30px_rgba(245,158,11,0.15)] bg-[#121c26]"
-                          : "border border-slate-700/60 shadow-slate-950/50 bg-[#121b24]"
-                      }`}
-                    >
-                      {/* Clean full-bleed image without any overlay or badge */}
+                    <div className="w-full h-full flex items-center justify-center relative">
                       <img
                         src={event.image || "/placeholder.svg"}
                         alt={event.title}
-                        className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
+                        className="w-full h-full max-h-[380px] md:max-h-[440px] object-contain object-center transform group-hover:scale-105 transition-transform duration-700"
                       />
                     </div>
                   </motion.div>
@@ -243,13 +234,13 @@ export default function EventTimeline() {
                     duration: 0.5,
                     type: "spring",
                   }}
-                  className={`hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full border-4 shadow-lg z-20 items-center justify-center ${
+                  className={`hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full border-4 z-20 items-center justify-center transition-all duration-300 ${
                     event.isCurrent
-                      ? "bg-gradient-to-r from-gold-400 to-amber-400 border-[#16212C] shadow-[0_0_20px_rgba(245,158,11,0.7)]"
-                      : "bg-gradient-to-r from-royal-400 to-royal-600 border-[#16212C] shadow-[0_0_15px_rgba(59,130,246,0.5)]"
+                      ? "bg-gradient-to-br from-amber-400 via-gold-400 to-yellow-400 border-[#0d1620] shadow-[0_0_20px_rgba(245,158,11,0.85)] scale-110"
+                      : "bg-gradient-to-br from-amber-500 via-gold-500 to-amber-600 border-[#0d1620] shadow-[0_0_15px_rgba(245,158,11,0.65)] hover:scale-110"
                   }`}
                 >
-                  <div className="w-2.5 h-2.5 rounded-full bg-white opacity-60"></div>
+                  <div className="w-2.5 h-2.5 rounded-full bg-white shadow-sm ring-1 ring-amber-300"></div>
                 </motion.div>
               </motion.div>
             ))}

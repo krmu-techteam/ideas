@@ -376,39 +376,6 @@ const rawRows: RawRow[] = [
     Prize: "₹5,000 (2500+2500) 700/800/1000",
   },
 
-  // 10. Student Welfare - Group Dance
-  {
-    "Name of Events": "Group Dance",
-    Department: "Student Welfare",
-    Participation: "School Students",
-    "Time Slot": "9:30 AM - 11:00 AM",
-    "Venue Details": "Sunken Garden",
-    "Coordinator Name":
-      "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
-    "Email ID / Mobile  Number":
-      "Nigam (9625003139), Moksh (9211575767), Utkarsh (9220400574), Ananya (8368720719), Swapnil (9582327541)",
-    Date: "28-Oct-26",
-    Category: "Cultural",
-    "Team Event/Individual": "TEAM(3-5)",
-    "Team Size": "3-5",
-    Prize: "₹4,500 (1000/1500/2000)",
-    Description:
-      "Showcase your rhythm, energy, and teamwork in the ultimate dance battle! Teams of 3–8 participants can perform any style of dance—be it contemporary, hip-hop, classical, or fusion. Impress the judges with creativity, coordination, and stage presence to win exciting prizes.",
-    "Guidlines of  the Event":
-      "1. Time limit: 1–2.5 minutes per performance. Points shall be deducted on exceeding the time limit.\n2. Any dance form allowed.\n3. Pre-recorded tracks must be submitted in advance.\n4. Costumes and props allowed. Use of colors, gulal, water, or hazardous material is strictly prohibited.\n5. Obscene/derogatory moves or lyrics are strictly prohibited.",
-    "Evaluation Pattern":
-      "Choreography, synchronization, rhythm, costume coordination, stage presence, and crowd impact.",
-  },
-  {
-    Participation: "University Students",
-    "Time Slot": "11:30 AM - 1:00 PM",
-    "Venue Details": "Sunken Garden",
-    "Coordinator Name":
-      "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
-    "Email ID / Mobile  Number":
-      "Nigam (9625003139), Moksh (9211575767), Utkarsh (9220400574), Ananya (8368720719), Swapnil (9582327541)",
-    Prize: "₹4,500 (1000/1500/2000)",
-  },
 
   // 11. SMAS - Science Quiz & Puzzle Solve based on AI Theme
   {
@@ -439,7 +406,39 @@ const rawRows: RawRow[] = [
     Prize: "₹4,500 (1000/1500/2000)",
   },
 
-  // 12. SOET - Drone Race (AI Arena)
+  // 12. SOLS - Poster/ Collage Making Competition (Theme: Know Your Laws)
+  {
+    "Name of Events":
+      "Poster/ Collage Making Competition  (Theme: Know Your Laws)",
+    Department: "SOLS",
+    Participation: "School Students",
+    "Time Slot": "10:00 AM - 11:00 AM",
+    "Venue Details": "Multi purpose hall",
+    "Coordinator Name":
+      "Dr. Ankita ( 9501474214) & Dr. Arti Sharma (9899073342)",
+    "Email ID / Mobile  Number": "baibhavi, Ritika",
+    Date: "27-Oct-26",
+    Category: "Academic",
+    "Team Event/Individual": "SOLO",
+    Prize: "₹4,500 (1000/1500/2000)",
+    Description:
+      "To spread awareness about cyber laws and promote digital safety by encouraging participants to creatively depict legal knowledge through visual art.",
+    "Guidlines of  the Event":
+      "Posters must include a slogan they must reflect cyber-related legal issues such as:\n1. Cyber Crime\n2. Online fraud\n3. Data privacy\n4. Impact of social media on youngsters\nLength Should be short and catchy — maximum 15 words.\n• Avoid long sentences or slogans that require additional explanations.\n• The slogan must be original and self-composed.\n\nEach poster must have the participant’s Name, Class & Institution.",
+    "Evaluation Pattern":
+      "Relevance to theme, artistic creativity, original slogan impact, and visual neatness.",
+  },
+  {
+    Participation: "University Students",
+    "Time Slot": "11:30 AM - 12:30 PM",
+    "Venue Details": "Multi purpose hall",
+    "Coordinator Name":
+      "Dr. Ankita ( 9501474214) & Dr. Arti Sharma (9899073342)",
+    "Email ID / Mobile  Number": "baibhavi, Ritika",
+    Prize: "₹4,500 (1000/1500/2000)",
+  },
+
+  // 13. SOET - Drone Race (AI Arena)
   {
     "Name of Events": "Drone Race (AI Arena)",
     Department: "SOET",
@@ -470,7 +469,7 @@ const rawRows: RawRow[] = [
     Prize: "₹9,000 (4500+4500) 1000/1500/2000",
   },
 
-  // 13. SOAS - Agritech – AI Smart Farming Models
+  // 14. SOAS - Agritech – AI Smart Farming Models
   {
     "Name of Events": "Agritech – AI Smart Farming Models",
     Department: "SOAS",
@@ -493,7 +492,7 @@ const rawRows: RawRow[] = [
       "Innovation, sustainability, precision agriculture relevance, and model presentation.",
   },
 
-  // 14. SOLA - Zero Waste Innovation
+  // 15. SOLA - Zero Waste Innovation
   {
     "Name of Events": "Zero Waste Innovation",
     Department: "SOLA",
@@ -527,63 +526,33 @@ const rawRows: RawRow[] = [
     Prize: "₹6,000 (3000+2000+1000)",
   },
 
-  // 15. SOLS - Poster/ Collage Making Competition (Theme: Know Your Laws)
+  // 15. SOET - One Day Hackathon
   {
-    "Name of Events":
-      "Poster/ Collage Making Competition  (Theme: Know Your Laws)",
-    Department: "SOLS",
-    Participation: "School Students",
-    "Time Slot": "10:00 AM - 11:00 AM",
-    "Venue Details": "Multi purpose hall",
-    "Coordinator Name":
-      "Dr. Ankita ( 9501474214) & Dr. Arti Sharma (9899073342)",
-    "Email ID / Mobile  Number":
-      "Dr. Ankita ( 9501474214) & Dr. Arti Sharma (9899073342)",
-    Date: "27-Oct-26",
-    Category: "Academic",
-    "Team Event/Individual": "SOLO",
-    Description:
-      "To spread awareness about cyber laws and promote digital safety by encouraging participants to creatively depict legal knowledge through visual art.",
-    "Guidlines of  the Event":
-      "Posters must include a slogan they must reflect cyber-related legal issues such as:\n1. Cyber Crime\n2. Online fraud\n3. Data privacy\n4. Impact of social media on youngsters\nLength Should be short and catchy — maximum 15 words.\n• Avoid long sentences or slogans that require additional explanations.\n• The slogan must be original and self-composed.\nEach poster must have the participant’s Name, Class & Institution.",
-    "Evaluation Pattern":
-      "Relevance to theme, artistic creativity, original slogan impact, and visual neatness.",
-  },
-  {
-    Participation: "University Students",
-    "Time Slot": "11:30 AM - 12:30 PM",
-    "Venue Details": "Multi purpose hall",
-    "Coordinator Name":
-      "Dr. Ankita ( 9501474214) & Dr. Arti Sharma (9899073342)",
-    "Email ID / Mobile  Number":
-      "Dr. Ankita ( 9501474214) & Dr. Arti Sharma (9899073342)",
-  },
-
-  // 16. SOET - Tech Treasure Hunt
-  {
-    "Name of Events": "Tech Treasure Hunt",
+    "Name of Events": "One Day Hackathon",
     Department: "SOET",
-    Participation: "School Students/University Students",
+    Participation: "School Students",
     "Time Slot": "10:00 AM Onwards",
-    "Venue Details": "Campus Grounds",
-    "Coordinator Name": "Dr.Manish Kumar/Dr. Feroz Ahmad",
-    "Email ID / Mobile  Number": "Komal,Bandhan,Daksh,Priya ,Gaurav ,Arpit",
-    Date: "27-28 Oct 2026",
+    "Venue Details": "AI Arena",
+    "Coordinator Name":
+      "Dr. Reenu Batra, Dr. Megha Sharma, Dr. Amar Sraswat",
+    "Email ID / Mobile  Number": "Aditya Kumar Singh, Kartik Sharma",
+    Date: "28-Oct-26",
     Category: "Technical",
-    "Team Event/Individual": "SOLO/Team (2-4)",
+    "Team Event/Individual": "Team (2-4)",
     "Team Size": "2-4",
+    Prize: "TBD",
     Description:
-      "A treasure hunt is a game where participants follow clues or solve puzzles to find hidden objects or a final “treasure.” It promotes teamwork, problem-solving, and adventure. Clues lead from one location to another until the treasure is discovered. Treasure hunts are popular for parties, schools, and team-building activities, offering fun, excitement, and a sense of achievement",
+      "Young AI Innovators Hackathon 4.0 is an exciting AI-focused innovation challenge designed to empower school students to transform their creative ideas into practical, technology-driven solutions. The hackathon will provide participants with an opportunity to explore the potential of Artificial Intelligence, Machine Learning, Generative AI, Robotics, IoT, and other emerging technologies to address real-world problems across areas such as education, healthcare, environment, safety, accessibility, and smart living. The event will be conducted in two rounds—an online ideation and evaluation round, followed by an offline AI Arena, where shortlisted teams will develop and demonstrate their software or hardware prototypes before a panel of judges. Through this experience, students will develop problem-solving, creativity, technical, teamwork, communication, and innovation skills, while gaining practical exposure to AI and emerging technologies in a competitive and collaborative environment.",
     "Guidlines of  the Event":
-      "\n* Divide participants into teams or allow individuals to play alone.\n* Each team receives a starting clue or hint.\n* Teams must stay together at all times and are not allowed to split up.\n\n* Clues can be written, visual, riddles, puzzles, or tasks that lead to the next location.\n* Each clue should lead logically to the next clue or checkpoint.\n* Teams cannot skip clues or move ahead without solving them.\n\n* Respect the environment and do not litter or disturb nature.\n\n* Clearly define the playing area or map boundaries before starting.\n* Teams must stay within the designated limits.\n\n* The treasure can be a box of treats, a prize, a token, or a certificate.\n* You can include smaller rewards at checkpoints and a grand prize at the end.",
+      "Guidelines / Description\n1.\tTheme: The hackathon theme will be Artificial Intelligence (AI). Participants must develop an innovative solution addressing a real-world problem using AI.\n2.\tTeam Size: Each team may consist of 2–4 students.\n3.\tRound 1 – Online: Teams will submit their AI project idea, problem statement, proposed solution, AI implementation plan, and a short presentation/video within the specified deadline. An online link would be sent to the participants for appearing in this round along with timings. Participants must be present at allotted time slot.\n4.\tProjects will be assessed in the online round based on innovation, relevance of AI, feasibility, creativity, social impact, and presentation.\n5.\tShortlisted teams will qualify for Round 2 – AI Arena, to be conducted physically at K. R. Mangalam University.\n6.\tIn the AI Arena, teams must present and demonstrate their working AI-based software and/or hardware prototype before the judges.\n7.\tParticipants may use software, hardware, AI tools, APIs, machine learning models, generative AI, IoT, robotics, or a combination of these, provided AI forms a meaningful part of the solution.\n8.\tTeams must bring all necessary hardware, components, software, datasets, and other materials required for demonstrating their project.\n9.\tThe project demonstrated in the final round should substantially correspond to the idea submitted in Round 1. Major changes, if any, must be approved by the organizers.\n10.\tUse of publicly available AI tools, libraries, APIs, and datasets is permitted. However, participants must be able to explain how these technologies are used in their project.\n11.\tTeams will be given a predefined time slot for project setup, demonstration, presentation, and interaction with the judges.",
     "Evaluation Pattern":
-      "Speed, accuracy in solving puzzles, teamwork, and completion of all checkpoints.",
+      "1.\tEvaluation will be based on innovation, originality, and creativity of the AI-based solution.\n2.\tProjects will be assessed on the effective and meaningful use of Artificial Intelligence in solving the identified problem.\n3.\tEvaluation will consider the functionality, working prototype, and quality of the software/hardware demonstration.\n4.\tJudges will assess the real-world impact, feasibility, and scalability of the proposed solution.\n5.\tPresentation, technical understanding, and ability to answer judges' questions will also be considered.",
   },
 
-  // 17. STUDENT WELFARE - Duet Dance
+  // 16. Student Welfare - Duet Dance
   {
     "Name of Events": "Duet Dance",
-    Department: "STUDENT WELFARE",
+    Department: "Student Welfare",
     Participation: "School Students",
     "Time Slot": "09:30 AM - 11:00 AM",
     "Venue Details": "Sunken Garden",
@@ -594,6 +563,7 @@ const rawRows: RawRow[] = [
     Category: "Cultural",
     "Team Event/Individual": "Duet",
     "Team Size": "2",
+    Prize: "₹4,500 (1000/1500/2000)",
     Description:
       "Unleash your rhythm and coordination as pairs take the stage to showcase creativity, synchronization, and expression through dance. Participants will be judged on choreography, energy, coordination, and overall performance.",
     "Guidlines of  the Event":
@@ -608,106 +578,73 @@ const rawRows: RawRow[] = [
     "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
     "Email ID / Mobile  Number":
       "Nirdesh (9810624900), Garvit (9729648968), Prakhar (9084179257), Hanshika (9910079602)",
+    Prize: "₹4,500 (1000/1500/2000)",
   },
 
-  // 18. SOET - One Day Hackathon
+  // 16. Student Welfare - Group Dance (Day 1)
   {
-    "Name of Events": "One Day Hackathon",
-    Department: "SOET",
+    "Name of Events": "Group Dance",
+    Department: "Student Welfare",
     Participation: "School Students",
-    "Time Slot": "9:10 AM - 04:00 PM",
-    "Venue Details": "Campus Labs",
-    "Coordinator Name":
-      "Dr. Reenu Batra, Dr. Megha Sharma, Dr. Amar Sraswat",
-    "Email ID / Mobile  Number": "Aditya Kumar Singh, Kartik Sharma",
-    Date: "28-Oct-26",
-    Category: "Technical",
-    "Team Event/Individual": "SOLO/Team (2-4)",
-    "Team Size": "2-4",
-    Description:
-      "One Day Hackathon challenging students to design, code, and prototype innovative technology and software solutions within a dedicated time sprint.",
-    "Guidlines of  the Event":
-      "Participants can compete solo or in teams of 2 to 4 members. Problem statements will be revealed at the commencement of the hackathon.",
-    "Evaluation Pattern":
-      "Innovation, technical implementation, working prototype, and presentation.",
-  },
-
-  // 19. SOED - AI Teaching Aid Innovation Challenge
-  {
-    "Name of Events": "AI Teaching Aid Innovation Challenge",
-    Department: "SOED",
-    Participation:
-      "B.Ed. and B.El.Ed. student-teachers, teacher educators, school teachers, school students, and other visitors interested in AI-enabled teaching and learning.",
-    "Time Slot": "10:00 AM - 2:00 PM",
-    "Venue Details": "A 203",
-    "Coordinator Name": "Dr. Richa Malaviya",
+    "Time Slot": "12:30 PM - 2:00 PM",
+    "Venue Details": "Sunken Garden",
+    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
     "Email ID / Mobile  Number":
-      "Priti, P Seetha Lakshmi -B.Ed. students (Semester -III)",
-    Date: "28-Oct-26",
-    Category: "Academic",
-    "Team Event/Individual": "SOLO",
+      "Nirdesh (9810624900), Garvit (9729648968), Prakhar (9084179257), Hanshika (9910079602)",
+    Date: "27-Oct-26",
+    Category: "Cultural",
+    "Team Event/Individual": "TEAM(3-5)",
+    "Team Size": "3-5",
+    Prize: "₹4,500 (1000/1500/2000)",
     Description:
-      "Develop comic strips, digital lesson planning, storytelling, worksheets prep, stories, flashcards, concept maps, quizzes, simulations, visual aids or multilingual resources using AI.",
+      "Showcase your rhythm, energy, and teamwork in the ultimate dance battle! Teams of 3–8 participants can perform any style of dance—be it contemporary, hip-hop, classical, or fusion. Impress the judges with creativity, coordination, and stage presence to win exciting prizes.",
     "Guidlines of  the Event":
-      "Individual/team of 2–3; create an original AI-assisted teaching aid for a specified class, subject and learning outcome; disclose AI tools used; fact-check all AI-generated content; ensure age-appropriateness, inclusion, accuracy and ethical AI use; no confidential student data; 5–7 minute demonstration plus jury interaction; evaluation based on innovation, pedagogy, responsible AI use, usability and classroom impact.",
+      "1. Time limit: 1–2.5 minutes per performance. Points shall be deducted on exceeding the time limit, organizers reserve the right to stop the performance if the time limit is exceeded.\n2. Any dance form allowed.\n3. Pre-recorded tracks must be submitted in advance. Last minute chances in audio are not allowed\n4. Costumes and props allowed. Use of colors, gulal, water, or any material that can damage/disturb the stage is strictly prohibited and will lead to disqualification.\n5. Obscene/derogatory moves or lyrics are strictly prohibited.",
     "Evaluation Pattern":
-      "Innovation, pedagogy, responsible AI use, usability and classroom impact.",
-  },
-
-  // 20. SOHMCT - The Beverage Arena
-  {
-    "Name of Events":
-      "The Beverage Arena  (Teams represent countries and create signature beverages from those regions)",
-    Department: "SOHMCT",
-    Participation: "School Students",
-    "Time Slot": "11:30 AM - 12:30 PM",
-    "Venue Details": "F & B Training Restaurant",
-    "Coordinator Name": "Mr. Akash Gautam",
-    "Email ID / Mobile  Number": "Prashant , Chirag",
-    Date: "28-Oct-26",
-    Category: "Academic",
-    "Team Event/Individual": "SOLO/Team (2-4)",
-    "Team Size": "2-4",
-    Description:
-      "Participants will represent a country and create signature beverages inspired by its culture, ingredients, and traditional flavours. The competition will test creativity, presentation, beverage knowledge, and preparation skills. Participants must present their beverage along with a brief explanation of the concept, ingredients, and inspiration behind their creation.",
-    "Guidlines of  the Event":
-      "1. Teams must consist of 2–4 participants.\n2. Each team must represent one country.\n3. The beverage must reflect the chosen country’s culture or flavours.\n4. Participants must bring/arrange their required ingredients and equipment as permitted.\n5. The beverage must be prepared within the allotted time.\n6. Proper hygiene and safety practices are mandatory.\n7. Judging will be based on creativity, taste, presentation, concept, technique, and explanation.\n8. Judges’ decision will be final.",
-    "Evaluation Pattern":
-      "Creativity, taste, presentation, concept, technique, and explanation.",
+      "Choreography, synchronization, rhythm, costume coordination, stage presence, and crowd impact.",
   },
   {
     Participation: "University Students",
-    "Time Slot": "01:00 PM - 02:30 PM",
-    "Venue Details": "F & B Training Restaurant",
-    "Coordinator Name": "Mr. Akash Gautam",
-    "Email ID / Mobile  Number": "Prashant , Chirag",
+    "Time Slot": "2:00 PM - 3:30 PM",
+    "Venue Details": "Sunken Garden",
+    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
+    "Email ID / Mobile  Number":
+      "Nirdesh (9810624900), Garvit (9729648968), Prakhar (9084179257), Hanshika (9910079602)",
+    Prize: "₹4,500 (1000/1500/2000)",
   },
 
-  // 21. SOET - ROBO Soccer
+  // 17. Student Welfare - Group Dance (Day 2)
   {
-    "Name of Events": "ROBO Soccer",
-    Department: "SOET",
+    "Name of Events": "Group Dance",
+    Department: "Student Welfare",
     Participation: "School Students",
-    "Time Slot": "11:00 AM Onwards",
-    "Venue Details": "Basketball Ground/Ai AReana",
-    "Coordinator Name": "Mr Gaurav/ Dr Imran/ Dr.Naman",
-    "Email ID / Mobile  Number": "Event Coordinators",
-    Date: "27-28 Oct 2026",
-    Category: "Technical",
-    "Team Event/Individual": "Team (2-4)",
-    "Team Size": "2-4",
+    "Time Slot": "9:30 AM - 11:00 AM",
+    "Venue Details": "Sunken Garden",
+    "Coordinator Name":
+      "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
+    "Email ID / Mobile  Number":
+      "Nigam (9625003139), Moksh (9211575767), Utkarsh (9220400574), Ananya (8368720719), Swapnil (9582327541)",
+    Date: "28-Oct-26",
+    Category: "Cultural",
+    "Team Event/Individual": "TEAM(3-5)",
+    "Team Size": "3-5",
+    Prize: "₹4,500 (1000/1500/2000)",
     Description:
-      "ROBO Soccer competition where student-engineered robots face off in exciting football matches on the arena field.",
+      "Showcase your rhythm, energy, and teamwork in the ultimate dance battle! Teams of 3–8 participants can perform any style of dance—be it contemporary, hip-hop, classical, or fusion. Impress the judges with creativity, coordination, and stage presence to win exciting prizes.",
     "Guidlines of  the Event":
-      "1. Robot will be wireless.\n2. Teams of 2 to 4 members.\n3. Robots must score goals within the allotted time in the arena.\n4. Both days match schedules will be announced by the organizers.",
+      "1. Time limit: 1–2.5 minutes per performance. Points shall be deducted on exceeding the time limit, organizers reserve the right to stop the performance if the time limit is exceeded.\n2. Any dance form allowed.\n3. Pre-recorded tracks must be submitted in advance. Last minute chances in audio are not allowed\n4. Costumes and props allowed. Use of colors, gulal, water, or hazardous material is strictly prohibited.\n5. Obscene/derogatory moves or lyrics are strictly prohibited.",
     "Evaluation Pattern":
-      "Match wins, goals scored, technical maneuvering, and fair play.",
+      "Choreography, synchronization, rhythm, costume coordination, stage presence, and crowd impact.",
   },
   {
     Participation: "University Students",
-    "Time Slot": "1:30 PM Onwards",
-    "Venue Details": "Basketball Ground/Ai AReana",
-    "Coordinator Name": "Mr Gaurav/ Dr Imran/ Dr.Naman",
+    "Time Slot": "11:30 AM - 1:00 PM",
+    "Venue Details": "Sunken Garden",
+    "Coordinator Name":
+      "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
+    "Email ID / Mobile  Number":
+      "Nigam (9625003139), Moksh (9211575767), Utkarsh (9220400574), Ananya (8368720719), Swapnil (9582327541)",
+    Prize: "₹4,500 (1000/1500/2000)",
   },
 ];
 
@@ -862,42 +799,12 @@ function groupEventSessions(rows: RawRow[]): EventItem[] {
 
 const allEvents = groupEventSessions(rawRows);
 
-// Curated Spotlight Events requested by stakeholder
-const SPOTLIGHT_ALLOWLIST = new Set<string>([
-  "crime scene investigation game",
-  "robots race",
-  "robo war (ai arena)",
-  "react to the situation",
-  "react to situation",
-  "button masala",
-  "imprint: the art of hand block printing",
-  "soap carving - carved expression",
-  "debate competition",
-  "reelbaaz (30s reel making)",
-  "science quiz & puzzle solve based on ai theme",
-  "drone race (ai arena)",
-  "agritech – ai smart farming models",
-  "agritech - ai smart farming models",
-  "zero waste innovation",
-]);
-
 function isCultural(ev: EventItem) {
   return (
-    ev.category === "Cultural" ||
+    ev.category?.toLowerCase() === "cultural" ||
     CULTURAL_EVENT_TITLES.has(ev.title.trim().toLowerCase())
   );
 }
-
-const spotlightFiltered = allEvents.filter((ev) => {
-  const norm = ev.title.trim().toLowerCase().replace(/\s+/g, " ");
-  return SPOTLIGHT_ALLOWLIST.has(norm);
-});
-
-const culturalEvents = allEvents.filter(isCultural);
-const curatedAllEventsMap = new Map<string, EventItem>();
-for (const ev of spotlightFiltered) curatedAllEventsMap.set(ev.id, ev);
-for (const ev of culturalEvents) curatedAllEventsMap.set(ev.id, ev);
-const curatedAllEvents = Array.from(curatedAllEventsMap.values());
 
 // Export functions
 export function getAllEvents(): EventItem[] {
@@ -908,13 +815,17 @@ export function getAllRawEvents(): EventItem[] {
   return allEvents;
 }
 
+export function getCulturalEvents(): EventItem[] {
+  return allEvents.filter(isCultural);
+}
+
 export function getSpotlightEvents(): EventItem[] {
-  return spotlightFiltered;
+  return allEvents.filter((ev) => !isCultural(ev));
 }
 
 export function getSpotlightCategories(): string[] {
   const set = new Set<string>();
-  for (const ev of spotlightFiltered) {
+  for (const ev of getSpotlightEvents()) {
     if (ev.category) set.add(ev.category.toLowerCase());
   }
   return Array.from(set).sort();
@@ -943,13 +854,9 @@ export function searchSpotlightEvents(
   });
 }
 
-export function getCulturalEvents(): EventItem[] {
-  return allEvents.filter(isCultural);
-}
-
 export function getEventCounts() {
-  const cultural = culturalEvents.length;
-  const spotlight = spotlightFiltered.length;
+  const cultural = getCulturalEvents().length;
+  const spotlight = getSpotlightEvents().length;
   const total = allEvents.length;
   return { cultural, spotlight, total };
 }

@@ -9,64 +9,69 @@ import Link from "next/link"
 
 export default function RegistrationSelectionPage() {
   return (
-    <div className="min-h-screen pt-24 pb-16 bg-gradient-to-br from-royal-950 via-royal-900 to-royal-800 relative overflow-hidden">
-      {/* Background decorations */}
-      <div className="absolute inset-0 pointer-events-none" style={{background: "radial-gradient(circle at 30% 40%, rgba(255,215,128,0.12), transparent 60%), radial-gradient(circle at 75% 65%, rgba(255,215,128,0.08), transparent 55%)"}} />
-      <div className="absolute inset-0 opacity-[0.08] bg-[linear-gradient(to_right,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[size:60px_60px]" />
-      
-      <div className="container mx-auto px-4 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-12"
-        >
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
-            Choose Your Registration Type
-          </h1>
-          <p className="text-lg md:text-xl text-royal-200 max-w-2xl mx-auto">
-            Select the appropriate registration category to get started with IDEAS 4.0
-          </p>
-        </motion.div>
+    <div className="min-h-screen bg-[#fffefb] text-[#14100b] selection:bg-[#ea580c]/20 selection:text-[#ea580c]">
+      {/* Hero Header Section */}
+      <section className="bg-[#f4ede1] pt-28 pb-12 sm:pt-32 sm:pb-16 border-b border-[#e7ded1]">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-center"
+          >
+            <div className="inline-flex items-center gap-2 mb-4 px-3.5 py-1.5 rounded-[4px] bg-[#ea580c]/10 text-[#ea580c] text-xs font-mono font-semibold border border-[#ea580c]/20">
+              <span>IDEAS 4.0 REGISTRATION</span>
+            </div>
+            <h1 className="font-serif text-[clamp(32px,5vw,52px)] font-bold text-[#14100b] mb-4 tracking-[-0.02em]">
+              Choose Your Registration Type
+            </h1>
+            <p className="text-base sm:text-lg text-[#6b6357] max-w-2xl mx-auto leading-relaxed">
+              Select the appropriate registration category to get started with IDEAS 4.0
+            </p>
+          </motion.div>
+        </div>
+      </section>
 
-        <div className="max-w-5xl mx-auto">
+      {/* Main Registration Options */}
+      <section className="py-12 sm:py-16">
+        <div className="container mx-auto px-4 max-w-5xl">
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             {/* School/Student Registration Card */}
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <Card className="h-full bg-white/10 backdrop-blur-md border-2 border-gold-400/30 hover:border-gold-400 hover:shadow-2xl hover:shadow-gold-400/20 transition-all duration-300 group">
+              <Card className="h-full bg-white border border-[#e7ded1] rounded-2xl hover:shadow-xl hover:border-[#ea580c]/50 transition-all duration-300 shadow-xs group">
                 <CardContent className="p-8 md:p-10 flex flex-col items-center text-center h-full">
-                  <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <School className="w-10 h-10 md:w-12 md:h-12 text-white" />
+                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-[#ea580c]/10 border border-[#ea580c]/20 text-[#ea580c] flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300 shadow-xs">
+                    <School className="w-8 h-8 md:w-10 md:h-10 text-[#ea580c]" />
                   </div>
                   
-                  <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                  <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#14100b] mb-4">
                     School / Student
                   </h2>
                   
-                  <p className="text-royal-200 mb-6 flex-grow text-sm md:text-base">
+                  <p className="text-[#6b6357] mb-6 flex-grow text-sm md:text-base leading-relaxed">
                     For school students and individual participants looking to showcase their talents, 
                     compete in various events, and be part of this mega fest.
                   </p>
                   
-                  <ul className="text-left text-royal-100 mb-8 space-y-2 text-sm md:text-base">
+                  <ul className="text-left text-[#14100b] mb-8 space-y-2.5 text-sm md:text-base w-full">
                     <li className="flex items-start">
-                      <span className="text-gold-400 mr-2">✓</span>
+                      <span className="text-[#ea580c] font-bold mr-2.5 shrink-0">✓</span>
                       <span>Access to 28 competitions</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-gold-400 mr-2">✓</span>
+                      <span className="text-[#ea580c] font-bold mr-2.5 shrink-0">✓</span>
                       <span>Cultural events participation</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-gold-400 mr-2">✓</span>
+                      <span className="text-[#ea580c] font-bold mr-2.5 shrink-0">✓</span>
                       <span>Workshops and skill development</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-gold-400 mr-2">✓</span>
+                      <span className="text-[#ea580c] font-bold mr-2.5 shrink-0">✓</span>
                       <span>Certificate of participation</span>
                     </li>
                   </ul>
@@ -74,11 +79,11 @@ export default function RegistrationSelectionPage() {
                   <Button
                     asChild
                     size="lg"
-                    className="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white font-semibold shadow-lg hover:shadow-gold-400/30 group-hover:scale-105 transition-all duration-300"
+                    className="w-full bg-[#ea580c] hover:bg-[#c2410c] text-white font-bold rounded-xl shadow-md hover:shadow-lg transition-all duration-300 py-3.5"
                   >
-                    <Link href="/register/school">
+                    <Link href="/register/school" className="flex items-center justify-center gap-2">
                       <span>Register as School/Student</span>
-                      <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </Button>
                 </CardContent>
@@ -87,40 +92,40 @@ export default function RegistrationSelectionPage() {
 
             {/* University Registration Card */}
             <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <Card className="h-full bg-white/10 backdrop-blur-md border-2 border-primary/30 hover:border-primary hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 group">
+              <Card className="h-full bg-white border border-[#e7ded1] rounded-2xl hover:shadow-xl hover:border-[#16212C]/40 transition-all duration-300 shadow-xs group">
                 <CardContent className="p-8 md:p-10 flex flex-col items-center text-center h-full">
-                  <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-primary to-rose-700 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <GraduationCap className="w-10 h-10 md:w-12 md:h-12 text-white" />
+                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-[#16212C]/10 border border-[#16212C]/20 text-[#16212C] flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300 shadow-xs">
+                    <GraduationCap className="w-8 h-8 md:w-10 md:h-10 text-[#16212C]" />
                   </div>
                   
-                  <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                  <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#14100b] mb-4">
                     University
                   </h2>
                   
-                  <p className="text-royal-200 mb-6 flex-grow text-sm md:text-base">
+                  <p className="text-[#6b6357] mb-6 flex-grow text-sm md:text-base leading-relaxed">
                     For universities, colleges, and higher education institutions looking to participate 
                     in canopy exhibitions, research showcases, and academic events.
                   </p>
                   
-                  <ul className="text-left text-royal-100 mb-8 space-y-2 text-sm md:text-base">
+                  <ul className="text-left text-[#14100b] mb-8 space-y-2.5 text-sm md:text-base w-full">
                     <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
+                      <span className="text-[#16212C] font-bold mr-2.5 shrink-0">✓</span>
                       <span>Canopy exhibition space</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
+                      <span className="text-[#16212C] font-bold mr-2.5 shrink-0">✓</span>
                       <span>Research paper presentations</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
+                      <span className="text-[#16212C] font-bold mr-2.5 shrink-0">✓</span>
                       <span>Industry-academia networking</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
+                      <span className="text-[#16212C] font-bold mr-2.5 shrink-0">✓</span>
                       <span>Innovation showcase opportunities</span>
                     </li>
                   </ul>
@@ -128,11 +133,11 @@ export default function RegistrationSelectionPage() {
                   <Button
                     asChild
                     size="lg"
-                    className="w-full bg-gradient-to-r from-primary to-rose-700 hover:from-rose-600 hover:to-rose-800 text-white font-semibold shadow-lg hover:shadow-primary/30 group-hover:scale-105 transition-all duration-300"
+                    className="w-full bg-[#16212C] hover:bg-[#233344] text-white font-bold rounded-xl shadow-md hover:shadow-lg transition-all duration-300 py-3.5"
                   >
-                    <Link href="/register/university">
+                    <Link href="/register/university" className="flex items-center justify-center gap-2">
                       <span>Register as University</span>
-                      <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </Button>
                 </CardContent>
@@ -144,41 +149,30 @@ export default function RegistrationSelectionPage() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
             className="mt-12 text-center"
           >
             {/* NO REFUND POLICY - Prominent Warning */}
-            <motion.div
-              initial={{ scale: 0.95 }}
-              animate={{ scale: 1 }}
-              transition={{
-                duration: 0.5,
-                repeat: 3,
-                repeatType: "reverse",
-              }}
-              className="mb-6"
-            >
-              <div className="bg-gradient-to-r from-red-600 via-red-500 to-red-600 p-1 rounded-lg shadow-2xl shadow-red-500/50">
-                <div className="bg-royal-900 rounded-md p-6 border-2 border-red-400">
-                  <p className="text-3xl md:text-4xl font-extrabold text-red-400 tracking-wide animate-pulse">
-                    ⚠️ NO REFUND POLICY ⚠️
-                  </p>
-                  <p className="text-sm md:text-base text-red-300 mt-2 font-semibold">
-                    All registration fees are non-refundable once payment is completed
-                  </p>
-                </div>
-              </div>
-            </motion.div>
+            <div className="mb-6 bg-red-50/90 border border-red-200 rounded-2xl p-6 sm:p-7 shadow-xs">
+              <p className="text-2xl sm:text-3xl font-serif font-bold text-red-600 tracking-wide flex items-center justify-center gap-2">
+                <span>⚠️</span>
+                <span>NO REFUND POLICY</span>
+                <span>⚠️</span>
+              </p>
+              <p className="text-sm sm:text-base text-red-700/90 mt-2 font-medium">
+                All registration fees are non-refundable once payment is completed
+              </p>
+            </div>
 
-            <Card className="bg-white/5 backdrop-blur-sm border border-royal-600/30">
+            <Card className="bg-white border border-[#e7ded1] rounded-2xl shadow-xs">
               <CardContent className="p-6">
-                <p className="text-royal-200 mb-4">
-                  <strong className="text-gold-400">Note:</strong> Both registration types include access to 
+                <p className="text-[#6b6357] mb-3 text-sm sm:text-base leading-relaxed">
+                  <strong className="text-[#14100b]">Note:</strong> Both registration types include access to 
                   cultural events, workshops, and networking opportunities at IDEAS 4.0.
                 </p>
-                <p className="text-sm text-royal-300">
+                <p className="text-sm text-[#8c8273]">
                   Need help? Contact us at{" "}
-                  <a href="mailto:ideas@krmangalam.edu.in" className="text-gold-400 hover:underline">
+                  <a href="mailto:ideas@krmangalam.edu.in" className="text-[#ea580c] font-semibold hover:underline">
                     ideas@krmangalam.edu.in
                   </a>
                 </p>
@@ -190,13 +184,13 @@ export default function RegistrationSelectionPage() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
             className="mt-8 text-center"
           >
             <Button
               asChild
               variant="outline"
-              className="bg-royal-800/40 border-royal-600/40 text-royal-100 hover:bg-royal-700/50 hover:border-royal-500/60 backdrop-blur-sm"
+              className="border border-[#e7ded1] bg-white hover:bg-[#FAF5EC] text-[#14100b] font-semibold shadow-xs rounded-xl transition-colors px-6 py-2.5"
             >
               <Link href="/">
                 ← Back to Home
@@ -204,7 +198,7 @@ export default function RegistrationSelectionPage() {
             </Button>
           </motion.div>
         </div>
-      </div>
+      </section>
     </div>
   )
 }

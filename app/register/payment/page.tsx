@@ -69,18 +69,23 @@ function PaymentRedirectContent() {
 
   if (!type || !paymentLink) {
     return (
-      <div className="min-h-screen pt-24 pb-16 bg-gradient-to-br from-royal-950 via-royal-900 to-royal-800 flex items-center justify-center px-4">
+      <div className="min-h-screen bg-[#fffefb] flex items-center justify-center px-4">
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="text-center text-white"
+          className="text-center bg-white border border-[#e7ded1] rounded-2xl p-8 max-w-md w-full shadow-sm"
         >
-          <p className="text-xl mb-4">Invalid registration type</p>
+          <p className="font-serif text-xl font-bold text-[#14100b] mb-2">
+            Invalid Registration Type
+          </p>
+          <p className="text-sm text-[#6b6357] mb-6">
+            The requested registration category does not exist or has expired.
+          </p>
           <a
             href="/register/selection"
-            className="text-gold-400 hover:underline"
+            className="inline-flex items-center justify-center px-5 py-2.5 bg-[#ea580c] hover:bg-[#c2410c] text-white font-bold rounded-xl shadow-xs transition-colors text-sm"
           >
-            Return to registration
+            ← Return to Registration
           </a>
         </motion.div>
       </div>
@@ -88,63 +93,24 @@ function PaymentRedirectContent() {
   }
 
   return (
-    <div className="min-h-screen pt-24 pb-16 bg-gradient-to-br from-royal-950 via-royal-900 to-royal-800 relative overflow-hidden">
-      {/* Background decorations */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(circle at 30% 40%, rgba(255,215,128,0.12), transparent 60%), radial-gradient(circle at 75% 65%, rgba(255,215,128,0.08), transparent 55%)",
-        }}
-      />
-      <div className="absolute inset-0 opacity-[0.08] bg-[linear-gradient(to_right,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[size:60px_60px]" />
-
-      {/* Animated particles */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(12)].map((_, i) => {
-          // Use index-based calculations instead of Math.random() to avoid hydration issues
-          const seed = i * 0.618033988749895; // Golden ratio for distribution
-          const width = ((seed * 10) % 10) + 6;
-          const height = ((seed * 10) % 10) + 6;
-          const top = (seed * 100) % 100;
-          const left = ((seed + 0.5) * 100) % 100;
-          const delay = (seed * 4) % 4;
-          const duration = ((seed * 8) % 8) + 12;
-
-          return (
-            <div
-              key={i}
-              className="absolute rounded-full bg-gold-400/20 animate-float"
-              style={{
-                width: `${width}px`,
-                height: `${height}px`,
-                top: `${top}%`,
-                left: `${left}%`,
-                animationDelay: `${delay}s`,
-                animationDuration: `${duration}s`,
-              }}
-            />
-          );
-        })}
-      </div>
-
-      <div className="container mx-auto px-4 relative z-10 flex items-center justify-center min-h-[calc(100vh-12rem)]">
+    <div className="min-h-screen bg-[#fffefb] text-[#14100b] flex items-center justify-center px-4 py-16 selection:bg-[#ea580c]/20 selection:text-[#ea580c]">
+      <div className="container mx-auto px-4 flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5 }}
           className="max-w-md w-full"
         >
-          <div className="bg-white/10 backdrop-blur-md border-2 border-gold-400/30 rounded-2xl p-8 md:p-10 shadow-2xl">
+          <div className="bg-white border border-[#e7ded1] rounded-2xl p-8 md:p-10 shadow-lg text-center">
             {/* Success Icon */}
             <motion.div
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
-              transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+              transition={{ delay: 0.1, type: "spring", stiffness: 200 }}
               className="flex justify-center mb-6"
             >
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center shadow-lg">
-                <CheckCircle2 className="w-10 h-10 text-white" />
+              <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-[#ea580c]/10 border border-[#ea580c]/20 flex items-center justify-center shadow-xs">
+                <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-[#ea580c]" />
               </div>
             </motion.div>
 
@@ -152,8 +118,8 @@ function PaymentRedirectContent() {
             <motion.h1
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              className="text-2xl md:text-3xl font-bold text-white text-center mb-3"
+              transition={{ delay: 0.2 }}
+              className="font-serif text-2xl md:text-3xl font-bold text-[#14100b] mb-3"
             >
               {title}
             </motion.h1>
@@ -162,8 +128,8 @@ function PaymentRedirectContent() {
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
-              className="text-royal-200 text-center mb-8"
+              transition={{ delay: 0.3 }}
+              className="text-[#6b6357] text-sm md:text-base leading-relaxed mb-8"
             >
               {description}
             </motion.p>
@@ -172,25 +138,35 @@ function PaymentRedirectContent() {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              className="flex flex-col items-center gap-4"
+              transition={{ delay: 0.4 }}
+              className="flex flex-col items-center gap-3 mb-6"
             >
               <div className="relative">
-                <Loader2 className="w-12 h-12 text-gold-400 animate-spin" />
-                {!isRedirecting && (
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">
-                      {countdown}
-                    </span>
-                  </div>
-                )}
+                <Loader2 className="w-10 h-10 text-[#ea580c] animate-spin" />
               </div>
 
-              <p className="text-royal-300 text-sm">
+              <p className="text-[#8c8273] text-sm font-medium">
                 {isRedirecting
-                  ? "Opening payment page..."
+                  ? "Opening registration portal..."
                   : `Redirecting in ${countdown} second${countdown !== 1 ? "s" : ""}...`}
               </p>
+            </motion.div>
+
+            {/* Progress Bar */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5 }}
+              className="mb-6"
+            >
+              <div className="h-1.5 bg-[#f4ede1] rounded-full overflow-hidden">
+                <motion.div
+                  initial={{ width: "0%" }}
+                  animate={{ width: "100%" }}
+                  transition={{ duration: 2.5, ease: "linear" }}
+                  className="h-full bg-gradient-to-r from-[#ea580c] to-[#c2410c]"
+                />
+              </div>
             </motion.div>
 
             {/* Manual Redirect Buttons */}
@@ -198,11 +174,11 @@ function PaymentRedirectContent() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="mt-8 space-y-3"
+              className="space-y-3"
             >
               <a
                 href={paymentLink}
-                className="block w-full text-center py-2 px-4 bg-gold-500/20 hover:bg-gold-500/30 border border-gold-400/50 rounded-lg text-gold-400 hover:text-gold-300 transition-all text-sm font-medium"
+                className="block w-full text-center py-3 px-4 bg-[#ea580c] hover:bg-[#c2410c] text-white font-bold rounded-xl shadow-md transition-all text-sm"
               >
                 <span className="flex items-center justify-center gap-2">
                   <span>Click here if not redirected automatically</span>
@@ -213,38 +189,22 @@ function PaymentRedirectContent() {
                 href={paymentLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center py-2 px-4 bg-primary/20 hover:bg-primary/30 border border-primary/50 rounded-lg text-primary hover:text-rose-400 transition-all text-xs"
+                className="block w-full text-center py-2.5 px-4 bg-white hover:bg-[#FAF5EC] border border-[#e7ded1] rounded-xl text-[#14100b] hover:text-[#ea580c] transition-all text-xs font-semibold"
               >
                 Or open in new tab →
               </a>
-            </motion.div>
-
-            {/* Progress Bar */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.7 }}
-              className="mt-6"
-            >
-              <div className="h-1 bg-royal-800/50 rounded-full overflow-hidden">
-                <motion.div
-                  initial={{ width: "0%" }}
-                  animate={{ width: "100%" }}
-                  transition={{ duration: 3, ease: "linear" }}
-                  className="h-full bg-gradient-to-r from-gold-400 to-gold-600"
-                />
-              </div>
             </motion.div>
 
             {/* Security Note */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.8 }}
+              transition={{ delay: 0.7 }}
               className="mt-6 text-center"
             >
-              <p className="text-xs text-royal-400">
-                🔒 Secure payment gateway
+              <p className="text-xs text-[#8c8273] flex items-center justify-center gap-1.5">
+                <span>🔒</span>
+                <span>Secure registration gateway</span>
               </p>
             </motion.div>
           </div>
@@ -253,12 +213,12 @@ function PaymentRedirectContent() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.9 }}
+            transition={{ delay: 0.8 }}
             className="text-center mt-6"
           >
             <a
               href="/register/selection"
-              className="text-royal-300 hover:text-white text-sm transition-colors"
+              className="inline-flex items-center text-sm font-semibold text-[#6b6357] hover:text-[#ea580c] transition-colors"
             >
               ← Go back
             </a>
@@ -273,8 +233,18 @@ export default function PaymentRedirectPage() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-screen pt-24 pb-16 bg-gradient-to-br from-royal-950 via-royal-900 to-royal-800 flex items-center justify-center">
-          <Loader2 className="w-12 h-12 text-gold-400 animate-spin" />
+        <div className="min-h-screen bg-[#fffefb] flex items-center justify-center px-4">
+          <div className="text-center p-8 bg-white border border-[#e7ded1] rounded-2xl shadow-sm max-w-sm w-full">
+            <div className="w-16 h-16 rounded-2xl bg-[#ea580c]/10 border border-[#ea580c]/20 text-[#ea580c] flex items-center justify-center mx-auto mb-4 shadow-xs">
+              <Loader2 className="w-8 h-8 text-[#ea580c] animate-spin" />
+            </div>
+            <h2 className="font-serif text-xl font-bold text-[#14100b] mb-1">
+              Loading Registration
+            </h2>
+            <p className="text-sm text-[#6b6357]">
+              Please wait while we prepare your session...
+            </p>
+          </div>
         </div>
       }
     >

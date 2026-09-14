@@ -2,10 +2,17 @@ import { Loader2 } from "lucide-react"
 
 export default function Loading() {
   return (
-    <div className="min-h-screen pt-24 pb-16 bg-gradient-to-br from-royal-950 via-royal-900 to-royal-800 flex items-center justify-center">
-      <div className="text-center">
-        <Loader2 className="w-12 h-12 text-gold-400 animate-spin mx-auto mb-4" />
-        <p className="text-white text-lg">Loading registration...</p>
+    <div className="min-h-screen bg-[#fffefb] flex items-center justify-center px-4">
+      <div className="text-center p-8 bg-white border border-[#e7ded1] rounded-2xl shadow-sm max-w-sm w-full">
+        <div className="w-16 h-16 rounded-2xl bg-[#ea580c]/10 border border-[#ea580c]/20 text-[#ea580c] flex items-center justify-center mx-auto mb-4 shadow-xs">
+          <Loader2 className="w-8 h-8 text-[#ea580c] animate-spin" />
+        </div>
+        <h2 className="font-serif text-xl font-bold text-[#14100b] mb-1">
+          Loading Registration
+        </h2>
+        <p className="text-sm text-[#6b6357]">
+          Please wait while we prepare your session...
+        </p>
       </div>
     </div>
   )

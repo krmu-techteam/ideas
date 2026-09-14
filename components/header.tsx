@@ -123,7 +123,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 text-white bg-[#16212C] border-none shadow-none py-3">
+      <header className="fixed top-0 left-0 right-0 z-50 text-white bg-[#16212C] border-none shadow-none py-2">
         <div className="container mx-auto px-4 flex items-center justify-between">
           {/* Logo & Brand */}
           <Link
@@ -148,7 +148,7 @@ export default function Header() {
                 "px-3 py-1.5 rounded-lg text-sm font-medium transition-colors duration-200",
                 pathname === "/"
                   ? "text-white font-semibold"
-                  : "text-slate-300 hover:text-white",
+                  : "text-white/90 hover:text-white",
               )}
             >
               Home
@@ -168,7 +168,7 @@ export default function Header() {
                   "flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors duration-200 cursor-pointer",
                   pathname.startsWith("/ideas")
                     ? "text-white font-semibold"
-                    : "text-slate-300 hover:text-white",
+                    : "text-white/90 hover:text-white",
                 )}
                 aria-expanded={isIdeasDropdownOpen}
                 aria-haspopup="true"
@@ -242,7 +242,7 @@ export default function Header() {
                 "px-3 py-1.5 rounded-lg text-sm font-medium transition-colors duration-200",
                 pathname.startsWith("/spotlight")
                   ? "text-white font-semibold"
-                  : "text-slate-300 hover:text-white",
+                  : "text-white/90 hover:text-white",
               )}
             >
               Spotlight Activities
@@ -254,7 +254,7 @@ export default function Header() {
                 "px-3 py-1.5 rounded-lg text-sm font-medium transition-colors duration-200",
                 pathname.startsWith("/cultural")
                   ? "text-white font-semibold"
-                  : "text-slate-300 hover:text-white",
+                  : "text-white/90 hover:text-white",
               )}
             >
               Cultural Events
@@ -266,7 +266,7 @@ export default function Header() {
                 "px-3 py-1.5 rounded-lg text-sm font-medium transition-colors duration-200",
                 pathname === "/contact"
                   ? "text-white font-semibold"
-                  : "text-slate-300 hover:text-white",
+                  : "text-white/90 hover:text-white",
               )}
             >
               Contact Us
@@ -275,7 +275,7 @@ export default function Header() {
             <Link
               href="/#faq"
               onClick={handleFaqClick}
-              className="px-3 py-1.5 rounded-lg text-sm font-medium transition-colors duration-200 text-slate-300 hover:text-white"
+              className="px-3 py-1.5 rounded-lg text-sm font-medium transition-colors duration-200 text-white/90 hover:text-white"
             >
               FAQ
             </Link>
@@ -335,7 +335,7 @@ export default function Header() {
                 "font-medium py-2.5 px-3.5 rounded-lg transition-colors text-sm",
                 pathname === "/"
                   ? "text-white font-semibold"
-                  : "text-slate-300 hover:bg-white/10 hover:text-white",
+                  : "text-white/90 hover:bg-white/10 hover:text-white",
               )}
               onClick={() => setIsMobileMenuOpen(false)}
             >

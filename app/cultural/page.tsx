@@ -59,13 +59,6 @@ export default function CulturalPage() {
             transition={{ duration: 0.5 }}
             className="max-w-4xl"
           >
-            {/* Kicker Eyebrow */}
-            <div className="font-mono text-[11px] sm:text-[12px] font-semibold uppercase tracking-[0.16em] text-[#ea580c] mb-3 flex items-center gap-2">
-              <span>IDEAS 4.0</span>
-              <span className="text-[#ea580c]/50">·</span>
-              <span>CULTURAL PERFORMANCES</span>
-            </div>
-
             {/* Main Headline */}
             <h1 className="font-serif text-[clamp(32px,5.2vw,58px)] font-bold leading-[1.08] tracking-[-0.025em] text-[#14100b] text-balance">
               Cultural{" "}
@@ -89,10 +82,7 @@ export default function CulturalPage() {
               </div>
               <div className="bg-white border border-[#e7ded1] rounded-[4px] px-3 py-1.5 text-xs font-mono text-[#14100b] flex items-center gap-2 shadow-2xs">
                 <MapPin size={13} className="text-[#ea580c]" />
-                <span>Sunken Garden, K.R. Mangalam University</span>
-              </div>
-              <div className="bg-[#ea580c]/10 border border-[#ea580c]/30 rounded-[4px] px-3 py-1.5 text-xs font-mono text-[#ea580c] font-semibold flex items-center gap-1.5">
-                <span>3 Headline Performances</span>
+                <span>Sohna Road, Gurugram, Delhi-NCR, Haryana</span>
               </div>
             </div>
           </motion.div>
@@ -106,9 +96,6 @@ export default function CulturalPage() {
           <div className="mb-8">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-[#e7ded1] pb-6">
               <div>
-                <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#ea580c] mb-1">
-                  THE PERFORMANCES
-                </div>
                 <h2 className="font-serif text-[26px] sm:text-[30px] font-bold text-[#14100b] tracking-[-0.015em]">
                   Every Cultural Performance
                 </h2>

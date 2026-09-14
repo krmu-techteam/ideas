@@ -24,10 +24,17 @@ function RedirectToSelection() {
   }, [router]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50">
-      <div className="text-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-        <p className="text-gray-600">Redirecting to registration page...</p>
+    <div className="min-h-screen flex items-center justify-center bg-[#fffefb] px-4">
+      <div className="text-center p-8 bg-white border border-[#e7ded1] rounded-2xl shadow-xs max-w-sm w-full">
+        <div className="w-14 h-14 rounded-2xl bg-[#ea580c]/10 border border-[#ea580c]/20 text-[#ea580c] flex items-center justify-center mx-auto mb-4 shadow-xs">
+          <div className="w-7 h-7 border-2 border-[#ea580c] border-t-transparent rounded-full animate-spin"></div>
+        </div>
+        <h2 className="font-serif text-lg font-bold text-[#14100b] mb-1">
+          Redirecting to Registration
+        </h2>
+        <p className="text-xs text-[#6b6357]">
+          Please wait a moment...
+        </p>
       </div>
     </div>
   );

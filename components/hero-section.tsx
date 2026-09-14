@@ -493,22 +493,22 @@ export default function HeroSection() {
                 {
                   ver: "IDEAS 1.0",
                   sub: "Foundation",
-                  image: "/IDEAS 1.0.webp",
+                  image: "/ideas-version/Ideas 1.0.png",
                 },
                 {
                   ver: "IDEAS 2.0",
                   sub: "Expansion",
-                  image: "/IDEAS 2.0.webp",
+                  image: "/ideas-version/Ideas 2.0.png",
                 },
                 {
                   ver: "IDEAS 3.0",
                   sub: "120 Canopies",
-                  image: "/3.0.jpeg",
+                  image: "/ideas-version/Ideas 3.0.png",
                 },
                 {
                   ver: "IDEAS 4.0",
                   sub: "Current • Mega Fest",
-                  image: "/4.0.jpeg",
+                  image: "/ideas-version/Ideas 4.0.png",
                   highlight: true,
                 },
               ].map((item, idx, arr) => (
