@@ -64,7 +64,7 @@ export default function ZonesHighlights() {
   return (
     <section
       id="zones-highlights"
-      className="py-16 sm:py-20 bg-gradient-to-b from-[#070d1e] via-[#0b1535] to-[#070e24] text-white border-t border-b border-royal-700/30"
+      className="py-16 sm:py-20 bg-[#16212C] text-white"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         {/* Title */}
@@ -89,7 +89,7 @@ export default function ZonesHighlights() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="rounded-2xl border border-royal-700/60 bg-gradient-to-b from-[#0a1435]/90 to-[#070e28]/95 p-6 sm:p-8 flex flex-col justify-between shadow-xl hover:border-gold-500/40 hover:-translate-y-1 transition-all duration-300 group"
+              className="rounded-[6px] border border-white/20 p-6 sm:p-8 flex flex-col justify-between hover:border-gold-500/40 hover:-translate-y-1 transition-all duration-300 group"
             >
               <div>
                 <h3 className="text-2xl font-serif font-bold text-gold-400 mb-4">

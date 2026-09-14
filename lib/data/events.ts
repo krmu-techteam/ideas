@@ -132,7 +132,7 @@ const rawRows: RawRow[] = [
     "Name of Events": "Crime Scene Investigation Game",
     Department: "SBAS",
     Participation: "School Students",
-    "Time Slot": "10.00 -12.30 PM",
+    "Time Slot": "10:00 AM - 12:30 PM",
     "Venue Details": "B Block Lobby Ground Floor",
     "Coordinator Name": "Dr Sourabh and Mr Vaibhav",
     "Email ID / Mobile  Number":
@@ -140,6 +140,7 @@ const rawRows: RawRow[] = [
     Date: "27-Oct-26",
     Category: "Technical/ Competition",
     "Team Event/Individual": "SOLO",
+    Prize: "₹9,000 (4500+4500) 1000/1500/2000",
     Description:
       "These activities, such as scavenger hunts and crime scene investigations, are interactive and educational exercises that encourage teamwork, observation, and critical thinking. Participants search for hidden clues, solve puzzles, analyze evidence, and collaborate to reach a solution. They make learning fun while developing problem-solving, communication, and decision-making skills in an engaging, hands-on environment",
     "Guidlines of  the Event":
@@ -148,20 +149,21 @@ const rawRows: RawRow[] = [
       "Find all the hidden items or clues on the list. Complete any challenges or puzzles at each station. Be the first team to solve the final mystery or finish all tasks within the designated time.",
   },
   {
-    Participation: "School Students",
-    "Time Slot": "2-4 PM",
+    Participation: "University Students",
+    "Time Slot": "2:00 PM - 4:00 PM",
     "Venue Details": "B Block Lobby Ground Floor",
     "Coordinator Name": "Dr Sourabh and Mr Vaibhav",
     "Email ID / Mobile  Number":
       "Vaibhav Saini (8178695170), Arijit Adhikari (7217674411), Tanvee Vashishth (9625124803), Kanika Sudha (8630907218)",
+    Prize: "₹9,000 (4500+4500) 1000/1500/2000",
   },
 
   // 2. SOET - Robots Race
   {
     "Name of Events": "Robots Race",
     Department: "SOET",
-    Participation: "School Students/University Students",
-    "Time Slot": "10:00 AM Onwards",
+    Participation: "School Students",
+    "Time Slot": "10:00 AM - 12:30 PM",
     "Venue Details": "Basketball ground",
     "Coordinator Name": "Mr.Gaurav Verma/Dr.Imran Siraj",
     "Email ID / Mobile  Number": "Tanush Tyagi, Tanishka",
@@ -169,55 +171,82 @@ const rawRows: RawRow[] = [
     Category: "Technical",
     "Team Event/Individual": "SOLO/TEAM(3-4)",
     "Team Size": "3-4",
+    Prize: "₹9,000 (4500+4500) 1000/1500/2000",
     Description:
-      "1.Robot will be wireless.\n\n2.Maximum dimensions and weight will be specified by organizers (e.g., 30x30 cm, 5 kg).\n\n3.The race track will include turns, straight paths, obstacles, or ramps (announced in advance or revealed on the spot).\n\n4.Robots must follow the track without skipping checkpoints.\n\n5.Touching the robot during the run (except for an official reset) will result in penalty points or disqualification.",
+      "1. Robot will be wireless.\n\n2. Maximum dimensions and weight will be specified by organizers (e.g., 30x30 cm, 5 kg).\n\n3. The race track will include turns, straight paths, obstacles, or ramps (announced in advance or revealed on the spot).\n\n4. Robots must follow the track without skipping checkpoints.\n\n5. Touching the robot during the run (except for an official reset) will result in penalty points or disqualification.",
     "Guidlines of  the Event":
-      "1.Robot will be wireless.\n\n2.Maximum dimensions and weight will be specified by organizers (e.g., 30x30 cm, 5 kg).\n\n3.The race track will include turns, straight paths, obstacles, or ramps (announced in advance or revealed on the spot).\n\n4.Robots must follow the track without skipping checkpoints.\n\n5.Touching the robot during the run (except for an official reset) will result in penalty points or disqualification.",
+      "1. Robot will be wireless.\n\n2. Maximum dimensions and weight will be specified by organizers (e.g., 30x30 cm, 5 kg).\n\n3. The race track will include turns, straight paths, obstacles, or ramps (announced in advance or revealed on the spot).\n\n4. Robots must follow the track without skipping checkpoints.\n\n5. Touching the robot during the run (except for an official reset) will result in penalty points or disqualification.",
     "Evaluation Pattern":
       "1. Evaluation will be entirely based on the speed, design, navigation and technical complexity of the design.\n\n2. Robot complete the track first in predefined time slot will win.",
+  },
+  {
+    Participation: "University Students",
+    "Time Slot": "1:30 PM Onwards",
+    "Venue Details": "Basketball Ground/AI Arena",
+    "Coordinator Name": "Mr.Gaurav Verma/Dr.Imran Siraj",
+    "Email ID / Mobile  Number": "Tanush Tyagi, Tanishka",
+    Prize: "₹9,000 (4500+4500) 1000/1500/2000",
   },
 
   // 3. SOET - Robo War (AI Arena)
   {
     "Name of Events": "Robo War (AI Arena)",
     Department: "SOET",
-    Participation: "School Students/University Students",
+    Participation: "School Students",
     "Time Slot": "10:00 AM Onwards",
     "Venue Details": "Basketball ground",
     "Coordinator Name": "Mr.Gaurav Verma/Dr.Imran Siraj",
     "Email ID / Mobile  Number":
-      "1) Umar Farooq, 2) Ayush Partap Singh, 3) Rudra Partap Singh 4) Khushboo",
-    Date: "27-28 oct 2026",
+      "1) Umar Farooq, 2) Ayush Partap Singh, 3) Rudra Partap Singh, 4) Khushboo",
+    Date: "27-28 Oct 2026",
     Category: "Technical",
     "Team Event/Individual": "SOLO/TEAM(3-4)",
     "Team Size": "3-4",
+    Prize: "₹9,000 (4500+4500) 1000/1500/2000",
     Description:
       "Gaming Arena is a thrilling robotics competition where student-built robots engage in intense physical battles and challenges such as Sumo Battle, Robo Soccer, and Task Arena. Participants design, program, and control their robots to outperform opponents in strength, strategy, and agility, showcasing innovation, teamwork, and technical skills.",
     "Guidlines of  the Event":
-      "1.Robot will be wireless.\n2. Maximum robot size and weight will be specified (e.g., 40x40 cm, 10 kg).\n3.The objective varies by event type:\n-Robot Soccer – score maximum goals;\n-Sumo Battle – push opponent out of arena;\n-Task Arena – collect objects or complete missions fastest.\n4.Robots must remain inside the arena during gameplay. Leaving the arena results in penalty or disqualification.\n5.Each match will have a fixed time limit (e.g., 2–5 minutes).\n6.Evaluation will be based on the speed, design, navigation, and technical complexity of the design.",
+      "1. Robot will be wireless.\n2. Maximum robot size and weight will be specified (e.g., 40x40 cm, 10 kg).\n3. The objective varies by event type:\n- Robot Soccer – score maximum goals;\n- Sumo Battle – push opponent out of arena;\n- Task Arena – collect objects or complete missions fastest.\n4. Robots must remain inside the arena during gameplay. Leaving the arena results in penalty or disqualification.\n5. Each match will have a fixed time limit (e.g., 2–5 minutes).\n6. Evaluation will be based on the speed, design, navigation, and technical complexity of the design.",
     "Evaluation Pattern":
       "Evaluation will be based on the speed, design, navigation, and technical complexity of the design.",
+  },
+  {
+    Participation: "University Students",
+    "Time Slot": "1:00 PM Onwards",
+    "Venue Details": "Basketball Ground/AI Arena",
+    "Coordinator Name": "Mr.Gaurav Verma/Dr.Imran Siraj",
+    "Email ID / Mobile  Number":
+      "1) Umar Farooq, 2) Ayush Partap Singh, 3) Rudra Partap Singh, 4) Khushboo",
+    Prize: "₹9,000 (4500+4500) 1000/1500/2000",
   },
 
   // 4. SOMC - React to Situation
   {
     "Name of Events": "React to Situation",
     Department: "SOMC",
-    Participation: "School Students/University Students",
-    "Time Slot": "9.30 - 12.00 PM",
+    Participation: "School Students",
+    "Time Slot": "9:30 AM - 12:00 PM",
     "Venue Details": "C415",
-    "Coordinator Name": "Dr. Anumeha, Dr. Sapna Rana & Dr. Rafiq",
-    "Email ID / Mobile  Number":
-      "Vandana, Amar Mittal Veriesh , Naina , Taranpreet",
-    Date: "27th October 2026",
+    "Coordinator Name": "Dr. Anumeha, Dr. Sapna Rana",
+    "Email ID / Mobile  Number": "Vandana, Mansi, Prince, Sameeksha",
+    Date: "27-Oct-26",
     Category: "Academic",
     "Team Event/Individual": "SOLO",
+    Prize: "₹7,000 (3500+3500) 900/1100/1500",
     Description:
-      "The IDEAS 3.0 activity engages students in developing ethical awareness, quick thinking, and communication skills through one-minute spontaneous speeches and model situational responses on legal and moral dilemmas. Covering topics like justice, cybercrime, equality, and professional ethics, it promotes integrity, empathy, and legal reasoning—essential traits for future law professionals and responsible citizens.",
+      "The IDEAS activity engages students in developing ethical awareness, quick thinking, and communication skills through one-minute spontaneous speeches and model situational responses on legal and moral dilemmas. Covering topics like justice, cybercrime, equality, and professional ethics, it promotes integrity, empathy, and legal reasoning—essential traits for future professionals and responsible citizens.",
     "Guidlines of  the Event":
-      ".Rules for IDEA 3.0 Activity\n1. Each participant will be given a stimulus word or situation related to legal themes or ethical dilemmas.\n2. A total of 1 minute will be allotted to each participant: this time includes thinking, structuring, and delivering their answer on the spot.\n3. Participants must begin speaking as soon as the timer starts; there is no separate \"thinking time\".\n4. Answers should be relevant, well-structured, and must reflect logical reasoning and legal/ethical awareness.\n5. The answer must be completed within 1 minute; exceeding the time limit will lead to automatic stoppage and disqualification from scoring for that round.\n6. No external aids, notes, or prompts may be used during the speech.\n7. The decision of the moderator or evaluator regarding timing, relevance, and adherence to rules will be final.\n8. Respectful language and decorum must be maintained; offensive or disrespectful remarks will result in negative marking or disqualification.\n9. These rules are designed to ensure fairness and to test participant spontaneity, legal knowledge, and ethical reasoning under time constraints.",
+      "1. Each participant will be given a stimulus word or situation related to legal themes or ethical dilemmas.\n2. A total of 1 minute will be allotted to each participant: this time includes thinking, structuring, and delivering their answer on the spot.\n3. Participants must begin speaking as soon as the timer starts; there is no separate \"thinking time\".\n4. Answers should be relevant, well-structured, and must reflect logical reasoning and legal/ethical awareness.\n5. The answer must be completed within 1 minute; exceeding the time limit will lead to automatic stoppage and disqualification from scoring for that round.\n6. No external aids, notes, or prompts may be used during the speech.\n7. The decision of the moderator or evaluator regarding timing, relevance, and adherence to rules will be final.\n8. Respectful language and decorum must be maintained; offensive or disrespectful remarks will result in negative marking or disqualification.",
     "Evaluation Pattern":
       "Spontaneity, logical reasoning, ethical awareness, structure, and adherence to time limit.",
+  },
+  {
+    Participation: "University Students",
+    "Time Slot": "1:00 PM - 3:00 PM",
+    "Venue Details": "C415",
+    "Coordinator Name": "Dr. Anumeha, Dr. Sapna Rana",
+    "Email ID / Mobile  Number": "Vandana, Mansi, Prince, Sameeksha",
+    Prize: "₹7,000 (3500+3500) 900/1100/1500",
   },
 
   // 5. SOAD - Button Masala
@@ -225,17 +254,18 @@ const rawRows: RawRow[] = [
     "Name of Events": "Button Masala",
     Department: "SOAD",
     Participation: "School Students",
-    "Time Slot": "10:00am- 2:00 pm",
-    "Venue Details": "C116 ( Pattern Making Lab)",
-    "Coordinator Name": "Ms. Paramjeet Kaur",
-    "Email ID / Mobile  Number": "Himanshi Singla 9518495115",
-    Date: "28-Sep-26",
+    "Time Slot": "10:00 AM - 2:00 PM",
+    "Venue Details": "C116 (Pattern Making Lab)",
+    "Coordinator Name": "Ms. Paramjeet Kaur / Dr Dinkar Kumavat (8826289725)",
+    "Email ID / Mobile  Number": "Himanshi Singla (9518495115)",
+    Date: "28-Oct-26",
     Category: "Academic",
     "Team Event/Individual": "SOLO",
+    Prize: "₹4,500 (1000/1500/2000)",
     Description:
-      "Button Masala is an innovative, zero-waste fashion technique that uses buttons and elastic/rubber bands to create garments and textile forms without conventional cutting, stitching, or permanent alteration of fabric.\nThe workshop will introduce participants to the fundamentals of Button Masala, followed by a creative competition where participants will apply the technique to develop an original fashion or textile outcome.\nIt's  aims to promote experiential learning, material exploration, creativity, sustainability, and innovative design thinking.",
+      "Button Masala is an innovative, zero-waste fashion technique that uses buttons and elastic/rubber bands to create garments and textile forms without conventional cutting, stitching, or permanent alteration of fabric.\nThe workshop will introduce participants to the fundamentals of Button Masala, followed by a creative competition where participants will apply the technique to develop an original fashion or textile outcome.\nIt aims to promote experiential learning, material exploration, creativity, sustainability, and innovative design thinking.",
     "Guidlines of  the Event":
-      "Each Participants will be recieve the basic materials such as:- Fabric, Buttons, Elastic/rubber bands, Scissors, Measuring tools\nNote:-Participants may be permitted to bring additional non-permanent/reusable materials.\n\nConstruction Rules:\n1.\tFabric, buttons, elastic/rubber bands and other approved materials will be provided by the organisers.\n2.\tParticipants may use additional materials only with prior permission from the organisers.\n3.\tThe primary construction of the design must be achieved through Button Masala techniques.\n4.\tConventional stitching should not be used for the primary construction.\n5.\tParticipants are encouraged to avoid unnecessary cutting and wastage of fabric.\n6.\tThe use of buttons and elastic should be integral to the construction rather than merely decorative.\n7.\tThe final design should preferably be reversible, detachable, reusable or reconfigurable.\n\nPresentation:\nEach participant will receive 3–5 minutes to present the final design.\nThe presentation should briefly explain:\nDesign Title\nConcept and Inspiration\nDesign Development\nButton Masala Techniques Used\nMaterial Selection\nSustainability / Reusability\nFunctionality and Application\n\nThe jury may ask questions regarding the design and construction process.",
+      "Each participant will receive basic materials such as: Fabric, Buttons, Elastic/rubber bands, Scissors, Measuring tools.\nNote: Participants may be permitted to bring additional non-permanent/reusable materials.\n\nConstruction Rules:\n1. Fabric, buttons, elastic/rubber bands and other approved materials will be provided by the organisers.\n2. Participants may use additional materials only with prior permission from the organisers.\n3. The primary construction of the design must be achieved through Button Masala techniques.\n4. Conventional stitching should not be used for the primary construction.\n5. Participants are encouraged to avoid unnecessary cutting and wastage of fabric.\n6. The use of buttons and elastic should be integral to the construction rather than merely decorative.\n7. The final design should preferably be reversible, detachable, reusable or reconfigurable.\n\nPresentation:\nEach participant will receive 3–5 minutes to present the final design explaining concept, techniques used, sustainability, and functionality.",
     "Evaluation Pattern":
       "Creativity, sustainability, innovative application of Button Masala, and presentation.",
   },
@@ -245,17 +275,19 @@ const rawRows: RawRow[] = [
     "Name of Events": "IMPRINT: The Art of Hand Block Printing",
     Department: "SOAD",
     Participation: "School Students",
-    "Time Slot": "10:00am- 2:00 pm",
+    "Time Slot": "10:00 AM - 2:00 PM",
     "Venue Details": "C101 (Textile Lab)",
-    "Coordinator Name": "Ms. Annu Yadav and Ms. Kanishka Singh",
-    "Email ID / Mobile  Number": "Kirty 7015376660",
-    Date: "28-Sep-26",
+    "Coordinator Name":
+      "Ms. Annu Yadav (9650468235) and Ms. Kanishka Singh (7408099898)",
+    "Email ID / Mobile  Number": "Kirty (7015376660)",
+    Date: "28-Oct-26",
     Category: "Academic",
     "Team Event/Individual": "SOLO",
+    Prize: "₹4,500 (1000/1500/2000)",
     Description:
       "The Block Printing Workshop is a hands-on learning experience introducing participants to the traditional art of textile printing. Participants will explore block design, colour preparation, fabric selection, and printing techniques while creating their own printed textile samples. The workshop encourages creativity, experimentation, and appreciation of Indian textile heritage, combining traditional craftsmanship with contemporary design approaches.",
     "Guidlines of  the Event":
-      "Basic Instructions: Use printing blocks carefully and handle all tools responsibly.\nMaintain cleanliness and keep the work area organised throughout the workshop.\nDo not exchange or misuse tools and materials without permission.\nClean the blocks, work surface, and tools after completing the activity.\nParticipants must follow the instructor’s demonstration and safety guidelines throughout the workshop.",
+      "Basic Instructions: Use printing blocks carefully and handle all tools responsibly.\nMaintain cleanliness and keep the work area organised throughout the workshop.\nDo not exchange or misuse tools and materials without permission.\nClean the blocks, work surface, and tools after completing the activity.\nParticipants must follow the instructor's demonstration and safety guidelines throughout the workshop.",
     "Evaluation Pattern":
       "Creativity, experimentation, craftsmanship, neatness, and block design execution.",
   },
@@ -265,13 +297,15 @@ const rawRows: RawRow[] = [
     "Name of Events": "Soap Carving - Carved Expression",
     Department: "SOAD",
     Participation: "School Students",
-    "Time Slot": "10:00am- 01:00 pm",
-    "Venue Details": "Campus Lab",
-    "Coordinator Name": "Mr. Deepanshu Sharma and Indrajeet Singh pandit",
-    "Email ID / Mobile  Number": "Bhumika 9560990811, Anjali  8708776166",
-    Date: "27-09-2026",
+    "Time Slot": "10:00 AM - 1:00 PM",
+    "Venue Details": "SOAD Studios / Campus Lab",
+    "Coordinator Name":
+      "Mr. Deepanshu Sharma (9646617238) and Indrajeet Singh Pandit (9354271104) / Pravesh Tandon (9996813341)",
+    "Email ID / Mobile  Number": "Bhumika (9560990811), Anjali (8708776166)",
+    Date: "27-Oct-26",
     Category: "Academic",
     "Team Event/Individual": "SOLO",
+    Prize: "₹4,500 (1000/1500/2000)",
     Description:
       "Soap carving is a creative art form that transforms simple bars of soap into beautiful sculptures. It encourages imagination, patience, and precision as participants express their ideas through delicate carvings. This activity blends artistry with mindfulness, allowing students to showcase intricate designs and develop fine motor skills through a soothing, hands-on experience.",
     "Guidlines of  the Event":
@@ -285,56 +319,61 @@ const rawRows: RawRow[] = [
     "Name of Events": "Debate Competition",
     Department: "SOLA",
     Participation: "School Students",
-    "Time Slot": "10:00- 11:30 AM",
+    "Time Slot": "9:30 AM - 12:00 PM",
     "Venue Details": "A-213",
     "Coordinator Name": "Dr. Vagish Mishra",
-    "Email ID / Mobile  Number": "Manasvi , Harsimran , Tulsi(9717006092)",
+    "Email ID / Mobile  Number": "Manasvi, Harsimran, Tulsi (9717006092)",
     Date: "28-Oct-26",
     Category: "Academic",
-    "Team Event/Individual": "SOLO",
+    "Team Event/Individual": "TEAM",
+    "Team Size": "3",
+    Prize: "₹5,000 (Trophies)",
     Description:
-      "Debate Competition is an intellectually stimulating event that encourages students to think critically, communicate effectively, and present logical arguments on contemporary issues. It provides a platform for participants to express diverse viewpoints, develop persuasive skills, and engage in healthy discussions. Through reasoned argumentation and evidence-based reasoning, students enhance their analytical thinking, confidence, and public speaking abilities. The competition fosters a spirit of respectful dialogue and critical inquiry, preparing participants to articulate their thoughts clearly and respond thoughtfully to opposing perspectives.",
+      "Debate Competition is an intellectually stimulating event that encourages students to think critically, communicate effectively, and present logical arguments on contemporary issues. It provides a platform for participants to express diverse viewpoints, develop persuasive skills, and engage in healthy discussions. Through reasoned argumentation and evidence-based reasoning, students enhance their analytical thinking, confidence, and public speaking abilities.",
     "Guidlines of  the Event":
-      "Each team will consist of three participants: one For Speaker, one Against Speaker, and one Interjector. Teams will be randomly paired for each debate. The debate will consist of four rounds. In each round, one speaker will deliver their argument for 2 minutes, followed by the opposing team’s Interjector questioning them for 1 minute. The speaker will then have 45 seconds to respond. The same sequence will be followed for both For and Against Speakers from both teams. Interjections must remain relevant to the motion and the speaker’s arguments. A Winner and 1st Runner-Up will be selected separately in the For Speaker, Against Speaker, and Interjector categories.",
+      "Each team will consist of three participants: one For Speaker, one Against Speaker, and one Interjector. Teams will be randomly paired for each debate. The debate will consist of four rounds. In each round, one speaker will deliver their argument for 2 minutes, followed by the opposing team's Interjector questioning them for 1 minute. The speaker will then have 45 seconds to respond. The same sequence will be followed for both For and Against Speakers from both teams. Interjections must remain relevant to the motion and the speaker's arguments. A Winner and 1st Runner-Up will be selected separately in the For Speaker, Against Speaker, and Interjector categories.",
     "Evaluation Pattern":
       "Logical arguments, evidence-based reasoning, persuasive communication, rebuttal efficacy, time adherence, and debate decorum.",
   },
   {
-    Participation: "School Students",
-    "Time Slot": "12:00-1:30 PM",
+    Participation: "University Students",
+    "Time Slot": "1:30 PM - 3:30 PM",
     "Venue Details": "A-215",
     "Coordinator Name": "Dr. Vagish Mishra",
-    "Email ID / Mobile  Number": "Manasvi , Harsimran , Tulsi(9717006092)",
+    "Email ID / Mobile  Number": "Manasvi, Harsimran, Tulsi (9717006092)",
+    Prize: "₹5,000 (Trophies)",
   },
 
   // 9. SEMCE - ReelBaaz (30s Reel Making)
   {
     "Name of Events": "ReelBaaz (30s Reel Making)",
     Department: "SEMCE",
-    Participation: "School Students/University Students",
-    "Time Slot": "10:30-12:00 PM",
+    Participation: "School Students",
+    "Time Slot": "10:30 AM - 12:00 PM",
     "Venue Details": "C113 (SEMCE Studio)",
-    "Coordinator Name": "Dr. Neha Arora(9541394959)",
+    "Coordinator Name": "Dr. Neha Arora (9541394959)",
     "Email ID / Mobile  Number":
       "Poorti Sharma, Palak Saini, Palak Verma, Sakshi Gupta, Kenneth and Manukriti Sharma",
     Date: "27-Oct-26",
     Category: "Technical",
     "Team Event/Individual": "SOLO/TEAM(2-3)",
     "Team Size": "2-3",
+    Prize: "₹5,000 (2500+2500) 700/800/1000",
     Description:
       "Participants have to upload 30-60 seconds reel on the given theme",
     "Guidlines of  the Event":
-      "1. The duration of the reel should be 30–60 seconds.\n2. Upload your reel on your own Instagram account using the hashtags #Ideas3.0 and #KRMU.\n3. Download your reel and email it along with the reel link to the given ID.\n4. Mention “Reelbaaz” in the subject line of your email.\n5. Your reel must be original, creative, and must comply with Instagram’s community guidelines.\n6. Strictly no plagiarism, violence, hate speech, or inappropriate content.\n7. Multiple entries are allowed, but each entry must be registered separately.\n8. AI-generated or plagiarized content will lead to immediate disqualification.\n9. The jury’s decision will be final and binding.\nReels must be uploaded on Instagram only between 1st and 3rd November 2025 — not before or after.\n10. All reels must be uploaded and submitted by 3rd November 2025.",
+      "1. The duration of the reel should be 30–60 seconds.\n2. Upload your reel on your own Instagram account using the hashtags #Ideas4.0 and #KRMU.\n3. Download your reel and email it along with the reel link to the given ID.\n4. Mention \"Reelbaaz\" in the subject line of your email.\n5. Your reel must be original, creative, and must comply with Instagram's community guidelines.\n6. Strictly no plagiarism, violence, hate speech, or inappropriate content.\n7. Multiple entries are allowed, but each entry must be registered separately.\n8. AI-generated or plagiarized content will lead to immediate disqualification.\n9. The jury's decision will be final and binding.",
     "Evaluation Pattern":
       "Creativity, adherence to theme, cinematography/editing quality, originality, and storytelling.",
   },
   {
-    Participation: "School Students/University Students",
-    "Time Slot": "2-4 PM",
+    Participation: "University Students",
+    "Time Slot": "2:00 PM - 4:00 PM",
     "Venue Details": "C113 (SEMCE Studio)",
-    "Coordinator Name": "Dr. Neha Arora(9541394959)",
+    "Coordinator Name": "Dr. Neha Arora (9541394959)",
     "Email ID / Mobile  Number":
       "Poorti Sharma, Palak Saini, Palak Verma, Sakshi Gupta, Kenneth and Manukriti Sharma",
+    Prize: "₹5,000 (2500+2500) 700/800/1000",
   },
 
   // 10. Student Welfare - Group Dance
@@ -342,29 +381,33 @@ const rawRows: RawRow[] = [
     "Name of Events": "Group Dance",
     Department: "Student Welfare",
     Participation: "School Students",
-    "Time Slot": "9:30 am-11:00am",
+    "Time Slot": "9:30 AM - 11:00 AM",
     "Venue Details": "Sunken Garden",
-    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
+    "Coordinator Name":
+      "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
     "Email ID / Mobile  Number":
-      "Nirdesh (9810624900).Garvit (9729648968), Prakhar (9084179257), Hanshika (9910079602)",
+      "Nigam (9625003139), Moksh (9211575767), Utkarsh (9220400574), Ananya (8368720719), Swapnil (9582327541)",
     Date: "28-Oct-26",
     Category: "Cultural",
     "Team Event/Individual": "TEAM(3-5)",
     "Team Size": "3-5",
+    Prize: "₹4,500 (1000/1500/2000)",
     Description:
       "Showcase your rhythm, energy, and teamwork in the ultimate dance battle! Teams of 3–8 participants can perform any style of dance—be it contemporary, hip-hop, classical, or fusion. Impress the judges with creativity, coordination, and stage presence to win exciting prizes.",
     "Guidlines of  the Event":
-      "1. Time limit: 1–2.5 minutes per performance. Points shall be deducted on exceeding the time limit, organizers reserve the right to stop the performance if the time limit is exceeded.\n2. Any dance form allowed.\n3. Pre-recorded tracks must be submitted in advance. Last minute chances in audio are not allowed\n4. Costumes and props allowed. Use of colors, gulal, water, or any material that can damage/disturb the stage is strictly prohibited and will lead to disqualification.\n5. Obscene/derogatory moves or lyrics are strictly prohibited.",
+      "1. Time limit: 1–2.5 minutes per performance. Points shall be deducted on exceeding the time limit.\n2. Any dance form allowed.\n3. Pre-recorded tracks must be submitted in advance.\n4. Costumes and props allowed. Use of colors, gulal, water, or hazardous material is strictly prohibited.\n5. Obscene/derogatory moves or lyrics are strictly prohibited.",
     "Evaluation Pattern":
       "Choreography, synchronization, rhythm, costume coordination, stage presence, and crowd impact.",
   },
   {
-    Participation: "School Students",
-    "Time Slot": "11:30 am- 01:00pm",
+    Participation: "University Students",
+    "Time Slot": "11:30 AM - 1:00 PM",
     "Venue Details": "Sunken Garden",
-    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
+    "Coordinator Name":
+      "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
     "Email ID / Mobile  Number":
-      "Nirdesh (9810624900).Garvit (9729648968), Prakhar (9084179257), Hanshika (9910079602)",
+      "Nigam (9625003139), Moksh (9211575767), Utkarsh (9220400574), Ananya (8368720719), Swapnil (9582327541)",
+    Prize: "₹4,500 (1000/1500/2000)",
   },
 
   // 11. SMAS - Science Quiz & Puzzle Solve based on AI Theme
@@ -372,35 +415,125 @@ const rawRows: RawRow[] = [
     "Name of Events": "Science Quiz & Puzzle Solve based on AI Theme",
     Department: "SMAS",
     Participation: "School Students",
-    "Time Slot": "09: 00 Am - 10:00 Am",
+    "Time Slot": "9:00 AM - 10:00 AM",
     "Venue Details": "Multi purpose hall",
-    "Coordinator Name": "Dr. Swati Kaushik &  Ms. Samiksha Mishra",
-    "Email ID / Mobile  Number": "Mehek, Anshika, Aryan",
+    "Coordinator Name": "Dr. Swati Kaushik & Ms. Samiksha Mishra",
+    "Email ID / Mobile  Number": "Piyush Jain (83073 74664), Ritika",
     Date: "27-Oct-26",
     Category: "Academic",
     "Team Event/Individual": "SOLO",
+    Prize: "₹4,500 (1000/1500/2000)",
     Description:
-      "To spread awareness about science related facts thorugh teamwork, quick thinking",
+      "To spread awareness about science related facts through teamwork, quick thinking.",
     "Guidlines of  the Event":
-      "Team event in first two rounds, and individual in last round. Fastest to solve in 5 mins",
+      "Team event in first two rounds, and individual in last round. Fastest to solve in 5 mins.",
     "Evaluation Pattern":
-      "Team event in first two rounds, and individual in last round. Fastest to solve in 5 mins",
+      "Team event in first two rounds, and individual in last round. Fastest to solve in 5 mins.",
   },
   {
-    Participation: "School Students",
+    Participation: "University Students",
     "Time Slot": "12:30 PM - 1:30 PM",
     "Venue Details": "Multi purpose hall",
-    "Coordinator Name": "Dr. Swati Kaushik &  Ms. Samiksha Mishra",
-    "Email ID / Mobile  Number": "Mehek, Anshika, Aryan",
+    "Coordinator Name": "Dr. Swati Kaushik & Ms. Samiksha Mishra",
+    "Email ID / Mobile  Number": "Piyush Jain (83073 74664), Ritika",
+    Prize: "₹4,500 (1000/1500/2000)",
   },
 
-  // 12. SOLS - Poster/ Collage Making Competition (Theme: Know Your Laws)
+  // 12. SOET - Drone Race (AI Arena)
+  {
+    "Name of Events": "Drone Race (AI Arena)",
+    Department: "SOET",
+    Participation: "School Students",
+    "Time Slot": "9:30 AM Onwards",
+    "Venue Details": "Basketball ground",
+    "Coordinator Name":
+      "Mr.Gaurav Verma/Dr.Imran Siraj/Dr Naman Gupta/Dr Digvijay",
+    "Email ID / Mobile  Number": "Krish, Varun, Bhaumik",
+    Date: "27-28 Oct 2026",
+    Category: "Technical",
+    "Team Event/Individual": "SOLO",
+    Prize: "₹9,000 (4500+4500) 1000/1500/2000",
+    Description:
+      "1.Drones may be manual or remote-controlled\n\n2.Maximum size and weight will be specified by organizers (e.g., diagonal < 500 mm, weight < 2 kg).\n\n3.The obstacle course may include:\n\nHoops / rings to fly through.\n\nZig-zag poles.\n\n4.Drones must follow the marked obstacle path without skipping.",
+    "Guidlines of  the Event":
+      "1.Drones may be manual or remote-controlled\n\n2.Maximum size and weight will be specified by organizers (e.g., diagonal < 500 mm, weight < 2 kg).\n\n3.The obstacle course may include:\n\nHoops / rings to fly through.\n\nZig-zag poles.\n\n4.Drones must follow the marked obstacle path without skipping.",
+    "Evaluation Pattern":
+      "1.Evaluation will be based on Compact, efficient, and innovative design and precision in crossing the loops.\n\n2 Drone  that reached the destination first will win.",
+  },
+  {
+    Participation: "University Students",
+    "Time Slot": "1:30 PM Onwards",
+    "Venue Details": "Basketball Ground/Ai AReana",
+    "Coordinator Name":
+      "Mr.Gaurav Verma/Dr.Imran Siraj/Dr Naman Gupta/Dr Digvijay",
+    "Email ID / Mobile  Number": "Krish, Varun, Bhaumik",
+    Prize: "₹9,000 (4500+4500) 1000/1500/2000",
+  },
+
+  // 13. SOAS - Agritech – AI Smart Farming Models
+  {
+    "Name of Events": "Agritech – AI Smart Farming Models",
+    Department: "SOAS",
+    Participation: "School Students",
+    "Time Slot": "11:00 AM - 2:00 PM",
+    "Venue Details": "C-306A",
+    "Coordinator Name": "Dr Jay Nath Patel and Dr Agnibha Sinha",
+    "Email ID / Mobile  Number":
+      "Divesh (9599724998), Shubham (9306630597), Anjali (9211964717), Lalit (9813634671)",
+    Date: "27-Oct-26",
+    Category: "Technical/ Competition",
+    "Team Event/Individual": "SOLO/Team(2-3)",
+    "Team Size": "2-3",
+    Prize: "₹4,500 (1000/1500/2000)",
+    Description:
+      "The “Agritech– Smart Farming Models” showcases innovative technologies and digital solutions revolutionizing agriculture. It highlights smart irrigation, precision farming, sensor-based monitoring and sustainable practices. Students and participants present models demonstrating how technology enhances productivity, resource efficiency and environmental sustainability in modern farming systems.",
+    "Guidlines of  the Event":
+      "1.\tParticipants may compete individually or in teams of up to 2 members.\n2.\tModels must be original and related to smart or sustainable farming technologies.\n3.\tUse of recycled or eco-friendly materials is encouraged.\n4.\tStudents must bring their own required materials for model making.\n5.\tModel size up to 3 x 2 feet.\n6.\tTeams must adhere to safety guidelines and maintain fair play throughout the competition.\n7.\tJudges’ decisions will be final.",
+    "Evaluation Pattern":
+      "Innovation, sustainability, precision agriculture relevance, and model presentation.",
+  },
+
+  // 14. SOLA - Zero Waste Innovation
+  {
+    "Name of Events": "Zero Waste Innovation",
+    Department: "SOLA",
+    Participation: "School Students",
+    "Time Slot": "10:30 AM - 3:00 PM",
+    "Venue Details": "C Block Ground Floor TT Room",
+    "Coordinator Name":
+      "Dr Amrita Ratnani(6394260965)/Dr Jyotsna Tyagi(9728509807)",
+    "Email ID / Mobile  Number":
+      "Manish Kumar- M.A. Sem- 3 (9654464361), Anushka Roy B.A. Sem 3 (8287372002)",
+    Date: "27-Oct-26",
+    Category: "Technical/ Competition",
+    "Team Event/Individual": "(3-5  Members in each) 10 Group per room",
+    "Team Size": "3-5",
+    Prize: "₹6,000 (3000+2000+1000)",
+    Description:
+      "Zero Waste Innovation is an inter-school and inter-university event designed to inspire young minds to create sustainable solutions for a cleaner planet. The event encourages students to present innovative ideas, models, and practices that minimize waste, promote recycling, and support environmental responsibility — fostering creativity, awareness, and action toward a zero-waste future.",
+    "Guidlines of  the Event":
+      "Team Composition:\nParticipation is strictly in groups. Each team must consist of 3 to 5 members from the same school or university.\n\nTheme Adherence:\nAll models and presentations must align with the theme “Zero Waste Innovation”, focusing on sustainability, recycling, and waste reduction.\n\nOriginality of Work:\nThe project must be original and student-developed. Plagiarism or pre-made models will lead to immediate disqualification.\n\nPresentation Guidelines:\nEach team will be given 5–7 minutes to present and explain their model, followed by a short Q&A session with the judges.",
+    "Evaluation Pattern":
+      "Sustainability impact, innovation, feasibility, prototype/model design, and presentation quality.",
+  },
+  {
+    Participation: "University Students",
+    "Time Slot": "10:30 AM - 3:00 PM",
+    "Venue Details": "C Block Dance Room",
+    "Coordinator Name":
+      "Dr Amrita Ratnani(6394260965)/Dr Jyotsna Tyagi(9728509807)",
+    "Email ID / Mobile  Number":
+      "Manish Kumar- M.A. Sem- 3 (9654464361), Anushka Roy B.A. Sem 3 (8287372002)",
+    Prize: "₹6,000 (3000+2000+1000)",
+  },
+
+  // 15. SOLS - Poster/ Collage Making Competition (Theme: Know Your Laws)
   {
     "Name of Events":
       "Poster/ Collage Making Competition  (Theme: Know Your Laws)",
     Department: "SOLS",
     Participation: "School Students",
-    "Time Slot": "10:00 am- 11 Noon",
+    "Time Slot": "10:00 AM - 11:00 AM",
     "Venue Details": "Multi purpose hall",
     "Coordinator Name":
       "Dr. Ankita ( 9501474214) & Dr. Arti Sharma (9899073342)",
@@ -412,90 +545,18 @@ const rawRows: RawRow[] = [
     Description:
       "To spread awareness about cyber laws and promote digital safety by encouraging participants to creatively depict legal knowledge through visual art.",
     "Guidlines of  the Event":
-      "Posters must include a slogan they must reflect cyber-related legal issues such as:\n1. Cyber Crime\n2. Online fraud\n3. Data privacy\n4. Impact of social media on youngsters                                                        \t                                                                      Length Should be short and catchy — maximum 15 words.\n•\tAvoid long sentences or slogans that require additional explanations.\n•\tThe slogan must be original and self-composed.\n\nEach poster must have the participant’s Name, Class & Institution.",
+      "Posters must include a slogan they must reflect cyber-related legal issues such as:\n1. Cyber Crime\n2. Online fraud\n3. Data privacy\n4. Impact of social media on youngsters\nLength Should be short and catchy — maximum 15 words.\n• Avoid long sentences or slogans that require additional explanations.\n• The slogan must be original and self-composed.\nEach poster must have the participant’s Name, Class & Institution.",
     "Evaluation Pattern":
       "Relevance to theme, artistic creativity, original slogan impact, and visual neatness.",
   },
   {
-    Participation: "School Students",
-    "Time Slot": "11:30 am- 12:30 pm",
+    Participation: "University Students",
+    "Time Slot": "11:30 AM - 12:30 PM",
     "Venue Details": "Multi purpose hall",
     "Coordinator Name":
       "Dr. Ankita ( 9501474214) & Dr. Arti Sharma (9899073342)",
     "Email ID / Mobile  Number":
       "Dr. Ankita ( 9501474214) & Dr. Arti Sharma (9899073342)",
-  },
-
-  // 13. SOET - Drone Race (AI Arena)
-  {
-    "Name of Events": "Drone Race (AI Arena)",
-    Department: "SOET",
-    Participation: "School Students/University Students",
-    "Time Slot": "11:00 AM Onwards",
-    "Venue Details": "Basketball ground / AI Arena",
-    "Coordinator Name": "Mr.Gaurav Verma/Dr.Imran Siraj",
-    "Email ID / Mobile  Number": "Krish, Varun, Bhaumik",
-    Date: "27-28 Oct 2026",
-    Category: "Technical",
-    "Team Event/Individual": "SOLO",
-    Description:
-      "1.Drones may be manual or remote-controlled\n\n2.Maximum size and weight will be specified by organizers (e.g., diagonal < 500 mm, weight < 2 kg).\n\n3.The obstacle course may include:\n\nHoops / rings to fly through.\n\nZig-zag poles.\n\n4.Drones must follow the marked obstacle path without skipping.",
-    "Guidlines of  the Event":
-      "1.Drones may be manual or remote-controlled\n\n2.Maximum size and weight will be specified by organizers (e.g., diagonal < 500 mm, weight < 2 kg).\n\n3.The obstacle course may include:\n\nHoops / rings to fly through.\n\nZig-zag poles.\n\n4.Drones must follow the marked obstacle path without skipping.",
-    "Evaluation Pattern":
-      "1.Evaluation will be based on Compact, efficient, and innovative design and precision in crossing the loops.\n\n2 Drone  that reached the destination first will win.",
-  },
-
-  // 14. SOAS - Agritech – AI Smart Farming Models
-  {
-    "Name of Events": "Agritech – AI Smart Farming Models",
-    Department: "SOAS",
-    Participation: "School Students",
-    "Time Slot": "11.00 AM.-2.00 P.M.",
-    "Venue Details": "C-306A",
-    "Coordinator Name": "Dr Jay Nath Patel and Dr Agnibha Sinha",
-    "Email ID / Mobile  Number":
-      "Divesh (9599724998), Shubham (9306630597), Anjali (9211964717), Lalit (9813634671)",
-    Date: "27-Oct-26",
-    Category: "Technical/ Competition",
-    "Team Event/Individual": "SOLO/Team(2-3)",
-    "Team Size": "2-3",
-    Description:
-      "The “Agritech– Smart Farming Models” showcases innovative technologies and digital solutions revolutionizing agriculture. It highlights smart irrigation, precision farming, sensor-based monitoring and sustainable practices. Students and participants present models demonstrating how technology enhances productivity, resource efficiency and environmental sustainability in modern farming systems.",
-    "Guidlines of  the Event":
-      "1.\tParticipants may compete individually or in teams of up to 2 members.\n2.\tModels must be original and related to smart or sustainable farming technologies.\n3.\tUse of recycled or eco-friendly materials is encouraged.\n4.\tStudents must bring their own required materials for model making.\n5.\tModel size up to 3 x 2 feet.\n6.\tTeams must adhere to safety guidelines and maintain fair play throughout the competition.\n7.\tJudges’ decisions will be final.",
-    "Evaluation Pattern":
-      "Innovation, sustainability, precision agriculture relevance, and model presentation.",
-  },
-
-  // 15. SOLA - Zero Waste Innovation
-  {
-    "Name of Events": "Zero Waste Innovation",
-    Department: "SOLA",
-    Participation: "School Students/University Students",
-    "Time Slot": "10:30 am- 03:00 pm",
-    "Venue Details": "C Block Ground Floor TT Room",
-    "Coordinator Name": "Dr. Amrita Ratnani",
-    "Email ID / Mobile  Number":
-      "Manish Kumar- M.A. Sem- 3 (9654464361), Anushka Roy B.A. Sem 3 (8287372002)",
-    Date: "27-Oct-26",
-    Category: "Technical/ Competition",
-    "Team Event/Individual": "(3-5  Members in each) 10 Group per room",
-    "Team Size": "3-5",
-    Description:
-      "Zero Waste Innovation is an inter-school and inter-university event designed to inspire young minds to create sustainable solutions for a cleaner planet. The event encourages students to present innovative ideas, models, and practices that minimize waste, promote recycling, and support environmental responsibility — fostering creativity, awareness, and action toward a zero-waste future.",
-    "Guidlines of  the Event":
-      "Team Composition:\nParticipation is strictly in groups. Each team must consist of 3 to 5 members from the same school or university.\n\nTheme Adherence:\nAll models and presentations must align with the theme “Zero Waste Innovation”, focusing on sustainability, recycling, and waste reduction.\n\nOriginality of Work:\nThe project must be original and student-developed. Plagiarism or pre-made models will lead to immediate disqualification.\n\nPresentation Guidelines:\nEach team will be given 5–7 minutes to present and explain their model, followed by a short Q&A session with the judges.",
-    "Evaluation Pattern":
-      "Sustainability impact, innovation, feasibility, prototype/model design, and presentation quality.",
-  },
-  {
-    Participation: "School Students/University Students",
-    "Time Slot": "10:30 am- 03:00 pm",
-    "Venue Details": "C Block Dance Room",
-    "Coordinator Name": "Dr. Amrita Ratnani",
-    "Email ID / Mobile  Number":
-      "Manish Kumar- M.A. Sem- 3 (9654464361), Anushka Roy B.A. Sem 3 (8287372002)",
   },
 
   // 16. SOET - Tech Treasure Hunt
@@ -523,12 +584,12 @@ const rawRows: RawRow[] = [
   {
     "Name of Events": "Duet Dance",
     Department: "STUDENT WELFARE",
-    Participation: "University Students/School Students",
-    "Time Slot": "09:30 AM -11:00 AM",
+    Participation: "School Students",
+    "Time Slot": "09:30 AM - 11:00 AM",
     "Venue Details": "Sunken Garden",
     "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
     "Email ID / Mobile  Number":
-      "Nirdesh (9810624900).Garvit (9729648968), Prakhar (9084179257), Hanshika (9910079602)",
+      "Nirdesh (9810624900), Garvit (9729648968), Prakhar (9084179257), Hanshika (9910079602)",
     Date: "27-Oct-26",
     Category: "Cultural",
     "Team Event/Individual": "Duet",
@@ -541,51 +602,21 @@ const rawRows: RawRow[] = [
       "Choreography, energy, coordination, synchronization, and overall performance.",
   },
   {
-    Participation: "University Students/School Students",
-    "Time Slot": "11:00 AM- 12:30PM",
+    Participation: "University Students",
+    "Time Slot": "11:00 AM - 12:30 PM",
     "Venue Details": "Sunken Garden",
     "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
     "Email ID / Mobile  Number":
-      "Nirdesh (9810624900).Garvit (9729648968), Prakhar (9084179257), Hanshika (9910079602)",
+      "Nirdesh (9810624900), Garvit (9729648968), Prakhar (9084179257), Hanshika (9910079602)",
   },
 
-  // 18. STUDENT WELFARE - Group Dance
-  {
-    "Name of Events": "Group Dance",
-    Department: "STUDENT WELFARE",
-    Participation: "University Students/School Students",
-    "Time Slot": "12:30 PM - 2:00PM",
-    "Venue Details": "Sunken Garden",
-    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
-    "Email ID / Mobile  Number":
-      "Nirdesh (9810624900).Garvit (9729648968), Prakhar (9084179257), Hanshika (9910079602)",
-    Date: "27-Oct-26",
-    Category: "Cultural",
-    "Team Event/Individual": "TEAM(3-5)",
-    "Team Size": "3-5",
-    Description:
-      "Showcase your rhythm, energy, and teamwork in the ultimate dance battle! Teams of 3–8 participants can perform any style of dance—be it contemporary, hip-hop, classical, or fusion. Impress the judges with creativity, coordination, and stage presence to win exciting prizes.",
-    "Guidlines of  the Event":
-      "1. Time limit: 1–2.5 minutes per performance. Points shall be deducted on exceeding the time limit, organizers reserve the right to stop the performance if the time limit is exceeded.\n2. Any dance form allowed.\n3. Pre-recorded tracks must be submitted in advance. Last minute chances in audio are not allowed\n4. Costumes and props allowed. Use of colors, gulal, water, or any material that can damage/disturb the stage is strictly prohibited and will lead to disqualification.\n5. Obscene/derogatory moves or lyrics are strictly prohibited.",
-    "Evaluation Pattern":
-      "Choreography, synchronization, rhythm, costume coordination, stage presence, and crowd impact.",
-  },
-  {
-    Participation: "University Students/School Students",
-    "Time Slot": "2:00PM-3:30 PM",
-    "Venue Details": "Sunken Garden",
-    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
-    "Email ID / Mobile  Number":
-      "Nirdesh (9810624900).Garvit (9729648968), Prakhar (9084179257), Hanshika (9910079602)",
-  },
-
-  // 19. SOET - One Day Hackathon
+  // 18. SOET - One Day Hackathon
   {
     "Name of Events": "One Day Hackathon",
     Department: "SOET",
     Participation: "School Students",
-    "Time Slot": "9:10 Am - 04:00 PM",
-    "Venue Details": "To be decided later",
+    "Time Slot": "9:10 AM - 04:00 PM",
+    "Venue Details": "Campus Labs",
     "Coordinator Name":
       "Dr. Reenu Batra, Dr. Megha Sharma, Dr. Amar Sraswat",
     "Email ID / Mobile  Number": "Aditya Kumar Singh, Kartik Sharma",
@@ -601,13 +632,13 @@ const rawRows: RawRow[] = [
       "Innovation, technical implementation, working prototype, and presentation.",
   },
 
-  // 20. SOED - AI Teaching Aid Innovation Challenge
+  // 19. SOED - AI Teaching Aid Innovation Challenge
   {
     "Name of Events": "AI Teaching Aid Innovation Challenge",
     Department: "SOED",
     Participation:
       "B.Ed. and B.El.Ed. student-teachers, teacher educators, school teachers, school students, and other visitors interested in AI-enabled teaching and learning.",
-    "Time Slot": "10:00 AM -2:00 PM",
+    "Time Slot": "10:00 AM - 2:00 PM",
     "Venue Details": "A 203",
     "Coordinator Name": "Dr. Richa Malaviya",
     "Email ID / Mobile  Number":
@@ -623,13 +654,13 @@ const rawRows: RawRow[] = [
       "Innovation, pedagogy, responsible AI use, usability and classroom impact.",
   },
 
-  // 21. SOHMCT - The Beverage Arena
+  // 20. SOHMCT - The Beverage Arena
   {
     "Name of Events":
       "The Beverage Arena  (Teams represent countries and create signature beverages from those regions)",
     Department: "SOHMCT",
-    Participation: "University Students/School Students",
-    "Time Slot": "11:30 a. m. - 12:30 p.m.",
+    Participation: "School Students",
+    "Time Slot": "11:30 AM - 12:30 PM",
     "Venue Details": "F & B Training Restaurant",
     "Coordinator Name": "Mr. Akash Gautam",
     "Email ID / Mobile  Number": "Prashant , Chirag",
@@ -645,19 +676,19 @@ const rawRows: RawRow[] = [
       "Creativity, taste, presentation, concept, technique, and explanation.",
   },
   {
-    Participation: "University Students/School Students",
-    "Time Slot": "01:00 p.m. - 02:30 p.m.",
+    Participation: "University Students",
+    "Time Slot": "01:00 PM - 02:30 PM",
     "Venue Details": "F & B Training Restaurant",
     "Coordinator Name": "Mr. Akash Gautam",
     "Email ID / Mobile  Number": "Prashant , Chirag",
   },
 
-  // 22. SOET - ROBO Soccer
+  // 21. SOET - ROBO Soccer
   {
     "Name of Events": "ROBO Soccer",
     Department: "SOET",
-    Participation: "University/School",
-    "Time Slot": "11 AM Onwards",
+    Participation: "School Students",
+    "Time Slot": "11:00 AM Onwards",
     "Venue Details": "Basketball Ground/Ai AReana",
     "Coordinator Name": "Mr Gaurav/ Dr Imran/ Dr.Naman",
     "Email ID / Mobile  Number": "Event Coordinators",
@@ -673,8 +704,8 @@ const rawRows: RawRow[] = [
       "Match wins, goals scored, technical maneuvering, and fair play.",
   },
   {
-    Participation: "University/School",
-    "Time Slot": "2nd day same time university",
+    Participation: "University Students",
+    "Time Slot": "1:30 PM Onwards",
     "Venue Details": "Basketball Ground/Ai AReana",
     "Coordinator Name": "Mr Gaurav/ Dr Imran/ Dr.Naman",
   },
@@ -704,15 +735,37 @@ function groupEventSessions(rows: RawRow[]): EventItem[] {
         "/placeholder.svg";
       const isCultural = CULTURAL_EVENT_TITLES.has(normalizedTitle);
 
-      const rawDate = row.Date || "27-Oct-26";
+      const rawDate = (row.Date || "27-Oct-26").trim();
+      const lowerDate = rawDate.toLowerCase();
       let formattedDate = "October 27, 2026";
-      if (rawDate.includes("24")) {
-        formattedDate = "24th – 25th October 2026 (Online), 27th – 28th October 2026 (Offline)";
-      } else if (rawDate.includes("28")) {
+      let dayValue = "day1";
+
+      if (
+        lowerDate.includes("both") ||
+        lowerDate.includes("27-28") ||
+        (lowerDate.includes("27") && lowerDate.includes("28"))
+      ) {
+        formattedDate = "October 27–28, 2026";
+        dayValue = "both";
+      } else if (lowerDate.includes("24")) {
+        formattedDate =
+          "24th – 25th October 2026 (Online), 27th – 28th October 2026 (Offline)";
+        dayValue = "both";
+      } else if (
+        lowerDate.includes("28") ||
+        lowerDate.includes("sep-28") ||
+        lowerDate.includes("28-sep")
+      ) {
         formattedDate = "October 28, 2026";
+        dayValue = "day2";
+      } else {
+        formattedDate = "October 27, 2026";
+        dayValue = "day1";
       }
+
       const venueLocation = row["Venue Details"] || "Campus";
-      const campusAddress = "K.R. Mangalam University, Sohna Road, Gurugram, Delhi-NCR, Haryana";
+      const campusAddress =
+        "K.R. Mangalam University, Sohna Road, Gurugram, Delhi-NCR, Haryana";
       const fullAddress = `${venueLocation}, ${campusAddress}`;
 
       currentEvent = {
@@ -720,7 +773,8 @@ function groupEventSessions(rows: RawRow[]): EventItem[] {
         title: title,
         slug: slugifiedTitle,
         department: row.Department || "TBA",
-        category: row.Category || (isCultural ? "Cultural" : row.Department || "General"),
+        category:
+          row.Category || (isCultural ? "Cultural" : row.Department || "General"),
         description:
           row.Description ||
           row["Guidlines of  the Event"] ||
@@ -733,12 +787,15 @@ function groupEventSessions(rows: RawRow[]): EventItem[] {
         image: eventImage,
         sessions: [],
         date: formattedDate,
-        dateObj: rawDate.includes("24") ? new Date("2026-10-24") : rawDate.includes("28") ? new Date("2026-10-28") : new Date("2026-10-27"),
+        dateObj:
+          dayValue === "day2"
+            ? new Date("2026-10-28")
+            : new Date("2026-10-27"),
         location: venueLocation,
         address: fullAddress,
         time: row["Time Slot"],
         type: "spotlight",
-        day: rawDate.includes("28") ? "day2" : "day1",
+        day: dayValue,
       };
 
       // Add first session
@@ -781,27 +838,54 @@ function groupEventSessions(rows: RawRow[]): EventItem[] {
     }
   }
 
+  // Format combined time slot for events with multiple sessions
+  for (const ev of events) {
+    if (ev.sessions.length > 1) {
+      const s1 = ev.sessions[0];
+      const s2 = ev.sessions[1];
+      if (s1.timeSlot && s2.timeSlot && s1.timeSlot !== s2.timeSlot) {
+        const p1 = s1.participation?.toLowerCase().includes("school")
+          ? "School"
+          : "Slot 1";
+        const p2 = s2.participation?.toLowerCase().includes("univ")
+          ? "Univ"
+          : "Slot 2";
+        ev.time = `${s1.timeSlot} (${p1}) | ${s2.timeSlot} (${p2})`;
+      } else if (s1.timeSlot) {
+        ev.time = s1.timeSlot;
+      }
+    }
+  }
+
   return events;
 }
 
 const allEvents = groupEventSessions(rawRows);
 
-// 8 Curated Spotlight Events requested by stakeholder
+// Curated Spotlight Events requested by stakeholder
 const SPOTLIGHT_ALLOWLIST = new Set<string>([
   "crime scene investigation game",
+  "robots race",
+  "robo war (ai arena)",
   "react to the situation",
   "react to situation",
   "button masala",
   "imprint: the art of hand block printing",
   "soap carving - carved expression",
   "debate competition",
+  "reelbaaz (30s reel making)",
+  "science quiz & puzzle solve based on ai theme",
+  "drone race (ai arena)",
   "agritech – ai smart farming models",
   "agritech - ai smart farming models",
   "zero waste innovation",
 ]);
 
 function isCultural(ev: EventItem) {
-  return ev.category === "Cultural" || CULTURAL_EVENT_TITLES.has(ev.title.trim().toLowerCase());
+  return (
+    ev.category === "Cultural" ||
+    CULTURAL_EVENT_TITLES.has(ev.title.trim().toLowerCase())
+  );
 }
 
 const spotlightFiltered = allEvents.filter((ev) => {

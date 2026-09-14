@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Calendar, MapPin, Search, ChevronDown } from "lucide-react";
+import { Calendar, Clock, MapPin, Search, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import {
   getSpotlightEvents,
@@ -176,9 +176,11 @@ export default function SpotlightPage() {
                       <div className="absolute top-2.5 right-2.5 bg-[#14100b]/80 backdrop-blur-xs text-white text-[10.5px] font-mono uppercase tracking-wider px-2.5 py-0.5 rounded-[3px] border border-white/10 shadow-xs">
                         {event.date?.includes("24")
                           ? "Oct 24–28"
-                          : event.day === "day2"
-                            ? "Oct 28"
-                            : "Oct 27"}
+                          : event.day === "both" || event.date?.includes("–") || event.date?.includes("-")
+                            ? "Oct 27–28"
+                            : event.day === "day2"
+                              ? "Oct 28"
+                              : "Oct 27"}
                       </div>
                     </div>
 
@@ -216,8 +218,16 @@ export default function SpotlightPage() {
                         {event.description}
                       </p>
 
+                      {/* Time Row */}
+                      {event.time && (
+                        <div className="mt-3 flex items-center gap-1.5 text-[11.5px] text-[#ea580c] font-mono">
+                          <Clock size={12.5} className="shrink-0" />
+                          <span className="truncate">{event.time}</span>
+                        </div>
+                      )}
+
                       {/* Divider & Footer (Location + Details →) */}
-                      <div className="mt-4 pt-3.5 border-t border-[#f0eae1] flex items-center justify-between text-[12px] text-[#78716c]">
+                      <div className="mt-3 pt-3 border-t border-[#f0eae1] flex items-center justify-between text-[12px] text-[#78716c]">
                         <div className="flex items-center gap-1.5 truncate max-w-[70%]">
                           <MapPin
                             size={13}

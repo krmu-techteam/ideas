@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { GraduationCap, Lightbulb, Building2, Globe } from "lucide-react";
@@ -34,16 +34,20 @@ const krmuHighlights = [
 
 export default function AboutKrmu() {
   const [isInView, setIsInView] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsInView(entry.isIntersecting);
+        if (entry.isIntersecting) {
+          setIsInView(true);
+        }
       },
-      { threshold: 0.2 },
+      { threshold: 0.15 },
     );
 
-    const section = document.querySelector(".about-krmu-section");
+    const section =
+      sectionRef.current || document.querySelector(".about-krmu-section");
     if (section) {
       observer.observe(section);
     }
@@ -56,8 +60,12 @@ export default function AboutKrmu() {
   }, []);
 
   return (
-    <section className="py-16 bg-slate-50/60 about-krmu-section">
-      <div className="container mx-auto px-4">
+    <section
+      ref={sectionRef}
+      className="py-16 sm:py-20 bg-[#FAF5EC] relative overflow-hidden about-krmu-section"
+      suppressHydrationWarning
+    >
+      <div className="container mx-auto px-4 max-w-7xl">
         {/* Header Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -65,14 +73,11 @@ export default function AboutKrmu() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-royal-950 mb-4">
-            About{" "}
-            <span className="bg-gradient-to-r from-royal-800 via-royal-700 to-royal-900 bg-clip-text text-transparent">
-              K.R. Mangalam University (KRMU)
-            </span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#16212C] mb-4 tracking-tight">
+            About K.R. Mangalam University (KRMU)
           </h2>
-          <div className="max-w-4xl mx-auto text-slate-900 space-y-4">
-            <p className="text-[15px] leading-relaxed">
+          <div className="max-w-5xl mx-auto text-[#16212C] space-y-4 text-[15px] sm:text-[16px] leading-relaxed">
+            <p>
               K.R. Mangalam University (KRMU) was established in 2013 in
               Gurugram, Haryana. It is a NAAC-accredited (Grade A)
               forward-looking institution dedicated to excellence in education,
@@ -80,14 +85,14 @@ export default function AboutKrmu() {
               leaders, innovators, and changemakers who can contribute
               meaningfully to society and the nation.
             </p>
-            <p className="text-[15px] leading-relaxed">
+            <p>
               KRMU places strong emphasis on interdisciplinary learning,
               hands-on pedagogy, and industry-academia collaboration. The
               university nurtures a vibrant ecosystem that promotes creativity,
               entrepreneurship, and problem-solving — enabling students to go
               beyond classrooms and apply knowledge in real-world contexts.
             </p>
-            <p className="text-[15px] leading-relaxed">
+            <p>
               As the proud organiser of IDEAS 4.0, KRMU continues its mission of
               inspiring innovation, celebrating creativity, and empowering the
               next generation to transform ideas into impactful outcomes. IDEAS
@@ -105,15 +110,15 @@ export default function AboutKrmu() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
             >
-              <Card className="h-full bg-white hover:shadow-xl transition-all duration-300 border border-slate-200/90 rounded-2xl hover:-translate-y-1 hover:border-royal-300 group shadow-sm">
+              <Card className="h-full bg-white/95 backdrop-blur-sm hover:shadow-xl transition-all duration-300 border border-[#e5dcce] rounded-[6px] hover:-translate-y-1 hover:border-[#16212C] group shadow-sm">
                 <CardContent className="p-6 text-center flex flex-col items-center h-full">
-                  <div className="w-14 h-14 rounded-xl flex items-center justify-center bg-royal-50 text-royal-800 border border-royal-100 group-hover:bg-royal-900 group-hover:text-gold-400 group-hover:scale-105 transition-all duration-300 mb-4 shadow-xs">
+                  <div className="w-14 h-14 rounded-xl flex items-center justify-center bg-royal-50 text-[#16212C] border border-[#16212C] group-hover:bg-[#16212C] group-hover:text-gold-400 group-hover:scale-105 transition-all duration-300 mb-4 shadow-xs">
                     {highlight.icon}
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-royal-950 group-hover:text-royal-800 transition-colors mb-3">
+                  <h3 className="text-xl font-serif font-bold text-[#16212C] group-hover:text-[#16212C] transition-colors mb-3">
                     {highlight.title}
                   </h3>
-                  <p className="text-slate-900 leading-relaxed text-[14px]">
+                  <p className="text-slate-600 leading-relaxed text-[14px]">
                     {highlight.description}
                   </p>
                 </CardContent>
@@ -122,18 +127,18 @@ export default function AboutKrmu() {
           ))}
         </div>
 
-        {/* Bottom Banner (Red Section replaced with Royal Blue & Gold) */}
+        {/* Bottom Banner */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ delay: 0.6, duration: 0.8 }}
+          transition={{ delay: 0.5, duration: 0.8 }}
           className="text-center"
         >
-          <div className="bg-gradient-to-r from-royal-950 via-royal-900 to-royal-800 text-white rounded-2xl p-8 sm:p-10 max-w-4xl mx-auto shadow-2xl border border-royal-700/60">
-            <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-gold-400">
+          <div className="bg-gradient-to-r from-[#16212C] via-[#16212C] to-[#16212C] text-white rounded-[6px] p-8 sm:p-10 max-w-4xl mx-auto shadow-2xl border border-[#16212C]/60">
+            <h3 className="text-2xl sm:text-3xl font-serif font-bold mb-4 text-gold-400">
               Proud Organizer of IDEAS 4.0
             </h3>
-            <p className="text-base sm:text-lg text-royal-100 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-white leading-relaxed max-w-3xl mx-auto">
               As the proud organiser of IDEAS 4.0, KRMU continues its mission of
               inspiring innovation, celebrating creativity, and empowering the
               next generation to transform ideas into impactful outcomes.

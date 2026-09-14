@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -61,16 +61,20 @@ const timelineEvents = [
 
 export default function EventTimeline() {
   const [isInView, setIsInView] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsInView(entry.isIntersecting);
+        if (entry.isIntersecting) {
+          setIsInView(true);
+        }
       },
-      { threshold: 0.2 },
+      { threshold: 0.15 },
     );
 
-    const section = document.querySelector(".timeline-section");
+    const section =
+      sectionRef.current || document.querySelector(".timeline-section");
     if (section) {
       observer.observe(section);
     }
@@ -84,10 +88,11 @@ export default function EventTimeline() {
 
   return (
     <section
-      className="py-20 bg-gradient-to-b from-slate-50 to-white timeline-section"
+      ref={sectionRef}
+      className="py-20 bg-[#16212C] text-white relative overflow-hidden timeline-section"
       suppressHydrationWarning
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -95,149 +100,156 @@ export default function EventTimeline() {
           className="text-center mb-16"
         >
           <div className="inline-block">
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-royal-600 via-gold-500 to-accent-600 bg-clip-text text-transparent mb-4">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold bg-gradient-to-r from-white via-gold-200 to-amber-400 bg-clip-text text-transparent mb-4">
               Our Journey
             </h2>
-            <div className="h-1 w-24 bg-gradient-to-r from-royal-600 to-gold-500 rounded-full mx-auto mb-6"></div>
+            <div className="h-1 w-24 bg-gradient-to-r from-gold-500 via-amber-400 to-royal-500 rounded-full mx-auto mb-6 shadow-[0_0_12px_rgba(245,158,11,0.4)]"></div>
           </div>
-          <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+          <p className="text-slate-300 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">
             From IDEAS 1.0 to IDEAS 4.0, witness the remarkable evolution of
-            KRMU's flagship innovation festival - transforming dreams into
+            KRMU&apos;s flagship innovation festival - transforming dreams into
             reality and fostering excellence in education, research, and
             innovation
           </p>
         </motion.div>
 
         <div className="relative max-w-6xl mx-auto">
-          {/* Enhanced Timeline line with gradient */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-royal-400 via-gold-400 to-accent-400 rounded-full z-0"></div>
+          {/* Enhanced Timeline line with gradient - visible on md screens */}
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-royal-500 via-gold-400 to-amber-500 rounded-full z-0 shadow-[0_0_12px_rgba(245,158,11,0.25)]"></div>
 
           {/* Timeline events */}
-          <div className="relative z-10">
+          <div className="relative z-10 space-y-12 md:space-y-16">
             {timelineEvents.map((event, index) => (
               <motion.div
                 key={event.year}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                initial={{ opacity: 0, y: 30 }}
                 animate={
                   isInView
-                    ? { opacity: 1, x: 0 }
-                    : { opacity: 0, x: index % 2 === 0 ? -50 : 50 }
+                    ? { opacity: 1, y: 0 }
+                    : { opacity: 0, y: 30 }
                 }
                 transition={{
-                  delay: index * 0.3,
-                  duration: 0.8,
+                  delay: index * 0.25,
+                  duration: 0.7,
                   ease: "easeOut",
                 }}
-                className={`mb-16 flex items-center ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
+                className={`flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} md:items-stretch relative items-center gap-6 md:gap-0`}
                 suppressHydrationWarning
               >
-                <div className="w-full md:w-1/2 px-4 md:px-8">
+                {/* Content Box (Left or Right) */}
+                <div className="w-full md:w-1/2 px-2 sm:px-4 md:px-8 flex">
                   <Card
-                    className={`shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 ${
+                    className={`w-full h-full flex flex-col justify-between shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-1 overflow-hidden backdrop-blur-md rounded-2xl ${
                       event.isCurrent
-                        ? "border-2 border-gold-400 bg-gradient-to-br from-gold-50 to-white"
-                        : "bg-gradient-to-br from-white to-slate-50 border border-slate-200"
-                    } overflow-hidden`}
+                        ? "border-2 border-gold-400/80 bg-gradient-to-br from-[#1d2c3c] to-[#121c26] shadow-[0_0_30px_rgba(245,158,11,0.15)]"
+                        : "bg-[#121b24]/90 border border-slate-700/60 shadow-slate-950/50 hover:border-royal-500/40"
+                    }`}
                   >
-                    <CardContent className="p-8">
-                      <div className="flex items-center mb-6">
-                        <div
-                          className={`text-xl font-bold px-6 py-3 rounded-full shadow-lg ${
-                            event.isCurrent
-                              ? "bg-gradient-to-r from-gold-500 to-accent-500 text-white shadow-gold-200"
-                              : "bg-gradient-to-r from-royal-600 to-royal-800 text-white shadow-royal-200"
-                          }`}
-                        >
-                          {event.year}
+                    <CardContent className="p-6 sm:p-8 flex flex-col h-full justify-between">
+                      <div>
+                        <div className="flex flex-wrap items-center gap-3 mb-5">
+                          <div
+                            className={`text-lg sm:text-xl font-bold px-5 py-2 rounded-full shadow-lg ${
+                              event.isCurrent
+                                ? "bg-gradient-to-r from-gold-500 to-amber-500 text-slate-950 font-extrabold shadow-[0_0_15px_rgba(245,158,11,0.3)]"
+                                : "bg-gradient-to-r from-royal-600 to-royal-800 text-white shadow-royal-900/40 border border-royal-400/20"
+                            }`}
+                          >
+                            {event.year}
+                          </div>
+                          <h3 className="text-2xl md:text-3xl font-serif font-bold text-white">
+                            {event.title}
+                          </h3>
+                          {event.isCurrent && (
+                            <span className="px-3 py-1 bg-gradient-to-r from-amber-400 via-gold-400 to-amber-500 text-slate-950 text-xs sm:text-sm font-bold rounded-full shadow-sm">
+                              Current
+                            </span>
+                          )}
                         </div>
-                        <h3 className="text-2xl md:text-3xl font-bold ml-4 text-royal-900">
-                          {event.title}
-                        </h3>
-                        {event.isCurrent && (
-                          <span className="ml-3 px-3 py-1 bg-gradient-to-r from-amber-400 via-gold-400 to-amber-500 text-slate-950 text-xs sm:text-sm font-bold rounded-full shadow-sm">
-                            Current
-                          </span>
-                        )}
+                        <p className="text-slate-300 mb-6 text-base sm:text-lg leading-relaxed">
+                          {event.description}
+                        </p>
                       </div>
-                      <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-                        {event.description}
-                      </p>
-                      <div className="space-y-3">
-                        <h4 className="font-semibold text-royal-800 text-lg mb-3">
+
+                      <div className="space-y-3 pt-4 border-t border-slate-700/40 mt-auto">
+                        <h4 className="font-semibold text-gold-400 text-sm sm:text-base tracking-wide uppercase">
                           Key Achievements:
                         </h4>
-                        {event.achievements.map((achievement, i) => (
-                          <motion.li
-                            key={i}
-                            initial={{ opacity: 0, x: -20 }}
-                            animate={
-                              isInView
-                                ? { opacity: 1, x: 0 }
-                                : { opacity: 0, x: -20 }
-                            }
-                            transition={{
-                              delay: index * 0.3 + i * 0.1,
-                              duration: 0.5,
-                            }}
-                            className="flex items-start list-none"
-                          >
-                            <span className="text-gold-500 mr-3 text-xl">
-                              ✦
-                            </span>
-                            <span className="text-gray-700">{achievement}</span>
-                          </motion.li>
-                        ))}
+                        <ul className="space-y-2.5">
+                          {event.achievements.map((achievement, i) => (
+                            <motion.li
+                              key={i}
+                              initial={{ opacity: 0, x: -10 }}
+                              animate={
+                                isInView
+                                  ? { opacity: 1, x: 0 }
+                                  : { opacity: 0, x: -10 }
+                              }
+                              transition={{
+                                delay: index * 0.2 + i * 0.08,
+                                duration: 0.4,
+                              }}
+                              className="flex items-start list-none"
+                            >
+                              <span className="text-gold-400 mr-2.5 text-base leading-tight mt-0.5 shrink-0">
+                                ✦
+                              </span>
+                              <span className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                                {achievement}
+                              </span>
+                            </motion.li>
+                          ))}
+                        </ul>
                       </div>
                     </CardContent>
                   </Card>
                 </div>
 
-                <div className="hidden md:block w-1/2 px-4 md:px-8">
+                {/* Image Box (Right or Left - Equal in Height and Width to Content Box) */}
+                <div className="w-full md:w-1/2 px-2 sm:px-4 md:px-8 flex">
                   <motion.div
-                    initial={{ opacity: 0, scale: 0.8 }}
+                    initial={{ opacity: 0, scale: 0.92 }}
                     animate={
                       isInView
                         ? { opacity: 1, scale: 1 }
-                        : { opacity: 0, scale: 0.8 }
+                        : { opacity: 0, scale: 0.92 }
                     }
-                    transition={{ delay: index * 0.3 + 0.2, duration: 0.8 }}
-                    className="relative group"
+                    transition={{ delay: index * 0.25 + 0.15, duration: 0.7 }}
+                    className="w-full h-full flex group relative"
                   >
                     <div
-                      className={`absolute inset-0 rounded-xl bg-gradient-to-br ${
+                      className={`w-full h-full min-h-[300px] sm:min-h-[360px] md:min-h-full rounded-2xl overflow-hidden relative shadow-2xl transition-all duration-500 group-hover:-translate-y-1 ${
                         event.isCurrent
-                          ? "from-gold-400 to-accent-400"
-                          : "from-royal-400 to-royal-600"
-                      } opacity-20 group-hover:opacity-30 transition-opacity duration-300 transform rotate-3`}
-                    ></div>
-                    <img
-                      src={event.image || "/placeholder.svg"}
-                      alt={event.title}
-                      className={`relative rounded-xl shadow-xl transform group-hover:scale-105 transition-all duration-500 ${
-                        event.isCurrent
-                          ? "border-4 border-gold-300"
-                          : "border-2 border-royal-200"
+                          ? "border-2 border-gold-400/80 shadow-[0_0_30px_rgba(245,158,11,0.15)] bg-[#121c26]"
+                          : "border border-slate-700/60 shadow-slate-950/50 bg-[#121b24]"
                       }`}
-                    />
+                    >
+                      {/* Clean full-bleed image without any overlay or badge */}
+                      <img
+                        src={event.image || "/placeholder.svg"}
+                        alt={event.title}
+                        className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
+                      />
+                    </div>
                   </motion.div>
                 </div>
 
-                {/* Enhanced Timeline dot */}
+                {/* Enhanced Timeline Center Dot - Exactly centered between equal boxes */}
                 <motion.div
                   initial={{ scale: 0 }}
                   animate={isInView ? { scale: 1 } : { scale: 0 }}
                   transition={{
-                    delay: index * 0.3 + 0.4,
+                    delay: index * 0.25 + 0.3,
                     duration: 0.5,
                     type: "spring",
                   }}
-                  className={`absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full border-4 shadow-lg ${
+                  className={`hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full border-4 shadow-lg z-20 items-center justify-center ${
                     event.isCurrent
-                      ? "bg-gradient-to-r from-gold-400 to-accent-400 border-white shadow-gold-200"
-                      : "bg-gradient-to-r from-royal-500 to-royal-700 border-white shadow-royal-200"
+                      ? "bg-gradient-to-r from-gold-400 to-amber-400 border-[#16212C] shadow-[0_0_20px_rgba(245,158,11,0.7)]"
+                      : "bg-gradient-to-r from-royal-400 to-royal-600 border-[#16212C] shadow-[0_0_15px_rgba(59,130,246,0.5)]"
                   }`}
                 >
-                  <div className="absolute inset-1 rounded-full bg-white opacity-30"></div>
+                  <div className="w-2.5 h-2.5 rounded-full bg-white opacity-60"></div>
                 </motion.div>
               </motion.div>
             ))}
