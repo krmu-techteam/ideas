@@ -10,20 +10,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
           {/* Logo and About */}
           <div className="space-y-4 sm:space-y-6 sm:col-span-2 lg:col-span-1">
-            <div className="flex items-center space-x-3">
+            <Link
+              href="/"
+              className="inline-block focus:outline-hidden py-0.5 group"
+            >
               <Image
-                src="/images/university-logo.png"
-                alt="K.R. Mangalam University"
-                width={60}
-                height={60}
-                className="rounded-lg bg-white/90 p-1"
+                src="/ideas-logo.png"
+                alt="IDEAS 4.0 - K.R. Mangalam University"
+                width={356}
+                height={40}
+                className="h-10 sm:h-11 md:h-12 w-auto object-contain transition-opacity duration-200 group-hover:opacity-90"
                 priority
               />
-              <div>
-                <h3 className="font-bold text-lg sm:text-xl">KRMU</h3>
-                <p className="text-gold-400 text-sm">IDEAS 4.0</p>
-              </div>
-            </div>
+            </Link>
             <p className="text-royal-200 text-sm leading-relaxed">
               K.R. Mangalam University (KRMU), established in 2013 in Gurugram, Haryana, is a forward-looking
               institution dedicated to excellence in education, research, and innovation.
@@ -162,7 +161,7 @@ export default function Footer() {
               <p className="font-semibold text-white mb-3">Built & Crafted By</p>
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden border-2 border-primary/30">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden border-2 border-gold-400/40">
                     <Image
                       src="/yashraj.webp"
                       alt="Yashraj Pahuja"
@@ -197,7 +196,7 @@ export default function Footer() {
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden border-2 border-primary/30">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden border-2 border-gold-400/40">
                     <Image
                       src="/piyush.webp"
                       alt="Piyush Sharma"

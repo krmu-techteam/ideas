@@ -28,13 +28,13 @@ export function NewsletterForm() {
         placeholder="Your Email"
         autoComplete="off"
         inputMode="email"
-        className="w-full px-4 py-2 rounded-md bg-deepBlue-light text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary"
+        className="w-full px-4 py-2.5 rounded-lg bg-royal-950/70 border border-royal-700/60 text-white placeholder-royal-300/60 focus:outline-none focus:ring-2 focus:ring-gold-400"
         required
         suppressHydrationWarning
       />
       <button
         type="submit"
-        className="w-full bg-primary hover:bg-primary/90 text-white font-medium py-2 px-4 rounded-md transition-colors"
+        className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold py-2.5 px-4 rounded-lg shadow-md transition-all duration-300"
         suppressHydrationWarning
       >
         Subscribe

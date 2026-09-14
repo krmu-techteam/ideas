@@ -161,11 +161,11 @@ export default function UnifiedEventGrid({
                   </div>
                   <p className="text-slate-600 text-sm line-clamp-3 flex-1">{event.description}</p>
                   <div className="mt-4 pt-4 border-t border-gray-200 flex items-center justify-between">
-                    {event.prize && (
+                    {/* {event.prize && (
                       <span className="text-xs text-slate-600 truncate pr-3">
                         <span className="font-semibold">Prize:</span> {event.prize}
                       </span>
-                    )}
+                    )} */}
                     <button
                       onClick={() => handleEventSelect(event)}
                       className="ml-auto text-xs font-semibold tracking-wide uppercase text-red-600 hover:text-red-700 transition-colors"

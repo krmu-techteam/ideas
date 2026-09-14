@@ -154,7 +154,7 @@ export default function EventTimeline() {
                           {event.title}
                         </h3>
                         {event.isCurrent && (
-                          <span className="ml-3 px-3 py-1 bg-gradient-to-r from-accent-500 to-crimson-500 text-white text-sm font-semibold rounded-full animate-pulse">
+                          <span className="ml-3 px-3 py-1 bg-gradient-to-r from-amber-400 via-gold-400 to-amber-500 text-slate-950 text-xs sm:text-sm font-bold rounded-full shadow-sm">
                             Current
                           </span>
                         )}

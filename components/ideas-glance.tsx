@@ -1,191 +1,212 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import {
+  Lightbulb,
+  Sparkles,
+  Globe,
+  Trophy,
+  Wrench,
+  Users,
+  Award,
+  Handshake,
+  TrendingUp,
+  ArrowRight,
+  ArrowUpRight,
+  Compass,
+} from "lucide-react";
+
+const engagementPoints = [
+  {
+    num: "01",
+    title: "Enhanced Engagement",
+    description:
+      "Connecting school students, universities, and startups through collaborative opportunities.",
+    icon: Users,
+  },
+  {
+    num: "02",
+    title: "Talent Recognition",
+    description:
+      "Celebrating student brilliance via competitions, projects, and impactful showcases.",
+    icon: Award,
+  },
+  {
+    num: "03",
+    title: "Collaboration",
+    description:
+      "Expanding academia-corporate partnerships and hands-on mentorship ecosystems.",
+    icon: Handshake,
+  },
+  {
+    num: "04",
+    title: "Long-term Impact",
+    description:
+      "Establishing IDEAS as an annual, memorable, and transformative innovation milestone.",
+    icon: TrendingUp,
+  },
+];
 
 const ideasCards = [
   {
     letter: "I",
     title: "Innovation",
+    badge: "Disruption & Tech",
     description:
       "Creative, sustainable, and technology-driven solutions. Focus on disruption, prototyping, and emerging-tech applications.",
-    icon: "💡",
-    color: "bg-gradient-to-r from-blue-500 to-indigo-600",
-    badgeBg: "bg-blue-100",
-    badgeText: "text-blue-700",
-    buttonClass: "bg-blue-600 hover:bg-blue-700",
+    icon: Lightbulb,
+    badgeBg: "bg-[#EF6321] text-white",
     slug: "innovation",
   },
   {
     letter: "D",
     title: "Distinctiveness",
+    badge: "Original Models",
     description:
       "Original models, methodologies, and practices. Celebrating what sets participants apart from the ordinary.",
-    icon: "🔍",
-    color: "bg-gradient-to-r from-purple-500 to-violet-600",
-    badgeBg: "bg-purple-100",
-    badgeText: "text-purple-700",
-    buttonClass: "bg-purple-600 hover:bg-purple-700",
+    icon: Sparkles,
+    badgeBg: "bg-[#16212C] text-white",
     slug: "distinctiveness",
   },
   {
     letter: "E",
     title: "Extension",
+    badge: "Community & Impact",
     description:
       "Connecting academia with community and industry. Bridging the gap between classroom learning and real-world impact.",
-    icon: "🌱",
-    color: "bg-gradient-to-r from-emerald-500 to-teal-600",
-    badgeBg: "bg-emerald-100",
-    badgeText: "text-emerald-700",
-    buttonClass: "bg-emerald-600 hover:bg-emerald-700",
+    icon: Globe,
+    badgeBg: "bg-[#0f766e] text-white",
     slug: "extension",
   },
   {
     letter: "A",
     title: "Achievements",
+    badge: "Milestones",
     description:
       "Highlighting excellence and breakthroughs. Recognising student projects, research, and milestones.",
-    icon: "🏆",
-    color: "bg-gradient-to-r from-amber-500 to-orange-600",
-    badgeBg: "bg-amber-100",
-    badgeText: "text-amber-700",
-    buttonClass: "bg-amber-600 hover:bg-amber-700",
+    icon: Trophy,
+    badgeBg: "bg-[#d97706] text-white",
     slug: "achievements",
   },
   {
     letter: "S",
     title: "Skill-Based",
+    badge: "Hands-on Sprints",
     description:
       "Hands-on interdisciplinary learning powered by strong industry and sponsor partnerships. Practical over theoretical.",
-    icon: "🛠️",
-    color: "bg-gradient-to-r from-rose-500 to-red-600",
-    badgeBg: "bg-rose-100",
-    badgeText: "text-rose-700",
-    buttonClass: "bg-rose-600 hover:bg-rose-700",
+    icon: Wrench,
+    badgeBg: "bg-[#EF6321] text-white",
     slug: "skill-based",
   },
 ];
 
 export default function IdeasGlance() {
   return (
-    <section className="py-20 bg-slate-50">
+    <section className="py-16 bg-[#F9F5EC] relative overflow-hidden">
       <div className="container mx-auto px-4">
+        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          transition={{ duration: 0.6 }}
+          className="text-center max-w-3xl mx-auto mb-14"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-[0.14em] text-[#16212C] bg-[#16212C]/5 border border-[#16212C]/15 mb-3">
+            <Compass className="w-3.5 h-3.5 text-[#EF6321]" />
+            <span>Core Pillars &amp; Tracks</span>
+          </div>
+
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#16212C] tracking-tight mb-4 leading-tight">
             IDEAS @ Glance
           </h2>
-          <p className="text-gray-700 max-w-3xl mx-auto mb-6">
-            IDEAS 4.0 is KRMU's flagship mega fest that celebrates innovation,
-            academics, hands-on pedagogy, and cultural vibrancy. The fest brings
-            together over 18,000 participants from NCR schools, pan-India
-            universities, and startups—making it a hub of creativity,
-            collaboration, and impactful learning.
-          </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mb-12">
-            <div className="text-center p-6 rounded-[2px] border-[1px] border-gray-100 bg-white hover:shadow-xl transition-all duration-300 transform">
-              <div className="text-2xl font-serif sm:text-3xl font-bold text-gray-900 mb-2">
-                Enhanced Engagement
-              </div>
-              <p className="text-gray-700 leading-relaxed text-sm sm:text-[15px]">
-                Connecting school students, universities, and startups through
-                collaborative opportunities.
-              </p>
-            </div>
-            <div className="text-center p-6 rounded-[2px] border-[1px] border-gray-100 bg-white  hover:shadow-xl transition-all duration-300 transform ">
-              <div className="text-2xl font-serif sm:text-3xl font-bold text-gray-900 mb-2">
-                Talent Recognition
-              </div>
-              <p className="text-gray-700 leading-relaxed text-sm sm:text-[15px]">
-                Celebrating student brilliance via competitions, projects, and
-                impactful showcases.
-              </p>
-            </div>
-            <div className="text-center p-6 rounded-[2px] border-[1px] border-gray-100 bg-white  hover:shadow-xl transition-all duration-300 transform ">
-              <div className="text-2xl font-serif sm:text-3xl font-bold text-gray-900 mb-2">
-                Collaboration
-              </div>
-              <p className="text-gray-700 leading-relaxed text-sm sm:text-[15px]">
-                Expanding academia-corporate partnerships.
-              </p>
-            </div>
-            <div className="text-center p-6 rounded-[2px] border-[1px] border-gray-100 bg-white  hover:shadow-xl transition-all duration-300 transform ">
-              <div className="text-2xl font-serif sm:text-3xl font-bold text-gray-900 mb-2">
-                Long-term Impact
-              </div>
-              <p className="text-gray-700 leading-relaxed text-sm sm:text-[15px]">
-                Establishing IDEAS as an annual, memorable, and transformative
-                experience.
-              </p>
-            </div>
-          </div>
+          <p className="text-[15px] sm:text-[16px] text-[#000] leading-relaxed max-w-2xl mx-auto">
+            IDEAS 4.0 is KRMU&apos;s flagship mega fest that celebrates
+            innovation, academics, hands-on pedagogy, and cultural vibrancy. The
+            fest brings together over 18,000 participants from NCR schools,
+            pan-India universities, and startups.
+          </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-8">
-          {ideasCards.map((card, index) => (
-            <motion.div
-              key={card.letter}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{
-                delay: index * 0.1,
-                duration: 0.6,
-                ease: "easeOut",
-              }}
-            >
-              <Link href={`/ideas/${card.slug}`} className="block group h-full">
-                <Card className="relative min-h-[420px] h-full rounded-[2px] overflow-hidden transition-all duration-300 transform border border-slate-200/90 !bg-white text-slate-900 flex flex-col justify-between">
-                  {/* Top accent border */}
-                  <div className={`h-2 w-full ${card.color}`} />
+        {/* 4 Pillars Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto mb-14">
+          {engagementPoints.map((point, index) => {
+            const Icon = point.icon;
+            return (
+              <motion.div
+                key={point.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.08 }}
+                className="bg-white rounded-[6px] border border-[#e6dfd3] p-6 shadow-xs hover:border-[#EF6321] hover:shadow-lg hover:shadow-[#EF6321]/10 transition-[border-color,box-shadow] duration-200 antialiased [backface-visibility:hidden] relative group flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="w-10 h-10 rounded-[4px] bg-[#F9F5EC] border border-[#e6dfd3] flex items-center justify-center text-[#16212C] group-hover:bg-[#EF6321] group-hover:border-[#EF6321] group-hover:text-white transition-all duration-300 shadow-xs">
+                      <Icon className="w-5 h-5" />
+                    </div>
+                  </div>
+                  <h3 className="text-lg font-serif font-bold text-[#16212C] mb-2 group-hover:text-[#EF6321] transition-colors leading-snug">
+                    {point.title}
+                  </h3>
+                  <p className="text-[#5a5247] text-[13px] leading-relaxed">
+                    {point.description}
+                  </p>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
 
-                  <CardContent className="p-7 h-full flex flex-col items-center text-center relative z-10 flex-1">
-                    {/* Top row: Letter badge */}
-                    <div className="w-full flex items-center justify-between mb-4">
-                      <div
-                        className={`w-11 h-11 rounded-[2px] ${card.badgeBg} ${card.badgeText} flex items-center justify-center font-black text-xl font-serif border border-black/5`}
-                      >
-                        {card.letter}
-                      </div>
-                      <span className="text-3xl group-hover:scale-110 transition-transform duration-300">
-                        {card.icon}
+        {/* 5-Column IDEAS Tracks Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+          {ideasCards.map((card, index) => {
+            const Icon = card.icon;
+            return (
+              <motion.div
+                key={card.letter}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ delay: index * 0.07, duration: 0.5 }}
+                className="h-full"
+              >
+                <Link
+                  href={`/ideas/${card.slug}`}
+                  className="group relative flex flex-col justify-between h-full p-6 rounded-[6px] bg-white border border-[#e6dfd3] shadow-xs hover:border-[#EF6321] hover:shadow-xl hover:shadow-[#EF6321]/10 transition-[border-color,box-shadow] duration-200 antialiased [backface-visibility:hidden]"
+                >
+                  <div>
+                    {/* Badge & Title */}
+                    <div className="mb-2">
+                      <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-[3px] bg-[#16212C]/5 text-[#16212C] border border-[#16212C]/10 group-hover:border-[#EF6321]/40 group-hover:text-[#EF6321] transition-colors">
+                        {card.badge}
                       </span>
                     </div>
 
-                    {/* Title with enhanced styling */}
-                    <h3 className="text-2xl font-serif font-bold mb-3 text-slate-900   transition-colors tracking-tight">
+                    <h3 className="text-xl font-serif font-bold text-[#16212C] group-hover:text-[#EF6321] transition-colors tracking-tight mb-2 leading-snug">
                       {card.title}
                     </h3>
 
-                    {/* Description with better readability */}
-                    <p className="text-slate-600 text-sm leading-relaxed mb-6 font-medium flex-1">
+                    {/* Description */}
+                    <p className="text-[#5a5247] text-[13px] leading-relaxed mb-6 flex-grow">
                       {card.description}
                     </p>
+                  </div>
 
-                    {/* Explore button */}
-                    <div className="w-full mt-auto">
-                      <Button
-                        className={`w-full ${card.buttonClass} text-white font-medium py-2.5 rounded-[2px] transition-all duration-300 flex items-center justify-center gap-2 `}
-                      >
-                        <span>Explore Track</span>
-                        <span className="group-hover:translate-x-1 transition-transform duration-300">
-                          →
-                        </span>
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              </Link>
-            </motion.div>
-          ))}
+                  {/* Card Bottom Action */}
+                  <div className="pt-3.5 border-t border-[#e6dfd3] flex items-center justify-between mt-auto">
+                    <span className="text-[13px] font-semibold text-[#16212C] group-hover:text-[#EF6321] inline-flex items-center gap-1.5 transition-colors duration-200">
+                      Explore Track
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200 text-[#EF6321]" />
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

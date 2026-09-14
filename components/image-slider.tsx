@@ -9,14 +9,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
   {
-    src: "/4.0.jpeg",
-    alt: "IDEAS 4.0 The Innovation Carnival 2026",
-  },
-  {
-    src: "/3.0.jpeg",
-    alt: "IDEAS 3.0 Innovation Fest Memories",
-  },
-  {
     src: "/images/IMG_2787.webp",
     alt: "IDEAS Event Photo 1",
   },

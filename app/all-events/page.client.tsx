@@ -165,14 +165,18 @@ function AllEventsClientPageComponent() {
 
                   {/* Top-Left Badge: Department */}
                   {event.department && (
-                    <div className="absolute top-3 left-3 px-2.5 py-1 bg-black/80 backdrop-blur-md text-white rounded-[2px] text-xs font-bold uppercase tracking-wider shadow-md border border-white/10">
+                    <div className="absolute top-3 left-3 z-20 px-2.5 py-1 bg-black/85 backdrop-blur-md text-white rounded-[2px] text-xs font-bold uppercase tracking-wider shadow-md border border-white/10">
                       {event.department}
                     </div>
                   )}
 
                   {/* Top-Right Badge: Date */}
-                  <div className="absolute top-3 right-3 px-2.5 py-1 rounded-[2px] text-xs font-bold text-white bg-gradient-to-r from-blue-600 to-purple-600 shadow-md">
-                    {event.date.includes("28") ? "Oct 28, 2026" : "Oct 27, 2026"}
+                  <div className="absolute top-3 right-3 z-10 max-w-[55%] truncate px-2.5 py-1 rounded-[2px] text-xs font-bold text-white bg-gradient-to-r from-blue-600 to-purple-600 shadow-md">
+                    {event.date.includes("24")
+                      ? "Oct 24–28, 2026"
+                      : event.date.includes("28")
+                      ? "Oct 28, 2026"
+                      : "Oct 27, 2026"}
                   </div>
 
                   {/* Bottom-Left Badges: Format & Category */}
@@ -189,13 +193,13 @@ function AllEventsClientPageComponent() {
                     )}
                   </div>
 
-                  {/* Bottom-Right Badge: Prize */}
-                  {event.prize && (
+                  {/* Bottom-Right Badge: Prize (Hidden as requested) */}
+                  {/* {event.prize && (
                     <div className="absolute bottom-3 right-3 px-2.5 py-0.5 bg-amber-500/95 backdrop-blur-md text-white rounded-[2px] text-[11px] font-bold shadow-sm flex items-center gap-1 z-10">
                       <Trophy size={11} className="text-amber-100" />
                       <span>{event.prize.split("|")[0].trim()}</span>
                     </div>
-                  )}
+                  )} */}
                 </div>
 
                 {/* Card Content */}
@@ -292,14 +296,6 @@ function AllEventsClientPageComponent() {
                             </span>
                             <span className="font-bold text-gray-900">
                               {event.teamType || "Individual"}
-                            </span>
-                          </div>
-                          <div>
-                            <span className="text-gray-500 text-[11px] uppercase block font-semibold">
-                              Prize Pool
-                            </span>
-                            <span className="font-bold text-amber-700">
-                              {event.prize || "Exciting Prizes"}
                             </span>
                           </div>
                         </div>

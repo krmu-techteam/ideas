@@ -1,288 +1,270 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Calendar, Clock, MapPin, Filter, Search } from "lucide-react"
-import Link from "next/link"
-import { getSpotlightEvents, getSpotlightCategories, searchSpotlightEvents, EventItem } from "@/lib/data/events"
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Calendar, MapPin, Search, ChevronDown } from "lucide-react";
+import Link from "next/link";
+import {
+  getSpotlightEvents,
+  getSpotlightCategories,
+  searchSpotlightEvents,
+  EventItem,
+} from "@/lib/data/events";
 
-// Pre-compute categories (stable between renders)
-const categories = getSpotlightCategories()
-const masterEvents = getSpotlightEvents()
+// Pre-computed categories and spotlight events
+const categories = getSpotlightCategories();
+const masterEvents = getSpotlightEvents();
 
-export default function EventsPage() {
-  const [searchTerm, setSearchTerm] = useState("")
-  const [categoryFilter, setCategoryFilter] = useState("all")
-  const [filteredEvents, setFilteredEvents] = useState<EventItem[]>(masterEvents)
-  const [isInView, setIsInView] = useState(false)
+export default function SpotlightPage() {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [categoryFilter, setCategoryFilter] = useState("all");
+  const [filteredEvents, setFilteredEvents] =
+    useState<EventItem[]>(masterEvents);
 
   useEffect(() => {
-    setIsInView(true)
-
-    const filtered = searchSpotlightEvents(searchTerm, categoryFilter)
-    setFilteredEvents(filtered)
-  }, [searchTerm, categoryFilter])
+    const filtered = searchSpotlightEvents(searchTerm, categoryFilter);
+    setFilteredEvents(filtered);
+  }, [searchTerm, categoryFilter]);
 
   return (
-        <div className="min-h-screen pt-24 pb-16 !bg-white">
-      <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-12"
-        >
-          <h1 className="text-3xl md:text-4xl font-bold text-deepBlue-dark mb-2">
-            Spotlight Activities <span className="text-primary">IDEAS 4.0</span>
-          </h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Join us on October 27–28, 2026 for exciting spotlight activities featuring innovation, technology, and creativity!
-          </p>
-        </motion.div>
-
-        <div className="mb-8">
-          <div className="flex flex-col md:flex-row gap-4 justify-between">
-            {/* Search bar */}
-            <div className="relative w-full md:w-64">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 transition-colors duration-200" size={18} />
-              <input
-                type="text"
-                placeholder="Search events..."
-                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 !bg-white text-gray-900 shadow-sm hover:shadow-md"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                suppressHydrationWarning
-              />
-            </div>
-
-            {/* Category filter (dynamic) */}
-            <div className="relative w-full md:w-64">
-              <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 transition-colors duration-200" size={18} />
-              <select
-                className="w-full pl-10 pr-8 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 !bg-white text-gray-900 shadow-sm hover:shadow-md appearance-none cursor-pointer"
-                value={categoryFilter}
-                onChange={(e) => setCategoryFilter(e.target.value)}
-                suppressHydrationWarning
-              >
-                <option value="all">All Categories</option>
-                {categories.map((cat) => (
-                  <option key={cat} value={cat}>
-                    {cat.length <= 4
-                      ? cat.toUpperCase()
-                      : cat
-                          .split(/[-_\s]/)
-                          .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-                          .join(" ")}
-                  </option>
-                ))}
-              </select>
-              <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
-                <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="mb-8">
-          <EventGrid events={filteredEvents} isInView={isInView} />
-        </div>
-
-        {filteredEvents.length === 0 && searchTerm && (
-          <div className="text-center py-20">
-            <div className="max-w-md mx-auto">
-              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Search className="w-8 h-8 text-gray-400" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">No events found</h3>
-              <p className="text-gray-500 mb-6">We couldn't find any events matching your search criteria. Try adjusting your filters or search terms.</p>
-              <Button
-                variant="outline"
-                className="text-primary border-primary hover:bg-primary hover:text-white"
-                onClick={() => {
-                  setSearchTerm("")
-                  setCategoryFilter("all")
-                }}
-              >
-                Clear all filters
-              </Button>
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  )
-}
-
-function EventGrid({ events, isInView }: { events: any[]; isInView: boolean }) {
-  const [selected, setSelected] = useState<any | null>(null)
-
-  // Close modal if filtered list no longer contains selected
-  useEffect(() => {
-    if (selected && !events.find(e => e.id === selected.id)) setSelected(null)
-  }, [events, selected])
-
-  // Prevent body scroll when modal open
-  useEffect(() => {
-    if (typeof document !== 'undefined') {
-      if (selected) {
-        document.documentElement.classList.add('overflow-hidden')
-      } else {
-        document.documentElement.classList.remove('overflow-hidden')
-      }
-    }
-    return () => document.documentElement.classList.remove('overflow-hidden')
-  }, [selected])
-
-  return (
-    <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {events.map((event: any, index: number) => (
+    <div className="min-h-screen bg-[#fffefb] text-[#14100b] selection:bg-[#ea580c]/20 selection:text-[#ea580c]">
+      {/* 1. Page Intro / Hero - Styled exactly after HackIndia Newsroom */}
+      <section className="bg-[#f4ede1] pt-28 pb-12 sm:pt-32 sm:pb-16">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6">
           <motion.div
-            key={event.id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ delay: index * 0.04, duration: 0.45 }}
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="max-w-4xl"
           >
-            <Card className="h-full flex flex-col transition-shadow duration-300 overflow-hidden group hover:shadow-xl border border-gray-200 !bg-white shadow-md rounded-[2px] !rounded-[2px]">
-              <div className="relative h-48 overflow-hidden rounded-t-[2px]">
-                <img
-                  src={event.image || "/placeholder.svg"}
-                  alt={event.title}
-                  loading="lazy"
-                  className="w-full h-full object-cover rounded-t-[2px]"
+            {/* Kicker Eyebrow */}
+            <div className="font-mono text-[11px] sm:text-[12px] font-semibold uppercase tracking-[0.16em] text-[#ea580c] mb-3 flex items-center gap-2">
+              <span>IDEAS 4.0</span>
+              <span className="text-[#ea580c]/50">·</span>
+              <span>FLAGSHIP CURATION</span>
+            </div>
+
+            {/* Main Headline */}
+            <h1 className="font-serif text-[clamp(32px,5.2vw,58px)] font-bold leading-[1.08] tracking-[-0.025em] text-[#14100b] text-balance">
+              Spotlight{" "}
+              <span className="italic font-serif font-normal text-[#ea580c]">
+                Activities
+              </span>
+            </h1>
+
+            {/* Lede Subtitle */}
+            <p className="mt-4 max-w-2xl text-[16px] sm:text-[17px] leading-[1.65] text-[#6b6357]">
+              The 8 marquee challenges, hands-on competitions, and
+              interdisciplinary innovation arenas curated for IDEAS 4.0 at K.R.
+              Mangalam University.
+            </p>
+
+            {/* Quick Info Chips */}
+            <div className="mt-6 flex flex-wrap items-center gap-2.5">
+              <div className="bg-white border border-[#e7ded1] rounded-[4px] px-3 py-1.5 text-xs font-mono text-[#14100b] flex items-center gap-2 shadow-2xs">
+                <Calendar size={13} className="text-[#ea580c]" />
+                <span>October 27–28, 2026</span>
+              </div>
+              <div className="bg-white border border-[#e7ded1] rounded-[4px] px-3 py-1.5 text-xs font-mono text-[#14100b] flex items-center gap-2 shadow-2xs">
+                <MapPin size={13} className="text-[#ea580c]" />
+                <span>K.R. Mangalam University</span>
+              </div>
+              <div className="bg-[#ea580c]/10 border border-[#ea580c]/30 rounded-[4px] px-3 py-1.5 text-xs font-mono text-[#ea580c] font-semibold flex items-center gap-1.5">
+                <span>8 Flagship Competitions</span>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* 2. Main Content Area */}
+      <section className="bg-[#fffefb] py-10 sm:py-14">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6">
+          {/* Section Heading & Filter Bar */}
+          <div className="mb-8">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-[#e7ded1] pb-6">
+              <div>
+                <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#ea580c] mb-1">
+                  THE ARCHIVE
+                </div>
+                <h2 className="font-serif text-[26px] sm:text-[30px] font-bold text-[#14100b] tracking-[-0.015em]">
+                  Every Activity
+                </h2>
+                <p className="text-[14px] text-[#6b6357] mt-1">
+                  Search by headline, department, or keywords, or filter by
+                  category.
+                </p>
+              </div>
+              <div className="font-mono text-xs text-[#8c8273] shrink-0">
+                Showing{" "}
+                <span className="font-bold text-[#14100b]">
+                  {filteredEvents.length}
+                </span>{" "}
+                of {masterEvents.length} activities
+              </div>
+            </div>
+
+            {/* Search & Filter Controls (HackIndia News Bar Style) */}
+            <div className="mt-6 flex flex-col sm:flex-row gap-3.5">
+              {/* Search Input */}
+              <div className="relative flex-1">
+                <Search
+                  size={16}
+                  className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#8c8273]"
                 />
-                <div className="absolute top-2 right-2 bg-red-600/90 backdrop-blur text-white text-xs font-bold px-2 py-1 rounded-[2px] shadow-lg">
-                  {event.department || event.category || 'EVENT'}
-                </div>
-                {event.day && (
-                  <div className="absolute top-2 left-2 bg-black/70 backdrop-blur text-white text-[10px] font-semibold px-2 py-1 rounded-[2px]">DAY1</div>
-                )}
+                <input
+                  type="text"
+                  placeholder="Search spotlight activities..."
+                  aria-label="Search spotlight activities"
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-full h-11 rounded-[6px] border border-[#e7ded1] bg-white pl-10 pr-4 text-[14px] text-[#14100b] placeholder:text-[#8c8273] shadow-2xs focus:outline-none focus:border-[#ea580c] focus:ring-1 focus:ring-[#ea580c] transition-all"
+                />
               </div>
-              <CardContent className="p-5 flex flex-col flex-1 !bg-white">
-                <h3 className="text-lg font-bold mb-2 !text-deepBlue-dark leading-snug min-h-[2.5rem]">{event.title}</h3>
-                <div className="space-y-1 mb-3 text-sm">
-                  <div className="flex items-center !text-gray-600"><Calendar size={14} className="mr-2 text-primary" />{event.date}</div>
-                  <div className="flex items-center !text-gray-600"><Clock size={14} className="mr-2 text-primary" />{event.time || 'See sessions'}</div>
-                  <div className="flex items-center !text-gray-600"><MapPin size={14} className="mr-2 text-primary" />{event.location}</div>
-                </div>
-                <p className="!text-gray-600 text-sm line-clamp-3 flex-1">{event.description}</p>
-                <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
-                  {event.prize && <span className="text-[11px] !text-gray-500 truncate pr-3"><span className="font-semibold">Prize:</span> {event.prize}</span>}
-                  <button
-                    onClick={() => setSelected(event)}
-                    className="ml-auto text-xs font-semibold tracking-wide uppercase text-primary hover:text-primary/80 transition-colors"
-                  >
-                    View Details
-                  </button>
-                </div>
-              </CardContent>
-            </Card>
-          </motion.div>
-        ))}
-      </div>
 
-      {selected && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 bg-black/50 backdrop-blur-sm"
-          aria-modal="true"
-          role="dialog"
-          onClick={() => setSelected(null)}
-        >
-          <motion.div
-            initial={{ scale: 0.95, opacity: 0, y: 20 }}
-            animate={{ scale: 1, opacity: 1, y: 0 }}
-            transition={{ type: 'spring', stiffness: 210, damping: 24 }}
-            className="relative w-full max-w-4xl md:max-w-5xl !bg-white rounded-[2px] !rounded-[2px] shadow-2xl border border-gray-200 flex flex-col max-h-[90vh]"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex items-center justify-between px-4 sm:px-5 py-3 bg-gradient-to-r from-primary/10 to-primary/5 border-b border-gray-200 flex-shrink-0 rounded-t-[2px]">
-              <h2 className="text-sm sm:text-base md:text-lg font-bold !text-deepBlue-dark pr-6 leading-snug break-words">{selected.title}</h2>
-              <button
-                onClick={() => setSelected(null)}
-                aria-label="Close details"
-                className="group p-2 rounded-[2px] hover:bg-primary/10 text-primary transition-colors flex-shrink-0"
-              >
-                <svg className="w-5 h-5" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-              </button>
-            </div>
-            <div className="p-4 sm:p-5 space-y-4 sm:space-y-6 overflow-y-auto overscroll-contain flex-1 min-h-0 !bg-white">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-xs sm:text-sm">
-                <div className="flex items-center !text-gray-700 break-words"><Calendar size={16} className="mr-2 text-primary flex-shrink-0" /><span className="break-words">{selected.date}</span></div>
-                <div className="flex items-center !text-gray-700 break-words"><Clock size={16} className="mr-2 text-primary flex-shrink-0" /><span className="break-words">{selected.time || 'Multiple Slots'}</span></div>
-                <div className="flex items-center !text-gray-700 break-words"><MapPin size={16} className="mr-2 text-primary flex-shrink-0" /><span className="break-words">{selected.location}</span></div>
-                {selected.teamType && <div className="!text-gray-700 break-words"><span className="font-medium">Format:</span> {selected.teamType}{selected.teamSize ? ` (Size: ${selected.teamSize})` : ''}</div>}
-                {selected.prize && <div className="!text-gray-700 break-words"><span className="font-medium">Prize:</span> {selected.prize}</div>}
-                {selected.department && <div className="!text-gray-700 break-words"><span className="font-medium">Department:</span> {selected.department}</div>}
+              {/* Category Select Filter */}
+              <div className="relative w-full sm:w-56">
+                <select
+                  value={categoryFilter}
+                  onChange={(e) => setCategoryFilter(e.target.value)}
+                  aria-label="Filter by category"
+                  className="w-full h-11 rounded-[6px] border border-[#e7ded1] bg-white pl-3.5 pr-9 text-[14px] font-medium text-[#14100b] shadow-2xs focus:outline-none focus:border-[#ea580c] focus:ring-1 focus:ring-[#ea580c] cursor-pointer appearance-none transition-all"
+                >
+                  <option value="all">All Categories</option>
+                  {categories.map((cat) => (
+                    <option key={cat} value={cat}>
+                      {cat.length <= 4
+                        ? cat.toUpperCase()
+                        : cat
+                            .split(/[-_\s]/)
+                            .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+                            .join(" ")}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown
+                  size={16}
+                  className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[#8c8273]"
+                />
               </div>
-              <div className="space-y-3 sm:space-y-4">
-                <section className="!bg-white rounded-[2px] border border-gray-200 p-3 sm:p-4">
-                  <h3 className="text-xs font-bold uppercase tracking-wide text-gray-500 mb-2">
-                    {selected.guidelines && selected.guidelines !== selected.description ? "Description" : "Guidelines / Description"}
-                  </h3>
-                  <p className="text-xs sm:text-sm leading-relaxed !text-gray-700 whitespace-pre-wrap break-words">{selected.description}</p>
-                </section>
-                {selected.guidelines && selected.guidelines !== selected.description && (
-                  <section className="!bg-white rounded-[2px] border border-gray-200 p-3 sm:p-4">
-                    <h3 className="text-xs font-bold uppercase tracking-wide text-gray-500 mb-2">Guidelines / Rules</h3>
-                    <p className="text-xs sm:text-sm leading-relaxed !text-gray-700 whitespace-pre-wrap break-words">{selected.guidelines}</p>
-                  </section>
-                )}
-                {selected.evaluation && (
-                  <section className="!bg-slate-50 rounded-[2px] border border-gray-200 p-3 sm:p-4">
-                    <h3 className="text-xs font-bold uppercase tracking-wide text-gray-500 mb-2">Evaluation</h3>
-                    <p className="text-xs sm:text-sm leading-relaxed !text-gray-700 whitespace-pre-wrap break-words">{selected.evaluation}</p>
-                  </section>
-                )}
-                {selected.sessions?.length > 0 && (
-                  <section className="!bg-white rounded-[2px] border border-gray-200 overflow-hidden">
-                    <div className="px-3 sm:px-4 py-2 sm:py-3 bg-gradient-to-r from-primary/10 to-primary/5 text-xs font-bold uppercase tracking-wide text-primary flex justify-between items-center">
-                      <span>Sessions</span>
-                      <span className="text-[10px] text-primary/70 font-medium">{selected.sessions.length} slot{selected.sessions.length>1?'s':''}</span>
+            </div>
+          </div>
+
+          {/* 3. Cards Grid - Click directly navigates to /spotlight/[slug] */}
+          {filteredEvents.length > 0 ? (
+            <div className="grid grid-cols-1 gap-[18px] md:grid-cols-2 lg:grid-cols-3">
+              {filteredEvents.map((event, index) => (
+                <motion.div
+                  key={event.id}
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.04, duration: 0.35 }}
+                >
+                  <Link
+                    href={`/spotlight/${event.slug}`}
+                    className="group flex h-full flex-col overflow-hidden rounded-[6px] border border-[#e7ded1] bg-white transition-all duration-200 hover:border-[#ea580c] hover:shadow-lg cursor-pointer"
+                  >
+                    {/* 16:9 Aspect Ratio Image */}
+                    <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#ede6dc]">
+                      <img
+                        src={event.image || "/placeholder.svg"}
+                        alt={event.title}
+                        loading="lazy"
+                        className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                      />
+                      {/* Top-Right Badge: Date / Day */}
+                      <div className="absolute top-2.5 right-2.5 bg-[#14100b]/80 backdrop-blur-xs text-white text-[10.5px] font-mono uppercase tracking-wider px-2.5 py-0.5 rounded-[3px] border border-white/10 shadow-xs">
+                        {event.date?.includes("24")
+                          ? "Oct 24–28"
+                          : event.day === "day2"
+                            ? "Oct 28"
+                            : "Oct 27"}
+                      </div>
                     </div>
-                    <div className="divide-y divide-gray-100 max-h-48 sm:max-h-60 overflow-auto">
-                      {selected.sessions.map((s: any, i: number) => (
-                        <div key={i} className="px-3 sm:px-4 py-2 sm:py-3 text-[11px] sm:text-xs leading-snug grid gap-1 !bg-white">
-                          <div className="flex flex-wrap gap-x-2 gap-y-1">
-                            {s.participation && <span className="font-semibold text-gray-800 break-words">{s.participation}</span>}
-                            {s.timeSlot && <span className="text-gray-600 break-words">{s.timeSlot}</span>}
-                          </div>
-                          <div className="flex flex-wrap gap-2 sm:gap-3 text-gray-600">
-                            {s.venue && <span className="inline-flex items-center break-words"><MapPin size={12} className="mr-1 flex-shrink-0" />{s.venue}</span>}
-                            {s.capacity && <span className="break-words">Cap: {s.capacity}</span>}
-                          </div>
-                          {s.coordinator && <div className="text-gray-500 break-words">{s.coordinator}</div>}
-                          {s.contacts && <div className="text-gray-500 break-all whitespace-pre-wrap">{s.contacts}</div>}
-                          {s.prize && <div className="text-gray-500 break-words">Prize: {s.prize}</div>}
+
+                    {/* Card Body */}
+                    <div className="flex flex-1 flex-col p-5">
+                      {/* Kicker Meta: Department · Category · Format */}
+                      <div className="font-mono flex flex-wrap items-center gap-x-2 text-[10.5px] font-semibold uppercase tracking-[0.12em] text-[#ea580c]">
+                        <span>{event.department || "IDEAS"}</span>
+                        <span aria-hidden="true" className="text-[#ea580c]/50">
+                          ·
+                        </span>
+                        <span className="truncate">
+                          {event.category || "Competition"}
+                        </span>
+                        {event.teamType && (
+                          <>
+                            <span
+                              aria-hidden="true"
+                              className="text-[#ea580c]/50"
+                            >
+                              ·
+                            </span>
+                            <span>{event.teamType}</span>
+                          </>
+                        )}
+                      </div>
+
+                      {/* Title (HackIndia font-serif, hover to saffron) */}
+                      <h3 className="font-serif mt-3 text-[18px] font-bold leading-snug tracking-[-0.015em] text-[#14100b] transition-colors line-clamp-2 group-hover:text-[#ea580c]">
+                        {event.title}
+                      </h3>
+
+                      {/* Excerpt / Description */}
+                      <p className="mt-2.5 text-[13.5px] leading-[1.6] text-[#6b6357] line-clamp-2 flex-1">
+                        {event.description}
+                      </p>
+
+                      {/* Divider & Footer (Location + Details →) */}
+                      <div className="mt-4 pt-3.5 border-t border-[#f0eae1] flex items-center justify-between text-[12px] text-[#78716c]">
+                        <div className="flex items-center gap-1.5 truncate max-w-[70%]">
+                          <MapPin
+                            size={13}
+                            className="text-[#ea580c] shrink-0"
+                          />
+                          <span className="truncate">
+                            {event.location || "Campus"}
+                          </span>
                         </div>
-                      ))}
+                        <span className="inline-flex items-center text-[12.5px] font-semibold text-[#14100b] group-hover:text-[#ea580c] transition-colors">
+                          Details
+                          <span className="ml-1 inline-block text-[#ea580c] transition-transform duration-200 group-hover:translate-x-1">
+                            →
+                          </span>
+                        </span>
+                      </div>
                     </div>
-                  </section>
-                )}
-                {selected.sessions.some((s:any)=>s.contacts) && (
-                  <section className="!bg-white rounded-[2px] border border-gray-200 p-3 sm:p-4">
-                    <h3 className="text-xs font-bold uppercase tracking-wide text-gray-500 mb-2">Contacts</h3>
-                    <ul className="space-y-1">
-                      {(Array.from(new Set(selected.sessions.map((s:any)=>s.contacts).filter(Boolean))) as string[]).map((c:string,i:number)=>(
-                        <li key={i} className="text-[11px] sm:text-xs leading-snug !text-gray-700 whitespace-pre-wrap break-all">{c}</li>
-                      ))}
-                    </ul>
-                  </section>
-                )}
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+          ) : (
+            /* Empty State (HackIndia EmptyState design) */
+            <div className="rounded-[6px] border border-[#e7ded1] bg-white px-6 py-16 text-center">
+              <p className="font-serif text-xl font-bold text-[#14100b]">
+                No spotlight activities found
+              </p>
+              <p className="mx-auto mt-2 max-w-md text-[14px] text-[#6b6357]">
+                Try adjusting your search keywords or switching your category
+                filter.
+              </p>
+              <div className="mt-6 flex justify-center">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSearchTerm("");
+                    setCategoryFilter("all");
+                  }}
+                  className="font-mono text-xs uppercase tracking-wider font-semibold px-5 py-2.5 rounded-[4px] border border-[#14100b] text-[#14100b] hover:bg-[#14100b] hover:text-white transition-colors"
+                >
+                  Clear all filters
+                </button>
               </div>
             </div>
-            <div className="flex justify-end px-4 sm:px-5 py-3 border-t border-gray-200 !bg-slate-50 flex-shrink-0 rounded-b-[2px]">
-              <Button variant="outline" size="sm" onClick={() => setSelected(null)} className="text-primary border-primary/40 hover:bg-primary/10 text-xs sm:text-sm rounded-[2px]">Close</Button>
-            </div>
-          </motion.div>
-        </motion.div>
-      )}
-    </>
-  )
+          )}
+        </div>
+      </section>
+    </div>
+  );
 }

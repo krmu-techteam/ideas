@@ -22,7 +22,7 @@
     --destructive-foreground: 210 40% 98%;
     --border: 221 83% 86%;
     --input: 221 83% 86%;
-    --ring: 351 83% 47%;
+    --ring: 221 84% 45%;
     --radius: 0.75rem;
     
     /* Premium university theme variables */
@@ -56,7 +56,7 @@
     --destructive-foreground: 210 40% 98%;
     --border: 221 84% 16%;
     --input: 221 84% 16%;
-    --ring: 351 83% 47%;
+    --ring: 221 84% 55%;
   }
 }
 
@@ -343,6 +343,15 @@
 }
 
 /* Input focus effects */
+input:focus,
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible,
+select:focus,
+select:focus-visible {
+  outline: none !important;
+}
+
 .input-focus {
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -495,4 +504,31 @@ html {
 
 .rotate-y-180 {
   transform: rotateY(180deg);
+}
+
+/* Ambient Slow Hero Waves */
+@keyframes heroWave {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(4%, -14px, 0);
+  }
+}
+
+@keyframes heroWaveSlow {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-4%, 12px, 0);
+  }
+}
+
+.animate-hero-wave {
+  animation: heroWave 18s ease-in-out infinite;
+}
+
+.animate-hero-wave-slow {
+  animation: heroWaveSlow 24s ease-in-out infinite;
 }

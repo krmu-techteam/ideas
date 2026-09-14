@@ -49,35 +49,35 @@ export default function CountdownTimer() {
   // Don't render time values until mounted on client
   if (!mounted) {
     return (
-      <section className="py-8 sm:py-12 bg-white">
+      <section className="py-10 sm:py-14 bg-[#F9F5EC]">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-6 sm:mb-8"
+            className="text-center mb-8"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-deepBlue-dark mb-2 leading-tight">
-              Countdown to IDEAS <span className="text-primary">4.0</span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-royal-950 mb-2 leading-tight">
+              Countdown to IDEAS <span className="text-gold-500">4.0</span>
             </h2>
-            <p className="text-sm sm:text-base text-gray-600">
+            <p className="text-sm sm:text-base text-slate-600">
               Mark your calendars for October 27–28, 2026
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto">
             {["Days", "Hours", "Minutes", "Seconds"].map((label, index) => (
               <motion.div
                 key={label}
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
-                className="bg-white  p-4 sm:p-6 text-center border-2 border-deepBlue hover:border-primary transition-colors touch-manipulation"
+                className="bg-white rounded-2xl p-5 sm:p-6 text-center border border-slate-200/90 shadow-sm"
               >
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-1 sm:mb-2 leading-tight">
+                <div className="text-2xl font-serif sm:text-3xl md:text-4xl lg:text-5xl font-bold text-royal-950 mb-1 sm:mb-2 leading-tight">
                   00
                 </div>
-                <div className="text-xs sm:text-sm uppercase tracking-wider text-gray-600">
+                <div className="text-xs sm:text-sm uppercase tracking-wider text-slate-500 font-semibold">
                   {label}
                 </div>
               </motion.div>
@@ -96,35 +96,35 @@ export default function CountdownTimer() {
   ];
 
   return (
-    <section className="py-8 sm:py-12 bg-white">
+    <section className="py-10 sm:py-14 bg-[#F9F5EC]">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-6 sm:mb-8"
+          className="text-center mb-8"
         >
-          <h2 className="text-2xl font-serif sm:text-3xl md:text-4xl font-bold text-deepBlue-dark mb-2 leading-tight">
-            Countdown to IDEAS <span className="text-primary">4.0</span>
+          <h2 className="text-2xl font-serif sm:text-3xl md:text-4xl font-bold text-[#16212C] mb-2 leading-tight">
+            Countdown to IDEAS 4.0
           </h2>
-          <p className="text-sm sm:text-base text-gray-600">
+          <p className="text-sm font-medium sm:text-[15px] text-[#16212C]">
             Mark your calendars for October 27–28, 2026
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto">
           {timeUnits.map((unit, index) => (
             <motion.div
               key={unit.label}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="bg-white rounded-[2px] p-4 sm:p-6 text-center border-2 border-deepBlue hover:border-primary transition-colors touch-manipulation"
+              className="bg-transparent rounded-[4px] p-5 sm:p-6 text-center border border-[#16212C]   group"
             >
-              <div className="text-2xl font-serif sm:text-3xl md:text-4xl lg:text-5xl font-bold text-deepBlue-dark mb-1 sm:mb-2 leading-tight">
+              <div className="text-2xl font-serif sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#16212C] group-hover:text-[#e7c268] transition-colors mb-1 sm:mb-2 leading-tight">
                 {unit.value.toString().padStart(2, "0")}
               </div>
-              <div className="text-xs sm:text-sm uppercase tracking-wider text-gray-600">
+              <div className="text-xs sm:text-sm uppercase tracking-wider text-[#16212C] font-semibold group-hover:text-[#e7c268] transition-colors">
                 {unit.label}
               </div>
             </motion.div>

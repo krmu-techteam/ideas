@@ -36,6 +36,26 @@ interface CompetitionEvent {
 
 // Comprehensive competition data with complete event details
 const rawData: RawCompetitionRecord[] = [
+  // 1. SOET - Young AI Innovators Hackathon (Flagship #1)
+  {
+    "Name of Events": "Young AI Innovators Hackathon",
+    Department: "SOET",
+    Participation: "School Students",
+    "Time Slot": "09:00 - 02.00 PM (10:00 AM onwards)",
+    "Venue Details": "AI Arena",
+    "Number of Participant in a Slot": "Team (2-4 Members)",
+    "Coordinator Name": "Dr. Amar Saraswat, Dr. Reenu Batra, Ms. Megha Sharma",
+    "Email ID / Mobile  Number":
+      "amar.saraswat@krmangalam.edu.in (9958984080), reenu@krmangalam.edu.in (8813993331), megha.sharma@krmangalam.edu.in (7830932723)",
+    "Guidlines of  the Event":
+      "1. Theme: The hackathon theme will be Artificial Intelligence (AI). Participants must develop an innovative solution addressing a real-world problem using AI.\n\n2. Team Size: Each team may consist of 2–4 students.\n\n3. Round 1 – Online: Teams will submit their AI project idea, problem statement, proposed solution, AI implementation plan, and a short presentation/video within the specified deadline. An online link would be sent to the participants for appearing in this round along with timings. Participants must be present at allotted time slot.\n\n4. Projects Assessment: Projects will be assessed in the online round based on innovation, relevance of AI, feasibility, creativity, social impact, and presentation.\n\n5. Shortlisted Teams: Shortlisted teams will qualify for Round 2 – AI Arena, to be conducted physically at K. R. Mangalam University.\n\n6. Round 2 – AI Arena: In the AI Arena, teams must present and demonstrate their working AI-based software and/or hardware prototype before the judges.\n\n7. Technologies: Participants may use software, hardware, AI tools, APIs, machine learning models, generative AI, IoT, robotics, or a combination of these, provided AI forms a meaningful part of the solution.\n\n8. Materials & Hardware: Teams must bring all necessary hardware, components, software, datasets, and other materials required for demonstrating their project.\n\n9. Project Continuity: The project demonstrated in the final round should substantially correspond to the idea submitted in Round 1. Major changes, if any, must be approved by the organizers.\n\n10. Tool Usage: Use of publicly available AI tools, libraries, APIs, and datasets is permitted. However, participants must be able to explain how these technologies are used in their project.\n\n11. Slot Allocation: Teams will be given a predefined time slot for project setup, demonstration, presentation, and interaction with the judges.",
+    "Evaluation Pattern":
+      "1. Innovation, originality, and creativity of the AI-based solution.\n\n2. Effective and meaningful use of Artificial Intelligence in solving the identified problem.\n\n3. Functionality, working prototype, and quality of the software/hardware demonstration.\n\n4. Real-world impact, feasibility, and scalability of the proposed solution.\n\n5. Presentation, technical understanding, and ability to answer judges' questions.",
+    "Team Event/Individual": "Team",
+    "Team Size": "2-4",
+    Prize: "1st, 2nd Team",
+  },
+
   {
     "Name of Events": "Crime Scene Investigation Game",
     Department: "SBAS",

@@ -20,13 +20,13 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ['var(--font-poppins)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        serif: ['var(--font-fraunces)', 'ui-serif', 'Georgia', 'serif'],
+        sans: ['var(--font-sans)', 'var(--font-poppins)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-outfit)', 'var(--font-sans)', 'ui-sans-serif', 'sans-serif'],
+        display: ['var(--font-outfit)', 'var(--font-sans)', 'ui-sans-serif', 'sans-serif'],
+        outfit: ['var(--font-outfit)', 'sans-serif'],
         mono: ['ui-monospace', 'SFMono-Regular', 'monospace'],
-        display: ['var(--font-fraunces)', 'ui-serif', 'Georgia', 'serif'],
-        body: ['var(--font-poppins)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        body: ['var(--font-sans)', 'var(--font-poppins)', 'system-ui', 'sans-serif'],
         poppins: ['var(--font-poppins)', 'sans-serif'],
-        fraunces: ['var(--font-fraunces)', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",

@@ -89,7 +89,7 @@ export default function ZonesHighlights() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="rounded-[2px] border border-royal-700/50 bg-[#0a132e]/80 p-6 sm:p-8 flex flex-col justify-between"
+              className="rounded-2xl border border-royal-700/60 bg-gradient-to-b from-[#0a1435]/90 to-[#070e28]/95 p-6 sm:p-8 flex flex-col justify-between shadow-xl hover:border-gold-500/40 hover:-translate-y-1 transition-all duration-300 group"
             >
               <div>
                 <h3 className="text-2xl font-serif font-bold text-gold-400 mb-4">
