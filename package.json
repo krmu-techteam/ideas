@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "pnpm run clean && next build",
+    "build": "npm run clean && next build",
     "clean": "rimraf .next out",
     "predeploy": "next build",
     "deploy": "gh-pages -d out",
