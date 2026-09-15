@@ -97,11 +97,15 @@ export default function EventDetailView({
             <div className="flex flex-wrap items-center gap-y-2 gap-x-5 font-mono text-xs uppercase tracking-wider text-[#6b6357]">
               <div className="flex items-center gap-1.5">
                 <Calendar size={14} className="text-[#ea580c]" />
-                <span className="font-semibold text-[#14100b]">{event.date}</span>
+                <span className="font-semibold text-[#14100b]">
+                  {event.date}
+                </span>
               </div>
               <div className="flex items-center gap-1.5">
                 <Clock size={14} className="text-[#ea580c]" />
-                <span>{event.time || primarySession?.timeSlot || "Multiple Slots"}</span>
+                <span>
+                  {event.time || primarySession?.timeSlot || "Multiple Slots"}
+                </span>
               </div>
               <div className="flex items-center gap-1.5">
                 <MapPin size={14} className="text-[#ea580c]" />
@@ -194,10 +198,14 @@ export default function EventDetailView({
                 </div>
                 <div className="divide-y divide-[#e7ded1]">
                   {event.sessions.map((s, idx) => (
-                    <div key={idx} className="p-5 hover:bg-[#fbf8f2]/60 transition-colors">
+                    <div
+                      key={idx}
+                      className="p-5 hover:bg-[#fbf8f2]/60 transition-colors"
+                    >
                       <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                         <span className="font-bold text-[15px] text-[#14100b]">
-                          Slot {idx + 1}: {s.participation || "Open to participants"}
+                          Slot {idx + 1}:{" "}
+                          {s.participation || "Open to participants"}
                         </span>
                         <span className="font-mono text-xs font-semibold px-2.5 py-1 rounded-[3px] bg-[#ea580c]/10 text-[#ea580c]">
                           {s.timeSlot || "TBA"}
@@ -251,33 +259,55 @@ export default function EventDetailView({
               {/* Fast Facts */}
               <div className="space-y-3 pt-2 border-t border-[#f0eae1] text-xs sm:text-sm">
                 <div className="flex items-start gap-3 py-1">
-                  <Calendar size={16} className="text-[#ea580c] shrink-0 mt-0.5" />
+                  <Calendar
+                    size={16}
+                    className="text-[#ea580c] shrink-0 mt-0.5"
+                  />
                   <div>
-                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">Date</div>
-                    <div className="font-semibold text-[#14100b]">{event.date}</div>
+                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">
+                      Date
+                    </div>
+                    <div className="font-semibold text-[#14100b]">
+                      {event.date}
+                    </div>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3 py-1">
                   <Clock size={16} className="text-[#ea580c] shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">Time</div>
-                    <div className="font-semibold text-[#14100b]">{event.time || primarySession?.timeSlot || "Multiple Slots"}</div>
+                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">
+                      Time
+                    </div>
+                    <div className="font-semibold text-[#14100b]">
+                      {event.time ||
+                        primarySession?.timeSlot ||
+                        "Multiple Slots"}
+                    </div>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3 py-1">
-                  <MapPin size={16} className="text-[#ea580c] shrink-0 mt-0.5" />
+                  <MapPin
+                    size={16}
+                    className="text-[#ea580c] shrink-0 mt-0.5"
+                  />
                   <div>
-                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">Venue</div>
-                    <div className="font-semibold text-[#14100b]">{event.location}</div>
+                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">
+                      Venue
+                    </div>
+                    <div className="font-semibold text-[#14100b]">
+                      {event.location}
+                    </div>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3 py-1">
                   <Users size={16} className="text-[#ea580c] shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">Participation</div>
+                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">
+                      Participation
+                    </div>
                     <div className="font-semibold text-[#14100b]">
                       {event.teamType || "Individual"}
                       {event.teamSize ? ` (${event.teamSize})` : ""}
@@ -287,10 +317,17 @@ export default function EventDetailView({
 
                 {primarySession?.coordinator && (
                   <div className="flex items-start gap-3 py-1">
-                    <UserCheck size={16} className="text-[#ea580c] shrink-0 mt-0.5" />
+                    <UserCheck
+                      size={16}
+                      className="text-[#ea580c] shrink-0 mt-0.5"
+                    />
                     <div>
-                      <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">Faculty Coordinator</div>
-                      <div className="font-semibold text-[#14100b]">{primarySession.coordinator}</div>
+                      <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">
+                        Faculty Coordinator
+                      </div>
+                      <div className="font-semibold text-[#14100b]">
+                        {primarySession.coordinator}
+                      </div>
                     </div>
                   </div>
                 )}

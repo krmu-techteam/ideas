@@ -98,29 +98,37 @@ function parseTimes(slot?: string): { start?: string; end?: string } {
 // Event image mapping - WebP assets for optimal loading
 const eventImages: { [key: string]: string } = {
   "crime scene investigation game": "/assets/upcoming-events/up-ev-2.webp",
-  "robots race": "/assets/upcoming-events/up-ev-14.webp",
-  "robo war (ai arena)": "/assets/upcoming-events/up-ev-14.webp",
+  "robots race": "/events/Robo race.png",
+  "robo war (ai arena)": "/events/Robo war.png",
   "react to the situation": "/assets/upcoming-events/up-ev-9.webp",
   "react to situation": "/assets/upcoming-events/up-ev-9.webp",
-  "button masala": "/assets/upcoming-events/up-ev-4.webp",
-  "imprint: the art of hand block printing": "/assets/upcoming-events/up-ev-5.webp",
-  "soap carving - carved expression": "/assets/upcoming-events/up-ev-7.webp",
+  "button masala": "/events/Button Masala.png",
+  "imprint: the art of hand block printing":
+    "/events/IMPRINT The Art of Hand Block Printing.png",
+  "soap carving - carved expression":
+    "/events/Soap Carving - Carved Expression.png",
   "debate competition": "/assets/upcoming-events/up-ev-12.webp",
   "reelbaaz (30s reel making)": "/assets/upcoming-events/up-ev-13.webp",
   "group dance": "/assets/upcoming-events/up-ev-25.webp",
-  "science quiz & puzzle solve based on ai theme": "/assets/upcoming-events/up-ev-17.webp",
-  "poster/ collage making competition  (theme: know your laws)": "/assets/upcoming-events/up-ev-19.webp",
-  "poster/ collage making competition (theme: know your laws)": "/assets/upcoming-events/up-ev-19.webp",
-  "drone race (ai arena)": "/assets/upcoming-events/up-ev-11.webp",
-  "agritech – ai smart farming models": "/assets/upcoming-events/up-ev-1.webp",
-  "zero waste innovation": "/assets/upcoming-events/up-ev-6.webp",
+  "science quiz & puzzle solve based on ai theme":
+    "/assets/upcoming-events/up-ev-17.webp",
+  "poster/ collage making competition  (theme: know your laws)":
+    "/assets/upcoming-events/up-ev-19.webp",
+  "poster/ collage making competition (theme: know your laws)":
+    "/assets/upcoming-events/up-ev-19.webp",
+  "drone race (ai arena)": "/events/Drone Race (AI Arena).png",
+  "agritech – ai smart farming models":
+    "/events/Agritech – AI Smart Farming Models.png",
+  "zero waste innovation": "/events/Zero Waste Innovation.png",
   "tech treasure hunt": "/assets/upcoming-events/up-ev-10.webp",
   "duet dance": "/assets/upcoming-events/up-ev-26.webp",
   "duet singing": "/assets/upcoming-events/up-ev-27.webp",
-  "one day hackathon": "/assets/upcoming-events/up-ev-2.webp",
-  "ai teaching aid innovation challenge": "/assets/upcoming-events/up-ev-3.webp",
+  "one day hackathon": "/events/One Day Hackathon.png",
+  "ai teaching aid innovation challenge":
+    "/assets/upcoming-events/up-ev-3.webp",
   "the beverage arena": "/assets/upcoming-events/up-ev-8.webp",
-  "the beverage arena (teams represent countries and create signature beverages from those regions)": "/assets/upcoming-events/up-ev-8.webp",
+  "the beverage arena (teams represent countries and create signature beverages from those regions)":
+    "/assets/upcoming-events/up-ev-8.webp",
   "robo soccer": "/assets/upcoming-events/up-ev-14.webp",
   "young ai innovators hackathon": "/assets/upcoming-events/up-ev-2.webp",
 };
@@ -236,7 +244,7 @@ const rawRows: RawRow[] = [
     Description:
       "The IDEAS activity engages students in developing ethical awareness, quick thinking, and communication skills through one-minute spontaneous speeches and model situational responses on legal and moral dilemmas. Covering topics like justice, cybercrime, equality, and professional ethics, it promotes integrity, empathy, and legal reasoning—essential traits for future professionals and responsible citizens.",
     "Guidlines of  the Event":
-      "1. Each participant will be given a stimulus word or situation related to legal themes or ethical dilemmas.\n2. A total of 1 minute will be allotted to each participant: this time includes thinking, structuring, and delivering their answer on the spot.\n3. Participants must begin speaking as soon as the timer starts; there is no separate \"thinking time\".\n4. Answers should be relevant, well-structured, and must reflect logical reasoning and legal/ethical awareness.\n5. The answer must be completed within 1 minute; exceeding the time limit will lead to automatic stoppage and disqualification from scoring for that round.\n6. No external aids, notes, or prompts may be used during the speech.\n7. The decision of the moderator or evaluator regarding timing, relevance, and adherence to rules will be final.\n8. Respectful language and decorum must be maintained; offensive or disrespectful remarks will result in negative marking or disqualification.",
+      '1. Each participant will be given a stimulus word or situation related to legal themes or ethical dilemmas.\n2. A total of 1 minute will be allotted to each participant: this time includes thinking, structuring, and delivering their answer on the spot.\n3. Participants must begin speaking as soon as the timer starts; there is no separate "thinking time".\n4. Answers should be relevant, well-structured, and must reflect logical reasoning and legal/ethical awareness.\n5. The answer must be completed within 1 minute; exceeding the time limit will lead to automatic stoppage and disqualification from scoring for that round.\n6. No external aids, notes, or prompts may be used during the speech.\n7. The decision of the moderator or evaluator regarding timing, relevance, and adherence to rules will be final.\n8. Respectful language and decorum must be maintained; offensive or disrespectful remarks will result in negative marking or disqualification.',
     "Evaluation Pattern":
       "Spontaneity, logical reasoning, ethical awareness, structure, and adherence to time limit.",
   },
@@ -375,7 +383,6 @@ const rawRows: RawRow[] = [
       "Poorti Sharma, Palak Saini, Palak Verma, Sakshi Gupta, Kenneth and Manukriti Sharma",
     Prize: "₹5,000 (2500+2500) 700/800/1000",
   },
-
 
   // 11. SMAS - Science Quiz & Puzzle Solve based on AI Theme
   {
@@ -533,8 +540,7 @@ const rawRows: RawRow[] = [
     Participation: "School Students",
     "Time Slot": "10:00 AM Onwards",
     "Venue Details": "AI Arena",
-    "Coordinator Name":
-      "Dr. Reenu Batra, Dr. Megha Sharma, Dr. Amar Sraswat",
+    "Coordinator Name": "Dr. Reenu Batra, Dr. Megha Sharma, Dr. Amar Sraswat",
     "Email ID / Mobile  Number": "Aditya Kumar Singh, Kartik Sharma",
     Date: "28-Oct-26",
     Category: "Technical",
@@ -620,8 +626,7 @@ const rawRows: RawRow[] = [
     Participation: "School Students",
     "Time Slot": "9:30 AM - 11:00 AM",
     "Venue Details": "Sunken Garden",
-    "Coordinator Name":
-      "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
+    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
     "Email ID / Mobile  Number":
       "Nigam (9625003139), Moksh (9211575767), Utkarsh (9220400574), Ananya (8368720719), Swapnil (9582327541)",
     Date: "28-Oct-26",
@@ -640,8 +645,7 @@ const rawRows: RawRow[] = [
     Participation: "University Students",
     "Time Slot": "11:30 AM - 1:00 PM",
     "Venue Details": "Sunken Garden",
-    "Coordinator Name":
-      "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
+    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
     "Email ID / Mobile  Number":
       "Nigam (9625003139), Moksh (9211575767), Utkarsh (9220400574), Ananya (8368720719), Swapnil (9582327541)",
     Prize: "₹4,500 (1000/1500/2000)",
@@ -711,7 +715,8 @@ function groupEventSessions(rows: RawRow[]): EventItem[] {
         slug: slugifiedTitle,
         department: row.Department || "TBA",
         category:
-          row.Category || (isCultural ? "Cultural" : row.Department || "General"),
+          row.Category ||
+          (isCultural ? "Cultural" : row.Department || "General"),
         description:
           row.Description ||
           row["Guidlines of  the Event"] ||
@@ -725,9 +730,7 @@ function groupEventSessions(rows: RawRow[]): EventItem[] {
         sessions: [],
         date: formattedDate,
         dateObj:
-          dayValue === "day2"
-            ? new Date("2026-10-28")
-            : new Date("2026-10-27"),
+          dayValue === "day2" ? new Date("2026-10-28") : new Date("2026-10-27"),
         location: venueLocation,
         address: fullAddress,
         time: row["Time Slot"],
@@ -895,7 +898,11 @@ export interface Event {
 export const events: Event[] = allEvents.map((e, idx) => ({
   id: (idx + 1).toString(),
   title: e.title,
-  category: (e.category?.includes("Cultural") ? "Cultural" : e.category?.includes("Academic") ? "Academic" : "Technical") as any,
+  category: (e.category?.includes("Cultural")
+    ? "Cultural"
+    : e.category?.includes("Academic")
+      ? "Academic"
+      : "Technical") as any,
   department: e.department || "General",
   participation: "Both",
   date: e.date,
