@@ -109,7 +109,7 @@ const eventImages: { [key: string]: string } = {
     "/events/Soap Carving - Carved Expression.png",
   "debate competition": "/assets/upcoming-events/up-ev-12.webp",
   "reelbaaz (30s reel making)": "/assets/upcoming-events/up-ev-13.webp",
-  "group dance": "/assets/upcoming-events/up-ev-25.webp",
+  "group dance": "/events/Group Dance.png",
   "science quiz & puzzle solve based on ai theme":
     "/assets/upcoming-events/up-ev-17.webp",
   "poster/ collage making competition  (theme: know your laws)":
@@ -121,7 +121,7 @@ const eventImages: { [key: string]: string } = {
     "/events/Agritech – AI Smart Farming Models.png",
   "zero waste innovation": "/events/Zero Waste Innovation.png",
   "tech treasure hunt": "/assets/upcoming-events/up-ev-10.webp",
-  "duet dance": "/assets/upcoming-events/up-ev-26.webp",
+  "duet dance": "/events/Duet Dance.png",
   "duet singing": "/assets/upcoming-events/up-ev-27.webp",
   "one day hackathon": "/events/One Day Hackathon.png",
   "ai teaching aid innovation challenge":

@@ -176,7 +176,9 @@ export default function UpcomingEvents() {
                   <div className="absolute top-2.5 right-2.5 bg-[#14100b]/85 backdrop-blur-xs text-white text-[10.5px] font-mono uppercase tracking-wider px-2.5 py-0.5 rounded-[3px] border border-white/10 shadow-xs">
                     {event.date?.includes("24")
                       ? "Oct 24–28"
-                      : event.day === "both" || event.date?.includes("–") || event.date?.includes("-")
+                      : event.day === "both" ||
+                          event.date?.includes("–") ||
+                          event.date?.includes("-")
                         ? "Oct 27–28"
                         : event.day === "day2"
                           ? "Oct 28"
