@@ -225,23 +225,32 @@ export default function EventTimeline() {
                   </motion.div>
                 </div>
 
-                {/* Enhanced Timeline Center Dot - Exactly centered between equal boxes */}
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={isInView ? { scale: 1 } : { scale: 0 }}
-                  transition={{
-                    delay: index * 0.25 + 0.3,
-                    duration: 0.5,
-                    type: "spring",
+                {/* Enhanced Timeline Center Dot - Exactly centered on the vertical line */}
+                <div
+                  className="hidden md:flex absolute z-20 items-center justify-center pointer-events-none"
+                  style={{
+                    left: "50%",
+                    top: "50%",
+                    transform: "translate(-50%, -50%)",
                   }}
-                  className={`hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full border-4 z-20 items-center justify-center transition-all duration-300 ${
-                    event.isCurrent
-                      ? "bg-gradient-to-br from-amber-400 via-gold-400 to-yellow-400 border-[#0d1620] shadow-[0_0_20px_rgba(245,158,11,0.85)] scale-110"
-                      : "bg-gradient-to-br from-amber-500 via-gold-500 to-amber-600 border-[#0d1620] shadow-[0_0_15px_rgba(245,158,11,0.65)] hover:scale-110"
-                  }`}
                 >
-                  <div className="w-2.5 h-2.5 rounded-full bg-white shadow-sm ring-1 ring-amber-300"></div>
-                </motion.div>
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    animate={isInView ? { scale: 1 } : { scale: 0 }}
+                    transition={{
+                      delay: index * 0.25 + 0.3,
+                      duration: 0.5,
+                      type: "spring",
+                    }}
+                    className={`w-8 h-8 rounded-full border-4 items-center justify-center flex transition-all duration-300 pointer-events-auto ${
+                      event.isCurrent
+                        ? "bg-gradient-to-br from-amber-400 via-gold-400 to-yellow-400 border-[#0d1620] shadow-[0_0_20px_rgba(245,158,11,0.85)] scale-110"
+                        : "bg-gradient-to-br from-amber-500 via-gold-500 to-amber-600 border-[#0d1620] shadow-[0_0_15px_rgba(245,158,11,0.65)] hover:scale-110"
+                    }`}
+                  >
+                    <div className="w-2.5 h-2.5 rounded-full bg-white shadow-sm ring-1 ring-amber-300"></div>
+                  </motion.div>
+                </div>
               </motion.div>
             ))}
           </div>

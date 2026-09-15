@@ -25,6 +25,7 @@ interface RawRow {
   Date?: string;
   Description?: string;
   Category?: string;
+  Image?: string;
 }
 
 export interface EventSession {
@@ -110,6 +111,8 @@ const eventImages: { [key: string]: string } = {
   "debate competition": "/assets/upcoming-events/up-ev-12.webp",
   "reelbaaz (30s reel making)": "/assets/upcoming-events/up-ev-13.webp",
   "group dance": "/events/Group Dance.png",
+  "group-dance": "/events/Group Dance.png",
+  "group-dance-2": "/assets/upcoming-events/up-ev-25.webp",
   "science quiz & puzzle solve based on ai theme":
     "/assets/upcoming-events/up-ev-17.webp",
   "poster/ collage making competition  (theme: know your laws)":
@@ -602,6 +605,7 @@ const rawRows: RawRow[] = [
     "Team Event/Individual": "TEAM(3-5)",
     "Team Size": "3-5",
     Prize: "₹4,500 (1000/1500/2000)",
+    Image: "/events/Group Dance.png",
     Description:
       "Showcase your rhythm, energy, and teamwork in the ultimate dance battle! Teams of 3–8 participants can perform any style of dance—be it contemporary, hip-hop, classical, or fusion. Impress the judges with creativity, coordination, and stage presence to win exciting prizes.",
     "Guidlines of  the Event":
@@ -634,6 +638,7 @@ const rawRows: RawRow[] = [
     "Team Event/Individual": "TEAM(3-5)",
     "Team Size": "3-5",
     Prize: "₹4,500 (1000/1500/2000)",
+    Image: "/assets/upcoming-events/up-ev-25.webp",
     Description:
       "Showcase your rhythm, energy, and teamwork in the ultimate dance battle! Teams of 3–8 participants can perform any style of dance—be it contemporary, hip-hop, classical, or fusion. Impress the judges with creativity, coordination, and stage presence to win exciting prizes.",
     "Guidlines of  the Event":
@@ -670,8 +675,9 @@ function groupEventSessions(rows: RawRow[]): EventItem[] {
         count++;
       }
       const eventImage =
-        eventImages[normalizedTitle] ||
+        row.Image ||
         eventImages[slugifiedTitle] ||
+        eventImages[normalizedTitle] ||
         eventImages[slugify(title)] ||
         "/placeholder.svg";
       const isCultural = CULTURAL_EVENT_TITLES.has(normalizedTitle);
