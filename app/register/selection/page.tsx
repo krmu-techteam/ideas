@@ -9,7 +9,7 @@ import Link from "next/link"
 
 export default function RegistrationSelectionPage() {
   return (
-    <div className="min-h-screen bg-[#fffefb] text-[#14100b] selection:bg-[#ea580c]/20 selection:text-[#ea580c]">
+    <div className="min-h-screen bg-[#fffefb] text-[#14100b] selection:bg-[#E11E45]/20 selection:text-[#E11E45]">
       {/* Hero Header Section */}
       <section className="bg-[#f4ede1] pt-28 pb-12 sm:pt-32 sm:pb-16 border-b border-[#e7ded1]">
         <div className="container mx-auto px-4 max-w-5xl">
@@ -19,7 +19,7 @@ export default function RegistrationSelectionPage() {
             transition={{ duration: 0.5 }}
             className="text-center"
           >
-            <div className="inline-flex items-center gap-2 mb-4 px-3.5 py-1.5 rounded-[4px] bg-[#ea580c]/10 text-[#ea580c] text-xs font-mono font-semibold border border-[#ea580c]/20">
+            <div className="inline-flex items-center gap-2 mb-4 px-3.5 py-1.5 rounded-[4px] bg-[#E11E45]/10 text-[#E11E45] text-xs font-mono font-semibold border border-[#E11E45]/20">
               <span>IDEAS 4.0 REGISTRATION</span>
             </div>
             <h1 className="font-serif text-[clamp(32px,5vw,52px)] font-bold text-[#14100b] mb-4 tracking-[-0.02em]">
@@ -42,10 +42,10 @@ export default function RegistrationSelectionPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <Card className="h-full bg-white border border-[#e7ded1] rounded-2xl hover:shadow-xl hover:border-[#ea580c]/50 transition-all duration-300 shadow-xs group">
+              <Card className="h-full bg-white border border-[#e7ded1] rounded-2xl hover:shadow-xl hover:border-[#E11E45]/50 transition-all duration-300 shadow-xs group">
                 <CardContent className="p-8 md:p-10 flex flex-col items-center text-center h-full">
-                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-[#ea580c]/10 border border-[#ea580c]/20 text-[#ea580c] flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300 shadow-xs">
-                    <School className="w-8 h-8 md:w-10 md:h-10 text-[#ea580c]" />
+                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-[#E11E45]/10 border border-[#E11E45]/20 text-[#E11E45] flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300 shadow-xs">
+                    <School className="w-8 h-8 md:w-10 md:h-10 text-[#E11E45]" />
                   </div>
                   
                   <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#14100b] mb-4">
@@ -59,19 +59,19 @@ export default function RegistrationSelectionPage() {
                   
                   <ul className="text-left text-[#14100b] mb-8 space-y-2.5 text-sm md:text-base w-full">
                     <li className="flex items-start">
-                      <span className="text-[#ea580c] font-bold mr-2.5 shrink-0">✓</span>
+                      <span className="text-[#E11E45] font-bold mr-2.5 shrink-0">✓</span>
                       <span>Access to 28 competitions</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-[#ea580c] font-bold mr-2.5 shrink-0">✓</span>
+                      <span className="text-[#E11E45] font-bold mr-2.5 shrink-0">✓</span>
                       <span>Cultural events participation</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-[#ea580c] font-bold mr-2.5 shrink-0">✓</span>
+                      <span className="text-[#E11E45] font-bold mr-2.5 shrink-0">✓</span>
                       <span>Workshops and skill development</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-[#ea580c] font-bold mr-2.5 shrink-0">✓</span>
+                      <span className="text-[#E11E45] font-bold mr-2.5 shrink-0">✓</span>
                       <span>Certificate of participation</span>
                     </li>
                   </ul>
@@ -79,7 +79,7 @@ export default function RegistrationSelectionPage() {
                   <Button
                     asChild
                     size="lg"
-                    className="w-full bg-[#ea580c] hover:bg-[#c2410c] text-white font-bold rounded-xl shadow-md hover:shadow-lg transition-all duration-300 py-3.5"
+                    className="w-full bg-[#E11E45] hover:bg-[#c2410c] text-white font-bold rounded-xl shadow-md hover:shadow-lg transition-all duration-300 py-3.5"
                   >
                     <Link href="/register/school" className="flex items-center justify-center gap-2">
                       <span>Register as School/Student</span>
@@ -172,7 +172,7 @@ export default function RegistrationSelectionPage() {
                 </p>
                 <p className="text-sm text-[#8c8273]">
                   Need help? Contact us at{" "}
-                  <a href="mailto:ideas@krmangalam.edu.in" className="text-[#ea580c] font-semibold hover:underline">
+                  <a href="mailto:ideas@krmangalam.edu.in" className="text-[#E11E45] font-semibold hover:underline">
                     ideas@krmangalam.edu.in
                   </a>
                 </p>

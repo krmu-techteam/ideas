@@ -20,18 +20,18 @@ export default function FaqPage() {
       {/* Dedicated Page Hero */}
       <section className="bg-[#f4ede1] pt-28 pb-12 sm:pt-36 sm:pb-16">
         <div className="container mx-auto max-w-5xl px-4 sm:px-6">
-          <div className="font-mono text-[11px] sm:text-[12px] font-semibold uppercase tracking-[0.16em] text-[#ea580c] mb-3 flex items-center gap-2">
+          <div className="font-mono text-[11px] sm:text-[12px] font-semibold uppercase tracking-[0.16em] text-[#E11E45] mb-3 flex items-center gap-2">
             <span>IDEAS 4.0</span>
-            <span className="text-[#ea580c]/50">·</span>
+            <span className="text-[#E11E45]/50">·</span>
             <span>K.R. MANGALAM UNIVERSITY</span>
-            <span className="text-[#ea580c]/50">·</span>
+            <span className="text-[#E11E45]/50">·</span>
             <span>SUPPORT</span>
           </div>
 
           <h1 className="font-serif text-[clamp(34px,5.4vw,64px)] font-bold leading-[1.04] tracking-[-0.025em] text-[#14100b] text-balance">
             Frequently Asked
             <br />
-            <span className="italic font-serif font-normal text-[#ea580c]">
+            <span className="italic font-serif font-normal text-[#E11E45]">
               Questions
             </span>
           </h1>

@@ -26,8 +26,8 @@ function RedirectToSelection() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#fffefb] px-4">
       <div className="text-center p-8 bg-white border border-[#e7ded1] rounded-2xl shadow-xs max-w-sm w-full">
-        <div className="w-14 h-14 rounded-2xl bg-[#ea580c]/10 border border-[#ea580c]/20 text-[#ea580c] flex items-center justify-center mx-auto mb-4 shadow-xs">
-          <div className="w-7 h-7 border-2 border-[#ea580c] border-t-transparent rounded-full animate-spin"></div>
+        <div className="w-14 h-14 rounded-2xl bg-[#E11E45]/10 border border-[#E11E45]/20 text-[#E11E45] flex items-center justify-center mx-auto mb-4 shadow-xs">
+          <div className="w-7 h-7 border-2 border-[#E11E45] border-t-transparent rounded-full animate-spin"></div>
         </div>
         <h2 className="font-serif text-lg font-bold text-[#14100b] mb-1">
           Redirecting to Registration

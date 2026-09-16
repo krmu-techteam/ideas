@@ -47,13 +47,13 @@ export default function EventDetailView({
   const primarySession = event.sessions[0];
 
   return (
-    <div className="min-h-screen bg-[#fffefb] text-[#14100b] selection:bg-[#ea580c]/20 selection:text-[#ea580c] pt-24 pb-16">
+    <div className="min-h-screen bg-[#fffefb] text-[#14100b] selection:bg-[#E11E45]/20 selection:text-[#E11E45] pt-24 pb-16">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6">
         {/* Top Navigation / Breadcrumb */}
         <div className="mb-6 pt-4">
           <Link
             href={backUrl}
-            className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-wider font-semibold text-[#8c8273] hover:text-[#ea580c] transition-colors group"
+            className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-wider font-semibold text-[#8c8273] hover:text-[#E11E45] transition-colors group"
           >
             <ArrowLeft
               size={15}
@@ -67,8 +67,8 @@ export default function EventDetailView({
         <header className="mb-8">
           {/* Eyebrow & Badges */}
           <div className="flex flex-wrap items-center gap-2 mb-4">
-            <span className="inline-flex items-center gap-1.5 font-mono text-[11px] font-semibold uppercase tracking-[0.12em] px-2.5 py-1 rounded-[3px] border border-[#e7ded1] bg-[#f4ede1] text-[#ea580c]">
-              <Tag size={12} className="text-[#ea580c]" />
+            <span className="inline-flex items-center gap-1.5 font-mono text-[11px] font-semibold uppercase tracking-[0.12em] px-2.5 py-1 rounded-[3px] border border-[#e7ded1] bg-[#f4ede1] text-[#E11E45]">
+              <Tag size={12} className="text-[#E11E45]" />
               <span>{event.department || "IDEAS 4.0"}</span>
             </span>
             <span className="inline-flex items-center font-mono text-[11px] font-semibold uppercase tracking-[0.12em] px-2.5 py-1 rounded-[3px] border border-[#e7ded1] bg-white text-[#14100b]">
@@ -96,19 +96,19 @@ export default function EventDetailView({
           <div className="mt-6 flex flex-wrap items-center justify-between gap-4 border-b border-[#e7ded1] pb-6">
             <div className="flex flex-wrap items-center gap-y-2 gap-x-5 font-mono text-xs uppercase tracking-wider text-[#6b6357]">
               <div className="flex items-center gap-1.5">
-                <Calendar size={14} className="text-[#ea580c]" />
+                <Calendar size={14} className="text-[#E11E45]" />
                 <span className="font-semibold text-[#14100b]">
                   {event.date}
                 </span>
               </div>
               <div className="flex items-center gap-1.5">
-                <Clock size={14} className="text-[#ea580c]" />
+                <Clock size={14} className="text-[#E11E45]" />
                 <span>
                   {event.time || primarySession?.timeSlot || "Multiple Slots"}
                 </span>
               </div>
               <div className="flex items-center gap-1.5">
-                <MapPin size={14} className="text-[#ea580c]" />
+                <MapPin size={14} className="text-[#E11E45]" />
                 <span>{event.location}</span>
               </div>
             </div>
@@ -152,7 +152,7 @@ export default function EventDetailView({
           <div className="lg:col-span-8 space-y-8">
             {/* 1. About / Description */}
             <section className="rounded-[6px] border border-[#e7ded1] bg-white p-6 shadow-xs">
-              <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#ea580c] mb-3 flex items-center gap-2">
+              <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#E11E45] mb-3 flex items-center gap-2">
                 <Sparkles size={13} />
                 <span>About This Activity</span>
               </div>
@@ -164,7 +164,7 @@ export default function EventDetailView({
             {/* 2. Guidelines & Instructions */}
             {event.guidelines && event.guidelines !== event.description && (
               <section className="rounded-[6px] border border-[#e7ded1] bg-white p-6 shadow-xs">
-                <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#ea580c] mb-3">
+                <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#E11E45] mb-3">
                   Guidelines &amp; Event Rules
                 </div>
                 <div className="text-[14px] sm:text-[15px] leading-[1.7] text-[#14100b] whitespace-pre-wrap font-sans">
@@ -176,7 +176,7 @@ export default function EventDetailView({
             {/* 3. Evaluation Pattern */}
             {event.evaluation && (
               <section className="rounded-[6px] border border-[#e7ded1] bg-white p-6 shadow-xs">
-                <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#ea580c] mb-3">
+                <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#E11E45] mb-3">
                   Evaluation &amp; Judging Criteria
                 </div>
                 <p className="text-[14px] sm:text-[15px] leading-[1.7] text-[#14100b]">
@@ -189,7 +189,7 @@ export default function EventDetailView({
             {event.sessions && event.sessions.length > 0 && (
               <section className="rounded-[6px] border border-[#e7ded1] bg-white overflow-hidden shadow-xs">
                 <div className="px-6 py-4 bg-[#fbf8f2] border-b border-[#e7ded1] flex items-center justify-between">
-                  <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#ea580c]">
+                  <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#E11E45]">
                     Scheduled Sessions ({event.sessions.length})
                   </div>
                   <span className="font-mono text-xs text-[#8c8273]">
@@ -207,32 +207,32 @@ export default function EventDetailView({
                           Slot {idx + 1}:{" "}
                           {s.participation || "Open to participants"}
                         </span>
-                        <span className="font-mono text-xs font-semibold px-2.5 py-1 rounded-[3px] bg-[#ea580c]/10 text-[#ea580c]">
+                        <span className="font-mono text-xs font-semibold px-2.5 py-1 rounded-[3px] bg-[#E11E45]/10 text-[#E11E45]">
                           {s.timeSlot || "TBA"}
                         </span>
                       </div>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-[#6b6357] mt-3">
                         {s.venue && (
                           <div className="flex items-center gap-1.5">
-                            <MapPin size={13} className="text-[#ea580c]" />
+                            <MapPin size={13} className="text-[#E11E45]" />
                             <span>Venue: {s.venue}</span>
                           </div>
                         )}
                         {s.capacity && (
                           <div className="flex items-center gap-1.5">
-                            <Users size={13} className="text-[#ea580c]" />
+                            <Users size={13} className="text-[#E11E45]" />
                             <span>Capacity: {s.capacity}</span>
                           </div>
                         )}
                         {s.coordinator && (
                           <div className="flex items-center gap-1.5 sm:col-span-2">
-                            <UserCheck size={13} className="text-[#ea580c]" />
+                            <UserCheck size={13} className="text-[#E11E45]" />
                             <span>Faculty: {s.coordinator}</span>
                           </div>
                         )}
                         {s.contacts && (
                           <div className="flex items-center gap-1.5 sm:col-span-2">
-                            <Phone size={13} className="text-[#ea580c]" />
+                            <Phone size={13} className="text-[#E11E45]" />
                             <span>Coordinators: {s.contacts}</span>
                           </div>
                         )}
@@ -248,7 +248,7 @@ export default function EventDetailView({
           <div className="lg:col-span-4">
             <div className="sticky top-28 rounded-[8px] border border-[#e7ded1] bg-white p-6 shadow-sm space-y-6">
               <div>
-                <div className="font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[#ea580c] mb-1">
+                <div className="font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[#E11E45] mb-1">
                   EVENT SUMMARY
                 </div>
                 <h3 className="font-serif text-[20px] font-bold text-[#14100b]">
@@ -261,7 +261,7 @@ export default function EventDetailView({
                 <div className="flex items-start gap-3 py-1">
                   <Calendar
                     size={16}
-                    className="text-[#ea580c] shrink-0 mt-0.5"
+                    className="text-[#E11E45] shrink-0 mt-0.5"
                   />
                   <div>
                     <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">
@@ -274,7 +274,7 @@ export default function EventDetailView({
                 </div>
 
                 <div className="flex items-start gap-3 py-1">
-                  <Clock size={16} className="text-[#ea580c] shrink-0 mt-0.5" />
+                  <Clock size={16} className="text-[#E11E45] shrink-0 mt-0.5" />
                   <div>
                     <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">
                       Time
@@ -290,7 +290,7 @@ export default function EventDetailView({
                 <div className="flex items-start gap-3 py-1">
                   <MapPin
                     size={16}
-                    className="text-[#ea580c] shrink-0 mt-0.5"
+                    className="text-[#E11E45] shrink-0 mt-0.5"
                   />
                   <div>
                     <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">
@@ -303,7 +303,7 @@ export default function EventDetailView({
                 </div>
 
                 <div className="flex items-start gap-3 py-1">
-                  <Users size={16} className="text-[#ea580c] shrink-0 mt-0.5" />
+                  <Users size={16} className="text-[#E11E45] shrink-0 mt-0.5" />
                   <div>
                     <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">
                       Participation
@@ -319,7 +319,7 @@ export default function EventDetailView({
                   <div className="flex items-start gap-3 py-1">
                     <UserCheck
                       size={16}
-                      className="text-[#ea580c] shrink-0 mt-0.5"
+                      className="text-[#E11E45] shrink-0 mt-0.5"
                     />
                     <div>
                       <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">
@@ -337,7 +337,7 @@ export default function EventDetailView({
               <div className="pt-4 border-t border-[#f0eae1]">
                 <Link
                   href="/register/selection"
-                  className="w-full h-12 inline-flex items-center justify-center gap-2 rounded-[4px] bg-[#ea580c] hover:bg-[#c2410c] text-white font-mono text-xs uppercase tracking-wider font-bold transition-colors shadow-xs"
+                  className="w-full h-10 inline-flex items-center justify-center gap-2 rounded-[4px] bg-[#E11E45] hover:bg-[#E11E45]/80 text-white font-serif text-xs uppercase tracking-wider font-bold transition-colors shadow-xs"
                 >
                   <span>Register for Event</span>
                   <span>→</span>
@@ -351,7 +351,7 @@ export default function EventDetailView({
               <div className="pt-2 text-center">
                 <Link
                   href={backUrl}
-                  className="font-mono text-xs text-[#6b6357] hover:text-[#ea580c] transition-colors inline-flex items-center gap-1.5"
+                  className="font-mono text-xs text-[#6b6357] hover:text-[#E11E45] transition-colors inline-flex items-center gap-1.5"
                 >
                   <ArrowLeft size={13} />
                   <span>{backLabel}</span>

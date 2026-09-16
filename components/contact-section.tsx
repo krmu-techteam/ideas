@@ -57,7 +57,7 @@ export default function ContactSection() {
 
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <div className="bg-white border border-[#e7ded1] p-3 rounded-xl text-[#ea580c] shadow-xs">
+                <div className="bg-white border border-[#e7ded1] p-3 rounded-xl text-[#E11E45] shadow-xs">
                   <MapPin size={24} />
                 </div>
                 <div>
@@ -71,7 +71,7 @@ export default function ContactSection() {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="bg-white border border-[#e7ded1] p-3 rounded-xl text-[#ea580c] shadow-xs">
+                <div className="bg-white border border-[#e7ded1] p-3 rounded-xl text-[#E11E45] shadow-xs">
                   <Mail size={24} />
                 </div>
                 <div>
@@ -80,7 +80,7 @@ export default function ContactSection() {
                   </h3>
                   <a
                     href="mailto:admissions@krmangalam.edu.in"
-                    className="text-[#6b6357] hover:text-[#ea580c] transition-colors duration-300"
+                    className="text-[#6b6357] hover:text-[#E11E45] transition-colors duration-300"
                   >
                     admissions@krmangalam.edu.in
                   </a>
@@ -88,17 +88,15 @@ export default function ContactSection() {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="bg-white border border-[#e7ded1] p-3 rounded-xl text-[#ea580c] shadow-xs">
+                <div className="bg-white border border-[#e7ded1] p-3 rounded-xl text-[#E11E45] shadow-xs">
                   <Phone size={24} />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-[#14100b] mb-1">
-                    Call Us
-                  </h3>
+                  <h3 className="font-semibold text-[#14100b] mb-1">Call Us</h3>
                   <div className="flex flex-col text-sm text-[#6b6357]">
                     <a
                       href="tel:01242867800"
-                      className="hover:text-[#ea580c] transition-colors duration-300 font-semibold text-[#14100b]"
+                      className="hover:text-[#E11E45] transition-colors duration-300 font-semibold text-[#14100b]"
                     >
                       Landline: 0124-2867800
                     </a>
@@ -119,7 +117,7 @@ export default function ContactSection() {
           >
             <Card className="bg-white border border-[#e7ded1] shadow-md rounded-2xl">
               <CardContent className="p-8 text-center">
-                <div className="bg-[#ea580c]/10 border border-[#ea580c]/20 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 text-[#ea580c] shadow-xs">
+                <div className="bg-[#E11E45]/10 border border-[#E11E45]/20 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 text-[#E11E45] shadow-xs">
                   <Mail size={32} />
                 </div>
                 <h3 className="text-2xl font-serif font-bold text-[#14100b] mb-4">
@@ -133,7 +131,7 @@ export default function ContactSection() {
                   <Button
                     asChild
                     size="lg"
-                    className="w-full bg-[#ea580c] hover:bg-[#c2410c] text-white font-bold shadow-md rounded-xl transition-all duration-300"
+                    className="w-full h-10 inline-flex items-center justify-center gap-2 rounded-xl bg-[#E11E45] hover:bg-[#E11E45]/80 text-white font-serif text-xs uppercase tracking-wider font-bold transition-colors shadow-xs"
                   >
                     <Link
                       href="/contact"
@@ -153,7 +151,7 @@ export default function ContactSection() {
                       href="mailto:ideas@krmangalam.edu.in"
                       className="flex items-center justify-center gap-2"
                     >
-                      <Mail size={18} className="text-[#ea580c]" />
+                      <Mail size={18} className="text-[#E11E45]" />
                       <span>Send Email</span>
                     </a>
                   </Button>
@@ -180,7 +178,7 @@ export default function ContactSection() {
               key={index}
               className="text-center bg-white border border-[#e7ded1] rounded-xl p-5 shadow-xs"
             >
-              <div className="text-3xl md:text-4xl font-serif font-bold mb-2 text-[#ea580c]">
+              <div className="text-3xl md:text-4xl font-serif font-bold mb-2 text-[#E11E45]">
                 {stat.number}
               </div>
               <div className="text-[#6b6357] text-sm font-medium">

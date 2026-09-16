@@ -83,7 +83,7 @@ function PaymentRedirectContent() {
           </p>
           <a
             href="/register/selection"
-            className="inline-flex items-center justify-center px-5 py-2.5 bg-[#ea580c] hover:bg-[#c2410c] text-white font-bold rounded-xl shadow-xs transition-colors text-sm"
+            className="inline-flex items-center justify-center px-5 py-2.5 bg-[#E11E45] hover:bg-[#c2410c] text-white font-bold rounded-xl shadow-xs transition-colors text-sm"
           >
             ← Return to Registration
           </a>
@@ -93,7 +93,7 @@ function PaymentRedirectContent() {
   }
 
   return (
-    <div className="min-h-screen bg-[#fffefb] text-[#14100b] flex items-center justify-center px-4 py-16 selection:bg-[#ea580c]/20 selection:text-[#ea580c]">
+    <div className="min-h-screen bg-[#fffefb] text-[#14100b] flex items-center justify-center px-4 py-16 selection:bg-[#E11E45]/20 selection:text-[#E11E45]">
       <div className="container mx-auto px-4 flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -109,8 +109,8 @@ function PaymentRedirectContent() {
               transition={{ delay: 0.1, type: "spring", stiffness: 200 }}
               className="flex justify-center mb-6"
             >
-              <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-[#ea580c]/10 border border-[#ea580c]/20 flex items-center justify-center shadow-xs">
-                <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-[#ea580c]" />
+              <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-[#E11E45]/10 border border-[#E11E45]/20 flex items-center justify-center shadow-xs">
+                <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-[#E11E45]" />
               </div>
             </motion.div>
 
@@ -142,7 +142,7 @@ function PaymentRedirectContent() {
               className="flex flex-col items-center gap-3 mb-6"
             >
               <div className="relative">
-                <Loader2 className="w-10 h-10 text-[#ea580c] animate-spin" />
+                <Loader2 className="w-10 h-10 text-[#E11E45] animate-spin" />
               </div>
 
               <p className="text-[#8c8273] text-sm font-medium">
@@ -164,7 +164,7 @@ function PaymentRedirectContent() {
                   initial={{ width: "0%" }}
                   animate={{ width: "100%" }}
                   transition={{ duration: 2.5, ease: "linear" }}
-                  className="h-full bg-gradient-to-r from-[#ea580c] to-[#c2410c]"
+                  className="h-full bg-gradient-to-r from-[#E11E45] to-[#c2410c]"
                 />
               </div>
             </motion.div>
@@ -178,7 +178,7 @@ function PaymentRedirectContent() {
             >
               <a
                 href={paymentLink}
-                className="block w-full text-center py-3 px-4 bg-[#ea580c] hover:bg-[#c2410c] text-white font-bold rounded-xl shadow-md transition-all text-sm"
+                className="block w-full text-center py-3 px-4 bg-[#E11E45] hover:bg-[#c2410c] text-white font-bold rounded-xl shadow-md transition-all text-sm"
               >
                 <span className="flex items-center justify-center gap-2">
                   <span>Click here if not redirected automatically</span>
@@ -189,7 +189,7 @@ function PaymentRedirectContent() {
                 href={paymentLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center py-2.5 px-4 bg-white hover:bg-[#FAF5EC] border border-[#e7ded1] rounded-xl text-[#14100b] hover:text-[#ea580c] transition-all text-xs font-semibold"
+                className="block w-full text-center py-2.5 px-4 bg-white hover:bg-[#FAF5EC] border border-[#e7ded1] rounded-xl text-[#14100b] hover:text-[#E11E45] transition-all text-xs font-semibold"
               >
                 Or open in new tab →
               </a>
@@ -218,7 +218,7 @@ function PaymentRedirectContent() {
           >
             <a
               href="/register/selection"
-              className="inline-flex items-center text-sm font-semibold text-[#6b6357] hover:text-[#ea580c] transition-colors"
+              className="inline-flex items-center text-sm font-semibold text-[#6b6357] hover:text-[#E11E45] transition-colors"
             >
               ← Go back
             </a>
@@ -235,8 +235,8 @@ export default function PaymentRedirectPage() {
       fallback={
         <div className="min-h-screen bg-[#fffefb] flex items-center justify-center px-4">
           <div className="text-center p-8 bg-white border border-[#e7ded1] rounded-2xl shadow-sm max-w-sm w-full">
-            <div className="w-16 h-16 rounded-2xl bg-[#ea580c]/10 border border-[#ea580c]/20 text-[#ea580c] flex items-center justify-center mx-auto mb-4 shadow-xs">
-              <Loader2 className="w-8 h-8 text-[#ea580c] animate-spin" />
+            <div className="w-16 h-16 rounded-2xl bg-[#E11E45]/10 border border-[#E11E45]/20 text-[#E11E45] flex items-center justify-center mx-auto mb-4 shadow-xs">
+              <Loader2 className="w-8 h-8 text-[#E11E45] animate-spin" />
             </div>
             <h2 className="font-serif text-xl font-bold text-[#14100b] mb-1">
               Loading Registration

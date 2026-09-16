@@ -136,7 +136,7 @@ export default function Faq() {
         <div className="max-w-3xl mb-10">
           <h2 className="font-serif text-[clamp(30px,4.5vw,48px)] font-bold tracking-[-0.02em] text-[#14100b] leading-[1.1]">
             Frequently Asked{" "}
-            <span className="italic font-serif font-normal text-[#ea580c]">
+            <span className="italic font-serif font-normal text-[#E11E45]">
               Questions
             </span>
           </h2>
@@ -159,7 +159,7 @@ export default function Faq() {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             style={{ outline: "none" }}
-            className="w-full h-11 rounded-[6px] border border-[#e7ded1] bg-white pl-10 pr-4 text-[14px] text-[#14100b] placeholder:text-[#8c8273] shadow-2xs outline-none focus:outline-none focus-visible:outline-none focus:border-[#ea580c] focus-visible:border-[#ea580c] focus:ring-1 focus:ring-[#ea580c] transition-all"
+            className="w-full h-11 rounded-[6px] border border-[#e7ded1] bg-white pl-10 pr-4 text-[14px] text-[#14100b] placeholder:text-[#8c8273] shadow-2xs outline-none focus:outline-none focus-visible:outline-none focus:border-[#E11E45] focus-visible:border-[#E11E45] focus:ring-1 focus:ring-[#E11E45] transition-all"
             suppressHydrationWarning
           />
         </div>
@@ -182,8 +182,8 @@ export default function Faq() {
                   <span
                     className={`font-serif text-[16.5px] sm:text-[18px] font-bold leading-snug transition-colors ${
                       isOpen
-                        ? "text-[#ea580c]"
-                        : "text-[#14100b] group-hover:text-[#ea580c]"
+                        ? "text-[#E11E45]"
+                        : "text-[#14100b] group-hover:text-[#E11E45]"
                     }`}
                   >
                     {faq.question}
@@ -193,8 +193,8 @@ export default function Faq() {
                     size={18}
                     className={`shrink-0 transition-transform duration-200 ${
                       isOpen
-                        ? "rotate-180 text-[#ea580c]"
-                        : "text-[#8c8273] group-hover:text-[#ea580c]"
+                        ? "rotate-180 text-[#E11E45]"
+                        : "text-[#8c8273] group-hover:text-[#E11E45]"
                     }`}
                   />
                 </button>
@@ -231,7 +231,7 @@ export default function Faq() {
             <button
               type="button"
               onClick={() => setSearchTerm("")}
-              className="mt-4 font-serif text-xs font-semibold uppercase tracking-wider text-[#ea580c] hover:underline"
+              className="mt-4 font-serif text-xs font-semibold uppercase tracking-wider text-[#E11E45] hover:underline"
             >
               Clear search
             </button>
@@ -250,7 +250,7 @@ export default function Faq() {
           </div>
           <Link
             href="/contact"
-            className="font-serif inline-flex items-center justify-center rounded-[3px] px-6 py-2.5 text-sm font-semibold transition-colors bg-[#ea580c] text-white hover:bg-[#c2410c] shadow-2xs self-start sm:self-auto"
+            className="font-serif inline-flex items-center justify-center rounded-[3px] px-6 py-2.5 text-sm font-semibold transition-colors bg-[#E11E45] text-white hover:bg-[#c2410c] shadow-2xs self-start sm:self-auto"
           >
             Contact Us →
           </Link>
