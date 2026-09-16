@@ -119,12 +119,12 @@ export default function CountdownTimer() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="bg-transparent rounded-[4px] p-5 sm:p-6 text-center border border-[#16212C]   group"
+              className="bg-transparent rounded-[4px] p-5 sm:p-6 text-center border border-[#16212C]"
             >
-              <div className="text-2xl font-serif sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#16212C] group-hover:text-[#e7c268] transition-colors mb-1 sm:mb-2 leading-tight">
+              <div className="text-2xl font-serif sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#16212C] mb-1 sm:mb-2 leading-tight">
                 {unit.value.toString().padStart(2, "0")}
               </div>
-              <div className="text-xs sm:text-sm uppercase tracking-wider text-[#16212C] font-semibold group-hover:text-[#e7c268] transition-colors">
+              <div className="text-xs sm:text-sm uppercase tracking-wider text-[#16212C] font-semibold">
                 {unit.label}
               </div>
             </motion.div>
