@@ -181,7 +181,6 @@ const rawRows: RawRow[] = [
     Date: "27-28 Oct 2026",
     Category: "Technical",
     "Team Event/Individual": "SOLO/TEAM(3-4)",
-    "Team Size": "3-4",
     Prize: "₹9,000 (4500+4500) 1000/1500/2000",
     Description:
       "1. Robot will be wireless.\n\n2. Maximum dimensions and weight will be specified by organizers (e.g., 30x30 cm, 5 kg).\n\n3. The race track will include turns, straight paths, obstacles, or ramps (announced in advance or revealed on the spot).\n\n4. Robots must follow the track without skipping checkpoints.\n\n5. Touching the robot during the run (except for an official reset) will result in penalty points or disqualification.",
@@ -212,7 +211,6 @@ const rawRows: RawRow[] = [
     Date: "27-28 Oct 2026",
     Category: "Technical",
     "Team Event/Individual": "SOLO/TEAM(3-4)",
-    "Team Size": "3-4",
     Prize: "₹9,000 (4500+4500) 1000/1500/2000",
     Description:
       "Gaming Arena is a thrilling robotics competition where student-built robots engage in intense physical battles and challenges such as Sumo Battle, Robo Soccer, and Task Arena. Participants design, program, and control their robots to outperform opponents in strength, strategy, and agility, showcasing innovation, teamwork, and technical skills.",
@@ -368,7 +366,6 @@ const rawRows: RawRow[] = [
     Date: "27-Oct-26",
     Category: "Technical",
     "Team Event/Individual": "SOLO/TEAM(2-3)",
-    "Team Size": "2-3",
     Prize: "₹5,000 (2500+2500) 700/800/1000",
     Description:
       "Participants have to upload 30-60 seconds reel on the given theme",
@@ -492,7 +489,6 @@ const rawRows: RawRow[] = [
     Date: "27-Oct-26",
     Category: "Technical/ Competition",
     "Team Event/Individual": "SOLO/Team(2-3)",
-    "Team Size": "2-3",
     Prize: "₹4,500 (1000/1500/2000)",
     Description:
       "The “Agritech– Smart Farming Models” showcases innovative technologies and digital solutions revolutionizing agriculture. It highlights smart irrigation, precision farming, sensor-based monitoring and sustainable practices. Students and participants present models demonstrating how technology enhances productivity, resource efficiency and environmental sustainability in modern farming systems.",
@@ -516,7 +512,6 @@ const rawRows: RawRow[] = [
     Date: "27-Oct-26",
     Category: "Technical/ Competition",
     "Team Event/Individual": "(3-5  Members in each) 10 Group per room",
-    "Team Size": "3-5",
     Prize: "₹6,000 (3000+2000+1000)",
     Description:
       "Zero Waste Innovation is an inter-school and inter-university event designed to inspire young minds to create sustainable solutions for a cleaner planet. The event encourages students to present innovative ideas, models, and practices that minimize waste, promote recycling, and support environmental responsibility — fostering creativity, awareness, and action toward a zero-waste future.",
@@ -543,12 +538,12 @@ const rawRows: RawRow[] = [
     Participation: "School Students",
     "Time Slot": "10:00 AM Onwards",
     "Venue Details": "AI Arena",
-    "Coordinator Name": "Dr. Reenu Batra, Dr. Megha Sharma, Dr. Amar Sraswat",
+    "Coordinator Name": "Dr. Amar Saraswat, Dr. Reenu Batra, Dr. Megha Sharma",
     "Email ID / Mobile  Number": "Aditya Kumar Singh, Kartik Sharma",
-    Date: "28-Oct-26",
+    Date: "27th October 2026 & 28th October 2026",
     Category: "Technical",
     "Team Event/Individual": "Team (2-4)",
-    "Team Size": "2-4",
+
     Prize: "TBD",
     Description:
       "Young AI Innovators Hackathon 4.0 is an exciting AI-focused innovation challenge designed to empower school students to transform their creative ideas into practical, technology-driven solutions. The hackathon will provide participants with an opportunity to explore the potential of Artificial Intelligence, Machine Learning, Generative AI, Robotics, IoT, and other emerging technologies to address real-world problems across areas such as education, healthcare, environment, safety, accessibility, and smart living. The event will be conducted in two rounds—an online ideation and evaluation round, followed by an offline AI Arena, where shortlisted teams will develop and demonstrate their software or hardware prototypes before a panel of judges. Through this experience, students will develop problem-solving, creativity, technical, teamwork, communication, and innovation skills, while gaining practical exposure to AI and emerging technologies in a competitive and collaborative environment.",
@@ -571,7 +566,6 @@ const rawRows: RawRow[] = [
     Date: "27-Oct-26",
     Category: "Cultural",
     "Team Event/Individual": "Duet",
-    "Team Size": "2",
     Prize: "₹4,500 (1000/1500/2000)",
     Description:
       "Unleash your rhythm and coordination as pairs take the stage to showcase creativity, synchronization, and expression through dance. Participants will be judged on choreography, energy, coordination, and overall performance.",
@@ -603,7 +597,6 @@ const rawRows: RawRow[] = [
     Date: "27-Oct-26",
     Category: "Cultural",
     "Team Event/Individual": "TEAM(3-5)",
-    "Team Size": "3-5",
     Prize: "₹4,500 (1000/1500/2000)",
     Image: "/events/Group Dance.png",
     Description:
@@ -636,7 +629,6 @@ const rawRows: RawRow[] = [
     Date: "28-Oct-26",
     Category: "Cultural",
     "Team Event/Individual": "TEAM(3-5)",
-    "Team Size": "3-5",
     Prize: "₹4,500 (1000/1500/2000)",
     Image: "/assets/upcoming-events/up-ev-25.webp",
     Description:

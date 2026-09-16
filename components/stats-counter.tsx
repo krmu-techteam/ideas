@@ -9,7 +9,7 @@ const stats = [
     label: "Prize Pool",
     sublabel: "Across 28 events",
     display: "₹10 Lakh+",
-    color: "text-[#EF6321]",
+    color: "text-[#E11E46]",
   },
   {
     value: 28,
@@ -23,7 +23,7 @@ const stats = [
     label: "Exhibition Stalls",
     sublabel: "Innoverse Zone",
     display: "120+",
-    color: "text-[#EF6321]",
+    color: "text-[#E11E46]",
   },
   {
     value: 18000,

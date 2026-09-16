@@ -10,7 +10,7 @@
     --card-foreground: 221 84% 16%;
     --popover: 0 0% 100%;
     --popover-foreground: 221 84% 16%;
-    --primary: 351 83% 47%; /* Premium Crimson */
+    --primary: #e11e46; /* Premium Crimson */
     --primary-foreground: 210 40% 98%;
     --secondary: 221 84% 24%; /* Royal Blue */
     --secondary-foreground: 0 0% 100%;
@@ -24,7 +24,7 @@
     --input: 221 83% 86%;
     --ring: 221 84% 45%;
     --radius: 0.75rem;
-    
+
     /* Premium university theme variables */
     --royal-blue: 221 84% 24%;
     --royal-blue-light: 221 84% 35%;
@@ -68,7 +68,9 @@
     @apply bg-background text-foreground font-sans;
     font-family: var(--font-poppins), sans-serif;
   }
-  h1, h2, .section-title {
+  h1,
+  h2,
+  .section-title {
     font-family: var(--font-fraunces), serif;
   }
 }
@@ -84,8 +86,15 @@
   inset: 0;
   padding: 2px;
   border-radius: 9999px;
-  background: linear-gradient(135deg, rgba(239, 68, 68, 0.45) 0%, rgba(250, 204, 21, 0.45) 50%, rgba(59, 130, 246, 0.45) 100%);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  background: linear-gradient(
+    135deg,
+    rgba(239, 68, 68, 0.45) 0%,
+    rgba(250, 204, 21, 0.45) 50%,
+    rgba(59, 130, 246, 0.45) 100%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   pointer-events: none;
@@ -222,7 +231,9 @@
 .scroll-reveal {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 
 .scroll-reveal.revealed {
@@ -329,7 +340,9 @@
 
 .btn-hover-lift:hover {
   transform: translateY(-2px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 /* Card hover effects */
@@ -435,7 +448,7 @@ html {
 /* Mobile-specific improvements */
 @media (max-width: 768px) {
   /* Improve tap targets */
-  button, 
+  button,
   [role="button"],
   input[type="button"],
   input[type="submit"],
@@ -443,25 +456,27 @@ html {
     min-height: 44px;
     min-width: 44px;
   }
-  
+
   /* Better touch areas for links */
   a {
     padding: 8px 4px;
     margin: -8px -4px;
   }
-  
+
   /* Optimize text for mobile */
   body {
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+
   /* Improve form inputs on mobile */
-  input, textarea, select {
+  input,
+  textarea,
+  select {
     font-size: 16px; /* Prevents zoom on iOS */
   }
-  
+
   /* Better spacing for mobile */
   .container {
     padding-left: 1rem;
@@ -474,7 +489,7 @@ html {
   .card-hover:hover {
     transform: none;
   }
-  
+
   .btn-hover-lift:hover {
     transform: none;
   }
@@ -508,7 +523,8 @@ html {
 
 /* Ambient Slow Hero Waves */
 @keyframes heroWave {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate3d(0, 0, 0);
   }
   50% {
@@ -517,7 +533,8 @@ html {
 }
 
 @keyframes heroWaveSlow {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate3d(0, 0, 0);
   }
   50% {
