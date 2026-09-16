@@ -125,7 +125,7 @@ export default function StatsCounter() {
               suppressHydrationWarning
             >
               <div
-                className={`text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-2 leading-none font-sans ${stat.color} transition-transform duration-300 group-hover:scale-105`}
+                className={`text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-2 leading-none font-sans text-white transition-transform duration-300 group-hover:scale-105`}
                 suppressHydrationWarning
               >
                 {formatDisplay(index)}

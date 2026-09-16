@@ -141,15 +141,15 @@ export default function IdeasGlance() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.08 }}
-                className="bg-white rounded-[6px] border border-[#e6dfd3] p-6 shadow-xs hover:border-[#e11e46] hover:shadow-lg hover:shadow-[#e11e46]/10 transition-[border-color,box-shadow] duration-200 antialiased [backface-visibility:hidden] relative group flex flex-col justify-between"
+                className="bg-white rounded-[6px] border border-[#e6dfd3] p-6 antialiased  relative group flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <div className="w-10 h-10 rounded-[4px] bg-[#F9F5EC] border border-[#e6dfd3] flex items-center justify-center text-[#16212C] group-hover:bg-[#e11e46] group-hover:border-[#e11e46] group-hover:text-white transition-all duration-300 shadow-xs">
+                    <div className="w-10 h-10 rounded-[4px] bg-[#F9F5EC] border border-[#e6dfd3] flex items-center justify-center text-[#16212C]">
                       <Icon className="w-5 h-5" />
                     </div>
                   </div>
-                  <h3 className="text-lg font-serif font-bold text-[#16212C] mb-2 group-hover:text-[#e11e46] transition-colors leading-snug">
+                  <h3 className="text-lg font-serif font-bold text-[#16212C] mb-2 leading-snug">
                     {point.title}
                   </h3>
                   <p className="text-[#5a5247] text-[13px] leading-relaxed">
@@ -176,17 +176,17 @@ export default function IdeasGlance() {
               >
                 <Link
                   href={`/ideas/${card.slug}`}
-                  className="group relative flex flex-col justify-between h-full p-6 rounded-[6px] bg-white border border-[#e6dfd3] shadow-xs hover:border-[#e11e46] hover:shadow-xl hover:shadow-[#e11e46]/10 transition-[border-color,box-shadow] duration-200 antialiased [backface-visibility:hidden]"
+                  className="group relative flex flex-col justify-between h-full p-6 rounded-[6px] bg-white border border-[#e6dfd3]  duration-200 antialiased [backface-visibility:hidden]"
                 >
                   <div>
                     {/* Badge & Title */}
                     <div className="mb-2">
-                      <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-[3px] bg-[#16212C]/5 text-[#16212C] border border-[#16212C]/10 group-hover:border-[#e11e46]/40 group-hover:text-[#e11e46] transition-colors">
+                      <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-[3px] bg-[#16212C]/5 text-[#16212C] border border-[#16212C]/10  transition-colors">
                         {card.badge}
                       </span>
                     </div>
 
-                    <h3 className="text-xl font-serif font-bold text-[#16212C] group-hover:text-[#e11e46] transition-colors tracking-tight mb-2 leading-snug">
+                    <h3 className="text-xl font-serif font-bold text-[#16212C]  transition-colors tracking-tight mb-2 leading-snug">
                       {card.title}
                     </h3>
 
@@ -198,9 +198,9 @@ export default function IdeasGlance() {
 
                   {/* Card Bottom Action */}
                   <div className="pt-3.5 border-t border-[#e6dfd3] flex items-center justify-between mt-auto">
-                    <span className="text-[13px] font-semibold text-[#16212C] group-hover:text-[#e11e46] inline-flex items-center gap-1.5 transition-colors duration-200">
+                    <span className="text-[13px] font-semibold text-[#16212C] inline-flex items-center gap-1.5 transition-colors duration-200">
                       Explore Track
-                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200 text-[#e11e46]" />
+                      <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 text-[#e11e46]" />
                     </span>
                   </div>
                 </Link>

@@ -94,7 +94,7 @@ export default function UpcomingEvents() {
           <div className="max-w-2xl">
             <h2 className="font-serif text-[clamp(28px,4.5vw,46px)] font-bold tracking-[-0.02em] text-[#14100b] leading-[1.12]">
               Upcoming Competitions &amp;{" "}
-              <span className="italic font-serif font-normal text-[#E11E45]">
+              <span className="italic font-serif font-normal text-[#14100b]">
                 Activities
               </span>
             </h2>
@@ -109,9 +109,9 @@ export default function UpcomingEvents() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
             <Link
               href="/all-events"
-              className="inline-flex items-center gap-2 text-[13.5px] font-mono font-semibold uppercase tracking-wider text-[#E11E45] hover:text-[#c2410c] transition-colors"
+              className="inline-flex items-center gap-2 text-[13.5px] font-mono font-semibold uppercase tracking-wider text-[#14100b] hover:text-[#c2410c] transition-colors"
             >
-              <span>View All 22+ Events</span>
+              <span>View All Events</span>
               <ArrowRight size={14} />
             </Link>
           </div>
@@ -128,7 +128,7 @@ export default function UpcomingEvents() {
                 onClick={() => setActiveTab(tab.id)}
                 className={`h-9 px-3.5 sm:px-4 rounded-[6px] text-[13px] font-medium transition-all duration-150 flex items-center gap-2 cursor-pointer ${
                   isActive
-                    ? "bg-[#E11E45] text-white shadow-xs"
+                    ? "bg-[#14100b] text-white shadow-xs"
                     : "bg-white border border-[#e7ded1] text-[#6b6357] hover:border-[#14100b] hover:text-[#14100b]"
                 }`}
               >
@@ -161,7 +161,7 @@ export default function UpcomingEvents() {
             >
               <Link
                 href={`/events/${event.slug}`}
-                className="group flex h-full flex-col overflow-hidden rounded-[6px] border border-[#e7ded1] bg-white transition-all duration-200 hover:border-[#E11E45] hover:shadow-lg cursor-pointer"
+                className="group flex h-full flex-col overflow-hidden rounded-[6px] border border-[#e7ded1] bg-white transition-all duration-200 hover:border-[#14100b] hover:shadow-lg cursor-pointer"
               >
                 {/* 16:9 Aspect Ratio Image with Zoom on Hover */}
                 <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#ede6dc]">
@@ -189,9 +189,9 @@ export default function UpcomingEvents() {
                 {/* Card Body */}
                 <div className="flex flex-1 flex-col p-5">
                   {/* Kicker Meta: Department · Category · Format */}
-                  <div className="font-mono flex flex-wrap items-center gap-x-2 text-[10.5px] font-semibold uppercase tracking-[0.12em] text-[#E11E45]">
+                  <div className="font-mono flex flex-wrap items-center gap-x-2 text-[10.5px] font-semibold uppercase tracking-[0.12em] text-[#14100b]">
                     <span>{event.department || "IDEAS 4.0"}</span>
-                    <span aria-hidden="true" className="text-[#E11E45]/50">
+                    <span aria-hidden="true" className="text-[#14100b]/50">
                       ·
                     </span>
                     <span className="truncate">
@@ -199,7 +199,7 @@ export default function UpcomingEvents() {
                     </span>
                     {event.teamType && (
                       <>
-                        <span aria-hidden="true" className="text-[#E11E45]/50">
+                        <span aria-hidden="true" className="text-[#14100b]/50">
                           ·
                         </span>
                         <span>{event.teamType}</span>
@@ -208,7 +208,7 @@ export default function UpcomingEvents() {
                   </div>
 
                   {/* Title (HackIndia font-serif, hover to saffron) */}
-                  <h3 className="font-serif mt-3 text-[18px] font-bold leading-snug tracking-[-0.015em] text-[#14100b] transition-colors line-clamp-2 group-hover:text-[#E11E45]">
+                  <h3 className="font-serif mt-3 text-[18px] font-bold leading-snug tracking-[-0.015em] text-[#14100b] transition-colors line-clamp-2 group-hover:text-[#14100b]">
                     {event.title}
                   </h3>
 
@@ -219,7 +219,7 @@ export default function UpcomingEvents() {
 
                   {/* Time Row */}
                   {event.time && (
-                    <div className="mt-3 flex items-center gap-1.5 text-[11.5px] text-[#E11E45] font-mono">
+                    <div className="mt-3 flex items-center gap-1.5 text-[11.5px] text-[#14100b] font-mono">
                       <Clock size={12.5} className="shrink-0" />
                       <span className="truncate">{event.time}</span>
                     </div>
@@ -228,16 +228,16 @@ export default function UpcomingEvents() {
                   {/* Divider & Footer (Location + Details →) */}
                   <div className="mt-3 pt-3 border-t border-[#f0eae1] flex items-center justify-between text-[12px] text-[#78716c]">
                     <div className="flex items-center gap-1.5 truncate max-w-[70%]">
-                      <MapPin size={13} className="text-[#E11E45] shrink-0" />
+                      <MapPin size={13} className="text-[#14100b] shrink-0" />
                       <span className="truncate">
                         {event.location ||
                           event.sessions?.[0]?.venue ||
                           "KRMU Campus"}
                       </span>
                     </div>
-                    <span className="inline-flex items-center text-[12.5px] font-semibold text-[#14100b] group-hover:text-[#E11E45] transition-colors">
+                    <span className="inline-flex items-center text-[12.5px] font-semibold text-[#14100b] group-hover:text-[#14100b] transition-colors">
                       Details
-                      <span className="ml-1 inline-block text-[#E11E45] transition-transform duration-200 group-hover:translate-x-1">
+                      <span className="ml-1 inline-block text-[#14100b] transition-transform duration-200 group-hover:translate-x-1">
                         →
                       </span>
                     </span>
@@ -252,9 +252,9 @@ export default function UpcomingEvents() {
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-3.5">
           <Link
             href="/all-events"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-[6px] bg-[#E11E45] px-7 py-3 text-[14px] font-medium text-white shadow-xs transition-colors hover:bg-[#c2410c]"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-[6px] bg-[#14100b] px-7 py-3 text-[14px] font-medium text-white shadow-xs transition-colors hover:bg-[#14100b]"
           >
-            <span>Explore All 22+ Events</span>
+            <span>Explore All Events</span>
             <ArrowRight size={16} />
           </Link>
           <Link
@@ -262,7 +262,7 @@ export default function UpcomingEvents() {
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-[6px] border border-[#e7ded1] bg-white px-6 py-3 text-[14px] font-medium text-[#14100b] shadow-2xs transition-colors hover:border-[#14100b]"
           >
             <span>Flagship Spotlight Activities</span>
-            <ArrowRight size={16} className="text-[#E11E45]" />
+            <ArrowRight size={16} className="text-[#14100b]" />
           </Link>
         </div>
       </div>

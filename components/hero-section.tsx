@@ -299,8 +299,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <p className="inline-flex items-center gap-1.5 mb-5 px-3.5 py-1.5 rounded-full bg-[#e7c268]/10 text-xs sm:text-sm font-semibold text-[#e7c268] border border-[#e7c268]/30 tracking-wide backdrop-blur-xs">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#e7c268] animate-pulse" />
+              <p className="inline-flex items-center gap-1.5 mb-5 px-3.5 py-1.5 rounded-full bg-[#e7c268]/10 text-xs sm:text-sm font-semibold text-[#e7c268] border border-[#e7c268]/30 tracking-wide">
                 October 27–28, 2026
               </p>
               <h1 className="mb-4">

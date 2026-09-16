@@ -27,7 +27,7 @@ export default function SpotlightPage() {
   }, [searchTerm, categoryFilter]);
 
   return (
-    <div className="min-h-screen bg-[#fffefb] text-[#14100b] selection:bg-[#E11E45]/20 selection:text-[#E11E45]">
+    <div className="min-h-screen bg-[#fffefb] text-[#14100b] selection:bg-[#14100b]/20 selection:text-[#14100b]">
       {/* 1. Page Intro / Hero - Styled exactly after HackIndia Newsroom */}
       <section className="bg-[#f4ede1] pt-28 pb-12 sm:pt-32 sm:pb-16">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6">
@@ -40,7 +40,7 @@ export default function SpotlightPage() {
             {/* Main Headline */}
             <h1 className="font-serif text-[clamp(32px,5.2vw,58px)] font-bold leading-[1.08] tracking-[-0.025em] text-[#14100b] text-balance">
               Spotlight{" "}
-              <span className="italic font-serif font-normal text-[#E11E45]">
+              <span className="italic font-serif font-normal text-[#14100b]">
                 Activities
               </span>
             </h1>
@@ -55,11 +55,11 @@ export default function SpotlightPage() {
             {/* Quick Info Chips */}
             <div className="mt-6 flex flex-wrap items-center gap-2.5">
               <div className="bg-white border border-[#e7ded1] rounded-[4px] px-3 py-1.5 text-xs font-mono text-[#14100b] flex items-center gap-2 shadow-2xs">
-                <Calendar size={13} className="text-[#E11E45]" />
+                <Calendar size={13} className="text-[#14100b]" />
                 <span>October 27–28, 2026</span>
               </div>
               <div className="bg-white border border-[#e7ded1] rounded-[4px] px-3 py-1.5 text-xs font-mono text-[#14100b] flex items-center gap-2 shadow-2xs">
-                <MapPin size={13} className="text-[#E11E45]" />
+                <MapPin size={13} className="text-[#14100b]" />
                 <span>Sohna Road, Gurugram, Delhi-NCR, Haryana</span>
               </div>
             </div>
@@ -105,7 +105,7 @@ export default function SpotlightPage() {
                   aria-label="Search spotlight activities"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full h-11 rounded-[6px] border border-[#e7ded1] bg-white pl-10 pr-4 text-[14px] text-[#14100b] placeholder:text-[#8c8273] shadow-2xs focus:outline-none focus:border-[#E11E45] focus:ring-1 focus:ring-[#E11E45] transition-all"
+                  className="w-full h-11 rounded-[6px] border border-[#e7ded1] bg-white pl-10 pr-4 text-[14px] text-[#14100b] placeholder:text-[#8c8273] shadow-2xs focus:outline-none focus:border-[#14100b] focus:ring-1 focus:ring-[#14100b] transition-all"
                 />
               </div>
 
@@ -115,7 +115,7 @@ export default function SpotlightPage() {
                   value={categoryFilter}
                   onChange={(e) => setCategoryFilter(e.target.value)}
                   aria-label="Filter by category"
-                  className="w-full h-11 rounded-[6px] border border-[#e7ded1] bg-white pl-3.5 pr-9 text-[14px] font-medium text-[#14100b] shadow-2xs focus:outline-none focus:border-[#E11E45] focus:ring-1 focus:ring-[#E11E45] cursor-pointer appearance-none transition-all"
+                  className="w-full h-11 rounded-[6px] border border-[#e7ded1] bg-white pl-3.5 pr-9 text-[14px] font-medium text-[#14100b] shadow-2xs focus:outline-none focus:border-[#14100b] focus:ring-1 focus:ring-[#14100b] cursor-pointer appearance-none transition-all"
                 >
                   <option value="all">All Categories</option>
                   {categories.map((cat) => (
@@ -149,7 +149,7 @@ export default function SpotlightPage() {
                 >
                   <Link
                     href={`/spotlight/${event.slug}`}
-                    className="group flex h-full flex-col overflow-hidden rounded-[6px] border border-[#e7ded1] bg-white transition-all duration-200 hover:border-[#E11E45] hover:shadow-lg cursor-pointer"
+                    className="group flex h-full flex-col overflow-hidden rounded-[6px] border border-[#e7ded1] bg-white transition-all duration-200 hover:border-[#14100b] hover:shadow-lg cursor-pointer"
                   >
                     {/* 16:9 Aspect Ratio Image */}
                     <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#ede6dc]">
@@ -176,9 +176,9 @@ export default function SpotlightPage() {
                     {/* Card Body */}
                     <div className="flex flex-1 flex-col p-5">
                       {/* Kicker Meta: Department · Category · Format */}
-                      <div className="font-mono flex flex-wrap items-center gap-x-2 text-[10.5px] font-semibold uppercase tracking-[0.12em] text-[#E11E45]">
+                      <div className="font-mono flex flex-wrap items-center gap-x-2 text-[10.5px] font-semibold uppercase tracking-[0.12em] text-[#14100b]">
                         <span>{event.department || "IDEAS"}</span>
-                        <span aria-hidden="true" className="text-[#E11E45]/50">
+                        <span aria-hidden="true" className="text-[#14100b]/50">
                           ·
                         </span>
                         <span className="truncate">
@@ -188,7 +188,7 @@ export default function SpotlightPage() {
                           <>
                             <span
                               aria-hidden="true"
-                              className="text-[#E11E45]/50"
+                              className="text-[#14100b]/50"
                             >
                               ·
                             </span>
@@ -198,7 +198,7 @@ export default function SpotlightPage() {
                       </div>
 
                       {/* Title (HackIndia font-serif, hover to saffron) */}
-                      <h3 className="font-serif mt-3 text-[18px] font-bold leading-snug tracking-[-0.015em] text-[#14100b] transition-colors line-clamp-2 group-hover:text-[#E11E45]">
+                      <h3 className="font-serif mt-3 text-[18px] font-bold leading-snug tracking-[-0.015em] text-[#14100b] transition-colors line-clamp-2 group-hover:text-[#14100b]">
                         {event.title}
                       </h3>
 
@@ -209,7 +209,7 @@ export default function SpotlightPage() {
 
                       {/* Time Row */}
                       {event.time && (
-                        <div className="mt-3 flex items-center gap-1.5 text-[11.5px] text-[#E11E45] font-mono">
+                        <div className="mt-3 flex items-center gap-1.5 text-[11.5px] text-[#14100b] font-mono">
                           <Clock size={12.5} className="shrink-0" />
                           <span className="truncate">{event.time}</span>
                         </div>
@@ -218,17 +218,14 @@ export default function SpotlightPage() {
                       {/* Divider & Footer (Location + Details →) */}
                       <div className="mt-3 pt-3 border-t border-[#f0eae1] flex items-center justify-between text-[12px] text-[#78716c]">
                         <div className="flex items-center gap-1.5 truncate max-w-[70%]">
-                          <MapPin
-                            size={13}
-                            className="text-[#E11E45] shrink-0"
-                          />
+                          <MapPin size={13} className="shrink-0" />
                           <span className="truncate">
                             {event.location || "Campus"}
                           </span>
                         </div>
-                        <span className="inline-flex items-center text-[12.5px] font-semibold text-[#14100b] group-hover:text-[#E11E45] transition-colors">
+                        <span className="inline-flex items-center text-[12.5px] font-semibold text-[#14100b] group-hover:text-[#14100b] transition-colors">
                           Details
-                          <span className="ml-1 inline-block text-[#E11E45] transition-transform duration-200 group-hover:translate-x-1">
+                          <span className="ml-1 inline-block text-[#14100b] transition-transform duration-200 group-hover:translate-x-1">
                             →
                           </span>
                         </span>

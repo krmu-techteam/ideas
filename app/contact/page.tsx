@@ -46,16 +46,16 @@ export default function ContactPage() {
             className="max-w-[9in]"
           >
             {/* Kicker */}
-            <div className="font-mono text-[11px] sm:text-[12px] font-semibold uppercase tracking-[0.16em] text-[#E11E45] mb-3 flex items-center gap-2">
+            <div className="font-mono text-[11px] sm:text-[12px] font-semibold uppercase tracking-[0.16em] text-[#14100b] mb-3 flex items-center gap-2">
               <span>IDEAS 4.0</span>
-              <span className="text-[#E11E45]/50">·</span>
+              <span className="text-[#14100b]/50">·</span>
               <span>K.R. MANGALAM UNIVERSITY</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="font-serif text-[clamp(34px,5.4vw,64px)] font-bold leading-[1.04] tracking-[-0.025em] text-[#14100b] text-balance">
               Contact{" "}
-              <span className="italic font-serif font-normal text-[#E11E45]">
+              <span className="italic font-serif font-normal text-[#14100b]">
                 Us
               </span>
             </h1>
@@ -77,7 +77,7 @@ export default function ContactPage() {
             <div className="lg:col-span-7 bg-white rounded-[6px] p-6 sm:p-8 border border-[#e7ded1] shadow-2xs flex flex-col justify-between">
               <div>
                 <div className="mb-6 pb-4 border-b border-[#e7ded1]">
-                  <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#E11E45] mb-1">
+                  <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#14100b] mb-1">
                     GET IN TOUCH
                   </div>
                   <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#14100b]">
@@ -103,7 +103,7 @@ export default function ContactPage() {
                         onChange={handleInputChange}
                         placeholder="Your full name"
                         style={{ outline: "none" }}
-                        className="h-11 w-full rounded-[6px] border border-[#e7ded1] bg-[#fffefb] px-3.5 text-[14px] text-[#14100b] placeholder:text-[#8c8273] shadow-2xs outline-none focus:outline-none focus-visible:outline-none focus:border-[#E11E45] focus-visible:border-[#E11E45] focus:ring-1 focus:ring-[#E11E45] focus-visible:ring-1 focus-visible:ring-[#E11E45] transition-colors"
+                        className="h-11 w-full rounded-[6px] border border-[#e7ded1] bg-[#fffefb] px-3.5 text-[14px] text-[#14100b] placeholder:text-[#8c8273] shadow-2xs outline-none focus:outline-none focus-visible:outline-none focus:border-[#14100b] focus-visible:border-[#14100b] focus:ring-1 focus:ring-[#14100b] focus-visible:ring-1 focus-visible:ring-[#14100b] transition-colors"
                       />
                     </div>
 
@@ -123,7 +123,7 @@ export default function ContactPage() {
                         onChange={handleInputChange}
                         placeholder="your.email@example.com"
                         style={{ outline: "none" }}
-                        className="h-11 w-full rounded-[6px] border border-[#e7ded1] bg-[#fffefb] px-3.5 text-[14px] text-[#14100b] placeholder:text-[#8c8273] shadow-2xs outline-none focus:outline-none focus-visible:outline-none focus:border-[#E11E45] focus-visible:border-[#E11E45] focus:ring-1 focus:ring-[#E11E45] focus-visible:ring-1 focus-visible:ring-[#E11E45] transition-colors"
+                        className="h-11 w-full rounded-[6px] border border-[#e7ded1] bg-[#fffefb] px-3.5 text-[14px] text-[#14100b] placeholder:text-[#8c8273] shadow-2xs outline-none focus:outline-none focus-visible:outline-none focus:border-[#14100b] focus-visible:border-[#14100b] focus:ring-1 focus:ring-[#14100b] focus-visible:ring-1 focus-visible:ring-[#14100b] transition-colors"
                       />
                     </div>
                   </div>
@@ -144,7 +144,7 @@ export default function ContactPage() {
                       onChange={handleInputChange}
                       placeholder="What is this regarding?"
                       style={{ outline: "none" }}
-                      className="h-11 w-full rounded-[6px] border border-[#e7ded1] bg-[#fffefb] px-3.5 text-[14px] text-[#14100b] placeholder:text-[#8c8273] shadow-2xs outline-none focus:outline-none focus-visible:outline-none focus:border-[#E11E45] focus-visible:border-[#E11E45] focus:ring-1 focus:ring-[#E11E45] focus-visible:ring-1 focus-visible:ring-[#E11E45] transition-colors"
+                      className="h-11 w-full rounded-[6px] border border-[#e7ded1] bg-[#fffefb] px-3.5 text-[14px] text-[#14100b] placeholder:text-[#8c8273] shadow-2xs outline-none focus:outline-none focus-visible:outline-none focus:border-[#14100b] focus-visible:border-[#14100b] focus:ring-1 focus:ring-[#14100b] focus-visible:ring-1 focus-visible:ring-[#14100b] transition-colors"
                     />
                   </div>
 
@@ -164,13 +164,13 @@ export default function ContactPage() {
                       onChange={handleInputChange}
                       placeholder="Tell us how we can help you..."
                       style={{ outline: "none" }}
-                      className="w-full rounded-[6px] border border-[#e7ded1] bg-[#fffefb] p-3.5 text-[14px] leading-[1.6] text-[#14100b] placeholder:text-[#8c8273] shadow-2xs outline-none focus:outline-none focus-visible:outline-none focus:border-[#E11E45] focus-visible:border-[#E11E45] focus:ring-1 focus:ring-[#E11E45] focus-visible:ring-1 focus-visible:ring-[#E11E45] transition-colors resize-y min-h-[140px]"
+                      className="w-full rounded-[6px] border border-[#e7ded1] bg-[#fffefb] p-3.5 text-[14px] leading-[1.6] text-[#14100b] placeholder:text-[#8c8273] shadow-2xs outline-none focus:outline-none focus-visible:outline-none focus:border-[#14100b] focus-visible:border-[#14100b] focus:ring-1 focus:ring-[#14100b] focus-visible:ring-1 focus-visible:ring-[#14100b] transition-colors resize-y min-h-[140px]"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="font-serif h-11 w-full rounded-[3px] bg-[#E11E45] hover:bg-[#c2410c] text-white font-semibold text-[15px] transition-colors flex items-center justify-center gap-2 shadow-2xs cursor-pointer"
+                    className="font-serif h-11 w-full rounded-[3px] bg-[#14100b] hover:bg-[#3a3732] text-white font-semibold text-[15px] transition-colors flex items-center justify-center gap-2 shadow-2xs cursor-pointer"
                   >
                     <Send size={15} />
                     <span>Send Message</span>
@@ -183,7 +183,7 @@ export default function ContactPage() {
             <div className="lg:col-span-5 bg-white rounded-[6px] p-6 sm:p-8 border border-[#e7ded1] shadow-2xs flex flex-col justify-between">
               <div>
                 <div className="mb-6 pb-4 border-b border-[#e7ded1]">
-                  <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#E11E45] mb-1">
+                  <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#14100b] mb-1">
                     CAMPUS DESK
                   </div>
                   <h2 className="font-serif text-2xl font-bold text-[#14100b]">
@@ -194,7 +194,7 @@ export default function ContactPage() {
                 <div className="space-y-4">
                   {/* Address */}
                   <div className="flex items-start gap-3.5 p-3 rounded-[6px] bg-[#f4ede1]/60 border border-[#e7ded1]">
-                    <div className="w-9 h-9 rounded-[4px] bg-white text-[#E11E45] border border-[#e7ded1] flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
+                    <div className="w-9 h-9 rounded-[4px] bg-white text-[#14100b] border border-[#e7ded1] flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
                       <MapPin size={17} />
                     </div>
                     <div>
@@ -209,7 +209,7 @@ export default function ContactPage() {
 
                   {/* Landline */}
                   <div className="flex items-start gap-3.5 p-3 rounded-[6px] bg-[#f4ede1]/60 border border-[#e7ded1]">
-                    <div className="w-9 h-9 rounded-[4px] bg-white text-[#E11E45] border border-[#e7ded1] flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
+                    <div className="w-9 h-9 rounded-[4px] bg-white text-[#14100b] border border-[#e7ded1] flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
                       <Phone size={17} />
                     </div>
                     <div>
@@ -218,7 +218,7 @@ export default function ContactPage() {
                       </h3>
                       <a
                         href="tel:01242867800"
-                        className="text-[#E11E45] hover:underline transition-colors font-semibold text-xs sm:text-sm"
+                        className="text-[#14100b] hover:underline transition-colors font-semibold text-xs sm:text-sm"
                       >
                         0124-2867800
                       </a>
@@ -227,7 +227,7 @@ export default function ContactPage() {
 
                   {/* Helpline Numbers */}
                   <div className="flex items-start gap-3.5 p-3 rounded-[6px] bg-[#f4ede1]/60 border border-[#e7ded1]">
-                    <div className="w-9 h-9 rounded-[4px] bg-white text-[#E11E45] border border-[#e7ded1] flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
+                    <div className="w-9 h-9 rounded-[4px] bg-white text-[#14100b] border border-[#e7ded1] flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
                       <Phone size={17} />
                     </div>
                     <div>
@@ -237,21 +237,21 @@ export default function ContactPage() {
                       <p className="text-[#14100b] text-xs sm:text-sm font-semibold">
                         <a
                           href="tel:08800697010"
-                          className="text-[#E11E45] hover:underline transition-colors"
+                          className="text-[#14100b] hover:underline transition-colors"
                         >
                           08800697010-15
                         </a>
                         {" | "}
                         <a
                           href="tel:8192888444"
-                          className="text-[#E11E45] hover:underline transition-colors"
+                          className="text-[#14100b] hover:underline transition-colors"
                         >
                           8192888444
                         </a>
                         {" | "}
                         <a
                           href="tel:8800697012"
-                          className="text-[#E11E45] hover:underline transition-colors"
+                          className="text-[#14100b] hover:underline transition-colors"
                         >
                           8800697012
                         </a>
@@ -261,7 +261,7 @@ export default function ContactPage() {
 
                   {/* Website */}
                   <div className="flex items-start gap-3.5 p-3 rounded-[6px] bg-[#f4ede1]/60 border border-[#e7ded1]">
-                    <div className="w-9 h-9 rounded-[4px] bg-white text-[#E11E45] border border-[#e7ded1] flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
+                    <div className="w-9 h-9 rounded-[4px] bg-white text-[#14100b] border border-[#e7ded1] flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
                       <Globe size={17} />
                     </div>
                     <div>
@@ -272,7 +272,7 @@ export default function ContactPage() {
                         href="https://www.krmangalam.edu.in"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#14100b] hover:text-[#E11E45] underline transition-colors font-semibold text-xs sm:text-sm"
+                        className="text-[#14100b] hover:text-[#14100b] underline transition-colors font-semibold text-xs sm:text-sm"
                       >
                         www.krmangalam.edu.in
                       </a>
@@ -281,7 +281,7 @@ export default function ContactPage() {
 
                   {/* Admissions Email */}
                   <div className="flex items-start gap-3.5 p-3 rounded-[6px] bg-[#f4ede1]/60 border border-[#e7ded1]">
-                    <div className="w-9 h-9 rounded-[4px] bg-white text-[#E11E45] border border-[#e7ded1] flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
+                    <div className="w-9 h-9 rounded-[4px] bg-white text-[#14100b] border border-[#e7ded1] flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
                       <Mail size={17} />
                     </div>
                     <div>
@@ -290,7 +290,7 @@ export default function ContactPage() {
                       </h3>
                       <a
                         href="mailto:admissions@krmangalam.edu.in"
-                        className="text-[#E11E45] hover:underline transition-colors font-semibold text-xs sm:text-sm break-all"
+                        className="text-[#14100b] hover:underline transition-colors font-semibold text-xs sm:text-sm break-all"
                       >
                         admissions@krmangalam.edu.in
                       </a>
@@ -299,7 +299,7 @@ export default function ContactPage() {
 
                   {/* Social Media */}
                   <div className="flex items-start gap-3.5 p-3 rounded-[6px] bg-[#f4ede1]/60 border border-[#e7ded1]">
-                    <div className="w-9 h-9 rounded-[4px] bg-white text-[#E11E45] border border-[#e7ded1] flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
+                    <div className="w-9 h-9 rounded-[4px] bg-white text-[#14100b] border border-[#e7ded1] flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
                       <Share2 size={17} />
                     </div>
                     <div className="flex-1">
@@ -311,7 +311,7 @@ export default function ContactPage() {
                           href="https://www.instagram.com/krmuniv/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[#E11E45] hover:underline font-semibold"
+                          className="text-[#14100b] hover:underline font-semibold"
                         >
                           @krmuniv
                         </a>{" "}
@@ -320,7 +320,7 @@ export default function ContactPage() {
                           href="https://www.linkedin.com/school/k-r-mangalam-university"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[#E11E45] hover:underline font-semibold"
+                          className="text-[#14100b] hover:underline font-semibold"
                         >
                           K.R. Mangalam University
                         </a>{" "}
@@ -374,7 +374,7 @@ export default function ContactPage() {
         <div className="container mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
             <div>
-              <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#E11E45] mb-1">
+              <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#14100b] mb-1">
                 LOCATION
               </div>
               <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#14100b]">
@@ -387,7 +387,7 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               className="self-start sm:self-auto inline-flex items-center gap-1.5 rounded-[3px] border border-[#14100b] bg-white text-[#14100b] hover:bg-[#14100b] hover:text-white px-4 py-2.5 text-xs font-mono font-semibold uppercase tracking-wider transition-colors shadow-2xs"
             >
-              <MapPin size={14} className="text-[#E11E45]" />
+              <MapPin size={14} className="text-[#14100b]" />
               <span>Open in Google Maps</span>
             </a>
           </div>
@@ -408,7 +408,7 @@ export default function ContactPage() {
         style={{ background: "#14100b" }}
       >
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 text-center">
-          <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-[#E11E45] mb-3">
+          <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-white mb-3">
             IDEAS 4.0
           </div>
 

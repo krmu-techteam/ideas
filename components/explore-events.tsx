@@ -108,20 +108,20 @@ export default function ExploreEvents() {
               >
                 <Link
                   href={category.href}
-                  className="group relative flex flex-col justify-between h-full p-6 rounded-[6px] bg-[#111c27] border border-white/10 shadow-xs hover:border-[#e11e46] hover:bg-[#162534] hover:shadow-lg hover:shadow-[#e11e46]/15 transition-[border-color,background-color,box-shadow] duration-200 antialiased [backface-visibility:hidden]"
+                  className="group relative flex flex-col justify-between h-full p-6 rounded-[6px] bg-[#111c27] border border-white/10 transition-[border-color,background-color,box-shadow] duration-200 antialiased [backface-visibility:hidden]"
                 >
                   <div>
                     {/* Top row: Number/Icon Badge & Tag */}
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center gap-1.5">
-                        <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-[3px] bg-white/10 text-white border border-white/15 group-hover:border-[#e11e46]/50 group-hover:text-[#e11e46] transition-colors">
+                        <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-[3px] bg-white/10 text-white border border-white/15  transition-colors">
                           {category.badge}
                         </span>
                       </div>
                     </div>
 
                     {/* Title & Description */}
-                    <h3 className="font-bold text-[17px] sm:text-[18px] text-white group-hover:text-[#e11e46] transition-colors duration-200 mb-2 leading-snug">
+                    <h3 className="font-bold text-[17px] sm:text-[18px] text-white  transition-colors duration-200 mb-2 leading-snug">
                       {category.title}
                     </h3>
                     <p className="text-[13px] leading-[1.6] text-white/90 mb-6 flex-grow">
@@ -131,7 +131,7 @@ export default function ExploreEvents() {
 
                   {/* Card bottom action */}
                   <div className="pt-3.5 border-t border-white/10 flex items-center justify-between mt-auto">
-                    <span className="text-[13px] font-semibold text-white group-hover:text-[#e11e46] inline-flex items-center gap-1.5 transition-colors duration-200">
+                    <span className="text-[13px] font-semibold text-white  inline-flex items-center gap-1.5 transition-colors duration-200">
                       Explore Track
                       <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200 text-[#e11e46]" />
                     </span>
