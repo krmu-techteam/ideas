@@ -202,7 +202,7 @@ const rawRows: RawRow[] = [
   {
     "Name of Events": "Robo War (AI Arena)",
     Department: "SOET",
-    Participation: "School Students",
+    Participation: "University Students",
     "Time Slot": "10:00 AM Onwards",
     "Venue Details": "Basketball ground",
     "Coordinator Name": "Mr.Gaurav Verma/Dr.Imran Siraj",
@@ -782,13 +782,20 @@ function groupEventSessions(rows: RawRow[]): EventItem[] {
       const s1 = ev.sessions[0];
       const s2 = ev.sessions[1];
       if (s1.timeSlot && s2.timeSlot && s1.timeSlot !== s2.timeSlot) {
-        const p1 = s1.participation?.toLowerCase().includes("school")
-          ? "School"
-          : "Slot 1";
-        const p2 = s2.participation?.toLowerCase().includes("univ")
-          ? "Univ"
-          : "Slot 2";
-        ev.time = `${s1.timeSlot} (${p1}) | ${s2.timeSlot} (${p2})`;
+        const isS1School = s1.participation?.toLowerCase().includes("school");
+        const isS2School = s2.participation?.toLowerCase().includes("school");
+        const isS1Univ = s1.participation?.toLowerCase().includes("univ");
+        const isS2Univ = s2.participation?.toLowerCase().includes("univ");
+
+        if (isS1School && isS2Univ) {
+          ev.time = `${s1.timeSlot} (School) | ${s2.timeSlot} (Univ)`;
+        } else if (isS1Univ && isS2School) {
+          ev.time = `${s1.timeSlot} (Univ) | ${s2.timeSlot} (School)`;
+        } else if (isS1Univ && isS2Univ) {
+          ev.time = `${s1.timeSlot} (Univ) | ${s2.timeSlot} (Univ)`;
+        } else {
+          ev.time = `${s1.timeSlot} | ${s2.timeSlot}`;
+        }
       } else if (s1.timeSlot) {
         ev.time = s1.timeSlot;
       }
