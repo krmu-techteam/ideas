@@ -219,15 +219,15 @@ const rawRows: RawRow[] = [
     "Evaluation Pattern":
       "Evaluation will be based on the speed, design, navigation, and technical complexity of the design.",
   },
-  {
-    Participation: "University Students",
-    "Time Slot": "1:00 PM Onwards",
-    "Venue Details": "Basketball Ground/AI Arena",
-    "Coordinator Name": "Mr.Gaurav Verma/Dr.Imran Siraj",
-    "Email ID / Mobile  Number":
-      "1) Umar Farooq, 2) Ayush Partap Singh, 3) Rudra Partap Singh, 4) Khushboo",
-    Prize: "₹9,000 (4500+4500) 1000/1500/2000",
-  },
+  // {
+  //   Participation: "University Students",
+  //   "Time Slot": "1:00 PM Onwards",
+  //   "Venue Details": "Basketball Ground/AI Arena",
+  //   "Coordinator Name": "Mr.Gaurav Verma/Dr.Imran Siraj",
+  //   "Email ID / Mobile  Number":
+  //     "1) Umar Farooq, 2) Ayush Partap Singh, 3) Rudra Partap Singh, 4) Khushboo",
+  //   Prize: "₹9,000 (4500+4500) 1000/1500/2000",
+  // },
 
   // 4. SOMC - React to Situation
   {

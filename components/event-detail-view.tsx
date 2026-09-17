@@ -190,7 +190,7 @@ export default function EventDetailView({
               <section className="rounded-[6px] border border-[#e7ded1] bg-white overflow-hidden shadow-xs">
                 <div className="px-6 py-4 bg-[#fbf8f2] border-b border-[#e7ded1] flex items-center justify-between">
                   <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#E11E45]">
-                    Scheduled Sessions ({event.sessions.length})
+                    Scheduled Sessions
                   </div>
                   <span className="font-mono text-xs text-[#8c8273]">
                     {event.date}
@@ -204,7 +204,6 @@ export default function EventDetailView({
                     >
                       <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                         <span className="font-bold text-[15px] text-[#14100b]">
-                          Slot {idx + 1}:{" "}
                           {s.participation || "Open to participants"}
                         </span>
                         <span className="font-mono text-xs font-semibold px-2.5 py-1 rounded-[3px] bg-[#E11E45]/10 text-[#E11E45]">
