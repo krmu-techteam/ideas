@@ -26,7 +26,7 @@ export const metadata: Metadata = generateEventMetadata(
 
 export default function DistinctivenessPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-100">
+    <div className="min-h-screen bg-[#edf6f9]">
       <StructuredData
         type="breadcrumb"
         data={{
@@ -87,8 +87,8 @@ export default function DistinctivenessPage() {
       </div>
 
       {/* Content Section */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="max-w-4xl mx-auto">
+      <div className="container bg-[#edf6f9] mx-auto px-4 py-16">
+        <div className="max-w-[1440px] mx-auto">
           {/* Description */}
           <Card className="mb-12 !bg-white border border-slate-200/90 shadow-md">
             <CardContent className="p-8">
@@ -107,7 +107,7 @@ export default function DistinctivenessPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
               Featured Events
             </h2>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-4 gap-6">
               {trackData.showcaseItems.map((item, idx) => (
                 <Card
                   key={idx}
@@ -157,9 +157,14 @@ export default function DistinctivenessPage() {
                   Showcase Your Distinctiveness
                 </h2>
                 <p className="text-slate-600 mb-6 max-w-xl mx-auto">
-                  Demonstrate your unique approaches and creative methodologies on October 27–28, 2026 at K.R. Mangalam University.
+                  Demonstrate your unique approaches and creative methodologies
+                  on October 27–28, 2026 at K.R. Mangalam University.
                 </p>
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold shadow-md" asChild>
+                <Button
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 text-black font-semibold shadow-md"
+                  asChild
+                >
                   <Link href="/register/selection">Register Now</Link>
                 </Button>
               </CardContent>

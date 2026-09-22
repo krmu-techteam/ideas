@@ -18,29 +18,29 @@ export const ideasEventsData = {
         title: "AI & Robotics Lab",
         description:
           "Experience cutting-edge artificial intelligence and robotics applications developed by students.",
-        image: "/assets/upcoming-events/up-ev-2.webp",
+        image: "/ideas/innovation/ai-and-robotics-lab.jpg",
       },
       {
         title: "Smart Farming Models",
         description:
           "Innovative approaches to urban challenges using IoT and data analytics.",
-        image: "/assets/upcoming-events/up-ev-17.webp",
+        image: "/ideas/innovation/smart-farming-models.jpg",
       },
       {
         title: "Drone Obstacle Course",
         description: "Pilots navigate drones through challenging courses.",
-        image: "/assets/upcoming-events/up-ev-16.webp",
+        image: "/ideas/innovation/drone-obstacle-course.jpg",
       },
       {
         title: "Gaming Arena",
         description: "Competitive and casual gaming tournaments.",
-        image: "/assets/upcoming-events/up-ev-5.webp",
+        image: "/ideas/innovation/gaming-arena.jpg",
       },
       {
         title: "Tech Treasure Hunt",
         description:
           "A thrilling hunt powered by technology and quick thinking.",
-        image: "/assets/upcoming-events/up-ev-20.webp",
+        image: "/ideas/innovation/tech-treasure-hunt.jpg",
       },
     ],
     relatedEvents: [
@@ -67,28 +67,28 @@ export const ideasEventsData = {
       {
         title: "Crime Scene Investigation",
         description: "Become a detective and solve a complex mystery.",
-        image: "/assets/upcoming-events/up-ev-1.webp",
+        image: "/ideas/distinctiveness/crime-scene-investigation.jpg",
       },
       {
         title: "ReelBaaz",
         description: "Create compelling short-form video content on the spot.",
-        image: "/assets/upcoming-events/up-ev-13.webp",
+        image: "/ideas/distinctiveness/reelbaaz.jpg",
       },
       {
         title: "Soap Carving",
         description: "Transforming simple soap into intricate art.",
-        image: "/assets/upcoming-events/up-ev-10.webp",
+        image: "/ideas/distinctiveness/soap-carving.jpg",
       },
       {
         title: "Cartoon Craze",
         description: "Express social satire and creativity through cartoons.",
-        image: "/assets/upcoming-events/up-ev-15.webp",
+        image: "/ideas/distinctiveness/cartoon-craze.avif",
       },
       {
         title: "Poster Making",
         description:
           "A blend of creativity and social responsibility on legal themes.",
-        image: "/assets/upcoming-events/up-ev-19.webp",
+        image: "/ideas/distinctiveness/poster-making.jpg",
       },
     ],
     relatedEvents: [

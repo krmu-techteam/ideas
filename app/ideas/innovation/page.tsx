@@ -26,7 +26,7 @@ export const metadata: Metadata = generateEventMetadata(
 
 export default function InnovationPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-[#f2f4f3]">
       <StructuredData
         type="breadcrumb"
         data={{
@@ -45,11 +45,11 @@ export default function InnovationPage() {
       />
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-blue-500 to-indigo-600 text-white py-20">
+      <div className="bg-gradient-to-br from-[#006d77] to-[#16212C] text-white py-20">
         <div className="container mx-auto px-4">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-blue-200 hover:text-white transition-colors mb-8"
+            className="inline-flex items-center gap-2 text-white hover:text-white transition-colors mb-8"
           >
             <ArrowLeft size={20} />
             Back to IDEAS
@@ -58,11 +58,11 @@ export default function InnovationPage() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="text-8xl mb-6">💡</div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Innovation</h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8">
+            <p className="text-xl md:text-2xl text-white mb-8">
               Creative, sustainable & tech-driven solutions
             </p>
 
-            <div className="flex flex-wrap justify-center gap-6 text-blue-100">
+            <div className="flex flex-wrap justify-center gap-6 text-white">
               <div className="flex items-center gap-2">
                 <Calendar size={20} />
                 <span>October 27–28, 2026</span>
@@ -85,16 +85,16 @@ export default function InnovationPage() {
       </div>
 
       {/* Content Section */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="max-w-4xl mx-auto">
+      <div className="container mx-auto px-4 pb-16">
+        <div className="max-w-[1440px] mx-auto">
           {/* Description */}
-          <Card className="mb-12 !bg-white border border-slate-200/90 shadow-md">
-            <CardContent className="p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <Target className="text-blue-600" />
+          <Card className="w-full mb-12 !bg-transparent border-0 shadow-none">
+            <CardContent className="py-8">
+              <h2 className="text-2xl font-semibold font-serif text-gray-900 mb-4 flex items-center gap-2">
+                <Target className="text-gray-900" />
                 About Innovation Track
               </h2>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-black text-lg leading-relaxed">
                 {trackData.description}
               </p>
             </CardContent>
@@ -102,10 +102,10 @@ export default function InnovationPage() {
 
           {/* Showcase Items */}
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            <h2 className="text-[38px] font-serif font-bold text-black mb-8 text-center">
               Featured Events
             </h2>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
               {trackData.showcaseItems.map((item, idx) => (
                 <Card
                   key={idx}
@@ -139,7 +139,7 @@ export default function InnovationPage() {
               {trackData.relatedEvents.map((event, idx) => (
                 <span
                   key={idx}
-                  className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                  className="px-4 py-[6px] bg-[#006d77]/10 text-[#006d77] rounded-full text-sm font-semibold"
                 >
                   {event}
                 </span>
@@ -149,14 +149,20 @@ export default function InnovationPage() {
 
           {/* CTA Section */}
           <div className="text-center mt-16">
-            <Card className="!bg-white border border-slate-200/90 shadow-xl text-slate-900">
+            <Card className="bg-gradient-to-br from-[#006d77] to-[#16212C] text-white border-0 shadow-xl">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold mb-4 text-slate-900">Ready to Innovate?</h2>
-                <p className="text-slate-600 mb-6 max-w-xl mx-auto">
-                  Join us at the Innovation track on October 27–28, 2026 and showcase your creative
-                  solutions at K.R. Mangalam University.
+                <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-white">
+                  Ready to Innovate?
+                </h2>
+                <p className="text-slate-200 mb-6 max-w-xl mx-auto text-base sm:text-lg leading-relaxed">
+                  Join us at the Innovation track on October 27–28, 2026 and
+                  showcase your creative solutions at K.R. Mangalam University.
                 </p>
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold shadow-md" asChild>
+                <Button
+                  size="lg"
+                  className="border rounded-[6px] border-white text-white hover:bg-primary"
+                  asChild
+                >
                   <Link href="/register/selection">Register Now</Link>
                 </Button>
               </CardContent>
