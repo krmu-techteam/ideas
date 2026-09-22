@@ -210,6 +210,18 @@ export default function UniversityRegistrationPage() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mt-12 text-center"
           >
+            {/* NO REFUND POLICY - University Warning */}
+            <div className="mb-6 bg-red-50/90 border border-red-200 rounded-2xl p-6 sm:p-7 shadow-xs">
+              <p className="text-2xl sm:text-3xl font-serif font-bold text-red-600 tracking-wide flex items-center justify-center gap-2">
+                <span>⚠️</span>
+                <span>NO REFUND POLICY</span>
+                <span>⚠️</span>
+              </p>
+              <p className="text-sm sm:text-base text-red-700/90 mt-2 font-medium">
+                All university registration fees are non-refundable once payment is completed
+              </p>
+            </div>
+
             <Card className="bg-white border border-[#e7ded1] rounded-2xl shadow-xs">
               <CardContent className="p-6">
                 <p className="text-[#6b6357] mb-3 text-sm sm:text-base leading-relaxed">
