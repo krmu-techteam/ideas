@@ -26,7 +26,7 @@ export const metadata: Metadata = generateEventMetadata(
 
 export default function SkillBasedPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-50 to-rose-100">
+    <div className="min-h-screen bg-[#f2f4f3]">
       <StructuredData
         type="breadcrumb"
         data={{
@@ -45,27 +45,27 @@ export default function SkillBasedPage() {
       />
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-red-500 to-rose-600 text-white py-20">
+      <div className="bg-gradient-to-r from-[#9d0208] via-[#370617] to-[#03071e] text-white pt-20 pb-12">
         <div className="container mx-auto px-4">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-red-200 hover:text-white transition-colors mb-8"
+            className="inline-flex items-center font-poppins gap-2 text-white hover:text-white transition-colors mb-8"
           >
             <ArrowLeft size={20} />
             Back to IDEAS
           </Link>
 
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-[1440px] mx-auto text-center">
             <div className="text-8xl mb-6">🛠️</div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-5xl font-serif md:text-6xl font-bold mb-6">
               Skill-Based Learning
             </h1>
-            <p className="text-xl md:text-2xl text-red-100 mb-8">
+            <p className="text-xl md:text-2xl text-white font-serif mb-8">
               Hands-on interdisciplinary learning powered by industry
               partnerships
             </p>
 
-            <div className="flex flex-wrap justify-center gap-6 text-red-100">
+            <div className="flex flex-wrap font-poppins justify-center gap-6 text-white">
               <div className="flex items-center gap-2">
                 <Calendar size={20} />
                 <span>October 27–28, 2026</span>
@@ -88,27 +88,29 @@ export default function SkillBasedPage() {
       </div>
 
       {/* Content Section */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="max-w-4xl mx-auto">
+      <div className="container mx-auto px-4 py-12">
+        <div className="max-w-[1440px] mx-auto">
           {/* Description */}
-          <Card className="mb-12 !bg-white border border-slate-200/90 shadow-md">
-            <CardContent className="p-8">
+          <Card className="mb-12 border-none !bg-transparent shadow-none">
+            <CardContent>
               <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <Target className="text-red-600" />
+                <Target className="text-[#03071e]" />
                 About Skill-Based Learning Track
               </h2>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-black text-[16px] font-normal font-poppins leading-relaxed">
                 {trackData.description}
               </p>
             </CardContent>
           </Card>
+          {/* divider */}
+          <div className="border-b border-[#03071e]/80 mb-12" />
 
           {/* Showcase Items */}
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            <h2 className="text-[38px] font-serif font-bold text-gray-900 mb-8 text-center">
               Featured Events
             </h2>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-4 gap-4">
               {trackData.showcaseItems.map((item, idx) => (
                 <Card
                   key={idx}
@@ -122,11 +124,13 @@ export default function SkillBasedPage() {
                       loading="lazy"
                     />
                   </div>
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  <CardContent className="p-5">
+                    <h3 className="text-xl font-serif font-semibold text-gray-900 mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-gray-600">{item.description}</p>
+                    <p className="text-black/80 font-poppins text-[15px]">
+                      {item.description}
+                    </p>
                   </CardContent>
                 </Card>
               ))}
@@ -135,14 +139,14 @@ export default function SkillBasedPage() {
 
           {/* Related Events */}
           <div className="mt-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl font-serif font-bold text-gray-900 mb-6">
               Related Events
             </h2>
             <div className="flex flex-wrap gap-3">
               {trackData.relatedEvents.map((event, idx) => (
                 <span
                   key={idx}
-                  className="px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-medium"
+                  className="px-4 py-[6px] font-poppins bg-[#370617]/5 text-[#370617] rounded-full text-sm font-medium"
                 >
                   {event}
                 </span>
@@ -151,17 +155,22 @@ export default function SkillBasedPage() {
           </div>
 
           {/* CTA Section */}
-          <div className="text-center mt-16">
-            <Card className="!bg-white border border-slate-200/90 shadow-xl text-slate-900">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold mb-4 text-slate-900">
+          <div className="text-center my-12">
+            <Card className="bg-gradient-to-r from-[#9d0208] via-[#370617] to-[#03071e] text-white border-0 shadow-xl">
+              <CardContent className="p-8 md:p-10">
+                <h2 className="text-2xl font-bold font-serif mb-4 text-white">
                   Build Essential Skills
                 </h2>
-                <p className="text-slate-600 mb-6 max-w-xl mx-auto">
+                <p className="text-white/90 font-poppins mb-6 max-w-xl mx-auto">
                   Develop hands-on expertise through practical learning
-                  experiences on October 27–28, 2026 at K.R. Mangalam University.
+                  experiences on October 27–28, 2026 at K.R. Mangalam
+                  University.
                 </p>
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold shadow-md" asChild>
+                <Button
+                  size="lg"
+                  className="bg-primary font-poppins hover:bg-primary/90 text-white font-semibold shadow-md !border !border-white"
+                  asChild
+                >
                   <Link href="/register/selection">Register Now</Link>
                 </Button>
               </CardContent>

@@ -26,7 +26,7 @@ export const metadata: Metadata = generateEventMetadata(
 
 export default function DistinctivenessPage() {
   return (
-    <div className="min-h-screen bg-[#edf6f9]">
+    <div className="min-h-screen bg-[#f2f4f3]">
       <StructuredData
         type="breadcrumb"
         data={{
@@ -45,11 +45,11 @@ export default function DistinctivenessPage() {
       />
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-purple-500 to-pink-600 text-white py-20">
+      <div className="bg-gradient-to-r from-[#484538] via-[#484538] to-[#172a3a] text-white pt-20 pb-12">
         <div className="container mx-auto px-4">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-purple-200 hover:text-white transition-colors mb-8"
+            className="inline-flex font-poppins items-center gap-2 text-white hover:text-white transition-colors mb-8"
           >
             <ArrowLeft size={20} />
             Back to IDEAS
@@ -57,14 +57,14 @@ export default function DistinctivenessPage() {
 
           <div className="max-w-4xl mx-auto text-center">
             <div className="text-8xl mb-6">🔍</div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-5xl font-serif md:text-6xl font-bold mb-6">
               Distinctiveness
             </h1>
-            <p className="text-xl md:text-2xl text-purple-100 mb-8">
+            <p className="text-xl font-serif md:text-2xl text-white mb-8">
               Original models & practices
             </p>
 
-            <div className="flex flex-wrap justify-center gap-6 text-purple-100">
+            <div className="flex font-poppins flex-wrap justify-center gap-6 text-white">
               <div className="flex items-center gap-2">
                 <Calendar size={20} />
                 <span>October 27–28, 2026</span>
@@ -87,11 +87,11 @@ export default function DistinctivenessPage() {
       </div>
 
       {/* Content Section */}
-      <div className="container bg-[#edf6f9] mx-auto px-4 py-16">
+      <div className="container bg-[#f2f4f3] mx-auto px-4 py-16">
         <div className="max-w-[1440px] mx-auto">
           {/* Description */}
-          <Card className="mb-12 !bg-white border border-slate-200/90 shadow-md">
-            <CardContent className="p-8">
+          <Card className="mb-12 border-0 shadow-none !bg-transparent">
+            <CardContent>
               <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
                 <Target className="text-purple-600" />
                 About Distinctiveness Track
@@ -107,11 +107,11 @@ export default function DistinctivenessPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
               Featured Events
             </h2>
-            <div className="grid md:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-4 gap-4">
               {trackData.showcaseItems.map((item, idx) => (
                 <Card
                   key={idx}
-                  className="hover:shadow-lg transition-shadow overflow-hidden !bg-white border border-slate-200/90"
+                  className=" !bg-white border border-[#484538]/30"
                 >
                   <div className="relative h-48 overflow-hidden">
                     <img
@@ -141,7 +141,7 @@ export default function DistinctivenessPage() {
               {trackData.relatedEvents.map((event, idx) => (
                 <span
                   key={idx}
-                  className="px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium"
+                  className="px-4 py-2 bg-[#484538]/5 text-[#484538] rounded-full text-sm font-medium"
                 >
                   {event}
                 </span>
@@ -151,18 +151,18 @@ export default function DistinctivenessPage() {
 
           {/* CTA Section */}
           <div className="text-center mt-16">
-            <Card className="!bg-white border border-slate-200/90 shadow-xl text-slate-900">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold mb-4 text-slate-900">
+            <Card className="bg-gradient-to-br from-[#484538] to-[#172a3a] text-white border-0 shadow-xl">
+              <CardContent className="p-8 md:p-10">
+                <h2 className="text-2xl font-bold mb-4 text-white">
                   Showcase Your Distinctiveness
                 </h2>
-                <p className="text-slate-600 mb-6 max-w-xl mx-auto">
+                <p className="text-white/90 mb-6 max-w-xl mx-auto">
                   Demonstrate your unique approaches and creative methodologies
                   on October 27–28, 2026 at K.R. Mangalam University.
                 </p>
                 <Button
                   size="lg"
-                  className="bg-primary hover:bg-primary/90 text-black font-semibold shadow-md"
+                  className="bg-primary font-poppins hover:bg-primary/90 text-white font-semibold !border !border-white"
                   asChild
                 >
                   <Link href="/register/selection">Register Now</Link>

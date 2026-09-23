@@ -45,7 +45,7 @@ export default function InnovationPage() {
       />
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-[#006d77] to-[#16212C] text-white py-20">
+      <div className="bg-gradient-to-r from-[#006d77] via-[#21717a] to-[#16212C] text-white py-20">
         <div className="container mx-auto px-4">
           <Link
             href="/"
@@ -149,7 +149,7 @@ export default function InnovationPage() {
 
           {/* CTA Section */}
           <div className="text-center mt-16">
-            <Card className="bg-gradient-to-br from-[#006d77] to-[#16212C] text-white border-0 shadow-xl">
+            <Card className="bg-gradient-to-r from-[#006d77] via-[#006d77] to-[#16212C] text-white border-0 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-white">
                   Ready to Innovate?

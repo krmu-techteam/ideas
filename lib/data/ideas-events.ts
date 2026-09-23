@@ -116,29 +116,29 @@ export const ideasEventsData = {
         title: "Community-Focused Events",
         description:
           "Events like Rangoli and singing that bring the community together.",
-        image: "/assets/upcoming-events/up-ev-14.webp",
+        image: "/ideas/extension/community-focused-events.jpg",
       },
       {
         title: "Live Performances",
         description:
           "Engaging duet and group dance performances on the main stage.",
-        image: "/assets/upcoming-events/ex-2.webp",
+        image: "/ideas/extension/live-performances.jpg",
       },
       {
         title: "Interactive Storytelling",
         description: "Creative and spontaneous story-spinning challenges.",
-        image: "/assets/upcoming-events/up-ev-18.webp",
+        image: "/ideas/extension/interactive-storytelling.jpg",
       },
       {
         title: "Legal Awareness",
         description:
           "Students engaging with legal concepts through creative mediums.",
-        image: "/assets/upcoming-events/up-ev-19.webp",
+        image: "/ideas/extension/legal-awareness.jpg",
       },
       {
         title: "Zero Waste Projects",
         description: "Innovative ideas for a sustainable future.",
-        image: "/assets/upcoming-events/up-ev-6.webp",
+        image: "/ideas/extension/zero-waste-projects.jpg",
       },
     ],
     relatedEvents: [
@@ -167,28 +167,28 @@ export const ideasEventsData = {
       {
         title: "Competitive Debates",
         description: "A platform for sharp arguments and logical reasoning.",
-        image: "/assets/upcoming-events/up-ev-12.webp",
+        image: "/ideas/achievements/competitive-debates.jpg",
       },
       {
         title: "Business Acumen",
         description:
           "Showcasing knowledge of the corporate world in quiz and ad-making formats.",
-        image: "/assets/upcoming-events/up-ev-8.webp",
+        image: "/ideas/achievements/business-acumen.jpg",
       },
       {
         title: "Physical Endurance",
         description: "Testing strength and stamina in on-field challenges.",
-        image: "/assets/upcoming-events/ex-4.webp",
+        image: "/ideas/achievements/physical-endurance.jpg",
       },
       {
         title: "Scientific Prowess",
         description: "Challenging puzzles and quizzes for science enthusiasts.",
-        image: "/assets/upcoming-events/up-ev-17.webp",
+        image: "/ideas/achievements/scientific-prowess.jpg",
       },
       {
         title: "Creative Photography",
         description: "Capturing moments and telling stories through the lens.",
-        image: "/assets/upcoming-events/up-ev-16.webp",
+        image: "/ideas/achievements/creative-photography.jpg",
       },
     ],
     relatedEvents: [
@@ -218,29 +218,29 @@ export const ideasEventsData = {
         title: "Pharmaceutical Challenges",
         description:
           "A series of quizzes and creative events for pharmacy students.",
-        image: "/assets/upcoming-events/up-ev-4.webp",
+        image: "/ideas/skill-based/pharmaceutical-challenges.jpg",
       },
       {
         title: "Legal Interpretation",
         description:
           "Reacting to situations and understanding legal themes through creative writing.",
-        image: "/assets/upcoming-events/up-ev-9.webp",
+        image: "/ideas/skill-based/legal-interpretation.jpg",
       },
       {
         title: "Creative Slogan Writing",
         description: "Crafting impactful slogans for health awareness.",
-        image: "/assets/upcoming-events/ex-5.webp",
+        image: "/ideas/skill-based/creative-slogan-writing.jpg",
       },
       {
         title: "Crossword Puzzles",
         description: "Solving themed puzzles against the clock.",
-        image: "/assets/upcoming-events/up-ev-17.webp",
+        image: "/ideas/skill-based/crossword-puzzles.jpg",
       },
       {
         title: "On-the-spot Photography",
         description:
           "Testing visual storytelling and composition skills under pressure.",
-        image: "/assets/upcoming-events/up-ev-16.webp",
+        image: "/ideas/skill-based/on-the-spot-photography.jpg",
       },
     ],
     relatedEvents: [
