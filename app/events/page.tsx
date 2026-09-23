@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { useEffect } from "react"
-import { useRouter } from "next/navigation"
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function EventsPage() {
-  const router = useRouter()
+  const router = useRouter();
 
   // Redirect /events to /spotlight since they show the same content
   useEffect(() => {
-    router.replace('/spotlight')
-  }, [router])
+    router.replace("/spotlight");
+  }, [router]);
 
   // Show loading state while redirecting
   return (
@@ -19,5 +19,5 @@ export default function EventsPage() {
         <p className="text-gray-600">Redirecting to Spotlight Activities...</p>
       </div>
     </div>
-  )
+  );
 }

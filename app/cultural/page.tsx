@@ -85,6 +85,13 @@ export default function CulturalPage() {
                 <span>Sohna Road, Gurugram, Delhi-NCR, Haryana</span>
               </div>
             </div>
+            <button className="bg-transparent   bg-gradient-to-r from-[#B8AC14]   to-[#C50D22] text-[#090702] p-[2px] rounded-full   mt-6 font-poppins font-medium">
+              <div className="bg-[#034894] px-5 py-3 rounded-full text-white">
+                <a href="/rulebook.pdf" target="_blank">
+                  Download Rule Book
+                </a>
+              </div>
+            </button>
           </motion.div>
         </div>
       </section>

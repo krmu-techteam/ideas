@@ -51,9 +51,9 @@ export function AllEventsClientPage() {
   }, [allEvents, searchTerm, filterDepartment]);
 
   return (
-    <div className="min-h-screen bg-[#fffefb] text-[#14100b] selection:bg-[#E11E45]/20 selection:text-[#E11E45]">
+    <div className="min-h-screen bg-[#fffefb] text-[#14100b] selection:bg-[#1a73e8]/20 selection:text-[#1a73e8]">
       {/* 1. Page Intro / Hero - Styled exactly after Spotlight / HackIndia Newsroom */}
-      <section className="bg-[#f4ede1] pt-28 pb-12 sm:pt-32 sm:pb-16">
+      <section className="bg-gradient-to-r from-[#213C87] via-[#0062A2] to-[#00ACE9] pt-28 pb-12 sm:pt-32 sm:pb-16">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -62,15 +62,15 @@ export function AllEventsClientPage() {
             className="max-w-4xl"
           >
             {/* Main Headline */}
-            <h1 className="font-serif text-[clamp(32px,5.2vw,58px)] font-bold leading-[1.08] tracking-[-0.025em] text-[#14100b] text-balance">
+            <h1 className="font-serif text-[clamp(32px,5.2vw,58px)] font-bold leading-[1.08] tracking-[-0.025em] text-[#fff] text-balance">
               All{" "}
-              <span className="italic font-serif font-normal text-[#E11E45]">
+              <span className="italic font-serif font-normal text-[#fff]">
                 Events
               </span>
             </h1>
 
             {/* Lede Subtitle */}
-            <p className="mt-4 max-w-2xl text-[16px] sm:text-[17px] leading-[1.65] text-gray-800">
+            <p className="mt-4 max-w-2xl text-[16px] sm:text-[17px] leading-[1.65] text-white">
               Explore the complete official schedule of technical hackathons,
               innovation challenges, academic showcases, and cultural
               performances curated for IDEAS 4.0 at K.R. Mangalam University.
@@ -78,11 +78,11 @@ export function AllEventsClientPage() {
 
             {/* Quick Info Chips */}
             <div className="mt-6 flex flex-wrap items-center gap-2.5">
-              <div className="bg-white border border-[#e7ded1] rounded-[4px] px-3 py-1.5 text-xs font-mono text-[#14100b] flex items-center gap-2 shadow-2xs">
+              <div className="bg-white border border-gray-800 rounded-[4px] px-3 py-1.5 text-xs font-mono text-[#14100b] flex items-center gap-2 shadow-2xs">
                 <Calendar size={13} className="text-[#14100b]" />
                 <span>October 27–28, 2026</span>
               </div>
-              <div className="bg-white border border-[#e7ded1] rounded-[4px] px-3 py-1.5 text-xs font-mono text-[#14100b] flex items-center gap-2 shadow-2xs">
+              <div className="bg-white border border-gray-800 rounded-[4px] px-3 py-1.5 text-xs font-mono text-[#14100b] flex items-center gap-2 shadow-2xs">
                 <MapPin size={13} className="text-[#14100b]" />
                 <span>Sohna Road, Gurugram, Delhi-NCR, Haryana</span>
               </div>
@@ -92,11 +92,11 @@ export function AllEventsClientPage() {
       </section>
 
       {/* 2. Main Content Area */}
-      <section className="bg-[#fffefb] py-10 sm:py-14">
+      <section className="bg-[#FAFDFF] py-10 sm:py-14">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6">
           {/* Section Heading & Filter Bar */}
           <div className="mb-8">
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-[#e7ded1] pb-6">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-gray-800 pb-6">
               <div>
                 <h2 className="font-serif text-[26px] sm:text-[30px] font-bold text-[#14100b] tracking-[-0.015em]">
                   Every Single Event
@@ -129,7 +129,7 @@ export function AllEventsClientPage() {
                   aria-label="Search all events"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full h-11 rounded-[6px] border border-[#e7ded1] bg-white pl-10 pr-4 text-[14px] text-[#14100b] placeholder:text-gray-800 shadow-2xs focus:outline-none  transition-all"
+                  className="w-full h-11 rounded-[6px] border border-gray-800 bg-white pl-10 pr-4 text-[14px] text-[#14100b] placeholder:text-gray-800 shadow-2xs focus:outline-none  transition-all"
                 />
               </div>
 
@@ -139,7 +139,7 @@ export function AllEventsClientPage() {
                   value={filterDepartment}
                   onChange={(e) => setFilterDepartment(e.target.value)}
                   aria-label="Filter by department"
-                  className="w-full h-11 rounded-[6px] border border-[#e7ded1] bg-white pl-3.5 pr-9 text-[14px] font-medium text-[#14100b] shadow-2xs focus:outline-none  cursor-pointer appearance-none transition-all"
+                  className="w-full h-11 rounded-[6px] border border-gray-800 bg-white pl-3.5 pr-9 text-[14px] font-medium text-[#14100b] shadow-2xs focus:outline-none  cursor-pointer appearance-none transition-all"
                 >
                   <option value="all">
                     All Departments ({departments.length})
@@ -173,10 +173,10 @@ export function AllEventsClientPage() {
                 >
                   <Link
                     href={`/events/${event.slug}`}
-                    className="group flex h-full flex-col overflow-hidden rounded-[6px] border border-[#e7ded1] bg-white transition-all duration-200 cursor-pointer"
+                    className="group flex h-full flex-col overflow-hidden rounded-[6px] border border-gray-800 bg-white transition-all duration-200 cursor-pointer"
                   >
                     {/* 16:9 Aspect Ratio Image */}
-                    <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#ede6dc]">
+                    <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#FAFDFF]">
                       <img
                         src={event.image || "/placeholder.svg"}
                         alt={event.title}
@@ -240,7 +240,7 @@ export function AllEventsClientPage() {
                       )}
 
                       {/* Divider & Footer (Location + Details →) */}
-                      <div className="mt-3 pt-3 border-t border-[#f0eae1] flex items-center justify-between text-[12px] text-[#78716c]">
+                      <div className="mt-3 pt-3 border-t border-[#FAFDFF] flex items-center justify-between text-[12px] text-[#78716c]">
                         <div className="flex items-center gap-1.5 truncate max-w-[70%]">
                           <MapPin size={13} className=" shrink-0" />
                           <span className="truncate">
@@ -261,7 +261,7 @@ export function AllEventsClientPage() {
             </div>
           ) : (
             /* Empty State (HackIndia EmptyState design) */
-            <div className="rounded-[6px] border border-[#e7ded1] bg-white px-6 py-16 text-center">
+            <div className="rounded-[6px] border border-gray-800 bg-white px-6 py-16 text-center">
               <p className="font-serif text-xl font-bold text-[#14100b]">
                 No events found matching your criteria
               </p>
