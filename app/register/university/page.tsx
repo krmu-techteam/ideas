@@ -42,7 +42,7 @@ export default function UniversityRegistrationPage() {
             <h1 className="font-serif text-[clamp(32px,5vw,52px)] font-bold text-[#14100b] mb-4 tracking-[-0.02em]">
               Select Your Institution Type
             </h1>
-            <p className="text-base sm:text-lg text-[#6b6357] max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-800 max-w-2xl mx-auto leading-relaxed">
               Choose the appropriate category for your university registration
             </p>
           </motion.div>
@@ -69,7 +69,7 @@ export default function UniversityRegistrationPage() {
                     KRMU Students
                   </h2>
 
-                  <p className="text-[#6b6357] mb-6 flex-grow text-sm md:text-base leading-relaxed">
+                  <p className="text-gray-800 mb-6 flex-grow text-sm md:text-base leading-relaxed">
                     For K.R. Mangalam University students participating in
                     student activities, competitions, and showcasing your
                     projects at IDEAS 4.0.
@@ -142,7 +142,7 @@ export default function UniversityRegistrationPage() {
                     Other Universities
                   </h2>
 
-                  <p className="text-[#6b6357] mb-6 flex-grow text-sm md:text-base leading-relaxed">
+                  <p className="text-gray-800 mb-6 flex-grow text-sm md:text-base leading-relaxed">
                     For students from other universities, colleges, and higher
                     education institutions looking to participate in canopy
                     exhibitions and academic events.
@@ -218,18 +218,19 @@ export default function UniversityRegistrationPage() {
                 <span>⚠️</span>
               </p>
               <p className="text-sm sm:text-base text-red-700/90 mt-2 font-medium">
-                All university registration fees are non-refundable once payment is completed
+                All university registration fees are non-refundable once payment
+                is completed
               </p>
             </div>
 
             <Card className="bg-white border border-[#e7ded1] rounded-2xl shadow-xs">
               <CardContent className="p-6">
-                <p className="text-[#6b6357] mb-3 text-sm sm:text-base leading-relaxed">
+                <p className="text-gray-800 mb-3 text-sm sm:text-base leading-relaxed">
                   <strong className="text-[#14100b]">Note:</strong> All
                   university registrations include access to workshops,
                   networking sessions, and cultural events at IDEAS 4.0.
                 </p>
-                <p className="text-sm text-[#8c8273]">
+                <p className="text-sm text-gray-800">
                   Need assistance? Contact us at{" "}
                   <a
                     href="mailto:ideas@krmangalam.edu.in"
@@ -252,7 +253,7 @@ export default function UniversityRegistrationPage() {
             <Button
               asChild
               variant="outline"
-              className="border border-[#e7ded1] bg-white hover:bg-[#FAF5EC] text-[#14100b] font-semibold shadow-xs rounded-xl transition-colors px-6 py-2.5"
+              className="border border-[#e7ded1] bg-white hover:bg-[#F7FCFE] text-[#14100b] font-semibold shadow-xs rounded-xl transition-colors px-6 py-2.5"
             >
               <Link href="/register/selection">
                 ← Back to Registration Options

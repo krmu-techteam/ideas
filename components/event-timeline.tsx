@@ -89,7 +89,7 @@ export default function EventTimeline() {
   return (
     <section
       ref={sectionRef}
-      className="py-20 bg-[#16212C] text-white relative overflow-hidden timeline-section"
+      className="py-16 bg-[#F8FCFF] text-white relative overflow-hidden timeline-section"
       suppressHydrationWarning
     >
       <div className="container mx-auto px-4 relative z-10">
@@ -100,12 +100,12 @@ export default function EventTimeline() {
           className="text-center mb-16"
         >
           <div className="inline-block">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold bg-gradient-to-r from-white via-gold-200 to-amber-400 bg-clip-text text-transparent mb-4">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold gradient-title mb-4">
               Our Journey
             </h2>
-            <div className="h-1 w-24 bg-gradient-to-r from-gold-500 via-amber-400 to-royal-500 rounded-full mx-auto mb-6 shadow-[0_0_12px_rgba(245,158,11,0.4)]"></div>
+            <div className="h-1 w-24 bg-gray-950 rounded-full mx-auto mb-5"></div>
           </div>
-          <p className="text-slate-300 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">
+          <p className="text-gray-950 max-w-3xl mx-auto text-base sm:text-[18px] leading-relaxed">
             From IDEAS 1.0 to IDEAS 4.0, witness the remarkable evolution of
             KRMU&apos;s flagship innovation festival - transforming dreams into
             reality and fostering excellence in education, research, and
@@ -115,7 +115,7 @@ export default function EventTimeline() {
 
         <div className="relative max-w-6xl mx-auto">
           {/* Enhanced Timeline line with gradient - visible on md screens */}
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-royal-500 via-gold-400 to-amber-500 rounded-full z-0 shadow-[0_0_12px_rgba(245,158,11,0.25)]"></div>
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-[#213C87] via-[#0062A2] to-[#00ACE9] rounded-full z-0 shadow-[0_0_12px_rgba(245,158,11,0.25)]"></div>
 
           {/* Timeline events */}
           <div className="relative z-10 space-y-12 md:space-y-16">
@@ -139,8 +139,8 @@ export default function EventTimeline() {
                   <Card
                     className={`w-full h-full flex flex-col justify-between shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-1 overflow-hidden backdrop-blur-md rounded-[10px] ${
                       event.isCurrent
-                        ? "border-2 border-gold-400/80 bg-gradient-to-br from-[#1d2c3c] to-[#121c26] shadow-[0_0_30px_rgba(245,158,11,0.15)]"
-                        : "bg-[#121b24]/90 border border-slate-700/60 shadow-slate-950/50 hover:border-royal-500/40"
+                        ? "border-2 border-gold-400/80 bg-[#F8FCFF]"
+                        : "bg-[#F8FCFF] text-gray-800 border border-slate-700/60 shadow-slate-950/50 hover:border-royal-500/40"
                     }`}
                   >
                     <CardContent className="p-6 sm:p-8 flex flex-col h-full justify-between">
@@ -149,28 +149,28 @@ export default function EventTimeline() {
                           <div
                             className={`text-lg sm:text-xl font-bold px-5 py-2 rounded-full shadow-lg ${
                               event.isCurrent
-                                ? "bg-gradient-to-r from-gold-500 to-amber-500 text-slate-950 font-extrabold shadow-[0_0_15px_rgba(245,158,11,0.3)]"
-                                : "bg-gradient-to-r from-royal-600 to-royal-800 text-white shadow-royal-900/40 border border-royal-400/20"
+                                ? "bg-[#1042AE] text-white font-extrabold "
+                                : "bg-gradient-to-r from-royal-600 to-royal-700 text-white shadow-royal-900/40 border border-royal-400/20"
                             }`}
                           >
                             {event.year}
                           </div>
-                          <h3 className="text-2xl md:text-3xl font-serif font-bold text-white">
+                          <h3 className="text-2xl md:text-3xl font-serif font-bold text-gray-800">
                             {event.title}
                           </h3>
                           {event.isCurrent && (
-                            <span className="px-3 py-1 bg-gradient-to-r from-amber-400 via-gold-400 to-amber-500 text-slate-950 text-xs sm:text-sm font-bold rounded-full shadow-sm">
+                            <span className="px-3 py-1  text-[#1042AE] text-xs sm:text-sm font-bold rounded-full shadow-sm">
                               Current
                             </span>
                           )}
                         </div>
-                        <p className="text-slate-300 mb-6 text-base sm:text-lg leading-relaxed">
+                        <p className="text-gray-950 mb-6 text-base sm:text-[16px] leading-relaxed">
                           {event.description}
                         </p>
                       </div>
 
                       <div className="space-y-3 pt-4 border-t border-slate-700/40 mt-auto">
-                        <h4 className="font-semibold text-gold-400 text-sm sm:text-base tracking-wide uppercase">
+                        <h4 className="font-semibold text-gray-950 text-sm sm:text-base tracking-wide uppercase">
                           Key Achievements:
                         </h4>
                         <ul className="space-y-2.5">
@@ -189,10 +189,10 @@ export default function EventTimeline() {
                               }}
                               className="flex items-start list-none"
                             >
-                              <span className="text-gold-400 mr-2.5 text-base leading-tight mt-0.5 shrink-0">
+                              <span className="text-gray-950 mr-2.5 text-base leading-tight mt-0.5 shrink-0">
                                 ✦
                               </span>
-                              <span className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                              <span className="text-gray-950 text-sm sm:text-base leading-relaxed">
                                 {achievement}
                               </span>
                             </motion.li>
@@ -244,11 +244,11 @@ export default function EventTimeline() {
                     }}
                     className={`w-8 h-8 rounded-full border-4 items-center justify-center flex transition-all duration-300 pointer-events-auto ${
                       event.isCurrent
-                        ? "bg-gradient-to-br from-amber-400 via-gold-400 to-yellow-400 border-[#0d1620] shadow-[0_0_20px_rgba(245,158,11,0.85)] scale-110"
-                        : "bg-gradient-to-br from-amber-500 via-gold-500 to-amber-600 border-[#0d1620] shadow-[0_0_15px_rgba(245,158,11,0.65)] hover:scale-110"
+                        ? "bg-[#1042AE] border-[#0d1620] scale-110"
+                        : "bg-gradient-to-br from-[#1042AE] via-[#1042AE] to-[#1042AE] border-[#0d1620]  "
                     }`}
                   >
-                    <div className="w-2.5 h-2.5 rounded-full bg-white shadow-sm ring-1 ring-amber-300"></div>
+                    <div className="w-2.5 h-2.5 rounded-full bg-white shadow-sm ring-1 ring-[#1042AE]"></div>
                   </motion.div>
                 </div>
               </motion.div>

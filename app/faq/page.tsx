@@ -36,7 +36,7 @@ export default function FaqPage() {
             </span>
           </h1>
 
-          <p className="mt-4 max-w-2xl text-[16px] sm:text-[17px] leading-[1.65] text-[#6b6357]">
+          <p className="mt-4 max-w-2xl text-[16px] sm:text-[17px] leading-[1.65] text-gray-800">
             Answers to what participants ask most — registration, categories,
             team formation, what to bring, and what winners take home.
           </p>

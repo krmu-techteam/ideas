@@ -9,9 +9,9 @@ import Link from "next/link";
 
 export default function RegistrationSelectionPage() {
   return (
-    <div className="min-h-screen bg-[#f1f7ee] text-[#14100b] selection:bg-[#E11E45]/20 selection:text-[#E11E45]">
+    <div className="min-h-screen bg-[#F6FCFE] text-[#14100b] selection:bg-[#E11E45]/20 selection:text-[#E11E45]">
       {/* Hero Header Section */}
-      <section className="bg-gradient-to-l from-[#1b4332] via-[#1b4332] to-[#081c15] text-white pt-28 pb-12 sm:pt-32 sm:pb-16">
+      <section className="bg-gradient-to-r from-[#213C87] via-[#0062A2] to-[#00ACE9] to-[#081c15] text-white pt-28 pb-12 sm:pt-32 sm:pb-16">
         <div className="container mx-auto px-4 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -43,7 +43,7 @@ export default function RegistrationSelectionPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <Card className="h-full bg-transparent border border-[#1b4332] rounded-[1px] hover:border-[#03071e]/50 transition-all duration-300 ">
+              <Card className="h-full bg-transparent border border-[#213C87] rounded-[1px] hover:border-[#03071e]/50 transition-all duration-300 ">
                 <CardContent className="p-8 md:p-10 flex flex-col items-center text-center h-full">
                   <div className="w-16 h-16 md:w-20 md:h-20  text-[#03071e] flex items-center justify-center  group-hover:scale-105 transition-transform duration-300  mb-4">
                     <School className="w-8 h-8 md:w-16 md:h-16 text-[#03071e]" />
@@ -61,25 +61,25 @@ export default function RegistrationSelectionPage() {
 
                   <ul className="text-left font-poppins text-[#14100b] mb-8 space-y-2.5 text-sm md:text-[15px] w-full">
                     <li className="flex items-start">
-                      <span className="text-[#1b4332] font-bold mr-2.5 shrink-0">
+                      <span className="text-[#213C87] font-bold mr-2.5 shrink-0">
                         ✓
                       </span>
                       <span>Access to 28 competitions</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-[#1b4332] font-bold mr-2.5 shrink-0">
+                      <span className="text-[#213C87] font-bold mr-2.5 shrink-0">
                         ✓
                       </span>
                       <span>Cultural events participation</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-[#1b4332] font-bold mr-2.5 shrink-0">
+                      <span className="text-[#213C87] font-bold mr-2.5 shrink-0">
                         ✓
                       </span>
                       <span>Workshops and skill development</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-[#1b4332] font-bold mr-2.5 shrink-0">
+                      <span className="text-[#213C87] font-bold mr-2.5 shrink-0">
                         ✓
                       </span>
                       <span>Certificate of participation</span>
@@ -89,7 +89,7 @@ export default function RegistrationSelectionPage() {
                   <Button
                     asChild
                     size="lg"
-                    className="w-full bg-[#1b4332] hover:bg-[#1b4332e0] text-white font-semibold font-poppins !rounded-[2px] hover:shadow-lg transition-all duration-300 py-3.5"
+                    className="w-full bg-[#213C87] hover:bg-[#213C87e0] text-white font-semibold font-poppins !rounded-[2px] hover:shadow-lg transition-all duration-300 py-3.5"
                   >
                     <Link
                       href="/register/school"
@@ -109,7 +109,7 @@ export default function RegistrationSelectionPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <Card className="h-full bg-transparent border border-[#1b4332] rounded-[1px] hover:border-[#16212C]/40 transition-all duration-300">
+              <Card className="h-full bg-transparent border border-[#213C87] rounded-[1px] hover:border-[#16212C]/40 transition-all duration-300">
                 <CardContent className="p-8 md:p-10 flex flex-col items-center text-center h-full">
                   <div className="w-16 h-16 md:w-20 md:h-20 text-[#16212C] flex items-center justify-center  group-hover:scale-105 transition-transform duration-300 shadow-xs">
                     <GraduationCap className="w-8 h-8 md:w-16 md:h-16 text-[#16212C]" />
@@ -177,14 +177,14 @@ export default function RegistrationSelectionPage() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mt-12 text-center"
           >
-            <Card className="bg-transparent border border-[#e7ded1] rounded-[1px]">
+            <Card className="bg-transparent border border-gray-800 rounded-[1px]">
               <CardContent className="p-6">
-                <p className="text-[#6b6357] mb-3 text-sm sm:text-base leading-relaxed">
+                <p className="text-gray-800 mb-3 text-sm sm:text-base leading-relaxed">
                   <strong className="text-[#14100b]">Note:</strong> Both
                   registration types include access to cultural events,
                   workshops, and networking opportunities at IDEAS 4.0.
                 </p>
-                <p className="text-sm text-[#8c8273]">
+                <p className="text-sm text-gray-800">
                   Need help? Contact us at{" "}
                   <a
                     href="mailto:ideas@krmangalam.edu.in"
@@ -207,7 +207,7 @@ export default function RegistrationSelectionPage() {
             <Button
               asChild
               variant="outline"
-              className="border border-[#e7ded1] bg-white hover:bg-[#FAF5EC] text-[#14100b] font-semibold shadow-xs rounded-xl transition-colors px-6 py-2.5"
+              className="border border-gray-800 bg-white hover:bg-[#F7FCFE] text-[#14100b] font-semibold shadow-xs rounded-xl transition-colors px-6 py-2.5"
             >
               <Link href="/">← Back to Home</Link>
             </Button>

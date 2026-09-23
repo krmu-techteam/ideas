@@ -1,4 +1,4 @@
-import { Loader2 } from "lucide-react"
+import { Loader2 } from "lucide-react";
 
 export default function Loading() {
   return (
@@ -10,10 +10,10 @@ export default function Loading() {
         <h2 className="font-serif text-xl font-bold text-[#14100b] mb-1">
           Loading Registration
         </h2>
-        <p className="text-sm text-[#6b6357]">
+        <p className="text-sm text-gray-800">
           Please wait while we prepare your session...
         </p>
       </div>
     </div>
-  )
+  );
 }

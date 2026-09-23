@@ -85,12 +85,12 @@ export default function UpcomingEvents() {
   return (
     <section
       id="upcoming-events"
-      className="py-16 sm:py-20 bg-[#fffefb] border-t border-[#e7ded1] relative overflow-hidden"
+      className="py-16 sm:py-20 bg-[#AEDBFD]   relative overflow-hidden"
       suppressHydrationWarning
     >
       <div className="container mx-auto max-w-7xl px-4 sm:px-6">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-[#e7ded1] pb-8">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-gray-800 pb-8">
           <div className="max-w-2xl">
             <h2 className="font-serif text-[clamp(28px,4.5vw,46px)] font-bold tracking-[-0.02em] text-[#14100b] leading-[1.12]">
               Upcoming Competitions &amp;{" "}
@@ -99,7 +99,7 @@ export default function UpcomingEvents() {
               </span>
             </h2>
 
-            <p className="mt-3 text-[15px] sm:text-[16px] leading-relaxed text-[#6b6357]">
+            <p className="mt-3 text-[15px] font-poppins sm:text-[16px] leading-relaxed text-gray-800">
               Explore marquee hackathons, robotics challenges, hands-on arenas,
               and stage showcases scheduled for October 27–28, 2026 at K.R.
               Mangalam University.
@@ -109,7 +109,7 @@ export default function UpcomingEvents() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
             <Link
               href="/all-events"
-              className="inline-flex items-center gap-2 text-[13.5px] font-mono font-semibold uppercase tracking-wider text-[#14100b] hover:text-[#c2410c] transition-colors"
+              className="inline-flex items-center gap-2 text-[13.5px] font-poppins font-semibold uppercase tracking-wider text-[#14100b] hover:text-[#c2410c] transition-colors"
             >
               <span>View All Events</span>
               <ArrowRight size={14} />
@@ -128,16 +128,16 @@ export default function UpcomingEvents() {
                 onClick={() => setActiveTab(tab.id)}
                 className={`h-9 px-3.5 sm:px-4 rounded-[6px] text-[13px] font-medium transition-all duration-150 flex items-center gap-2 cursor-pointer ${
                   isActive
-                    ? "bg-[#14100b] text-white shadow-xs"
-                    : "bg-white border border-[#e7ded1] text-[#6b6357] hover:border-[#14100b] hover:text-[#14100b]"
+                    ? "bg-gray-800 text-white shadow-xs"
+                    : "bg-white border border-gray-800/40 text-gray-800 hover:border-gray-800/40 hover:text-gray-800"
                 }`}
               >
                 <span>{tab.label}</span>
                 <span
                   className={`text-[11px] font-mono px-1.5 py-0.2 rounded-[3px] ${
                     isActive
-                      ? "bg-white/20 text-white"
-                      : "bg-[#f4ede1] text-[#8c8273]"
+                      ? "bg-gray-500/5 text-white"
+                      : "bg-gray-800/20 text-gray-800"
                   }`}
                 >
                   {tab.count}
@@ -161,10 +161,10 @@ export default function UpcomingEvents() {
             >
               <Link
                 href={`/events/${event.slug}`}
-                className="group flex h-full flex-col overflow-hidden rounded-[6px] border border-[#e7ded1] bg-white transition-all duration-200 hover:border-[#14100b] hover:shadow-lg cursor-pointer"
+                className="group flex h-full flex-col overflow-hidden rounded-[6px] border border-[#18639B]/80 bg-white transition-all duration-200 hover:border-[#14100b] hover:shadow-lg cursor-pointer"
               >
                 {/* 16:9 Aspect Ratio Image with Zoom on Hover */}
-                <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#ede6dc]">
+                <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#F7FBFE]">
                   <img
                     src={event.image || "/placeholder.svg"}
                     alt={event.title}
@@ -213,7 +213,7 @@ export default function UpcomingEvents() {
                   </h3>
 
                   {/* Excerpt / Description */}
-                  <p className="mt-2.5 text-[13.5px] leading-[1.6] text-[#6b6357] line-clamp-2 flex-1">
+                  <p className="mt-2.5 text-[13.5px] leading-[1.6] text-gray-800 line-clamp-2 flex-1">
                     {event.description}
                   </p>
 
@@ -226,8 +226,8 @@ export default function UpcomingEvents() {
                   )}
 
                   {/* Divider & Footer (Location + Details →) */}
-                  <div className="mt-3 pt-3 border-t border-[#f0eae1] flex items-center justify-between text-[12px] text-[#78716c]">
-                    <div className="flex items-center gap-1.5 truncate max-w-[70%]">
+                  <div className="mt-3 pt-3 border-t border-gray-800 flex items-center justify-between text-[12px] text-[#78716c]">
+                    <div className="flex items-center font-poppins gap-1.5 truncate max-w-[70%]">
                       <MapPin size={13} className="text-[#14100b] shrink-0" />
                       <span className="truncate">
                         {event.location ||
@@ -235,7 +235,7 @@ export default function UpcomingEvents() {
                           "KRMU Campus"}
                       </span>
                     </div>
-                    <span className="inline-flex items-center text-[12.5px] font-semibold text-[#14100b] group-hover:text-[#14100b] transition-colors">
+                    <span className="inline-flex items-center text-[12.5px] font-poppins text-[#14100b] group-hover:text-[#14100b] transition-colors">
                       Details
                       <span className="ml-1 inline-block text-[#14100b] transition-transform duration-200 group-hover:translate-x-1">
                         →

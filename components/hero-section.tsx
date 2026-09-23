@@ -150,7 +150,7 @@ export default function HeroSection() {
       className="relative min-h-screen flex items-center overflow-hidden text-white"
     >
       {/* Layered background seamlessly matching #16212C header with sleek dark depth */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#16212C] via-[#162330] to-[#101923]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#001A47] via-[#002E7B] to-[#014DAF]" />
       <div
         className="absolute inset-0 pointer-events-none"
         style={{

@@ -103,7 +103,7 @@ const ideasCards = [
 
 export default function IdeasGlance() {
   return (
-    <section className="py-16 bg-[#F9F5EC] relative overflow-hidden">
+    <section className="py-16 bg-[#D5ECFC] relative overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <motion.div
@@ -113,16 +113,20 @@ export default function IdeasGlance() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-14"
         >
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-[0.14em] text-[#16212C] bg-[#16212C]/5 border border-[#16212C]/15 mb-3">
-            <Compass className="w-3.5 h-3.5 text-[#16212C]" />
-            <span>Core Pillars &amp; Tracks</span>
+          <div className="mb-3">
+            <div className="inline-flex font-poppins items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-[0.14em] text-gray-800 bg-gray-800/10 border border-gray-800/25">
+              <Compass className="w-3.5 h-3.5 text-gray-800" />
+              <span>Core Pillars &amp; Tracks</span>
+            </div>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#16212C] tracking-tight mb-4 leading-tight">
-            IDEAS @ Glance
-          </h2>
+          <div className="mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-gray-800 tracking-tight leading-tight">
+              IDEAS @ Glance
+            </h2>
+          </div>
 
-          <p className="text-[15px] sm:text-[16px] text-[#000] leading-relaxed max-w-2xl mx-auto">
+          <p className="text-[15px] sm:text-[16px] font-poppins text-gray-800 leading-relaxed max-w-2xl mx-auto">
             IDEAS 4.0 is KRMU&apos;s flagship mega fest that celebrates
             innovation, academics, hands-on pedagogy, and cultural vibrancy. The
             fest brings together over 18,000 participants from NCR schools,
@@ -141,18 +145,18 @@ export default function IdeasGlance() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.08 }}
-                className="bg-white rounded-[6px] border border-[#e6dfd3] p-6 antialiased  relative group flex flex-col justify-between"
+                className="bg-[#ECF7FD] rounded-[12px] border-2 border-[#034792]/40 p-6 antialiased  relative group flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <div className="w-10 h-10 rounded-[4px] bg-[#F9F5EC] border border-[#e6dfd3] flex items-center justify-center text-[#16212C]">
+                    <div className="w-10 h-10 rounded-[12px] bg-[#F4FBFE] border-2 border-[#034792]/40 flex items-center justify-center text-[#16212C]">
                       <Icon className="w-5 h-5" />
                     </div>
                   </div>
-                  <h3 className="text-lg font-serif font-bold text-[#16212C] mb-2 leading-snug">
+                  <h3 className="text-xl font-serif font-bold text-[#034792]/80 mb-2 leading-snug">
                     {point.title}
                   </h3>
-                  <p className="text-[#5a5247] text-[13px] leading-relaxed">
+                  <p className="text-gray-800 text-[13px] font-poppins ">
                     {point.description}
                   </p>
                 </div>
@@ -176,31 +180,31 @@ export default function IdeasGlance() {
               >
                 <Link
                   href={`/ideas/${card.slug}`}
-                  className="group relative flex flex-col justify-between h-full p-6 rounded-[6px] bg-white border border-[#e6dfd3]  duration-200 antialiased [backface-visibility:hidden]"
+                  className="group relative flex flex-col justify-between h-full p-6 rounded-[12px] bg-[#ECF7FD] border-2 border-[#034792]/40  duration-200 antialiased [backface-visibility:hidden]"
                 >
                   <div>
                     {/* Badge & Title */}
                     <div className="mb-2">
-                      <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-[3px] bg-[#16212C]/5 text-[#16212C] border border-[#16212C]/10  transition-colors">
+                      <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-[12px] bg-[#16212C]/5 text-[#16212C] border border-[#16212C]/10  transition-colors">
                         {card.badge}
                       </span>
                     </div>
 
-                    <h3 className="text-xl font-serif font-bold text-[#16212C]  transition-colors tracking-tight mb-2 leading-snug">
+                    <h3 className="text-xl font-serif font-bold text-[#034792]/80  tracking-tight mb-2 leading-snug">
                       {card.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-[#5a5247] text-[13px] leading-relaxed mb-6 flex-grow">
+                    <p className="text-gray-800 font-poppins text-[13px] leading-relaxed mb-6 flex-grow">
                       {card.description}
                     </p>
                   </div>
 
                   {/* Card Bottom Action */}
-                  <div className="pt-3.5 border-t border-[#e6dfd3] flex items-center justify-between mt-auto">
-                    <span className="text-[13px] font-semibold text-[#16212C] inline-flex items-center gap-1.5 transition-colors duration-200">
+                  <div className="pt-3.5 border-t border-[#034792]/40 flex items-center justify-between mt-auto">
+                    <span className="text-[13px] font-semibold text-[#034792]/80 inline-flex items-center gap-1.5 transition-colors duration-200">
                       Explore Track
-                      <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 text-[#e11e46]" />
+                      <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 text-[#034792]/80" />
                     </span>
                   </div>
                 </Link>

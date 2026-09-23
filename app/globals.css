@@ -549,3 +549,27 @@ html {
 .animate-hero-wave-slow {
   animation: heroWaveSlow 24s ease-in-out infinite;
 }
+
+/* Common Gradient Title Classes (#213C87 -> #0062A2 -> #00ACE9) */
+@layer utilities {
+  .gradi-title,
+  .gradient-title {
+    background-image: linear-gradient(135deg, #213C87 0%, #0062A2 50%, #00ACE9 100%);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+    display: inline-block;
+  }
+
+  .gradi-title-r,
+  .gradient-title-r {
+    background-image: linear-gradient(to right, #213C87 0%, #0062A2 50%, #00ACE9 100%);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+    display: inline-block;
+  }
+}
+

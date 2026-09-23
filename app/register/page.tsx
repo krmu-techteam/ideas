@@ -32,9 +32,7 @@ function RedirectToSelection() {
         <h2 className="font-serif text-lg font-bold text-[#14100b] mb-1">
           Redirecting to Registration
         </h2>
-        <p className="text-xs text-[#6b6357]">
-          Please wait a moment...
-        </p>
+        <p className="text-xs text-gray-800">Please wait a moment...</p>
       </div>
     </div>
   );

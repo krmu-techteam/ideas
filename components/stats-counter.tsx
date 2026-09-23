@@ -104,7 +104,7 @@ export default function StatsCounter() {
   return (
     <div
       ref={sectionRef}
-      className="py-8 bg-[#16212C] text-white"
+      className="py-8 bg-[#ABD9FB] text-gray-800"
       suppressHydrationWarning
     >
       <div className="container mx-auto px-4">
@@ -125,16 +125,16 @@ export default function StatsCounter() {
               suppressHydrationWarning
             >
               <div
-                className={`text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-2 leading-none font-sans text-white transition-transform duration-300 group-hover:scale-105`}
+                className={`text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-2 leading-none font-serif text-gray-800`}
                 suppressHydrationWarning
               >
                 {formatDisplay(index)}
               </div>
-              <div className="text-[11px] sm:text-xs font-semibold uppercase tracking-widest text-white">
+              <div className="text-[11px] font-poppins sm:text-xs font-semibold uppercase tracking-widest text-gray-800">
                 {stat.label}
               </div>
               {stat.sublabel && (
-                <div className="text-[10px] text-white/80 tracking-wider uppercase mt-1">
+                <div className="text-[10px] font-poppins text-gray-800 tracking-wider uppercase mt-1">
                   {stat.sublabel}
                 </div>
               )}

@@ -53,7 +53,7 @@ export default function EventDetailView({
         <div className="mb-6 pt-4">
           <Link
             href={backUrl}
-            className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-wider font-semibold text-[#8c8273] hover:text-[#E11E45] transition-colors group"
+            className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-wider font-semibold text-gray-800 hover:text-[#E11E45] transition-colors group"
           >
             <ArrowLeft
               size={15}
@@ -75,7 +75,7 @@ export default function EventDetailView({
               <span>{event.category || "FLAGSHIP"}</span>
             </span>
             {event.teamType && (
-              <span className="inline-flex items-center font-mono text-[11px] font-semibold uppercase tracking-[0.12em] px-2.5 py-1 rounded-[3px] border border-[#e7ded1] bg-white text-[#6b6357]">
+              <span className="inline-flex items-center font-mono text-[11px] font-semibold uppercase tracking-[0.12em] px-2.5 py-1 rounded-[3px] border border-[#e7ded1] bg-white text-gray-800">
                 <span>{event.teamType}</span>
                 {event.teamSize ? ` (${event.teamSize})` : ""}
               </span>
@@ -88,13 +88,13 @@ export default function EventDetailView({
           </h1>
 
           {/* Short Lede */}
-          <p className="mt-4 max-w-3xl text-[16px] sm:text-[18px] leading-[1.65] text-[#6b6357]">
+          <p className="mt-4 max-w-3xl text-[16px] sm:text-[18px] leading-[1.65] text-gray-800">
             {event.description}
           </p>
 
           {/* Meta Line: Date, Venue & Share Button */}
           <div className="mt-6 flex flex-wrap items-center justify-between gap-4 border-b border-[#e7ded1] pb-6">
-            <div className="flex flex-wrap items-center gap-y-2 gap-x-5 font-mono text-xs uppercase tracking-wider text-[#6b6357]">
+            <div className="flex flex-wrap items-center gap-y-2 gap-x-5 font-mono text-xs uppercase tracking-wider text-gray-800">
               <div className="flex items-center gap-1.5">
                 <Calendar size={14} className="text-[#E11E45]" />
                 <span className="font-semibold text-[#14100b]">
@@ -126,7 +126,7 @@ export default function EventDetailView({
                 </>
               ) : (
                 <>
-                  <Share2 size={14} className="text-[#8c8273]" />
+                  <Share2 size={14} className="text-gray-800" />
                   <span>Share Event</span>
                 </>
               )}
@@ -192,7 +192,7 @@ export default function EventDetailView({
                   <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#E11E45]">
                     Scheduled Sessions
                   </div>
-                  <span className="font-mono text-xs text-[#8c8273]">
+                  <span className="font-mono text-xs text-gray-800">
                     {event.date}
                   </span>
                 </div>
@@ -210,7 +210,7 @@ export default function EventDetailView({
                           {s.timeSlot || "TBA"}
                         </span>
                       </div>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-[#6b6357] mt-3">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-gray-800 mt-3">
                         {s.venue && (
                           <div className="flex items-center gap-1.5">
                             <MapPin size={13} className="text-[#E11E45]" />
@@ -263,7 +263,7 @@ export default function EventDetailView({
                     className="text-[#E11E45] shrink-0 mt-0.5"
                   />
                   <div>
-                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">
+                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-gray-800">
                       Date
                     </div>
                     <div className="font-semibold text-[#14100b]">
@@ -275,7 +275,7 @@ export default function EventDetailView({
                 <div className="flex items-start gap-3 py-1">
                   <Clock size={16} className="text-[#E11E45] shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">
+                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-gray-800">
                       Time
                     </div>
                     <div className="font-semibold text-[#14100b]">
@@ -292,7 +292,7 @@ export default function EventDetailView({
                     className="text-[#E11E45] shrink-0 mt-0.5"
                   />
                   <div>
-                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">
+                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-gray-800">
                       Venue
                     </div>
                     <div className="font-semibold text-[#14100b]">
@@ -304,7 +304,7 @@ export default function EventDetailView({
                 <div className="flex items-start gap-3 py-1">
                   <Users size={16} className="text-[#E11E45] shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">
+                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-gray-800">
                       Participation
                     </div>
                     <div className="font-semibold text-[#14100b]">
@@ -321,7 +321,7 @@ export default function EventDetailView({
                       className="text-[#E11E45] shrink-0 mt-0.5"
                     />
                     <div>
-                      <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#8c8273]">
+                      <div className="text-[10.5px] font-mono uppercase tracking-wider text-gray-800">
                         Faculty Coordinator
                       </div>
                       <div className="font-semibold text-[#14100b]">
@@ -341,7 +341,7 @@ export default function EventDetailView({
                   <span>Register for Event</span>
                   <span>→</span>
                 </Link>
-                <p className="mt-2 text-center text-[11px] text-[#8c8273]">
+                <p className="mt-2 text-center text-[11px] text-gray-800">
                   IDEAS 4.0 · K.R. Mangalam University
                 </p>
               </div>
@@ -350,7 +350,7 @@ export default function EventDetailView({
               <div className="pt-2 text-center">
                 <Link
                   href={backUrl}
-                  className="font-mono text-xs text-[#6b6357] hover:text-[#E11E45] transition-colors inline-flex items-center gap-1.5"
+                  className="font-mono text-xs text-gray-800 hover:text-[#E11E45] transition-colors inline-flex items-center gap-1.5"
                 >
                   <ArrowLeft size={13} />
                   <span>{backLabel}</span>

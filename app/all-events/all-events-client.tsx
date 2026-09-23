@@ -70,7 +70,7 @@ export function AllEventsClientPage() {
             </h1>
 
             {/* Lede Subtitle */}
-            <p className="mt-4 max-w-2xl text-[16px] sm:text-[17px] leading-[1.65] text-[#6b6357]">
+            <p className="mt-4 max-w-2xl text-[16px] sm:text-[17px] leading-[1.65] text-gray-800">
               Explore the complete official schedule of technical hackathons,
               innovation challenges, academic showcases, and cultural
               performances curated for IDEAS 4.0 at K.R. Mangalam University.
@@ -101,12 +101,12 @@ export function AllEventsClientPage() {
                 <h2 className="font-serif text-[26px] sm:text-[30px] font-bold text-[#14100b] tracking-[-0.015em]">
                   Every Single Event
                 </h2>
-                <p className="text-[14px] text-[#6b6357] mt-1">
+                <p className="text-[14px] text-gray-800 mt-1">
                   Search by title, department, or keywords, or filter by
                   organizing school.
                 </p>
               </div>
-              <div className="font-mono text-xs text-[#8c8273] shrink-0">
+              <div className="font-mono text-xs text-gray-800 shrink-0">
                 Showing{" "}
                 <span className="font-bold text-[#14100b]">
                   {filteredEvents.length}
@@ -121,7 +121,7 @@ export function AllEventsClientPage() {
               <div className="relative flex-1">
                 <Search
                   size={16}
-                  className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#8c8273]"
+                  className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-800"
                 />
                 <input
                   type="text"
@@ -129,7 +129,7 @@ export function AllEventsClientPage() {
                   aria-label="Search all events"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full h-11 rounded-[6px] border border-[#e7ded1] bg-white pl-10 pr-4 text-[14px] text-[#14100b] placeholder:text-[#8c8273] shadow-2xs focus:outline-none  transition-all"
+                  className="w-full h-11 rounded-[6px] border border-[#e7ded1] bg-white pl-10 pr-4 text-[14px] text-[#14100b] placeholder:text-gray-800 shadow-2xs focus:outline-none  transition-all"
                 />
               </div>
 
@@ -152,7 +152,7 @@ export function AllEventsClientPage() {
                 </select>
                 <ChevronDown
                   size={16}
-                  className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[#8c8273]"
+                  className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-gray-800"
                 />
               </div>
             </div>
@@ -227,7 +227,7 @@ export function AllEventsClientPage() {
                       </h3>
 
                       {/* Excerpt / Description */}
-                      <p className="mt-2.5 text-[13.5px] leading-[1.6] text-[#6b6357] line-clamp-2 flex-1">
+                      <p className="mt-2.5 text-[13.5px] leading-[1.6] text-gray-800 line-clamp-2 flex-1">
                         {event.description}
                       </p>
 
@@ -265,7 +265,7 @@ export function AllEventsClientPage() {
               <p className="font-serif text-xl font-bold text-[#14100b]">
                 No events found matching your criteria
               </p>
-              <p className="mx-auto mt-2 max-w-md text-[14px] text-[#6b6357]">
+              <p className="mx-auto mt-2 max-w-md text-[14px] text-gray-800">
                 Try adjusting your search keywords or switching your department
                 filter.
               </p>

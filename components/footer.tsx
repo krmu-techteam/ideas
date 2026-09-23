@@ -15,7 +15,7 @@ import { NewsletterForm } from "@/components/newsletter-form";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#16212C] text-white pt-12 sm:pt-16 lg:pt-20 pb-2">
+    <footer className="bg-[#034894] text-white pt-12 sm:pt-16 lg:pt-20 pb-2">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
           {/* Logo and About */}
@@ -147,10 +147,10 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-white flex-shrink-0" />
                 <a
-                  href="mailto:admissions@krmangalam.edu.in"
-                  className="text-white hover:text-gold-300 text-sm"
+                  href="mailto:ideas@krmangalam.edu.in"
+                  className="text-white hover:text-gray-800 text-sm"
                 >
-                  admissions@krmangalam.edu.in
+                  ideas@krmangalam.edu.in
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -158,12 +158,13 @@ export default function Footer() {
                 <div className="text-white text-sm flex flex-col">
                   <a
                     href="tel:01242867800"
-                    className="hover:text-gold-300 font-medium"
+                    className="hover:text-gray-800 font-medium"
                   >
                     Landline: 0124-2867800
                   </a>
-                  <span className="text-xs text-white">
-                    Helpline: 08800697010-15 | 8192888444 | 8800697012
+                  <span className="text-[14px] text-white">
+                    Helpline: <a href="tel:+918448184864">8448184864</a> |
+                    <a href="tel:+918192888444">8192888444</a>
                   </span>
                 </div>
               </li>

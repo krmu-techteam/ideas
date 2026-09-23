@@ -27,9 +27,9 @@ export default function SpotlightPage() {
   }, [searchTerm, categoryFilter]);
 
   return (
-    <div className="min-h-screen bg-[#fffefb] text-[#14100b] selection:bg-[#14100b]/20 selection:text-[#14100b]">
+    <div className="min-h-screen bg-[#F6FCFE] text-[#14100b] selection:bg-[#14100b]/20 selection:text-[#14100b]">
       {/* 1. Page Intro / Hero - Styled exactly after HackIndia Newsroom */}
-      <section className="bg-[#f4ede1] pt-28 pb-12 sm:pt-32 sm:pb-16">
+      <section className="bg-gradient-to-r from-[#213C87] via-[#0062A2] to-[#00ACE9] pt-28 pb-12 sm:pt-32 sm:pb-16">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -38,15 +38,15 @@ export default function SpotlightPage() {
             className="max-w-4xl"
           >
             {/* Main Headline */}
-            <h1 className="font-serif text-[clamp(32px,5.2vw,58px)] font-bold leading-[1.08] tracking-[-0.025em] text-[#14100b] text-balance">
+            <h1 className="font-serif text-[clamp(32px,5.2vw,58px)] font-bold leading-[1.08] tracking-[-0.025em] text-[#fff] text-balance">
               Spotlight{" "}
-              <span className="italic font-serif font-normal text-[#14100b]">
+              <span className="italic font-serif font-normal text-[#fff]">
                 Activities
               </span>
             </h1>
 
             {/* Lede Subtitle */}
-            <p className="mt-4 max-w-2xl text-[16px] sm:text-[17px] leading-[1.65] text-[#6b6357]">
+            <p className="mt-4 max-w-2xl text-[16px] sm:text-[17px] leading-[1.65] text-[#fff]">
               The marquee challenges, hands-on competitions, and
               interdisciplinary innovation arenas curated for IDEAS 4.0 at K.R.
               Mangalam University.
@@ -68,21 +68,21 @@ export default function SpotlightPage() {
       </section>
 
       {/* 2. Main Content Area */}
-      <section className="bg-[#fffefb] py-10 sm:py-14">
+      <section className="bg-[#F6FCFE] py-10 sm:py-14">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6">
           {/* Section Heading & Filter Bar */}
           <div className="mb-8">
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-[#e7ded1] pb-6">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-gray-800 pb-6">
               <div>
                 <h2 className="font-serif text-[26px] sm:text-[30px] font-bold text-[#14100b] tracking-[-0.015em]">
                   Every Activity
                 </h2>
-                <p className="text-[14px] text-[#6b6357] mt-1">
+                <p className="text-[14px] text-gray-800 mt-1">
                   Search by headline, department, or keywords, or filter by
                   category.
                 </p>
               </div>
-              <div className="font-mono text-xs text-[#8c8273] shrink-0">
+              <div className="font-mono text-xs text-gray-800 shrink-0">
                 Showing{" "}
                 <span className="font-bold text-[#14100b]">
                   {filteredEvents.length}
@@ -97,7 +97,7 @@ export default function SpotlightPage() {
               <div className="relative flex-1">
                 <Search
                   size={16}
-                  className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#8c8273]"
+                  className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-800"
                 />
                 <input
                   type="text"
@@ -105,7 +105,7 @@ export default function SpotlightPage() {
                   aria-label="Search spotlight activities"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full h-11 rounded-[6px] border border-[#e7ded1] bg-white pl-10 pr-4 text-[14px] text-[#14100b] placeholder:text-[#8c8273] shadow-2xs focus:outline-none focus:border-[#14100b] focus:ring-1 focus:ring-[#14100b] transition-all"
+                  className="w-full h-11 rounded-[6px] border border-gray-800 bg-white pl-10 pr-4 text-[14px] text-[#14100b] placeholder:text-gray-800 shadow-2xs focus:outline-none focus:border-[#14100b] focus:ring-1 focus:ring-[#14100b] transition-all"
                 />
               </div>
 
@@ -115,7 +115,7 @@ export default function SpotlightPage() {
                   value={categoryFilter}
                   onChange={(e) => setCategoryFilter(e.target.value)}
                   aria-label="Filter by category"
-                  className="w-full h-11 rounded-[6px] border border-[#e7ded1] bg-white pl-3.5 pr-9 text-[14px] font-medium text-[#14100b] shadow-2xs focus:outline-none focus:border-[#14100b] focus:ring-1 focus:ring-[#14100b] cursor-pointer appearance-none transition-all"
+                  className="w-full h-11 rounded-[6px] border border-gray-800 bg-white pl-3.5 pr-9 text-[14px] font-medium text-[#14100b] shadow-2xs focus:outline-none focus:border-[#14100b] focus:ring-1 focus:ring-[#14100b] cursor-pointer appearance-none transition-all"
                 >
                   <option value="all">All Categories</option>
                   {categories.map((cat) => (
@@ -131,7 +131,7 @@ export default function SpotlightPage() {
                 </select>
                 <ChevronDown
                   size={16}
-                  className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[#8c8273]"
+                  className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-gray-800"
                 />
               </div>
             </div>
@@ -149,10 +149,10 @@ export default function SpotlightPage() {
                 >
                   <Link
                     href={`/spotlight/${event.slug}`}
-                    className="group flex h-full flex-col overflow-hidden rounded-[6px] border border-[#e7ded1] bg-white transition-all duration-200 hover:border-[#14100b] hover:shadow-lg cursor-pointer"
+                    className="group flex h-full flex-col overflow-hidden rounded-[6px] border border-gray-800 bg-white transition-all duration-200 hover:border-[#14100b] hover:shadow-lg cursor-pointer"
                   >
                     {/* 16:9 Aspect Ratio Image */}
-                    <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#ede6dc]">
+                    <div className="relative aspect-[16/9] w-full overflow-hidden bg-gray-800">
                       <img
                         src={event.image || "/placeholder.svg"}
                         alt={event.title}
@@ -203,7 +203,7 @@ export default function SpotlightPage() {
                       </h3>
 
                       {/* Excerpt / Description */}
-                      <p className="mt-2.5 text-[13.5px] leading-[1.6] text-[#6b6357] line-clamp-2 flex-1">
+                      <p className="mt-2.5 text-[13.5px] leading-[1.6] text-gray-800 line-clamp-2 flex-1">
                         {event.description}
                       </p>
 
@@ -216,7 +216,7 @@ export default function SpotlightPage() {
                       )}
 
                       {/* Divider & Footer (Location + Details →) */}
-                      <div className="mt-3 pt-3 border-t border-[#f0eae1] flex items-center justify-between text-[12px] text-[#78716c]">
+                      <div className="mt-3 pt-3 border-t border-gray-800 flex items-center justify-between text-[12px] text-[#78716c]">
                         <div className="flex items-center gap-1.5 truncate max-w-[70%]">
                           <MapPin size={13} className="shrink-0" />
                           <span className="truncate">
@@ -237,11 +237,11 @@ export default function SpotlightPage() {
             </div>
           ) : (
             /* Empty State (HackIndia EmptyState design) */
-            <div className="rounded-[6px] border border-[#e7ded1] bg-white px-6 py-16 text-center">
+            <div className="rounded-[6px] border border-gray-800 bg-white px-6 py-16 text-center">
               <p className="font-serif text-xl font-bold text-[#14100b]">
                 No spotlight activities found
               </p>
-              <p className="mx-auto mt-2 max-w-md text-[14px] text-[#6b6357]">
+              <p className="mx-auto mt-2 max-w-md text-[14px] text-gray-800">
                 Try adjusting your search keywords or switching your category
                 filter.
               </p>

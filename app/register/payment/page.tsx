@@ -78,7 +78,7 @@ function PaymentRedirectContent() {
           <p className="font-serif text-xl font-bold text-[#14100b] mb-2">
             Invalid Registration Type
           </p>
-          <p className="text-sm text-[#6b6357] mb-6">
+          <p className="text-sm text-gray-800 mb-6">
             The requested registration category does not exist or has expired.
           </p>
           <a
@@ -129,7 +129,7 @@ function PaymentRedirectContent() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="text-[#6b6357] text-sm md:text-base leading-relaxed mb-8"
+              className="text-gray-800 text-sm md:text-base leading-relaxed mb-8"
             >
               {description}
             </motion.p>
@@ -145,7 +145,7 @@ function PaymentRedirectContent() {
                 <Loader2 className="w-10 h-10 text-[#E11E45] animate-spin" />
               </div>
 
-              <p className="text-[#8c8273] text-sm font-medium">
+              <p className="text-gray-800 text-sm font-medium">
                 {isRedirecting
                   ? "Opening registration portal..."
                   : `Redirecting in ${countdown} second${countdown !== 1 ? "s" : ""}...`}
@@ -189,7 +189,7 @@ function PaymentRedirectContent() {
                 href={paymentLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center py-2.5 px-4 bg-white hover:bg-[#FAF5EC] border border-[#e7ded1] rounded-xl text-[#14100b] hover:text-[#E11E45] transition-all text-xs font-semibold"
+                className="block w-full text-center py-2.5 px-4 bg-white hover:bg-[#F7FCFE] border border-[#e7ded1] rounded-xl text-[#14100b] hover:text-[#E11E45] transition-all text-xs font-semibold"
               >
                 Or open in new tab →
               </a>
@@ -202,7 +202,7 @@ function PaymentRedirectContent() {
               transition={{ delay: 0.7 }}
               className="mt-6 text-center"
             >
-              <p className="text-xs text-[#8c8273] flex items-center justify-center gap-1.5">
+              <p className="text-xs text-gray-800 flex items-center justify-center gap-1.5">
                 <span>🔒</span>
                 <span>Secure registration gateway</span>
               </p>
@@ -218,7 +218,7 @@ function PaymentRedirectContent() {
           >
             <a
               href="/register/selection"
-              className="inline-flex items-center text-sm font-semibold text-[#6b6357] hover:text-[#E11E45] transition-colors"
+              className="inline-flex items-center text-sm font-semibold text-gray-800 hover:text-[#E11E45] transition-colors"
             >
               ← Go back
             </a>
@@ -241,7 +241,7 @@ export default function PaymentRedirectPage() {
             <h2 className="font-serif text-xl font-bold text-[#14100b] mb-1">
               Loading Registration
             </h2>
-            <p className="text-sm text-[#6b6357]">
+            <p className="text-sm text-gray-800">
               Please wait while we prepare your session...
             </p>
           </div>
