@@ -1,32 +1,13 @@
 "use client";
 
 import type React from "react";
-import { useState } from "react";
-import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
-import {
-  GraduationCap,
-  School,
-  ArrowRight,
-  AlertTriangle,
-  CheckCircle2,
-} from "lucide-react";
+import { GraduationCap, School, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export default function RegistrationSelectionPage() {
-  const router = useRouter();
-  const [isUniversityModalOpen, setIsUniversityModalOpen] = useState(false);
-
   return (
     <div className="min-h-screen bg-[#f1f7ee] text-[#14100b] selection:bg-[#E11E45]/20 selection:text-[#E11E45]">
       {/* Hero Header Section */}
@@ -172,13 +153,17 @@ export default function RegistrationSelectionPage() {
                   </ul>
 
                   <Button
-                    type="button"
+                    asChild
                     size="lg"
-                    onClick={() => setIsUniversityModalOpen(true)}
-                    className="w-full bg-[#081c15] hover:bg-[#081c15ee] text-white font-bold rounded-[2px] hover:shadow-lg transition-all duration-300 py-3.5 flex items-center justify-center gap-2 cursor-pointer"
+                    className="w-full bg-[#081c15] hover:bg-[#081c15ee] text-white font-bold rounded-[2px] hover:shadow-lg transition-all duration-300 py-3.5"
                   >
-                    <span>Register as University</span>
-                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    <Link
+                      href="/register/university"
+                      className="flex items-center justify-center gap-2"
+                    >
+                      <span>Register as University</span>
+                      <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -229,107 +214,6 @@ export default function RegistrationSelectionPage() {
           </motion.div>
         </div>
       </section>
-
-      {/* University Registration & Refund Policy Modal */}
-      <Dialog
-        open={isUniversityModalOpen}
-        onOpenChange={setIsUniversityModalOpen}
-      >
-        <DialogContent className="max-w-md sm:max-w-lg p-0 overflow-hidden bg-white rounded-[2px]">
-          {/* Header banner */}
-          <div className="bg-[#FAF5EC] p-6 sm:p-7">
-            <div className="flex items-start gap-3.5">
-              <div className="w-11 h-11 rounded-xl bg-red-100 border border-red-200 text-red-600 flex items-center justify-center shrink-0 shadow-xs">
-                <AlertTriangle className="w-5 h-5 text-red-600" />
-              </div>
-              <div className="flex-1 pr-6">
-                <DialogTitle className="font-serif text-xl sm:text-2xl font-bold text-[#14100b] tracking-[-0.01em]">
-                  University Registration & Fee Policy
-                </DialogTitle>
-                <DialogDescription className="text-xs sm:text-sm text-[#6b6357] mt-1 leading-relaxed">
-                  Please review the refund and participation terms before
-                  continuing.
-                </DialogDescription>
-              </div>
-            </div>
-          </div>
-
-          {/* Body content */}
-          <div className="p-6 sm:p-7 space-y-4">
-            {/* NO REFUND POLICY Box */}
-            <div className="bg-red-50/90 border border-[#1b4332] rounded-[1px] p-4 sm:p-5">
-              <div className="flex items-center gap-2 mb-1.5">
-                <span className="text-lg">⚠️</span>
-                <h3 className="text-base sm:text-lg font-serif font-bold text-[#14100b] tracking-wide">
-                  NO REFUND POLICY
-                </h3>
-              </div>
-              <p className="text-xs sm:text-sm text-[#14100b]/90 font-medium leading-relaxed">
-                All registration fees for university participation and canopy
-                exhibitions are non-refundable once payment is completed.
-              </p>
-            </div>
-
-            {/* Registration Points */}
-            <div className="bg-[#faf6ef] rounded-xl p-4 border border-[#eee7dc] space-y-2.5 text-xs sm:text-sm text-[#4b4337]">
-              <div className="flex items-start gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-[#16212C] mt-0.5 shrink-0" />
-                <span>
-                  University registrations (KRMU Students & Other Universities)
-                  are chargeable based on the selected activity.
-                </span>
-              </div>
-              <div className="flex items-start gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-[#16212C] mt-0.5 shrink-0" />
-                <span>
-                  Fee includes canopy exhibition space, competition access,
-                  workshops, and participation certificates.
-                </span>
-              </div>
-              <div className="flex items-start gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-[#16212C] mt-0.5 shrink-0" />
-                <span>
-                  Please double-check your institution details and category
-                  before completing the transaction.
-                </span>
-              </div>
-            </div>
-
-            <p className="text-xs text-[#8c8273] text-center pt-1">
-              Have questions regarding invoices or registration? Contact{" "}
-              <a
-                href="mailto:ideas@krmangalam.edu.in"
-                className="text-[#E11E45] font-semibold underline hover:text-[#c2410c]"
-              >
-                ideas@krmangalam.edu.in
-              </a>
-            </p>
-          </div>
-
-          {/* Footer actions */}
-          <div className="bg-[#FAF5EC] p-4 sm:p-6 flex flex-col-reverse sm:flex-row gap-3 sm:justify-end">
-            <Button
-              type="button"
-              variant="ghost"
-              onClick={() => setIsUniversityModalOpen(false)}
-              className="bg-white hover:bg-gray-100 text-[#6b6357] hover:text-[#14100b] rounded-[2px] py-2.5 px-5 font-semibold text-sm transition-colors border-0 shadow-none"
-            >
-              Cancel
-            </Button>
-            <Button
-              type="button"
-              onClick={() => {
-                setIsUniversityModalOpen(false);
-                router.push("/register/university");
-              }}
-              className="bg-[#16212C] hover:bg-[#233344] text-white font-bold rounded-[2px] py-2.5 px-6 flex items-center justify-center gap-2 text-sm cursor-pointer"
-            >
-              <span>Proceed to Register</span>
-              <ArrowRight className="w-4 h-4" />
-            </Button>
-          </div>
-        </DialogContent>
-      </Dialog>
     </div>
   );
 }

@@ -41,6 +41,9 @@ const ideasDropdownItems = [
   },
 ];
 
+// Toggle to show/hide the IDEAS menu across all pages
+const SHOW_IDEAS_MENU = false;
+
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isIdeasDropdownOpen, setIsIdeasDropdownOpen] = useState(false);
@@ -155,86 +158,88 @@ export default function Header() {
             </Link>
 
             {/* IDEAS Dropdown with Forgiving Hover Bridge */}
-            <div
-              ref={dropdownContainerRef}
-              className="relative"
-              onMouseEnter={handleDropdownMouseEnter}
-              onMouseLeave={handleDropdownMouseLeave}
-            >
-              <button
-                type="button"
-                onClick={() => setIsIdeasDropdownOpen((prev) => !prev)}
-                className={cn(
-                  "flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors duration-200 cursor-pointer",
-                  pathname.startsWith("/ideas")
-                    ? "text-white font-semibold"
-                    : "text-white/90 hover:text-white",
-                )}
-                aria-expanded={isIdeasDropdownOpen}
-                aria-haspopup="true"
-              >
-                <span>IDEAS</span>
-                <ChevronDown
-                  size={14}
-                  className={cn(
-                    "transition-transform duration-200",
-                    isIdeasDropdownOpen ? "rotate-180" : "",
-                  )}
-                />
-              </button>
-
-              {/* Dropdown Card */}
+            {SHOW_IDEAS_MENU && (
               <div
-                className={cn(
-                  "absolute top-full left-0 pt-2 w-80 transition-all duration-200 ease-out z-50",
-                  isIdeasDropdownOpen
-                    ? "opacity-100 visible translate-y-0"
-                    : "opacity-0 invisible -translate-y-1.5 pointer-events-none",
-                )}
+                ref={dropdownContainerRef}
+                className="relative"
+                onMouseEnter={handleDropdownMouseEnter}
+                onMouseLeave={handleDropdownMouseLeave}
               >
-                <div className="bg-[#16212C] rounded-[4px] overflow-hidden text-white">
-                  <div className="p-3.5 bg-[#101820]">
-                    <h3 className="text-xs font-bold uppercase tracking-wider text-white mb-0.5 font-serif">
-                      IDEAS Framework
-                    </h3>
-                    <p className="text-[11px] text-slate-300 leading-tight">
-                      Innovation, Distinctiveness, Extension, Achievements &amp;
-                      Skill-Based Learning
-                    </p>
-                  </div>
-                  <div className="p-1.5 space-y-0.5">
-                    {ideasDropdownItems.map((item) => {
-                      const isItemActive = pathname === `/ideas/${item.slug}`;
-                      return (
-                        <Link
-                          key={item.slug}
-                          href={`/ideas/${item.slug}`}
-                          className={cn(
-                            "flex items-center gap-3 p-2.5 rounded-lg transition-all duration-150 group/item",
-                            isItemActive
-                              ? "bg-white/15 text-white font-semibold"
-                              : "hover:bg-white/10 text-slate-200",
-                          )}
-                          onClick={() => setIsIdeasDropdownOpen(false)}
-                        >
-                          <div className="w-7 h-7 rounded-md bg-blue-600 text-white flex items-center justify-center text-xs font-bold shrink-0 shadow-xs group-hover/item:scale-105 transition-transform">
-                            {item.letter}
-                          </div>
-                          <div className="min-w-0">
-                            <h4 className="text-xs font-bold text-white  transition-colors">
-                              {item.title}
-                            </h4>
-                            <p className="text-[11px] text-white/80 line-clamp-1">
-                              {item.description}
-                            </p>
-                          </div>
-                        </Link>
-                      );
-                    })}
+                <button
+                  type="button"
+                  onClick={() => setIsIdeasDropdownOpen((prev) => !prev)}
+                  className={cn(
+                    "flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors duration-200 cursor-pointer",
+                    pathname.startsWith("/ideas")
+                      ? "text-white font-semibold"
+                      : "text-white/90 hover:text-white",
+                  )}
+                  aria-expanded={isIdeasDropdownOpen}
+                  aria-haspopup="true"
+                >
+                  <span>IDEAS</span>
+                  <ChevronDown
+                    size={14}
+                    className={cn(
+                      "transition-transform duration-200",
+                      isIdeasDropdownOpen ? "rotate-180" : "",
+                    )}
+                  />
+                </button>
+
+                {/* Dropdown Card */}
+                <div
+                  className={cn(
+                    "absolute top-full left-0 pt-2 w-80 transition-all duration-200 ease-out z-50",
+                    isIdeasDropdownOpen
+                      ? "opacity-100 visible translate-y-0"
+                      : "opacity-0 invisible -translate-y-1.5 pointer-events-none",
+                  )}
+                >
+                  <div className="bg-[#16212C] rounded-[4px] overflow-hidden text-white">
+                    <div className="p-3.5 bg-[#101820]">
+                      <h3 className="text-xs font-bold uppercase tracking-wider text-white mb-0.5 font-serif">
+                        IDEAS Framework
+                      </h3>
+                      <p className="text-[11px] text-slate-300 leading-tight">
+                        Innovation, Distinctiveness, Extension, Achievements &amp;
+                        Skill-Based Learning
+                      </p>
+                    </div>
+                    <div className="p-1.5 space-y-0.5">
+                      {ideasDropdownItems.map((item) => {
+                        const isItemActive = pathname === `/ideas/${item.slug}`;
+                        return (
+                          <Link
+                            key={item.slug}
+                            href={`/ideas/${item.slug}`}
+                            className={cn(
+                              "flex items-center gap-3 p-2.5 rounded-lg transition-all duration-150 group/item",
+                              isItemActive
+                                ? "bg-white/15 text-white font-semibold"
+                                : "hover:bg-white/10 text-slate-200",
+                            )}
+                            onClick={() => setIsIdeasDropdownOpen(false)}
+                          >
+                            <div className="w-7 h-7 rounded-md bg-blue-600 text-white flex items-center justify-center text-xs font-bold shrink-0 shadow-xs group-hover/item:scale-105 transition-transform">
+                              {item.letter}
+                            </div>
+                            <div className="min-w-0">
+                              <h4 className="text-xs font-bold text-white  transition-colors">
+                                {item.title}
+                              </h4>
+                              <p className="text-[11px] text-white/80 line-clamp-1">
+                                {item.description}
+                              </p>
+                            </div>
+                          </Link>
+                        );
+                      })}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            )}
 
             <Link
               href="/spotlight"
@@ -343,31 +348,33 @@ export default function Header() {
             </Link>
 
             {/* Mobile IDEAS Section */}
-            <div className="rounded-lg bg-[#101820]/90 p-2.5 border border-white/10">
-              <div className="text-white font-bold px-2 py-1 text-xs uppercase tracking-wider font-serif">
-                IDEAS Framework
+            {SHOW_IDEAS_MENU && (
+              <div className="rounded-lg bg-[#101820]/90 p-2.5 border border-white/10">
+                <div className="text-white font-bold px-2 py-1 text-xs uppercase tracking-wider font-serif">
+                  IDEAS Framework
+                </div>
+                <div className="space-y-1 mt-1">
+                  {ideasDropdownItems.map((item) => (
+                    <Link
+                      key={item.slug}
+                      href={`/ideas/${item.slug}`}
+                      className={cn(
+                        "flex items-center gap-2.5 py-2 px-2.5 rounded-md transition-colors text-xs",
+                        pathname === `/ideas/${item.slug}`
+                          ? "text-amber-400 font-semibold"
+                          : "text-slate-300 hover:bg-white/10 hover:text-white",
+                      )}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      <span className="w-5 h-5 rounded bg-blue-600 text-white text-[10px] font-bold flex items-center justify-center shrink-0 shadow-xs">
+                        {item.letter}
+                      </span>
+                      <span className="font-medium">{item.title}</span>
+                    </Link>
+                  ))}
+                </div>
               </div>
-              <div className="space-y-1 mt-1">
-                {ideasDropdownItems.map((item) => (
-                  <Link
-                    key={item.slug}
-                    href={`/ideas/${item.slug}`}
-                    className={cn(
-                      "flex items-center gap-2.5 py-2 px-2.5 rounded-md transition-colors text-xs",
-                      pathname === `/ideas/${item.slug}`
-                        ? "text-amber-400 font-semibold"
-                        : "text-slate-300 hover:bg-white/10 hover:text-white",
-                    )}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    <span className="w-5 h-5 rounded bg-blue-600 text-white text-[10px] font-bold flex items-center justify-center shrink-0 shadow-xs">
-                      {item.letter}
-                    </span>
-                    <span className="font-medium">{item.title}</span>
-                  </Link>
-                ))}
-              </div>
-            </div>
+            )}
 
             <Link
               href="/spotlight"
