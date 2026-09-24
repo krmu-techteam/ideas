@@ -494,7 +494,6 @@ export const rawRows: RawRow[] = [
     Date: "27–28 October 2026",
     Category: "Academic",
     "Team Event/Individual": "SOLO",
-    "Team Size": "1",
     Prize: "₹4,500 (1000/1500/2000)",
     Description:
       "A visual art competition encouraging participants to depict cyber law and digital safety themes such as cybercrime, online fraud, data privacy and social media's impact on youth through an original poster or collage paired with a clear, self-composed slogan.",
@@ -956,10 +955,11 @@ export function getEventBySlug(slug: string): EventItem | undefined {
     allEvents.find((event) => event.id.toLowerCase() === decoded) ||
     allEvents.find((event) => slugify(event.title) === decoded) ||
     allEvents.find(
-      (event) => event.slug.toLowerCase().replace(/-+/g, "-") === normalizedSlug
+      (event) =>
+        event.slug.toLowerCase().replace(/-+/g, "-") === normalizedSlug,
     ) ||
     allEvents.find(
-      (event) => slugify(event.title).replace(/-+/g, "-") === normalizedSlug
+      (event) => slugify(event.title).replace(/-+/g, "-") === normalizedSlug,
     )
   );
 }

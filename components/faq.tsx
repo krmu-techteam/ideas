@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "What is the AI Arena?",
     answer:
-      "The AI Arena is the technology and competition hub of IDEAS 4.0. It hosts 25+ competitions in robotics, AI, coding, drones, and other skill-based challenges — including flagship events like Robo War, Drone Race, Robots Race, Drone Obstacle Crossing, Gaming Arena, and the One Day Hackathon. It's the go-to zone for high-energy, hands-on tech competitions with a major share of the prize pool.",
+      "The AI Arena is the technology and competition hub of IDEAS 4.0. It hosts 19 competitions in robotics, AI, coding, drones, and other skill-based challenges — including flagship events like Robo War, Drone Race, Robots Race, Drone Obstacle Crossing, Gaming Arena, and the One Day Hackathon. It's the go-to zone for high-energy, hands-on tech competitions with a major share of the prize pool.",
   },
   {
     question: "What is Innoverse?",
