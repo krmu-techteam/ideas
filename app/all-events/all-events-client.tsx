@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Calendar, Clock, MapPin, Search, ChevronDown } from "lucide-react";
 import Link from "next/link";
-import { getAllEvents, EventItem } from "@/lib/data/events";
+import { getAllEvents } from "@/lib/data/events";
 
 export function AllEventsClientPage() {
   const allEvents = useMemo(() => getAllEvents(), []);
@@ -188,10 +188,11 @@ export function AllEventsClientPage() {
                         {event.date?.includes("24")
                           ? "Oct 24–28"
                           : event.day === "both" ||
-                              event.date?.includes("–") ||
-                              event.date?.includes("-")
+                              (event.date?.includes("27") &&
+                                event.date?.includes("28")) ||
+                              event.date?.includes("–")
                             ? "Oct 27–28"
-                            : event.day === "day2"
+                            : event.day === "day2" || event.date?.includes("28")
                               ? "Oct 28"
                               : "Oct 27"}
                       </div>
@@ -242,7 +243,10 @@ export function AllEventsClientPage() {
                       {/* Divider & Footer (Location + Details →) */}
                       <div className="mt-3 pt-3 border-t border-blue-50 flex items-center justify-between text-[12px] text-slate-500">
                         <div className="flex items-center gap-1.5 truncate max-w-[70%] text-slate-600">
-                          <MapPin size={13} className="shrink-0 text-[#0062A2]" />
+                          <MapPin
+                            size={13}
+                            className="shrink-0 text-[#0062A2]"
+                          />
                           <span className="truncate">
                             {event.location || "Campus"}
                           </span>

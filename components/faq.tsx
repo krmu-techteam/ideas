@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "What is IDEAS 4.0?",
     answer:
-      "IDEAS 4.0 is K.R. Mangalam University's flagship annual innovation fest, celebrating innovation, academics, hands-on learning, and culture. Now in its fourth edition, it is one of the largest student-led innovation festivals in Delhi-NCR, featuring 28 competitions, 120+ exhibition stalls, and a prize pool of ₹10 Lakh+.",
+      "IDEAS 4.0 is K.R. Mangalam University's flagship annual innovation fest, celebrating innovation, academics, hands-on learning, and culture. Now in its fourth edition, it is one of the largest student-led innovation festivals in Delhi-NCR, featuring 19 competitions, 120+ exhibition stalls, and a prize pool of ₹10 Lakh+.",
   },
   {
     question: "When and where is IDEAS 4.0 happening?",
@@ -19,7 +19,7 @@ const faqs = [
   {
     question: "Who can participate in IDEAS 4.0?",
     answer:
-      "IDEAS 4.0 is open to school students (classes 9–12), college and university students from across India, and startups. We expect over 18,000 participants this year across all categories.",
+      "IDEAS 4.0 is open to school students (classes 9–12), college and university students from across India, and startups. We expect over 20,000+ participants this year across all categories.",
   },
   {
     question: "What is the AI Arena?",
@@ -34,18 +34,18 @@ const faqs = [
   {
     question: "What is the prize pool for IDEAS 4.0?",
     answer:
-      "IDEAS 4.0 features a prize pool worth ₹10 Lakh+, distributed across 28 competitions in 10 categories, including technology, academics, arts, business, and culture.",
+      "IDEAS 4.0 features a prize pool worth ₹10 Lakh+, distributed across 19 competitions in 10 categories, including technology, academics, arts, business, and culture.",
   },
   {
     question:
       "How many competitions are there, and what categories do they cover?",
     answer:
-      "There are 28 competitions across 10 categories: Law & Social Sciences, Technology & Engineering, Pharmacy, Creative Arts, Media & Communication, Innovation & Sustainability, Business, Science, Cultural, and Sports & Fitness. There's something for every interest, whether you're into tech, art, debate, dance, or business.",
+      "There are 19 competitions across 10 categories: Law & Social Sciences, Technology & Engineering, Pharmacy, Creative Arts, Media & Communication, Innovation & Sustainability, Business, Science, Cultural, and Sports & Fitness. There's something for every interest, whether you're into tech, art, debate, dance, or business.",
   },
   {
     question: "How do I register for IDEAS 4.0?",
     answer:
-      "Students: Scan the Student Registration QR code available in the event brochure.\nSchools: Scan the separate School Registration QR code for bulk/institutional registration.\nFor the Hackathon: Complete the standard registration first, then fill out the additional Hackathon Team form.\nYou can also reach out to the event team directly for help via admissions@krmangalam.edu.in.",
+      "Students: Scan the Student Registration QR code available in the event brochure.\nSchools: Scan the separate School Registration QR code for bulk/institutional registration.\nFor the Hackathon: Complete the standard registration first, then fill out the additional Hackathon Team form.\nYou can also reach out to the event team directly for help via ideas@krmangalam.edu.in",
   },
   {
     question: "Can I participate in more than one event?",
@@ -110,7 +110,7 @@ const faqs = [
   {
     question: "Who should I contact for more information?",
     answer:
-      "You can reach the IDEAS 4.0 event team at:\nEmail: ideas@krmangalam.edu.in\nMobile: 8448184864\nUniversity Helpline: 08800697010-15 | 8192888444 | 8800697012\nLandline: 0124-2867800\nWebsite: www.krmangalam.edu.in",
+      "You can reach the IDEAS 4.0 event team at:\nEmail: ideas@krmangalam.edu.in\nMobile: 8448184864\nUniversity Helpline: 8448184864 | 8192888444\nLandline: 0124-2867800\nWebsite: www.krmangalam.edu.in",
   },
 ];
 

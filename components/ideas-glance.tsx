@@ -184,11 +184,11 @@ export default function IdeasGlance() {
                 >
                   <div>
                     {/* Badge & Title */}
-                    <div className="mb-2">
+                    {/* <div className="mb-2">
                       <span className="text-[10px] font-mono font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full bg-white/15 text-[#00D2FF] border border-white/20">
                         {card.badge}
                       </span>
-                    </div>
+                    </div> */}
 
                     <h3 className="text-xl font-serif font-bold text-white tracking-tight mb-2 leading-snug">
                       {card.title}

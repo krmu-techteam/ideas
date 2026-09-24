@@ -196,10 +196,11 @@ export default function SpotlightPage() {
                         {event.date?.includes("24")
                           ? "Oct 24–28"
                           : event.day === "both" ||
-                              event.date?.includes("–") ||
-                              event.date?.includes("-")
+                              (event.date?.includes("27") &&
+                                event.date?.includes("28")) ||
+                              event.date?.includes("–")
                             ? "Oct 27–28"
-                            : event.day === "day2"
+                            : event.day === "day2" || event.date?.includes("28")
                               ? "Oct 28"
                               : "Oct 27"}
                       </div>
