@@ -44,26 +44,27 @@ export async function POST(request: Request) {
       );
     }
 
-    // Configure Nodemailer transporter
-    const transporter = nodemailer.createTransport(
-      process.env.SMTP_HOST
-        ? {
-            host: process.env.SMTP_HOST,
-            port: Number(process.env.SMTP_PORT) || 465,
-            secure: Number(process.env.SMTP_PORT) === 465 || !process.env.SMTP_PORT,
-            auth: {
-              user: smtpUser,
-              pass: smtpPass,
-            },
-          }
-        : {
-            service: "gmail",
-            auth: {
-              user: smtpUser,
-              pass: smtpPass,
-            },
-          }
-    );
+    // Configure Nodemailer transporter (Office 365 / Microsoft Exchange)
+    const smtpHost = process.env.SMTP_HOST || "smtp.office365.com";
+    const smtpPort = Number(process.env.SMTP_PORT) || 587;
+    // Port 587 = STARTTLS (secure: false, requireTLS: true)
+    // Port 465 = SSL/TLS   (secure: true)
+    const isSecure = smtpPort === 465;
+
+    const transporter = nodemailer.createTransport({
+      host: smtpHost,
+      port: smtpPort,
+      secure: isSecure,
+      requireTLS: !isSecure, // enforce STARTTLS upgrade on port 587
+      auth: {
+        user: smtpUser,
+        pass: smtpPass,
+      },
+      tls: {
+        ciphers: "SSLv3",
+        rejectUnauthorized: false, // allows self-signed certs on some Exchange servers
+      },
+    });
 
     const emailSubject = subject?.trim()
       ? `[IDEAS 4.0 Contact] ${subject.trim()}`
