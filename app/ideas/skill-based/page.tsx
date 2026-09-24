@@ -8,10 +8,11 @@ import {
   Users,
   ArrowLeft,
   Target,
+  Wrench,
+  ArrowRight,
 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { StructuredData } from "@/components/structured-data";
 
 const trackData = ideasEventsData["skill-based"];
@@ -26,7 +27,7 @@ export const metadata: Metadata = generateEventMetadata(
 
 export default function SkillBasedPage() {
   return (
-    <div className="min-h-screen bg-[#f2f4f3]">
+    <div className="min-h-screen bg-[#F4F9FD] text-[#0B256B]">
       <StructuredData
         type="breadcrumb"
         data={{
@@ -45,139 +46,148 @@ export default function SkillBasedPage() {
       />
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-[#9d0208] via-[#370617] to-[#03071e] text-white pt-20 pb-12">
-        <div className="container mx-auto px-4">
+      <section className="bg-gradient-to-r from-[#081B4B] via-[#00529B] to-[#00ACE9] text-white pt-28 pb-14 sm:pt-36 sm:pb-16 relative overflow-hidden">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 relative z-10">
           <Link
             href="/"
-            className="inline-flex items-center font-poppins gap-2 text-white hover:text-white transition-colors mb-8"
+            className="inline-flex items-center gap-2 text-blue-100 hover:text-white transition-colors mb-6 text-xs sm:text-sm font-mono uppercase tracking-wider"
           >
-            <ArrowLeft size={20} />
-            Back to IDEAS
+            <ArrowLeft size={16} />
+            <span>Back to IDEAS</span>
           </Link>
 
-          <div className="max-w-[1440px] mx-auto text-center">
-            <div className="text-8xl mb-6">🛠️</div>
-            <h1 className="text-5xl font-serif md:text-6xl font-bold mb-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-xs sm:text-sm font-mono font-semibold uppercase tracking-wider text-[#00D2FF] border border-white/20 mb-4 backdrop-blur-xs">
+              <Wrench size={14} className="text-[#00D2FF]" />
+              <span>Track V • Skill-Based Learning</span>
+            </div>
+
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-white mb-4 tracking-tight">
               Skill-Based Learning
             </h1>
-            <p className="text-xl md:text-2xl text-white font-serif mb-8">
-              Hands-on interdisciplinary learning powered by industry
-              partnerships
+
+            <p className="text-base sm:text-lg md:text-xl text-blue-100 mb-8 max-w-2xl mx-auto leading-relaxed">
+              Hands-on interdisciplinary learning powered by industry partnerships
             </p>
 
-            <div className="flex flex-wrap font-poppins justify-center gap-6 text-white">
-              <div className="flex items-center gap-2">
-                <Calendar size={20} />
+            {/* Event Info Chips */}
+            <div className="flex flex-wrap justify-center gap-3 text-white text-xs sm:text-sm">
+              <div className="flex items-center gap-2 bg-white/10 border border-white/15 px-3.5 py-1.5 rounded-xl backdrop-blur-xs">
+                <Calendar size={16} className="text-[#00D2FF]" />
                 <span>October 27–28, 2026</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Clock size={20} />
+              <div className="flex items-center gap-2 bg-white/10 border border-white/15 px-3.5 py-1.5 rounded-xl backdrop-blur-xs">
+                <Clock size={16} className="text-[#00D2FF]" />
                 <span>9:15 AM onwards (both days)</span>
               </div>
-              <div className="flex items-center gap-2">
-                <MapPin size={20} />
+              <div className="flex items-center gap-2 bg-white/10 border border-white/15 px-3.5 py-1.5 rounded-xl backdrop-blur-xs">
+                <MapPin size={16} className="text-[#00D2FF]" />
                 <span>Various Locations, KRMU Campus</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Users size={20} />
+              <div className="flex items-center gap-2 bg-white/10 border border-white/15 px-3.5 py-1.5 rounded-xl backdrop-blur-xs">
+                <Users size={16} className="text-[#00D2FF]" />
                 <span>700+ Participants</span>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Content Section */}
-      <div className="container mx-auto px-4 py-12">
-        <div className="max-w-[1440px] mx-auto">
-          {/* Description */}
-          <Card className="mb-12 border-none !bg-transparent shadow-none">
-            <CardContent>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <Target className="text-[#03071e]" />
-                About Skill-Based Learning Track
-              </h2>
-              <p className="text-black text-[16px] font-normal font-poppins leading-relaxed">
-                {trackData.description}
-              </p>
-            </CardContent>
-          </Card>
-          {/* divider */}
-          <div className="border-b border-[#03071e]/80 mb-12" />
+      <section className="container mx-auto max-w-7xl px-4 sm:px-6 py-12 sm:py-16">
+        {/* Description Card */}
+        <div className="bg-white rounded-2xl border border-blue-100 p-6 sm:p-8 mb-12">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-[#0062A2]">
+              <Target size={20} />
+            </div>
+            <h2 className="text-xl sm:text-2xl font-serif font-bold text-[#0B256B]">
+              About Skill-Based Learning Track
+            </h2>
+          </div>
+          <p className="text-slate-600 text-[15px] sm:text-base leading-relaxed">
+            {trackData.description}
+          </p>
+        </div>
 
-          {/* Showcase Items */}
-          <div>
-            <h2 className="text-[38px] font-serif font-bold text-gray-900 mb-8 text-center">
+        {/* Featured Events */}
+        <div className="mb-14">
+          <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
+            <div className="inline-flex font-mono items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-[0.14em] text-[#0062A2] bg-blue-50 border border-blue-200 mb-2">
+              <span>Competitions &amp; Showcases</span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-[#0B256B]">
               Featured Events
             </h2>
-            <div className="grid md:grid-cols-4 gap-4">
-              {trackData.showcaseItems.map((item, idx) => (
-                <Card
-                  key={idx}
-                  className="hover:shadow-lg transition-shadow overflow-hidden !bg-white border border-slate-200/90"
-                >
-                  <div className="relative h-48 overflow-hidden">
-                    <img
-                      src={item.image || "/placeholder.svg"}
-                      alt={item.title}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                    />
-                  </div>
-                  <CardContent className="p-5">
-                    <h3 className="text-xl font-serif font-semibold text-gray-900 mb-2">
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {trackData.showcaseItems.map((item, idx) => (
+              <div
+                key={idx}
+                className="group flex flex-col justify-between bg-white rounded-2xl border border-blue-100 hover:border-[#0062A2] transition-colors duration-200 overflow-hidden"
+              >
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-100">
+                  <img
+                    src={item.image || "/placeholder.svg"}
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="p-5 sm:p-6 flex flex-col justify-between flex-grow">
+                  <div>
+                    <h3 className="text-lg font-serif font-bold text-[#0B256B] group-hover:text-[#0062A2] transition-colors mb-2 leading-snug">
                       {item.title}
                     </h3>
-                    <p className="text-black/80 font-poppins text-[15px]">
+                    <p className="text-slate-600 text-[13px] leading-relaxed">
                       {item.description}
                     </p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-
-          {/* Related Events */}
-          <div className="mt-12">
-            <h2 className="text-2xl font-serif font-bold text-gray-900 mb-6">
-              Related Events
-            </h2>
-            <div className="flex flex-wrap gap-3">
-              {trackData.relatedEvents.map((event, idx) => (
-                <span
-                  key={idx}
-                  className="px-4 py-[6px] font-poppins bg-[#370617]/5 text-[#370617] rounded-full text-sm font-medium"
-                >
-                  {event}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          {/* CTA Section */}
-          <div className="text-center my-12">
-            <Card className="bg-gradient-to-r from-[#9d0208] via-[#370617] to-[#03071e] text-white border-0 shadow-xl">
-              <CardContent className="p-8 md:p-10">
-                <h2 className="text-2xl font-bold font-serif mb-4 text-white">
-                  Build Essential Skills
-                </h2>
-                <p className="text-white/90 font-poppins mb-6 max-w-xl mx-auto">
-                  Develop hands-on expertise through practical learning
-                  experiences on October 27–28, 2026 at K.R. Mangalam
-                  University.
-                </p>
-                <Button
-                  size="lg"
-                  className="bg-primary font-poppins hover:bg-primary/90 text-white font-semibold shadow-md !border !border-white"
-                  asChild
-                >
-                  <Link href="/register/selection">Register Now</Link>
-                </Button>
-              </CardContent>
-            </Card>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      </div>
+
+        {/* Related Events */}
+        <div className="bg-white rounded-2xl border border-blue-100 p-6 sm:p-8 mb-14">
+          <h2 className="text-xl sm:text-2xl font-serif font-bold text-[#0B256B] mb-4">
+            Related Events
+          </h2>
+          <div className="flex flex-wrap gap-2.5">
+            {trackData.relatedEvents.map((event, idx) => (
+              <span
+                key={idx}
+                className="px-3.5 py-1.5 bg-blue-50 text-[#0062A2] border border-blue-100 rounded-full text-xs font-mono font-medium hover:bg-blue-100/70 transition-colors"
+              >
+                {event}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* CTA Section */}
+        <div className="bg-gradient-to-r from-[#081B4B] via-[#00529B] to-[#00ACE9] text-white rounded-3xl border border-white/20 p-8 sm:p-12 text-center relative overflow-hidden">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-white mb-3">
+            Build Essential Skills
+          </h2>
+          <p className="text-blue-100 mb-6 max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
+            Develop hands-on expertise through practical learning experiences on
+            October 27–28, 2026 at K.R. Mangalam University.
+          </p>
+          <Button
+            asChild
+            size="lg"
+            className="bg-gradient-to-r from-[#FF6600] to-[#E51937] hover:from-[#FF5500] hover:to-[#CC112D] text-white font-bold h-11 px-8 rounded-xl transition-colors duration-200"
+          >
+            <Link href="/register/selection" className="inline-flex items-center gap-2">
+              <span>Register Now</span>
+              <ArrowRight size={16} />
+            </Link>
+          </Button>
+        </div>
+      </section>
     </div>
   );
 }

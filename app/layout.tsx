@@ -36,7 +36,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   ...generateBaseMetadata(
     "IDEAS 4.0 | K.R. Mangalam University",
-    "IDEAS 4.0 is KRMU's flagship mega fest that celebrates innovation, academics, hands-on pedagogy, and cultural vibrancy. The fest brings together over 18,000 participants from NCR schools, pan-India universities, and startups. With 120 canopies, 35 competitions, and a ₹10 lakh prize pool spread across October 27–28, 2026. Register now for spotlight activities, cultural events, and innovation competitions.",
+    "IDEAS 4.0 is KRMU's flagship mega fest that celebrates innovation, academics, hands-on pedagogy, and cultural vibrancy. The fest brings together over 18,000 participants from NCR schools, pan-India universities, and startups. With 120 canopies, 28 competitions across 10 categories, and a ₹10 lakh prize pool spread across October 27–28, 2026. Register now for spotlight activities, cultural events, and innovation competitions.",
     "/",
   ),
   keywords: [

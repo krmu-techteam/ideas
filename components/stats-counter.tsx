@@ -7,15 +7,15 @@ const stats = [
   {
     value: 10,
     label: "Prize Pool",
-    sublabel: "Across 28 events",
+    sublabel: "Across 19 events",
     display: "₹10 Lakh+",
     color: "text-[#E11E46]",
   },
   {
-    value: 28,
+    value: 19,
     label: "Competitions",
     sublabel: "10 Categories",
-    display: "28",
+    display: "19",
     color: "text-white",
   },
   {
@@ -26,10 +26,10 @@ const stats = [
     color: "text-[#E11E46]",
   },
   {
-    value: 18000,
+    value: 20000,
     label: "Expected Footfall",
     sublabel: "Delhi-NCR & Beyond",
-    display: "18,000+",
+    display: "20,000+",
     color: "text-white",
   },
 ];
@@ -104,10 +104,10 @@ export default function StatsCounter() {
   return (
     <div
       ref={sectionRef}
-      className="py-8 bg-[#ABD9FB] text-gray-800"
+      className="py-10 bg-gradient-to-r from-[#081B4B] via-[#00529B] to-[#00ACE9] text-white relative overflow-hidden"
       suppressHydrationWarning
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4">
           {stats.map((stat, index) => (
             <motion.div
@@ -116,25 +116,25 @@ export default function StatsCounter() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               className={`py-4 px-3 sm:px-6 flex flex-col items-center justify-center text-center relative ${
-                index % 2 === 0 ? "border-r border-white/10" : ""
+                index % 2 === 0 ? "border-r border-white/15" : ""
               } ${
                 index < 2
-                  ? "border-b md:border-b-0 border-white/10 pb-6 md:pb-4"
+                  ? "border-b md:border-b-0 border-white/15 pb-6 md:pb-4"
                   : "pt-6 md:pt-4"
-              } md:border-r md:last:border-r-0 md:border-white/10 group`}
+              } md:border-r md:last:border-r-0 md:border-white/15 group`}
               suppressHydrationWarning
             >
               <div
-                className={`text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-2 leading-none font-serif text-gray-800`}
+                className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-2 leading-none font-serif text-[#00D2FF]"
                 suppressHydrationWarning
               >
                 {formatDisplay(index)}
               </div>
-              <div className="text-[11px] font-poppins sm:text-xs font-semibold uppercase tracking-widest text-gray-800">
+              <div className="text-[11px] font-mono sm:text-xs font-semibold uppercase tracking-widest text-white">
                 {stat.label}
               </div>
               {stat.sublabel && (
-                <div className="text-[10px] font-poppins text-gray-800 tracking-wider uppercase mt-1">
+                <div className="text-[10px] font-mono text-blue-100/90 tracking-wider uppercase mt-1">
                   {stat.sublabel}
                 </div>
               )}

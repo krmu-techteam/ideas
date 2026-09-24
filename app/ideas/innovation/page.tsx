@@ -26,7 +26,7 @@ export const metadata: Metadata = generateEventMetadata(
 
 export default function InnovationPage() {
   return (
-    <div className="min-h-screen bg-[#f2f4f3]">
+    <div className="min-h-screen bg-[#F4F9FD]">
       <StructuredData
         type="breadcrumb"
         data={{
@@ -45,11 +45,11 @@ export default function InnovationPage() {
       />
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-[#006d77] via-[#21717a] to-[#16212C] text-white py-20">
+      <div className="bg-gradient-to-r from-[#081B4B] via-[#00529B] to-[#00ACE9] text-white py-20">
         <div className="container mx-auto px-4">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-white hover:text-white transition-colors mb-8"
+            className="inline-flex items-center gap-2 text-blue-100 hover:text-white transition-colors mb-8 text-sm"
           >
             <ArrowLeft size={20} />
             Back to IDEAS
@@ -57,26 +57,26 @@ export default function InnovationPage() {
 
           <div className="max-w-4xl mx-auto text-center">
             <div className="text-8xl mb-6">💡</div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Innovation</h1>
-            <p className="text-xl md:text-2xl text-white mb-8">
-              Creative, sustainable & tech-driven solutions
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 font-serif text-white">Innovation</h1>
+            <p className="text-xl md:text-2xl text-blue-100 mb-8">
+              Creative, sustainable &amp; tech-driven solutions
             </p>
 
-            <div className="flex flex-wrap justify-center gap-6 text-white">
-              <div className="flex items-center gap-2">
-                <Calendar size={20} />
+            <div className="flex flex-wrap justify-center gap-6 text-white text-sm">
+              <div className="flex items-center gap-2 bg-white/10 px-3.5 py-1.5 rounded-lg border border-white/15">
+                <Calendar size={18} className="text-[#00D2FF]" />
                 <span>October 27–28, 2026</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Clock size={20} />
+              <div className="flex items-center gap-2 bg-white/10 px-3.5 py-1.5 rounded-lg border border-white/15">
+                <Clock size={18} className="text-[#00D2FF]" />
                 <span>9:15 AM onwards (both days)</span>
               </div>
-              <div className="flex items-center gap-2">
-                <MapPin size={20} />
+              <div className="flex items-center gap-2 bg-white/10 px-3.5 py-1.5 rounded-lg border border-white/15">
+                <MapPin size={18} className="text-[#00D2FF]" />
                 <span>Sohna Road, Gurugram, Delhi-NCR, Haryana</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Users size={20} />
+              <div className="flex items-center gap-2 bg-white/10 px-3.5 py-1.5 rounded-lg border border-white/15">
+                <Users size={18} className="text-[#00D2FF]" />
                 <span>500+ Participants</span>
               </div>
             </div>
@@ -90,11 +90,11 @@ export default function InnovationPage() {
           {/* Description */}
           <Card className="w-full mb-12 !bg-transparent border-0 shadow-none">
             <CardContent className="py-8">
-              <h2 className="text-2xl font-semibold font-serif text-gray-900 mb-4 flex items-center gap-2">
-                <Target className="text-gray-900" />
+              <h2 className="text-2xl font-semibold font-serif text-[#0B256B] mb-4 flex items-center gap-2">
+                <Target className="text-[#0062A2]" />
                 About Innovation Track
               </h2>
-              <p className="text-black text-lg leading-relaxed">
+              <p className="text-slate-700 text-lg leading-relaxed">
                 {trackData.description}
               </p>
             </CardContent>
@@ -102,28 +102,28 @@ export default function InnovationPage() {
 
           {/* Showcase Items */}
           <div>
-            <h2 className="text-[38px] font-serif font-bold text-black mb-8 text-center">
+            <h2 className="text-[38px] font-serif font-bold text-[#0B256B] mb-8 text-center">
               Featured Events
             </h2>
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {trackData.showcaseItems.map((item, idx) => (
                 <Card
                   key={idx}
-                  className="hover:shadow-lg transition-shadow overflow-hidden !bg-white border border-slate-200/90"
+                  className="!bg-white border border-blue-100 hover:border-[#0062A2] transition-colors duration-200 overflow-hidden"
                 >
-                  <div className="relative h-48 overflow-hidden">
+                  <div className="relative h-48 overflow-hidden bg-slate-100">
                     <img
                       src={item.image || "/placeholder.svg"}
                       alt={item.title}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover"
                       loading="lazy"
                     />
                   </div>
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    <h3 className="text-xl font-semibold font-serif text-[#0B256B] mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-gray-600">{item.description}</p>
+                    <p className="text-slate-600 text-sm leading-relaxed">{item.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -132,14 +132,14 @@ export default function InnovationPage() {
 
           {/* Related Events */}
           <div className="mt-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl font-bold text-[#0B256B] mb-6">
               Related Events
             </h2>
             <div className="flex flex-wrap gap-3">
               {trackData.relatedEvents.map((event, idx) => (
                 <span
                   key={idx}
-                  className="px-4 py-[6px] bg-[#006d77]/10 text-[#006d77] rounded-full text-sm font-semibold"
+                  className="px-4 py-[6px] bg-blue-50 text-[#0062A2] border border-blue-100 rounded-full text-sm font-semibold"
                 >
                   {event}
                 </span>
@@ -149,18 +149,18 @@ export default function InnovationPage() {
 
           {/* CTA Section */}
           <div className="text-center mt-16">
-            <Card className="bg-gradient-to-r from-[#006d77] via-[#006d77] to-[#16212C] text-white border-0 shadow-xl">
+            <Card className="bg-gradient-to-r from-[#081B4B] via-[#00529B] to-[#00ACE9] text-white border-0">
               <CardContent className="p-8">
-                <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-white">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-white font-serif">
                   Ready to Innovate?
                 </h2>
-                <p className="text-slate-200 mb-6 max-w-xl mx-auto text-base sm:text-lg leading-relaxed">
+                <p className="text-blue-100 mb-6 max-w-xl mx-auto text-base sm:text-lg leading-relaxed">
                   Join us at the Innovation track on October 27–28, 2026 and
                   showcase your creative solutions at K.R. Mangalam University.
                 </p>
                 <Button
                   size="lg"
-                  className="border rounded-[6px] border-white text-white hover:bg-primary"
+                  className="border rounded-[6px] border-white text-white hover:bg-white hover:text-[#081B4B] transition-colors"
                   asChild
                 >
                   <Link href="/register/selection">Register Now</Link>

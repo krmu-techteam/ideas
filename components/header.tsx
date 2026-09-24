@@ -127,7 +127,7 @@ export default function Header() {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 text-white bg-[#16212C] border-none shadow-none py-2">
-        <div className="container mx-auto px-4 flex items-center justify-between">
+        <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 flex items-center justify-between">
           {/* Logo & Brand */}
           <Link
             href="/"
@@ -202,8 +202,8 @@ export default function Header() {
                         IDEAS Framework
                       </h3>
                       <p className="text-[11px] text-slate-300 leading-tight">
-                        Innovation, Distinctiveness, Extension, Achievements &amp;
-                        Skill-Based Learning
+                        Innovation, Distinctiveness, Extension, Achievements
+                        &amp; Skill-Based Learning
                       </p>
                     </div>
                     <div className="p-1.5 space-y-0.5">
@@ -221,7 +221,7 @@ export default function Header() {
                             )}
                             onClick={() => setIsIdeasDropdownOpen(false)}
                           >
-                            <div className="w-7 h-7 rounded-md bg-blue-600 text-white flex items-center justify-center text-xs font-bold shrink-0 shadow-xs group-hover/item:scale-105 transition-transform">
+                            <div className="w-7 h-7 rounded-md bg-blue-600 text-white flex items-center justify-center text-xs font-bold shrink-0 group-hover/item:scale-105 transition-transform">
                               {item.letter}
                             </div>
                             <div className="min-w-0">

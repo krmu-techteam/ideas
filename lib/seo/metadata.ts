@@ -1,20 +1,25 @@
-import type { Metadata } from "next"
+import type { Metadata } from "next";
 
 export const siteConfig = {
   name: "IDEAS 4.0",
   description:
-    "KRMU's flagship mega fest celebrating innovation, academics, hands-on pedagogy, and cultural vibrancy. 120 canopies, 28 competitions, ₹10 lakh prize pool, 18,000+ participants.",
+    "KRMU's flagship mega fest celebrating innovation, academics, hands-on pedagogy, and cultural vibrancy. 120 canopies, 28 competitions, ₹10 lakh prize pool, 20,000+ participants.",
   url: "https://ideas.krmangalam.edu.in",
   ogImage: "https://ideas.krmangalam.edu.in/IDEAS_LOGO2.png",
   links: {
     twitter: "https://twitter.com/krmangalam",
     instagram: "https://instagram.com/krmangalam",
   },
-}
+};
 
-export function generateBaseMetadata(title: string, description: string, path = "/", ogImage?: string): Metadata {
-  const fullTitle = title === "IDEAS 4.0" ? title : `${title} | IDEAS 4.0`
-  const url = `${siteConfig.url}${path}`
+export function generateBaseMetadata(
+  title: string,
+  description: string,
+  path = "/",
+  ogImage?: string,
+): Metadata {
+  const fullTitle = title === "IDEAS 4.0" ? title : `${title} | IDEAS 4.0`;
+  const url = `${siteConfig.url}${path}`;
 
   return {
     title: fullTitle,
@@ -55,7 +60,7 @@ export function generateBaseMetadata(title: string, description: string, path = 
         "max-snippet": -1,
       },
     },
-  }
+  };
 }
 
 export function generateEventMetadata(
@@ -65,6 +70,6 @@ export function generateEventMetadata(
   eventVenue: string,
   path: string,
 ): Metadata {
-  const description = `${eventDescription} | Date: ${eventDate} | Venue: ${eventVenue}`
-  return generateBaseMetadata(eventTitle, description, path)
+  const description = `${eventDescription} | Date: ${eventDate} | Venue: ${eventVenue}`;
+  return generateBaseMetadata(eventTitle, description, path);
 }

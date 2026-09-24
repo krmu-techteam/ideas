@@ -49,7 +49,7 @@ export default function CountdownTimer() {
   // Don't render time values until mounted on client
   if (!mounted) {
     return (
-      <section className="py-10 sm:py-14 bg-[#F4FBFE]">
+      <section className="py-10 sm:py-14 bg-[#F4F9FD]">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -57,8 +57,8 @@ export default function CountdownTimer() {
             transition={{ duration: 0.8 }}
             className="text-center mb-8"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-royal-950 mb-2 leading-tight">
-              Countdown to IDEAS <span className="text-gold-500">4.0</span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-[#0B256B] mb-2 leading-tight">
+              Countdown to IDEAS <span className="text-[#00ACE9]">4.0</span>
             </h2>
             <p className="text-sm sm:text-base text-slate-600">
               Mark your calendars for October 27–28, 2026
@@ -72,12 +72,12 @@ export default function CountdownTimer() {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
-                className="bg-white rounded-2xl p-5 sm:p-6 text-center border border-slate-200/90 shadow-sm"
+                className="bg-white rounded-2xl p-5 sm:p-6 text-center border border-blue-100"
               >
-                <div className="text-2xl font-serif sm:text-3xl md:text-4xl lg:text-5xl font-bold text-royal-950 mb-1 sm:mb-2 leading-tight">
+                <div className="text-2xl font-serif sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B256B] mb-1 sm:mb-2 leading-tight">
                   00
                 </div>
-                <div className="text-xs sm:text-sm uppercase tracking-wider text-slate-500 font-semibold">
+                <div className="text-xs sm:text-sm uppercase tracking-wider text-[#0062A2] font-semibold font-mono">
                   {label}
                 </div>
               </motion.div>
@@ -96,7 +96,7 @@ export default function CountdownTimer() {
   ];
 
   return (
-    <section className="py-10 sm:py-14 bg-[#F4FBFE]">
+    <section className="py-10 sm:py-14 bg-[#F4F9FD]">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -104,10 +104,10 @@ export default function CountdownTimer() {
           transition={{ duration: 0.8 }}
           className="text-center mb-8"
         >
-          <h2 className="text-2xl font-serif sm:text-3xl md:text-5xl font-bold gradi-title mb-4 leading-tight">
-            Countdown to IDEAS 4.0
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#0B256B] mb-3 leading-tight">
+            Countdown to IDEAS <span className="text-[#00ACE9]">4.0</span>
           </h2>
-          <p className="text-sm font-medium sm:text-[16px] text-gray-800 font-poppins">
+          <p className="text-sm sm:text-base text-slate-600 font-poppins">
             Mark your calendars for October 27–28, 2026
           </p>
         </motion.div>
@@ -119,12 +119,12 @@ export default function CountdownTimer() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="bg-transparent rounded-[4px] p-5 sm:p-6 text-center border border-gray-800"
+              className="bg-white rounded-2xl p-5 sm:p-6 text-center border border-blue-100 hover:border-[#0062A2] transition-colors duration-200"
             >
-              <div className="text-2xl font-serif sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-1 sm:mb-2 leading-tight">
+              <div className="text-2xl font-serif sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B256B] mb-1 sm:mb-2 leading-tight">
                 {unit.value.toString().padStart(2, "0")}
               </div>
-              <div className="text-xs sm:text-sm uppercase tracking-wider text-gray-800 font-semibold">
+              <div className="text-xs sm:text-sm uppercase tracking-wider text-[#0062A2] font-semibold font-mono">
                 {unit.label}
               </div>
             </motion.div>

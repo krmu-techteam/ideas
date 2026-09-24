@@ -6,11 +6,11 @@ const zones = [
   {
     title: "4.1 AI Arena",
     description:
-      "The AI Arena is the technology and competition hub of IDEAS 4.0. It hosts 25+ curated competitions spanning robotics, AI, coding, and skill-based challenges. It is the primary venue for power-packed, high-energy contests where participants compete for a share of the ₹10 Lakh+ prize pool.",
+      "The AI Arena is the technology and competition hub of IDEAS 4.0. It hosts 19 curated competitions spanning robotics, AI, coding, and skill-based challenges. It is the primary venue for power-packed, high-energy contests where participants compete for a share of the ₹10 Lakh+ prize pool.",
     details: [
       {
         label: "Number of Competitions",
-        value: "25+ (across all AI Arena events)",
+        value: "19 (across 10 categories)",
       },
       {
         label: "Focus Areas",
@@ -64,7 +64,7 @@ export default function ZonesHighlights() {
   return (
     <section
       id="zones-highlights"
-      className="py-16  bg-[#F2FAFE] text-gray-900"
+      className="py-16 bg-[#F4F9FD] text-[#0B256B]"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         {/* Title */}
@@ -75,7 +75,7 @@ export default function ZonesHighlights() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold tracking-tight gradient-title">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold tracking-tight text-[#0B256B]">
             Zones &amp; Key Highlights
           </h2>
         </motion.div>
@@ -89,25 +89,25 @@ export default function ZonesHighlights() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="rounded-[12px] border border-gray-900/40 p-6 sm:p-8 flex flex-col justify-between hover:!border-gray-900/40 hover:-translate-y-1 transition-all duration-300 group"
+              className="rounded-2xl border border-blue-100 bg-white p-6 sm:p-8 flex flex-col justify-between hover:border-[#0062A2] transition-colors duration-200 group"
             >
               <div>
-                <h3 className="text-2xl font-serif font-bold text-gray-900 mb-4">
+                <h3 className="text-2xl font-serif font-bold text-[#0B256B] mb-4">
                   {zone.title}
                 </h3>
 
-                <p className="text-gray-800 font-poppins text-sm sm:text-base leading-relaxed mb-6">
+                <p className="text-slate-600 font-sans text-sm sm:text-base leading-relaxed mb-6">
                   {zone.description}
                 </p>
 
                 {zone.details && zone.details.length > 0 && (
-                  <div className="space-y-3.5 pt-2 border-t border-gray-900/40">
+                  <div className="space-y-3.5 pt-3 border-t border-blue-50">
                     {zone.details.map((item) => (
                       <div key={item.label} className="text-sm">
-                        <span className="font-semibold font-poppins text-gray-800 block sm:inline">
+                        <span className="font-semibold font-mono text-[#0062A2] block sm:inline">
                           {item.label}:{" "}
                         </span>
-                        <span className="text-gray-800">{item.value}</span>
+                        <span className="text-slate-700">{item.value}</span>
                       </div>
                     ))}
                   </div>

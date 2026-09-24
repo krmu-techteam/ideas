@@ -49,10 +49,10 @@ export default function CulturalPage() {
   }, [searchTerm, participationFilter, events]);
 
   return (
-    <div className="min-h-screen bg-[#fffefb] text-[#14100b] selection:bg-[#14100b]/20 selection:text-[#14100b]">
-      {/* 1. Page Intro / Hero - Styled exactly after HackIndia Newsroom */}
-      <section className="bg-gradient-to-r from-[#213C87] via-[#0062A2] to-[#00ACE9] pt-28 pb-12 sm:pt-32 sm:pb-16">
-        <div className="container mx-auto max-w-7xl px-4 sm:px-6">
+    <div className="min-h-screen bg-[#F4F9FD] text-[#0B256B] selection:bg-[#00ACE9]/30 selection:text-[#081B4B]">
+      {/* 1. Page Intro / Hero - Brochure Color Combination (Deep Navy #081B4B -> Royal Blue #00529B -> Electric Sky #00ACE9) */}
+      <section className="bg-gradient-to-r from-[#081B4B] via-[#00529B] to-[#00ACE9] pt-28 pb-12 sm:pt-36 sm:pb-16 text-white relative overflow-hidden">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -60,73 +60,91 @@ export default function CulturalPage() {
             className="max-w-4xl"
           >
             {/* Main Headline */}
-            <h1 className="font-serif text-[clamp(32px,5.2vw,58px)] font-bold leading-[1.08] tracking-[-0.025em] text-[#fff] text-balance">
+            <h1 className="font-serif text-[clamp(32px,5.2vw,58px)] font-bold leading-[1.08] tracking-[-0.025em] text-white text-balance">
               Cultural{" "}
-              <span className="italic font-serif font-normal text-[#fff]">
+              <span className="italic font-serif font-normal text-[#00D2FF]">
                 Events
               </span>
             </h1>
 
             {/* Lede Subtitle */}
-            <p className="mt-4 max-w-2xl text-[16px] sm:text-[17px] leading-[1.65] text-white">
+            <p className="mt-4 max-w-2xl text-[16px] sm:text-[17px] leading-[1.65] text-blue-100">
               Showcasing rhythm, energy, and artistic synchronization at the
               Sunken Garden. Highlighting the top talent and dance troupes
               across IDEAS 4.0.
             </p>
 
-            {/* Quick Info Chips */}
-            <div className="mt-6 flex flex-wrap items-center gap-2.5">
-              <div className="bg-white border border-[#e7ded1] rounded-[4px] px-3 py-1.5 text-xs font-mono text-[#14100b] flex items-center gap-2 shadow-2xs">
-                <Calendar size={13} className="text-[#14100b]" />
+            {/* Quick Info Chips & Rule Book Button - All 3 in 1 line with transparent background */}
+            <div className="mt-6 flex flex-wrap items-center gap-2.5 sm:gap-3">
+              <div className="bg-transparent border border-white/20 rounded-[4px] px-3 py-1.5 text-xs font-mono text-white flex items-center gap-2 shadow-2xs">
+                <Calendar size={13} className="text-[#00D2FF]" />
                 <span>October 27–28, 2026</span>
               </div>
-              <div className="bg-white border border-[#e7ded1] rounded-[4px] px-3 py-1.5 text-xs font-mono text-[#14100b] flex items-center gap-2 shadow-2xs">
-                <MapPin size={13} className="text-[#14100b]" />
+              <div className="bg-transparent border border-white/20 rounded-[4px] px-3 py-1.5 text-xs font-mono text-white flex items-center gap-2 shadow-2xs">
+                <MapPin size={13} className="text-[#00D2FF]" />
                 <span>Sohna Road, Gurugram, Delhi-NCR, Haryana</span>
               </div>
+              <a
+                href="/rulebook.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Download Official Rule Book (PDF)"
+                className="relative inline-flex items-center justify-center rounded-full px-4 sm:px-5 py-2 text-xs font-mono font-semibold uppercase tracking-wide hover:bg-white/10 transition-colors duration-300 cursor-pointer"
+              >
+                {/* Gradient Border with Transparent Center */}
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-0 rounded-full p-[1.5px] pointer-events-none"
+                  style={{
+                    background:
+                      "linear-gradient(90deg, #FFD000 0%, #FF6600 50%, #E51937 100%)",
+                    WebkitMask:
+                      "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                    WebkitMaskComposite: "xor",
+                    maskComposite: "exclude",
+                  }}
+                />
+                <span className="relative z-10 font-poppins flex items-center gap-1.5">
+                  <span className="text-[#FFD000]">Download</span>
+                  <span className="text-[#f02d4a]">Rule Book</span>
+                </span>
+              </a>
             </div>
-            <button className="bg-transparent   bg-gradient-to-r from-[#B8AC14]   to-[#C50D22] text-[#090702] p-[2px] rounded-full   mt-6 font-poppins font-medium">
-              <div className="bg-[#034894] px-5 py-3 rounded-full text-white">
-                <a href="/rulebook.pdf" target="_blank">
-                  Download Rule Book
-                </a>
-              </div>
-            </button>
           </motion.div>
         </div>
       </section>
 
       {/* 2. Main Content Area */}
-      <section className="bg-[#F6FCFE] py-10 sm:py-14">
+      <section className="bg-[#F4F9FD] py-10 sm:py-14">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6">
           {/* Section Heading & Filter Bar */}
           <div className="mb-8">
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-gray-800 pb-6">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-blue-100 pb-6">
               <div>
-                <h2 className="font-serif text-[26px] sm:text-[30px] font-bold text-[#14100b] tracking-[-0.015em]">
+                <h2 className="font-serif text-[26px] sm:text-[30px] font-bold text-[#0B256B] tracking-[-0.015em]">
                   Every Cultural Performance
                 </h2>
-                <p className="text-[14px] text-gray-800 mt-1">
+                <p className="text-[14px] text-slate-600 mt-1">
                   Explore group and duet dance showcases, schedule timings, and
                   venue details.
                 </p>
               </div>
-              <div className="font-mono text-xs text-gray-800 shrink-0">
+              <div className="font-mono text-xs text-slate-600 shrink-0">
                 Showing{" "}
-                <span className="font-bold text-[#14100b]">
+                <span className="font-bold text-[#0B256B]">
                   {filteredEvents.length}
                 </span>{" "}
                 of {events.length} performances
               </div>
             </div>
 
-            {/* Search & Filter Controls (HackIndia News Bar Style) */}
+            {/* Search & Filter Controls */}
             <div className="mt-6 flex flex-col sm:flex-row gap-3.5">
               {/* Search Input */}
               <div className="relative flex-1">
                 <Search
                   size={16}
-                  className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-800"
+                  className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#0062A2]"
                 />
                 <input
                   type="text"
@@ -134,7 +152,7 @@ export default function CulturalPage() {
                   aria-label="Search cultural events"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full h-11 rounded-[6px] border border-gray-800 bg-white pl-10 pr-4 text-[14px] text-[#14100b] placeholder:text-gray-800 shadow-2xs focus:outline-none focus:border-[#14100b] focus:ring-1 focus:ring-[#14100b] transition-all"
+                  className="w-full h-11 rounded-[6px] border border-blue-200 bg-white pl-10 pr-4 text-[14px] text-slate-800 placeholder:text-slate-400 shadow-2xs focus:outline-none focus:border-[#0062A2] focus:ring-1 focus:ring-[#0062A2] transition-all"
                 />
               </div>
 
@@ -144,7 +162,7 @@ export default function CulturalPage() {
                   value={participationFilter}
                   onChange={(e) => setParticipationFilter(e.target.value)}
                   aria-label="Filter by participation"
-                  className="w-full h-11 rounded-[6px] border border-gray-800 bg-white pl-3.5 pr-9 text-[14px] font-medium text-[#14100b] shadow-2xs focus:outline-none focus:border-[#14100b] focus:ring-1 focus:ring-[#14100b] cursor-pointer appearance-none transition-all"
+                  className="w-full h-11 rounded-[6px] border border-blue-200 bg-white pl-3.5 pr-9 text-[14px] font-medium text-slate-800 shadow-2xs focus:outline-none focus:border-[#0062A2] focus:ring-1 focus:ring-[#0062A2] cursor-pointer appearance-none transition-all"
                 >
                   <option value="all">All Participants</option>
                   <option value="school">School Students</option>
@@ -152,7 +170,7 @@ export default function CulturalPage() {
                 </select>
                 <ChevronDown
                   size={16}
-                  className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-gray-800"
+                  className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[#0062A2]"
                 />
               </div>
             </div>
@@ -170,10 +188,10 @@ export default function CulturalPage() {
                 >
                   <Link
                     href={`/cultural/${event.slug}`}
-                    className="group flex h-full flex-col overflow-hidden rounded-[6px] border border-gray-800 bg-white transition-all duration-200 hover:border-[#14100b] hover:shadow-lg cursor-pointer"
+                    className="group flex h-full flex-col overflow-hidden rounded-[8px] border border-blue-100 bg-white transition-all duration-200 hover:border-[#0062A2] hover:shadow-lg cursor-pointer"
                   >
                     {/* 16:9 Aspect Ratio Image */}
-                    <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#ede6dc]">
+                    <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-100">
                       <img
                         src={event.image || "/placeholder.svg"}
                         alt={event.title}
@@ -181,7 +199,7 @@ export default function CulturalPage() {
                         className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                       />
                       {/* Top-Right Badge: Date / Day */}
-                      <div className="absolute top-2.5 right-2.5 bg-[#14100b]/80 backdrop-blur-xs text-white text-[10.5px] font-mono uppercase tracking-wider px-2.5 py-0.5 rounded-[3px] border border-white/10 shadow-xs">
+                      <div className="absolute top-2.5 right-2.5 bg-[#081B4B]/85 backdrop-blur-xs text-[#00D2FF] text-[10.5px] font-mono uppercase tracking-wider px-2.5 py-0.5 rounded-[3px] border border-white/10 shadow-xs">
                         {event.date?.includes("28")
                           ? "Oct 28 (Day 2)"
                           : "Oct 27 (Day 1)"}
@@ -191,9 +209,9 @@ export default function CulturalPage() {
                     {/* Card Body */}
                     <div className="flex flex-1 flex-col p-5">
                       {/* Kicker Meta: Department · Category · Format */}
-                      <div className="font-mono flex flex-wrap items-center gap-x-2 text-[10.5px] font-semibold uppercase tracking-[0.12em] text-[#14100b]">
+                      <div className="font-mono flex flex-wrap items-center gap-x-2 text-[10.5px] font-semibold uppercase tracking-[0.12em] text-[#0062A2]">
                         <span>{event.department || "STUDENT WELFARE"}</span>
-                        <span aria-hidden="true" className="text-[#14100b]/50">
+                        <span aria-hidden="true" className="text-[#0062A2]/40">
                           ·
                         </span>
                         <span>Cultural</span>
@@ -201,7 +219,7 @@ export default function CulturalPage() {
                           <>
                             <span
                               aria-hidden="true"
-                              className="text-[#14100b]/50"
+                              className="text-[#0062A2]/40"
                             >
                               ·
                             </span>
@@ -210,27 +228,27 @@ export default function CulturalPage() {
                         )}
                       </div>
 
-                      {/* Title (HackIndia font-serif, hover to saffron) */}
-                      <h3 className="font-serif mt-3 text-[18px] font-bold leading-snug tracking-[-0.015em] text-[#14100b] transition-colors line-clamp-2 group-hover:text-[#14100b]">
+                      {/* Title */}
+                      <h3 className="font-serif mt-3 text-[18px] font-bold leading-snug tracking-[-0.015em] text-[#0B256B] transition-colors line-clamp-2 group-hover:text-[#0062A2]">
                         {event.title}
                       </h3>
 
                       {/* Excerpt / Description */}
-                      <p className="mt-2.5 text-[13.5px] leading-[1.6] text-gray-800 line-clamp-2 flex-1">
+                      <p className="mt-2.5 text-[13.5px] leading-[1.6] text-slate-600 line-clamp-2 flex-1">
                         {event.description}
                       </p>
 
                       {/* Divider & Footer (Location + Details →) */}
-                      <div className="mt-4 pt-3.5 border-t border-gray-800 flex items-center justify-between text-[12px] text-gray-800">
-                        <div className="flex items-center gap-1.5 truncate max-w-[70%]">
-                          <MapPin size={13} className=" shrink-0" />
+                      <div className="mt-4 pt-3.5 border-t border-blue-50 flex items-center justify-between text-[12px] text-slate-500">
+                        <div className="flex items-center gap-1.5 truncate max-w-[70%] text-slate-600">
+                          <MapPin size={13} className="shrink-0 text-[#0062A2]" />
                           <span className="truncate">
                             {event.location || "Sunken Garden"}
                           </span>
                         </div>
-                        <span className="inline-flex items-center text-[12.5px] font-semibold text-[#14100b] group-hover:text-[#14100b] transition-colors">
+                        <span className="inline-flex items-center text-[12.5px] font-semibold text-[#0062A2] group-hover:text-[#0B256B] transition-colors">
                           Details
-                          <span className="ml-1 inline-block text-[#14100b] transition-transform duration-200 group-hover:translate-x-1">
+                          <span className="ml-1 inline-block text-[#0062A2] transition-transform duration-200 group-hover:translate-x-1">
                             →
                           </span>
                         </span>
@@ -241,12 +259,12 @@ export default function CulturalPage() {
               ))}
             </div>
           ) : (
-            /* Empty State (HackIndia EmptyState design) */
-            <div className="rounded-[6px] border border-gray-800 bg-white px-6 py-16 text-center">
-              <p className="font-serif text-xl font-bold text-[#14100b]">
+            /* Empty State */
+            <div className="rounded-[8px] border border-blue-100 bg-white px-6 py-16 text-center shadow-xs">
+              <p className="font-serif text-xl font-bold text-[#0B256B]">
                 No cultural performances found
               </p>
-              <p className="mx-auto mt-2 max-w-md text-[14px] text-gray-800">
+              <p className="mx-auto mt-2 max-w-md text-[14px] text-slate-600">
                 Try adjusting your search keywords or switching your filter.
               </p>
               <div className="mt-6 flex justify-center">
@@ -256,7 +274,7 @@ export default function CulturalPage() {
                     setSearchTerm("");
                     setParticipationFilter("all");
                   }}
-                  className="font-mono text-xs uppercase tracking-wider font-semibold px-5 py-2.5 rounded-[4px] border border-[#14100b] text-[#14100b] hover:bg-[#14100b] hover:text-white transition-colors"
+                  className="font-mono text-xs uppercase tracking-wider font-semibold px-5 py-2.5 rounded-[4px] border border-[#0B256B] text-[#0B256B] hover:bg-[#0B256B] hover:text-white transition-colors"
                 >
                   Clear all filters
                 </button>

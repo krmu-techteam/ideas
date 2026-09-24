@@ -24,11 +24,11 @@ const generateLayerParticles = (
     return state / m;
   };
   const colors = [
-    "bg-[#e7c268]/30 shadow-[0_0_10px_rgba(251,191,36,0.35)]",
-    "bg-sky-400/25 shadow-[0_0_10px_rgba(56,189,248,0.3)]",
-    "bg-amber-300/25 shadow-[0_0_8px_rgba(252,211,77,0.25)]",
-    "bg-cyan-400/20 shadow-[0_0_8px_rgba(45,212,191,0.25)]",
-    "bg-blue-400/20 shadow-[0_0_8px_rgba(96,165,250,0.2)]",
+    "bg-[#e7c268]/30",
+    "bg-sky-400/25",
+    "bg-amber-300/25",
+    "bg-cyan-400/20",
+    "bg-blue-400/20",
   ];
   return Array.from({ length: count }, (_, i) => {
     const top = rand() * 100;
@@ -299,9 +299,6 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <p className="inline-flex items-center gap-1.5 mb-5 px-3.5 py-1.5 rounded-full bg-[#e7c268]/10 text-xs sm:text-sm font-semibold text-[#e7c268] border border-[#e7c268]/30 tracking-wide">
-                October 27–28, 2026
-              </p>
               <h1 className="mb-4">
                 <span className="sr-only">IDEAS 4.0</span>
                 <Image
@@ -326,16 +323,16 @@ export default function HeroSection() {
 
               {/* Meta badges */}
               <div className="flex flex-wrap gap-3 sm:gap-4 mb-8">
-                <div className="flex items-center gap-2 text-xs sm:text-sm bg-white/5 border border-white/10 rounded-full px-4 py-2 text-slate-200 backdrop-blur-xs">
-                  <Calendar size={16} className="text-[#e7c268]" />
+                <div className="flex items-center gap-2 text-xs sm:text-sm bg-white/5 border border-white/15 rounded-full px-4 py-2 text-slate-200 backdrop-blur-xs">
+                  <Calendar size={16} className="text-[#00D2FF]" />
                   <span>October 27–28, 2026</span>
                 </div>
-                <div className="flex items-center gap-2 text-xs sm:text-sm bg-white/5 border border-white/10 rounded-full px-4 py-2 text-slate-200 backdrop-blur-xs">
-                  <Users size={16} className="text-[#e7c268]" />
+                <div className="flex items-center gap-2 text-xs sm:text-sm bg-white/5 border border-white/15 rounded-full px-4 py-2 text-slate-200 backdrop-blur-xs">
+                  <Users size={16} className="text-[#00D2FF]" />
                   <span>120 Canopies</span>
                 </div>
-                <div className="flex items-center gap-2 text-xs sm:text-sm bg-white/5 border border-white/10 rounded-full px-4 py-2 text-slate-200 backdrop-blur-xs">
-                  <MapPin size={16} className="text-[#e7c268]" />
+                <div className="flex items-center gap-2 text-xs sm:text-sm bg-white/5 border border-white/15 rounded-full px-4 py-2 text-slate-200 backdrop-blur-xs">
+                  <MapPin size={16} className="text-[#00D2FF]" />
                   <span>K.R. Mangalam University</span>
                 </div>
               </div>
@@ -347,7 +344,7 @@ export default function HeroSection() {
                   <Button
                     asChild
                     size="lg"
-                    className="bg-gradient-to-r from-rose-600 to-red-600 hover:from-rose-500 hover:to-red-500 text-white font-semibold min-h-[44px] text-[15px] px-7 rounded-[3px] shadow-lg shadow-rose-600/25 hover:shadow-rose-600/35 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+                    className="bg-[#E11E45] text-white font-bold min-h-[44px] text-[15px] px-7 rounded-xl transition-colors duration-300"
                   >
                     <Link href="/register/selection">Register Now</Link>
                   </Button>
@@ -355,7 +352,7 @@ export default function HeroSection() {
                     asChild
                     variant="outline"
                     size="lg"
-                    className="group bg-white/5 hover:bg-white/10 border border-[#e7c268]/40 hover:border-[#e7c268] text-[#e7c268] hover:text-[#e7c268] font-medium min-h-[44px] px-6 rounded-[3px] backdrop-blur-xs transition-all duration-200"
+                    className="group bg-white/5 hover:bg-white/15 border border-white/20 hover:border-white/40 text-white font-medium min-h-[44px] px-6 rounded-xl  transition-colors duration-300"
                   >
                     <Link
                       href="/all-events"
@@ -364,29 +361,19 @@ export default function HeroSection() {
                       <span>Explore Events</span>
                       <ArrowRight
                         size={18}
-                        className="group-hover:translate-x-1 transition-transform duration-300"
+                        className="group-hover:translate-x-1 transition-transform duration-300 text-[#00D2FF]"
                       />
                     </Link>
                   </Button>
-                  <Button
-                    asChild
-                    variant="outline"
-                    size="lg"
-                    className="group bg-white/5 hover:bg-white/10 border border-white/15 hover:border-white/30 text-slate-200 hover:text-white font-medium min-h-[44px] px-7 rounded-[3px] backdrop-blur-xs transition-all duration-200"
+                  <Link
+                    href="/IDEAS_Brochure_4.0.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex text-[14px] items-center justify-center gap-2 whitespace-nowrap bg-white/5 hover:bg-white/15 border border-white/20 hover:border-white/40 text-white font-medium min-h-[44px] px-6 rounded-xl transition-colors duration-300"
                   >
-                    <Link
-                      href="/IDEAS4.0-Brochure.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-2"
-                    >
-                      <span>View Brochure</span>
-                      <ArrowRight
-                        size={18}
-                        className="group-hover:translate-x-1 transition-transform duration-300"
-                      />
-                    </Link>
-                  </Button>
+                    <span>View Brochure</span>
+                    <ArrowRight size={15} className="text-[#00D2FF]" />
+                  </Link>
                 </div>
 
                 {/* Mobile: Grid layout with better spacing */}
@@ -396,7 +383,7 @@ export default function HeroSection() {
                     <Button
                       asChild
                       size="lg"
-                      className="bg-gradient-to-r from-rose-600 to-red-600 hover:from-rose-500 hover:to-red-500 text-white font-semibold shadow-md shadow-rose-600/25 min-h-[50px] text-sm px-4 rounded-[3px] border-0 transition-all duration-200"
+                      className="bg-[#E11E45] text-white font-bold min-h-[50px] text-sm px-4 rounded-xl border-0 transition-colors duration-300"
                     >
                       <Link href="/register/selection">Register Now</Link>
                     </Button>
@@ -404,7 +391,7 @@ export default function HeroSection() {
                       asChild
                       variant="outline"
                       size="lg"
-                      className="group bg-white/5 hover:bg-white/10 border border-[#e7c268]/40 text-amber-300 font-semibold min-h-[50px] text-sm px-4 rounded-[3px] backdrop-blur-xs transition-all duration-200"
+                      className="group bg-white/5 hover:bg-white/15 border border-white/20 text-white font-semibold min-h-[50px] text-sm px-4 rounded-xl backdrop-blur-xs transition-colors duration-300"
                     >
                       <Link
                         href="/all-events"
@@ -413,32 +400,34 @@ export default function HeroSection() {
                         <span>Explore Events</span>
                         <ArrowRight
                           size={16}
-                          className="group-hover:translate-x-1 transition-transform duration-300"
+                          className="group-hover:translate-x-1 transition-transform duration-300 text-[#00D2FF]"
                         />
                       </Link>
                     </Button>
                   </div>
 
                   {/* Row 2: One full-width button with spacing */}
-                  <Button
-                    asChild
-                    variant="outline"
-                    size="lg"
-                    className="group bg-white/5 hover:bg-white/10 border border-white/15 text-slate-200 hover:text-white font-semibold min-h-[50px] w-full text-sm px-6 rounded-[3px] backdrop-blur-xs transition-all duration-200"
+                  <Link
+                    href="/IDEAS4.0-Brochure.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative flex items-center justify-center gap-2 rounded-full px-6 min-h-[50px] w-full text-xs font-mono font-semibold uppercase tracking-wider text-white transition-colors duration-300 hover:bg-white/10"
                   >
-                    <Link
-                      href="/IDEAS4.0-Brochure.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-2"
-                    >
-                      <span>View Brochure</span>
-                      <ArrowRight
-                        size={16}
-                        className="group-hover:translate-x-1 transition-transform duration-300"
-                      />
-                    </Link>
-                  </Button>
+                    <span
+                      aria-hidden="true"
+                      className="absolute inset-0 rounded-full p-[1.5px] pointer-events-none"
+                      style={{
+                        background:
+                          "linear-gradient(90deg, #FFD000 0%, #FF6600 50%, #E51937 100%)",
+                        WebkitMask:
+                          "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                        WebkitMaskComposite: "xor",
+                        maskComposite: "exclude",
+                      }}
+                    />
+                    <span>View Brochure</span>
+                    <ArrowRight size={16} className="text-[#00D2FF]" />
+                  </Link>
                 </div>
               </div>
             </motion.div>
@@ -519,8 +508,8 @@ export default function HeroSection() {
                     <div
                       className={`relative w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 flex items-center justify-center overflow-hidden mb-2 ${
                         item.highlight
-                          ? "border-[#e7c268] shadow-lg shadow-[#e7c268]/30 scale-105"
-                          : "border-white/70 bg-transparent"
+                          ? "border-[#00D2FF] ring-2 ring-[#00D2FF]/40"
+                          : "border-white/50 bg-transparent"
                       }`}
                     >
                       <img
@@ -533,7 +522,7 @@ export default function HeroSection() {
                     <p
                       className={`text-xs font-semibold leading-tight ${
                         item.highlight
-                          ? "text-gold-400 font-bold"
+                          ? "text-[#00D2FF] font-bold"
                           : "text-white"
                       }`}
                     >
@@ -541,7 +530,9 @@ export default function HeroSection() {
                     </p>
                     <p
                       className={`text-[10px] mt-0.5 ${
-                        item.highlight ? "text-gold-300" : "text-white/80"
+                        item.highlight
+                          ? "text-[#00D2FF]/90 font-medium"
+                          : "text-white/80"
                       }`}
                     >
                       {item.sub}
@@ -549,10 +540,10 @@ export default function HeroSection() {
                   </div>
                   {idx < arr.length - 1 && (
                     <div
-                      className="text-royal-400/40 mb-6 shrink-0"
+                      className="text-white/40 mb-6 shrink-0"
                       aria-hidden="true"
                     >
-                      <ArrowRight size={14} className="text-white/80" />
+                      <ArrowRight size={14} className="text-[#00D2FF]/80" />
                     </div>
                   )}
                 </div>

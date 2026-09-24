@@ -26,7 +26,7 @@ export const metadata: Metadata = generateEventMetadata(
 
 export default function DistinctivenessPage() {
   return (
-    <div className="min-h-screen bg-[#f2f4f3]">
+    <div className="min-h-screen bg-[#F4F9FD]">
       <StructuredData
         type="breadcrumb"
         data={{
@@ -45,40 +45,40 @@ export default function DistinctivenessPage() {
       />
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-[#484538] via-[#484538] to-[#172a3a] text-white pt-20 pb-12">
+      <div className="bg-gradient-to-r from-[#081B4B] via-[#00529B] to-[#00ACE9] text-white pt-24 pb-14 sm:pt-32 sm:pb-16">
         <div className="container mx-auto px-4">
           <Link
             href="/"
-            className="inline-flex font-poppins items-center gap-2 text-white hover:text-white transition-colors mb-8"
+            className="inline-flex font-poppins items-center gap-2 text-blue-100 hover:text-white transition-colors mb-8 text-sm"
           >
-            <ArrowLeft size={20} />
+            <ArrowLeft size={18} />
             Back to IDEAS
           </Link>
 
           <div className="max-w-4xl mx-auto text-center">
             <div className="text-8xl mb-6">🔍</div>
-            <h1 className="text-5xl font-serif md:text-6xl font-bold mb-6">
+            <h1 className="text-5xl font-serif md:text-6xl font-bold mb-6 text-white">
               Distinctiveness
             </h1>
-            <p className="text-xl font-serif md:text-2xl text-white mb-8">
-              Original models & practices
+            <p className="text-xl font-serif md:text-2xl text-blue-100 mb-8">
+              Original models &amp; practices
             </p>
 
-            <div className="flex font-poppins flex-wrap justify-center gap-6 text-white">
-              <div className="flex items-center gap-2">
-                <Calendar size={20} />
+            <div className="flex font-poppins flex-wrap justify-center gap-6 text-white text-sm">
+              <div className="flex items-center gap-2 bg-white/10 px-3.5 py-1.5 rounded-lg border border-white/15">
+                <Calendar size={18} className="text-[#00D2FF]" />
                 <span>October 27–28, 2026</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Clock size={20} />
+              <div className="flex items-center gap-2 bg-white/10 px-3.5 py-1.5 rounded-lg border border-white/15">
+                <Clock size={18} className="text-[#00D2FF]" />
                 <span>9:15 AM onwards (both days)</span>
               </div>
-              <div className="flex items-center gap-2">
-                <MapPin size={20} />
+              <div className="flex items-center gap-2 bg-white/10 px-3.5 py-1.5 rounded-lg border border-white/15">
+                <MapPin size={18} className="text-[#00D2FF]" />
                 <span>Design Block, KRMU Campus</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Users size={20} />
+              <div className="flex items-center gap-2 bg-white/10 px-3.5 py-1.5 rounded-lg border border-white/15">
+                <Users size={18} className="text-[#00D2FF]" />
                 <span>400+ Participants</span>
               </div>
             </div>
@@ -87,16 +87,16 @@ export default function DistinctivenessPage() {
       </div>
 
       {/* Content Section */}
-      <div className="container bg-[#f2f4f3] mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-16">
         <div className="max-w-[1440px] mx-auto">
           {/* Description */}
           <Card className="mb-12 border-0 shadow-none !bg-transparent">
             <CardContent>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <Target className="text-purple-600" />
+              <h2 className="text-2xl font-bold text-[#0B256B] mb-4 flex items-center gap-2">
+                <Target className="text-[#0062A2]" />
                 About Distinctiveness Track
               </h2>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-slate-700 text-lg leading-relaxed">
                 {trackData.description}
               </p>
             </CardContent>
@@ -104,28 +104,28 @@ export default function DistinctivenessPage() {
 
           {/* Showcase Items */}
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            <h2 className="text-3xl font-bold text-[#0B256B] mb-8 text-center font-serif">
               Featured Events
             </h2>
             <div className="grid md:grid-cols-4 gap-4">
               {trackData.showcaseItems.map((item, idx) => (
                 <Card
                   key={idx}
-                  className=" !bg-white border border-[#484538]/30"
+                  className="!bg-white border border-blue-100 hover:border-[#0062A2] transition-colors duration-200 overflow-hidden"
                 >
-                  <div className="relative h-48 overflow-hidden">
+                  <div className="relative h-48 overflow-hidden bg-slate-100">
                     <img
                       src={item.image || "/placeholder.svg"}
                       alt={item.title}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover"
                       loading="lazy"
                     />
                   </div>
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    <h3 className="text-xl font-semibold text-[#0B256B] mb-2 font-serif">
                       {item.title}
                     </h3>
-                    <p className="text-gray-600">{item.description}</p>
+                    <p className="text-slate-600 text-sm leading-relaxed">{item.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -134,14 +134,14 @@ export default function DistinctivenessPage() {
 
           {/* Related Events */}
           <div className="mt-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl font-bold text-[#0B256B] mb-6">
               Related Events
             </h2>
             <div className="flex flex-wrap gap-3">
               {trackData.relatedEvents.map((event, idx) => (
                 <span
                   key={idx}
-                  className="px-4 py-2 bg-[#484538]/5 text-[#484538] rounded-full text-sm font-medium"
+                  className="px-4 py-2 bg-blue-50 text-[#0062A2] border border-blue-100 rounded-full text-sm font-medium"
                 >
                   {event}
                 </span>
@@ -151,18 +151,18 @@ export default function DistinctivenessPage() {
 
           {/* CTA Section */}
           <div className="text-center mt-16">
-            <Card className="bg-gradient-to-br from-[#484538] to-[#172a3a] text-white border-0 shadow-xl">
+            <Card className="bg-gradient-to-r from-[#081B4B] via-[#00529B] to-[#00ACE9] text-white border-0">
               <CardContent className="p-8 md:p-10">
-                <h2 className="text-2xl font-bold mb-4 text-white">
+                <h2 className="text-2xl font-bold mb-4 text-white font-serif">
                   Showcase Your Distinctiveness
                 </h2>
-                <p className="text-white/90 mb-6 max-w-xl mx-auto">
+                <p className="text-blue-100 mb-6 max-w-xl mx-auto leading-relaxed">
                   Demonstrate your unique approaches and creative methodologies
                   on October 27–28, 2026 at K.R. Mangalam University.
                 </p>
                 <Button
                   size="lg"
-                  className="bg-primary font-poppins hover:bg-primary/90 text-white font-semibold !border !border-white"
+                  className="bg-transparent hover:bg-white hover:text-[#081B4B] text-white font-semibold !border !border-white rounded-xl transition-colors"
                   asChild
                 >
                   <Link href="/register/selection">Register Now</Link>

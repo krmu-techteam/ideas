@@ -200,7 +200,7 @@ export default function IncubationHub() {
             initial={{ opacity: 0, x: 20 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
             transition={{ duration: 0.8 }}
-            className="relative h-80 md:h-96 overflow-hidden rounded-lg shadow-xl"
+            className="relative h-80 md:h-96 overflow-hidden rounded-xl border border-blue-100"
           >
             <div
               className="absolute inset-0 flex transition-transform duration-500 ease-in-out"

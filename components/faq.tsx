@@ -128,30 +128,30 @@ export default function Faq() {
   return (
     <section
       id="faq"
-      className="py-16 bg-[#F7FCFE] faq-section"
+      className="py-16 bg-[#F4F9FD] faq-section"
       suppressHydrationWarning
     >
       <div className="container mx-auto max-w-5xl px-4 sm:px-6">
         {/* Section Header */}
         <div className="max-w-3xl mb-10">
-          <h2 className="font-serif text-[clamp(30px,4.5vw,48px)] font-bold tracking-[-0.02em] text-[#14100b] leading-[1.1]">
+          <h2 className="font-serif text-[clamp(30px,4.5vw,48px)] font-bold tracking-[-0.02em] text-[#0B256B] leading-[1.1]">
             Frequently Asked{" "}
-            <span className="italic font-serif font-normal text-gray-800">
+            <span className="italic font-serif font-normal text-[#00ACE9]">
               Questions
             </span>
           </h2>
 
-          <p className="mt-3 text-[15px] sm:text-[16px] leading-relaxed text-gray-800 font-poppins">
+          <p className="mt-3 text-[15px] sm:text-[16px] leading-relaxed text-slate-600 font-sans">
             Answers to what participants ask most — registration, categories,
             team formation, schedule, and event guidelines.
           </p>
         </div>
 
-        {/* Search Input (HackIndia Input Design) */}
+        {/* Search Input */}
         <div className="relative mb-8 max-w-md">
           <Search
             size={16}
-            className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-800"
+            className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#0062A2]"
           />
           <input
             type="text"
@@ -159,19 +159,19 @@ export default function Faq() {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             style={{ outline: "none" }}
-            className="w-full h-11 rounded-[6px] border border-gray-800 bg-white pl-10 pr-4 text-[14px] text-[#14100b] placeholder:text-gray-800 shadow-2xs outline-none focus:outline-none focus-visible:outline-none focus:border-[#18639B] focus-visible:border-[#14100b] focus:ring-1 focus:ring-[#14100b] transition-all"
+            className="w-full h-11 rounded-lg border border-blue-200 bg-white pl-10 pr-4 text-[14px] text-[#0B256B] placeholder:text-slate-400 outline-none focus:outline-none focus-visible:outline-none focus:border-[#0062A2] focus-visible:border-[#0062A2] focus:ring-1 focus:ring-[#0062A2] transition-all"
             suppressHydrationWarning
           />
         </div>
 
-        {/* Accordion List - Exact HackIndia Minimal Bordered Rows */}
-        <div className="border-t border-gray-800" suppressHydrationWarning>
+        {/* Accordion List */}
+        <div className="border-t border-blue-100" suppressHydrationWarning>
           {filteredFaqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
               <div
                 key={faq.question}
-                className="border-b border-gray-800 transition-colors"
+                className="border-b border-blue-100 last:border-b-0 transition-colors"
               >
                 <button
                   type="button"
@@ -182,8 +182,8 @@ export default function Faq() {
                   <span
                     className={`font-serif text-[16.5px] sm:text-[18px] font-bold leading-snug transition-colors ${
                       isOpen
-                        ? "text-[#18639B]"
-                        : "text-[#14100b] group-hover:text-[#18639B]"
+                        ? "text-[#0062A2]"
+                        : "text-[#0B256B] group-hover:text-[#0062A2]"
                     }`}
                   >
                     {faq.question}
@@ -193,8 +193,8 @@ export default function Faq() {
                     size={18}
                     className={`shrink-0 transition-transform duration-200 ${
                       isOpen
-                        ? "rotate-180 text-[#18639B]"
-                        : "text-gray-800 group-hover:text-[#18639B]"
+                        ? "rotate-180 text-[#0062A2]"
+                        : "text-[#0062A2]/70 group-hover:text-[#0062A2]"
                     }`}
                   />
                 </button>
@@ -208,7 +208,7 @@ export default function Faq() {
                       transition={{ duration: 0.22, ease: "easeInOut" }}
                       className="overflow-hidden"
                     >
-                      <p className="pb-5 pt-1 text-[15px] sm:text-[15.5px] leading-[1.65] text-gray-800 whitespace-pre-line">
+                      <p className="pb-5 pt-1 text-[15px] sm:text-[15.5px] leading-[1.65] text-slate-600 whitespace-pre-line font-sans">
                         {faq.answer}
                       </p>
                     </motion.div>
@@ -221,17 +221,17 @@ export default function Faq() {
 
         {/* Empty State */}
         {filteredFaqs.length === 0 && (
-          <div className="py-12 text-center border-b border-gray-800">
-            <p className="font-serif text-lg font-bold text-[#14100b]">
+          <div className="py-12 text-center border-b border-blue-100">
+            <p className="font-serif text-lg font-bold text-[#0B256B]">
               No questions found
             </p>
-            <p className="mt-1 text-sm text-gray-800">
+            <p className="mt-1 text-sm text-slate-600">
               Try searching with different keywords.
             </p>
             <button
               type="button"
               onClick={() => setSearchTerm("")}
-              className="mt-4 font-serif text-xs font-semibold uppercase tracking-wider text-[#E11E45] hover:underline"
+              className="mt-4 font-mono text-xs font-semibold uppercase tracking-wider text-[#0062A2] hover:underline"
             >
               Clear search
             </button>
@@ -239,18 +239,18 @@ export default function Faq() {
         )}
 
         {/* Bottom Help Footer Prompt */}
-        <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="mt-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
-            <h3 className="font-serif text-[18px] font-bold text-[#14100b]">
+            <h3 className="font-serif text-[18px] font-bold text-[#0B256B]">
               Still have questions?
             </h3>
-            <p className="text-[14px] text-gray-800 mt-0.5">
+            <p className="text-[14px] text-slate-600 mt-0.5">
               Can't find the answer you're looking for? Reach our team directly.
             </p>
           </div>
           <Link
             href="/contact"
-            className="font-serif inline-flex items-center justify-center rounded-[3px] px-6 py-2.5 text-sm font-semibold transition-colors bg-[#E11E45] text-white hover:bg-[#c2410c] shadow-2xs self-start sm:self-auto"
+            className="font-mono text-xs uppercase tracking-wider font-semibold inline-flex items-center justify-center rounded-xl px-6 py-3 transition-all bg-gradient-to-r from-[#0B256B] to-[#0062A2] text-white hover:from-[#081B4B] hover:to-[#004B87] self-start sm:self-auto"
           >
             Contact Us →
           </Link>

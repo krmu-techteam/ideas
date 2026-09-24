@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { motion } from "framer-motion";
 import {
   Calendar,
   Clock,
@@ -47,14 +46,15 @@ export default function EventDetailView({
   const primarySession = event.sessions[0];
 
   return (
-    <div className="min-h-screen bg-[#F8FCFF] text-[#14100b] selection:bg-[#1a73e8]/20 selection:text-[#1a73e8] py-16">
-      <div className="bg-gradient-to-r from-[#213C87] via-[#0062A2] to-[#00ACE9]">
-        <div className="max-w-[1440px] mx-auto">
+    <div className="min-h-screen bg-[#F4F9FD] text-[#0B256B] selection:bg-[#00ACE9]/30 selection:text-[#081B4B]">
+      {/* Hero Header - Brochure Color Gradient */}
+      <section className="bg-gradient-to-r from-[#081B4B] via-[#00529B] to-[#00ACE9] text-white pt-28 pb-12 sm:pt-36 sm:pb-16 relative overflow-hidden">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 relative z-10">
           {/* Top Navigation / Breadcrumb */}
-          <div className="mb-6 pt-4">
+          <div className="mb-6">
             <Link
               href={backUrl}
-              className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-wider font-semibold text-white hover:text-[#1a73e8] transition-colors group"
+              className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-wider font-semibold text-white/80 hover:text-white transition-colors group"
             >
               <ArrowLeft
                 size={15}
@@ -64,19 +64,19 @@ export default function EventDetailView({
             </Link>
           </div>
 
-          {/* Article Header (HackIndia Style) */}
-          <header className="mb-8">
+          {/* Article Header */}
+          <header className="mb-4">
             {/* Eyebrow & Badges */}
             <div className="flex flex-wrap items-center gap-2 mb-4">
-              <span className="inline-flex items-center gap-1.5 font-mono text-[11px] font-semibold uppercase tracking-[0.12em] px-2.5 py-1 rounded-[3px] border border-[#e7ded1] bg-[#f4ede1] text-gray-800">
-                <Tag size={12} className="text-white" />
+              <span className="inline-flex items-center gap-1.5 font-mono text-[11px] font-semibold uppercase tracking-[0.12em] px-2.5 py-1 rounded-[4px] border border-white/20 bg-white/10 text-[#00D2FF]">
+                <Tag size={12} className="text-[#00D2FF]" />
                 <span>{event.department || "IDEAS 4.0"}</span>
               </span>
-              <span className="inline-flex items-center font-mono text-[11px] font-semibold uppercase tracking-[0.12em] px-2.5 py-1 rounded-[3px] border border-[#e7ded1] bg-white text-[#14100b]">
+              <span className="inline-flex items-center font-mono text-[11px] font-semibold uppercase tracking-[0.12em] px-2.5 py-1 rounded-[4px] border border-white/20 bg-white/10 text-white">
                 <span>{event.category || "FLAGSHIP"}</span>
               </span>
               {event.teamType && (
-                <span className="inline-flex items-center font-mono text-[11px] font-semibold uppercase tracking-[0.12em] px-2.5 py-1 rounded-[3px] border border-[#e7ded1] bg-white text-white">
+                <span className="inline-flex items-center font-mono text-[11px] font-semibold uppercase tracking-[0.12em] px-2.5 py-1 rounded-[4px] border border-white/20 bg-white/10 text-white">
                   <span>{event.teamType}</span>
                   {event.teamSize ? ` (${event.teamSize})` : ""}
                 </span>
@@ -89,26 +89,26 @@ export default function EventDetailView({
             </h1>
 
             {/* Short Lede */}
-            <p className="mt-4 text-[16px] sm:text-[18px] leading-[1.65] text-white">
+            <p className="mt-4 text-[16px] sm:text-[18px] leading-[1.65] text-blue-100 max-w-3xl">
               {event.description}
             </p>
 
             {/* Meta Line: Date, Venue & Share Button */}
-            <div className="mt-6 flex flex-wrap items-center justify-between gap-4 border-b border-[#e7ded1] pb-6">
-              <div className="flex flex-wrap items-center gap-y-2 gap-x-5 font-mono text-xs uppercase tracking-wider text-gray-800">
+            <div className="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-white/15 pt-6">
+              <div className="flex flex-wrap items-center gap-y-2 gap-x-5 font-mono text-xs uppercase tracking-wider text-white">
                 <div className="flex items-center gap-1.5">
-                  <Calendar size={14} className="text-white" />
-                  <span className="font-semibold text-white">{event.date}</span>
+                  <Calendar size={14} className="text-[#00D2FF]" />
+                  <span className="font-semibold">{event.date}</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <Clock size={14} className="text-white" />
-                  <span className="text-white">
+                  <Clock size={14} className="text-[#00D2FF]" />
+                  <span>
                     {event.time || primarySession?.timeSlot || "Multiple Slots"}
                   </span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <MapPin size={14} className="text-white" />
-                  <span className="text-white">{event.location}</span>
+                  <MapPin size={14} className="text-[#00D2FF]" />
+                  <span>{event.location}</span>
                 </div>
               </div>
 
@@ -116,16 +116,16 @@ export default function EventDetailView({
               <button
                 type="button"
                 onClick={handleShare}
-                className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-wider font-semibold px-3.5 py-2 rounded-[4px] border border-[#e7ded1] bg-white hover:bg-[#f4ede1] text-[#14100b] transition-colors shadow-2xs cursor-pointer"
+                className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-wider font-semibold px-3.5 py-2 rounded-[4px] border border-white/25 bg-white/10 hover:bg-white/20 text-white transition-colors shadow-2xs cursor-pointer backdrop-blur-sm"
               >
                 {copied ? (
                   <>
-                    <Check size={14} className="text-green-600" />
-                    <span className="text-green-700">Link Copied!</span>
+                    <Check size={14} className="text-[#00D2FF]" />
+                    <span className="text-[#00D2FF]">Link Copied!</span>
                   </>
                 ) : (
                   <>
-                    <Share2 size={14} className="text-gray-800" />
+                    <Share2 size={14} className="text-white" />
                     <span>Share Event</span>
                   </>
                 )}
@@ -133,42 +133,44 @@ export default function EventDetailView({
             </div>
           </header>
         </div>
-      </div>
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6">
+      </section>
+
+      {/* Main Content Body */}
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 py-10 sm:py-14">
         {/* Hero Banner Image */}
-        <div className="mb-10 overflow-hidden rounded-[8px] border border-[#e7ded1] bg-[#ede6dc] aspect-[16/9] sm:aspect-[21/9] w-full relative shadow-xs">
+        <div className="mb-10 overflow-hidden rounded-xl border border-blue-100 bg-slate-100 aspect-[16/9] sm:aspect-[21/9] w-full relative shadow-sm">
           <img
             src={event.image || "/placeholder.svg"}
             alt={event.title}
             className="h-full w-full object-cover object-center"
           />
-          <div className="absolute top-3 right-3 bg-[#14100b]/80 backdrop-blur-xs text-white text-[11px] font-mono uppercase tracking-wider px-3 py-1 rounded-[3px] border border-white/10">
+          <div className="absolute top-3 right-3 bg-[#081B4B]/85 backdrop-blur-xs text-[#00D2FF] text-[11px] font-mono uppercase tracking-wider px-3 py-1 rounded-[4px] border border-white/10 shadow-xs">
             {event.date}
           </div>
         </div>
 
         {/* 12-Column Grid (Main Content 8 cols + Sticky Action Sidebar 4 cols) */}
-        <div className="grid gap-10 lg:grid-cols-12">
+        <div className="grid gap-10 lg:grid-cols-12 items-start">
           {/* Main Content (8 cols) */}
           <div className="lg:col-span-8 space-y-8">
             {/* 1. About / Description */}
-            <section className="rounded-[6px] border border-[#e7ded1] bg-white p-6 shadow-xs">
-              <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-gray-800 mb-3 flex items-center gap-2">
+            <section className="rounded-xl border border-blue-100 bg-white p-6 sm:p-7 shadow-sm">
+              <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#0062A2] mb-3 flex items-center gap-2">
                 <Sparkles size={13} />
                 <span>About This Activity</span>
               </div>
-              <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#14100b] whitespace-pre-wrap font-sans">
+              <p className="text-[15px] sm:text-[16px] leading-[1.7] text-slate-700 whitespace-pre-wrap font-sans">
                 {event.description}
               </p>
             </section>
 
             {/* 2. Guidelines & Instructions */}
             {event.guidelines && event.guidelines !== event.description && (
-              <section className="rounded-[6px] border border-[#e7ded1] bg-white p-6 shadow-xs">
-                <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-gray-800 mb-3">
+              <section className="rounded-xl border border-blue-100 bg-white p-6 sm:p-7 shadow-sm">
+                <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#0062A2] mb-3">
                   Guidelines &amp; Event Rules
                 </div>
-                <div className="text-[14px] sm:text-[15px] leading-[1.7] text-[#14100b] whitespace-pre-wrap font-sans">
+                <div className="text-[14px] sm:text-[15px] leading-[1.7] text-slate-700 whitespace-pre-wrap font-sans">
                   {event.guidelines}
                 </div>
               </section>
@@ -176,11 +178,11 @@ export default function EventDetailView({
 
             {/* 3. Evaluation Pattern */}
             {event.evaluation && (
-              <section className="rounded-[6px]  bg-white p-6 shadow-xs">
-                <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-gray-800 mb-3">
+              <section className="rounded-xl border border-blue-100 bg-white p-6 sm:p-7 shadow-sm">
+                <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[#0062A2] mb-3">
                   Evaluation &amp; Judging Criteria
                 </div>
-                <p className="text-[14px] sm:text-[15px] leading-[1.7] text-[#14100b]">
+                <p className="text-[14px] sm:text-[15px] leading-[1.7] text-slate-700">
                   {event.evaluation}
                 </p>
               </section>
@@ -188,51 +190,51 @@ export default function EventDetailView({
 
             {/* 4. Scheduled Slots */}
             {event.sessions && event.sessions.length > 0 && (
-              <section className="rounded-[6px]  bg-white overflow-hidden shadow-xs">
-                <div className="px-6 py-4 bg-gray-800 border-b border-gray-800 flex items-center justify-between">
-                  <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-white">
+              <section className="rounded-xl border border-blue-100 bg-white overflow-hidden shadow-sm">
+                <div className="px-6 py-4 bg-[#081B4B] text-white flex items-center justify-between">
+                  <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em]">
                     Scheduled Sessions
                   </div>
-                  <span className="font-mono text-xs text-white">
+                  <span className="font-mono text-xs text-[#00D2FF]">
                     {event.date}
                   </span>
                 </div>
-                <div className="divide-y divide-gray-800">
+                <div className="divide-y divide-blue-50">
                   {event.sessions.map((s, idx) => (
                     <div
                       key={idx}
-                      className="p-5 hover:bg-gray-800/60 transition-colors"
+                      className="p-5 hover:bg-blue-50/40 transition-colors"
                     >
                       <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-                        <span className="font-bold text-[15px] text-[#14100b]">
+                        <span className="font-bold text-[15px] text-[#0B256B]">
                           {s.participation || "Open to participants"}
                         </span>
-                        <span className="font-mono text-xs font-semibold px-2.5 py-1 rounded-[3px] bg-gray-800/10 text-gray-800">
+                        <span className="font-mono text-xs font-semibold px-2.5 py-1 rounded-[4px] bg-blue-50 text-[#0062A2] border border-blue-100">
                           {s.timeSlot || "TBA"}
                         </span>
                       </div>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-gray-800 mt-3">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600 mt-3">
                         {s.venue && (
                           <div className="flex items-center gap-1.5">
-                            <MapPin size={13} className="text-gray-800" />
+                            <MapPin size={13} className="text-[#0062A2]" />
                             <span>Venue: {s.venue}</span>
                           </div>
                         )}
                         {s.capacity && (
                           <div className="flex items-center gap-1.5">
-                            <Users size={13} className="text-gray-800" />
+                            <Users size={13} className="text-[#0062A2]" />
                             <span>Capacity: {s.capacity}</span>
                           </div>
                         )}
                         {s.coordinator && (
                           <div className="flex items-center gap-1.5 sm:col-span-2">
-                            <UserCheck size={13} className="text-gray-800" />
+                            <UserCheck size={13} className="text-[#0062A2]" />
                             <span>Faculty: {s.coordinator}</span>
                           </div>
                         )}
                         {s.contacts && (
                           <div className="flex items-center gap-1.5 sm:col-span-2">
-                            <Phone size={13} className="text-gray-800" />
+                            <Phone size={13} className="text-[#0062A2]" />
                             <span>Coordinators: {s.contacts}</span>
                           </div>
                         )}
@@ -245,41 +247,41 @@ export default function EventDetailView({
           </div>
 
           {/* Sticky Sidebar (4 cols) */}
-          <div className="lg:col-span-4 bg-[#ACDAFC]">
-            <div className="sticky top-28 rounded-[8px]  bg-[#ACDAFC] p-6 shadow-sm space-y-6">
+          <div className="lg:col-span-4">
+            <div className="sticky top-28 rounded-xl bg-white border border-blue-100 p-6 shadow-sm space-y-6">
               <div>
-                <div className="font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-gray-800 mb-1">
+                <div className="font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[#0062A2] mb-1">
                   EVENT SUMMARY
                 </div>
-                <h3 className="font-serif text-[20px] font-bold text-[#14100b]">
+                <h3 className="font-serif text-[20px] font-bold text-[#0B256B]">
                   {event.title}
                 </h3>
               </div>
 
               {/* Fast Facts */}
-              <div className="space-y-3 pt-2 border-t border-[#ACDAFC] text-xs sm:text-sm">
+              <div className="space-y-3 pt-2 border-t border-blue-50 text-xs sm:text-sm">
                 <div className="flex items-start gap-3 py-1">
                   <Calendar
                     size={16}
-                    className="text-gray-800 shrink-0 mt-0.5"
+                    className="text-[#0062A2] shrink-0 mt-0.5"
                   />
                   <div>
-                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-gray-800">
+                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-slate-500">
                       Date
                     </div>
-                    <div className="font-semibold text-[#14100b]">
+                    <div className="font-semibold text-[#0B256B]">
                       {event.date}
                     </div>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3 py-1">
-                  <Clock size={16} className="text-gray-800 shrink-0 mt-0.5" />
+                  <Clock size={16} className="text-[#0062A2] shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-gray-800">
+                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-slate-500">
                       Time
                     </div>
-                    <div className="font-semibold text-[#14100b]">
+                    <div className="font-semibold text-[#0B256B]">
                       {event.time ||
                         primarySession?.timeSlot ||
                         "Multiple Slots"}
@@ -288,24 +290,24 @@ export default function EventDetailView({
                 </div>
 
                 <div className="flex items-start gap-3 py-1">
-                  <MapPin size={16} className="text-gray-800 shrink-0 mt-0.5" />
+                  <MapPin size={16} className="text-[#0062A2] shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-gray-800">
+                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-slate-500">
                       Venue
                     </div>
-                    <div className="font-semibold text-[#14100b]">
+                    <div className="font-semibold text-[#0B256B]">
                       {event.location}
                     </div>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3 py-1">
-                  <Users size={16} className="text-gray-800 shrink-0 mt-0.5" />
+                  <Users size={16} className="text-[#0062A2] shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-gray-800">
+                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-slate-500">
                       Participation
                     </div>
-                    <div className="font-semibold text-[#14100b]">
+                    <div className="font-semibold text-[#0B256B]">
                       {event.teamType || "Individual"}
                       {event.teamSize ? ` (${event.teamSize})` : ""}
                     </div>
@@ -316,13 +318,13 @@ export default function EventDetailView({
                   <div className="flex items-start gap-3 py-1">
                     <UserCheck
                       size={16}
-                      className="text-gray-800 shrink-0 mt-0.5"
+                      className="text-[#0062A2] shrink-0 mt-0.5"
                     />
                     <div>
-                      <div className="text-[10.5px] font-mono uppercase tracking-wider text-gray-800">
+                      <div className="text-[10.5px] font-mono uppercase tracking-wider text-slate-500">
                         Faculty Coordinator
                       </div>
-                      <div className="font-semibold text-[#14100b]">
+                      <div className="font-semibold text-[#0B256B]">
                         {primarySession.coordinator}
                       </div>
                     </div>
@@ -331,15 +333,15 @@ export default function EventDetailView({
               </div>
 
               {/* Big CTA Button */}
-              <div className="pt-4 border-t border-[#f0eae1]">
+              <div className="pt-4 border-t border-blue-50">
                 <Link
                   href="/register/selection"
-                  className="w-full h-10 inline-flex items-center justify-center gap-2 rounded-[4px] bg-gray-800 hover:bg-gray-800/80 text-white font-serif text-xs uppercase tracking-wider font-bold transition-colors shadow-xs"
+                  className="w-full h-11 inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#0B256B] to-[#0062A2] hover:from-[#081B4B] hover:to-[#004B87] text-white font-serif text-xs uppercase tracking-wider font-bold transition-all shadow-md shadow-blue-900/15"
                 >
                   <span>Register for Event</span>
                   <span>→</span>
                 </Link>
-                <p className="mt-2 text-center text-[11px] text-gray-800">
+                <p className="mt-2 text-center text-[11px] text-slate-500 font-mono">
                   IDEAS 4.0 · K.R. Mangalam University
                 </p>
               </div>
@@ -348,7 +350,7 @@ export default function EventDetailView({
               <div className="pt-2 text-center">
                 <Link
                   href={backUrl}
-                  className="font-mono text-xs text-gray-800 hover:text-gray-800 transition-colors inline-flex items-center gap-1.5"
+                  className="font-mono text-xs text-[#0062A2] hover:underline transition-colors inline-flex items-center gap-1.5"
                 >
                   <ArrowLeft size={13} />
                   <span>{backLabel}</span>
