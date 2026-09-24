@@ -183,12 +183,10 @@ export default function IdeasGlance() {
                   className="group relative flex flex-col justify-between h-full p-6 rounded-2xl bg-white/10  border border-white/20 hover:border-white/50 hover:bg-white/15 transition-colors duration-200 antialiased [backface-visibility:hidden]"
                 >
                   <div>
-                    {/* Badge & Title */}
-                    {/* <div className="mb-2">
-                      <span className="text-[10px] font-mono font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full bg-white/15 text-[#00D2FF] border border-white/20">
-                        {card.badge}
-                      </span>
-                    </div> */}
+                    {/* Icon */}
+                    <div className="mb-4 flex items-center justify-center w-10 h-10 rounded-full bg-white/10 text-[#00D2FF] group-hover:bg-[#00D2FF] group-hover:text-white transition-colors border border-white/20">
+                      <card.icon className="w-5 h-5" />
+                    </div>
 
                     <h3 className="text-xl font-serif font-bold text-white tracking-tight mb-2 leading-snug">
                       {card.title}

@@ -34,42 +34,42 @@ const eventCategories = [
     href: "/cultural",
     badgeColor: "bg-[#7c3aed]",
   },
-  {
-    num: "03",
-    title: "Innovation Track",
-    badge: "Disruption",
-    description:
-      "Cutting-edge startup pitches, deep-tech research demonstrations and prototype expositions.",
-    icon: Rocket,
-    href: "/ideas/innovation",
-    badgeColor: "bg-[#0f766e]",
-  },
-  {
-    num: "04",
-    title: "Skill-Based Track",
-    badge: "Hands-on",
-    description:
-      "Hands-on masterclasses, industry-certified bootcamps, workshops and live technical sprints.",
-    icon: Target,
-    href: "/ideas/skill-based",
-    badgeColor: "bg-[#EF6321]",
-  },
-  {
-    num: "05",
-    title: "Extension Track",
-    badge: "Community",
-    description:
-      "High-impact social outreach, sustainability initiatives, and community-driven field projects.",
-    icon: Globe2,
-    href: "/ideas/extension",
-    badgeColor: "bg-[#0284c7]",
-  },
+  // {
+  //   num: "03",
+  //   title: "Innovation Track",
+  //   badge: "Disruption",
+  //   description:
+  //     "Cutting-edge startup pitches, deep-tech research demonstrations and prototype expositions.",
+  //   icon: Rocket,
+  //   href: "/ideas/innovation",
+  //   badgeColor: "bg-[#0f766e]",
+  // },
+  // {
+  //   num: "04",
+  //   title: "Skill-Based Track",
+  //   badge: "Hands-on",
+  //   description:
+  //     "Hands-on masterclasses, industry-certified bootcamps, workshops and live technical sprints.",
+  //   icon: Target,
+  //   href: "/ideas/skill-based",
+  //   badgeColor: "bg-[#EF6321]",
+  // },
+  // {
+  //   num: "05",
+  //   title: "Extension Track",
+  //   badge: "Community",
+  //   description:
+  //     "High-impact social outreach, sustainability initiatives, and community-driven field projects.",
+  //   icon: Globe2,
+  //   href: "/ideas/extension",
+  //   badgeColor: "bg-[#0284c7]",
+  // },
 ];
 
 export default function ExploreEvents() {
   return (
     <section className="py-16 bg-[#F4F9FD] relative overflow-hidden">
-      <div className="container mx-auto px-4">
+      <div className="max-w-5xl mx-auto px-4">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -95,7 +95,7 @@ export default function ExploreEvents() {
         </motion.div>
 
         {/* 5-Column Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2  gap-4 sm:gap-5">
           {eventCategories.map((category, index) => {
             const Icon = category.icon;
             return (
@@ -146,7 +146,7 @@ export default function ExploreEvents() {
         </div>
 
         {/* Bottom CTA Button */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -163,7 +163,7 @@ export default function ExploreEvents() {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
