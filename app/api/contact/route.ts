@@ -31,39 +31,29 @@ export async function POST(request: Request) {
       "prince.sharma@krmangalam.edu.in";
 
     if (!smtpUser || !smtpPass) {
-      console.error(
-        "[Contact API] SMTP credentials missing. Please set SMTP_USER and SMTP_PASS in .env.local"
-      );
+      console.error("[Contact API] SMTP_USER or SMTP_PASS missing in .env.local");
       return NextResponse.json(
-        {
-          success: false,
-          error:
-            "Mail service is not configured yet. Please configure SMTP_USER and SMTP_PASS in .env.local",
-        },
+        { success: false, error: "Mail service is not configured. Please set SMTP credentials." },
         { status: 500 }
       );
     }
 
-    // Configure Nodemailer transporter (Office 365 / Microsoft Exchange)
-    const smtpHost = process.env.SMTP_HOST || "smtp.office365.com";
-    const smtpPort = Number(process.env.SMTP_PORT) || 587;
-    // Port 587 = STARTTLS (secure: false, requireTLS: true)
-    // Port 465 = SSL/TLS   (secure: true)
-    const isSecure = smtpPort === 465;
-
+    // Office 365 SMTP — port 587 STARTTLS
     const transporter = nodemailer.createTransport({
-      host: smtpHost,
-      port: smtpPort,
-      secure: isSecure,
-      requireTLS: !isSecure, // enforce STARTTLS upgrade on port 587
+      host: process.env.SMTP_HOST || "smtp.office365.com",
+      port: Number(process.env.SMTP_PORT) || 587,
+      secure: false,        // false = STARTTLS (required for port 587)
+      requireTLS: true,     // enforce TLS upgrade
       auth: {
+        type: "login",      // Microsoft requires LOGIN (not PLAIN)
         user: smtpUser,
         pass: smtpPass,
       },
       tls: {
-        ciphers: "SSLv3",
-        rejectUnauthorized: false, // allows self-signed certs on some Exchange servers
+        rejectUnauthorized: false,
       },
+      connectionTimeout: 15000,
+      greetingTimeout: 15000,
     });
 
     const emailSubject = subject?.trim()
@@ -114,33 +104,19 @@ export async function POST(request: Request) {
       </div>
     </div>
     <div class="footer">
-      This email was sent from the IDEAS 4.0 contact form at ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })} IST.
+      Sent from IDEAS 4.0 contact form at ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })} IST.
     </div>
   </div>
 </body>
 </html>
     `;
 
-    const textContent = `
-IDEAS 4.0 - New Contact Form Submission
----------------------------------------
-Sender Name: ${name}
-Email: ${email}
-Subject: ${subject || "N/A"}
-
-Message:
-${message}
-
----------------------------------------
-Sent at: ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })} IST
-    `.trim();
-
     await transporter.sendMail({
       from: `"IDEAS 4.0 Portal" <${smtpUser}>`,
       to: receiverEmail,
       replyTo: email,
       subject: emailSubject,
-      text: textContent,
+      text: `From: ${name} <${email}>\nSubject: ${subject || "N/A"}\n\n${message}`,
       html: htmlContent,
     });
 
