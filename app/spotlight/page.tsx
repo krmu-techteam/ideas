@@ -61,20 +61,23 @@ export default function SpotlightPage() {
 
             {/* Quick Info Chips & Rule Book Button - All 3 in 1 line with transparent background */}
             <div className="mt-6 flex flex-wrap items-center gap-2.5 sm:gap-3">
-              <div className="bg-transparent border border-white/20 rounded-[4px] px-3 py-1.5 text-xs font-mono text-white flex items-center gap-2">
+              <div className="bg-transparent border border-white/20 rounded-full px-3 py-1.5 text-xs font-mono text-white flex items-center gap-2">
                 <Calendar size={13} className="text-[#00D2FF]" />
                 <span>October 27–28, 2026</span>
               </div>
-              <div className="bg-transparent border border-white/20 rounded-[4px] px-3 py-1.5 text-xs font-mono text-white flex items-center gap-2">
+              <div className="bg-transparent border border-white/20 rounded-full px-3 py-1.5 text-xs font-mono text-white flex items-center gap-2">
                 <MapPin size={13} className="text-[#00D2FF]" />
                 <span>Sohna Road, Gurugram, Delhi-NCR, Haryana</span>
               </div>
+            </div>
+
+            <div className="mt-5">
               <a
                 href="/rulebook.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Download Official Rule Book (PDF)"
-                className="relative inline-flex items-center justify-center rounded-full px-4 sm:px-5 py-2 text-xs font-mono font-semibold uppercase tracking-wide hover:bg-white/10 transition-colors duration-300 cursor-pointer"
+                className="relative inline-flex items-center justify-center rounded-full px-4 sm:px-5 py-3 text-xs font-mono font-semibold uppercase tracking-wide hover:bg-white/10 transition-colors duration-300 cursor-pointer"
               >
                 {/* Gradient Border with Transparent Center */}
                 <span
@@ -91,7 +94,7 @@ export default function SpotlightPage() {
                 />
                 <span className="relative z-10 font-poppins flex items-center gap-1.5">
                   <span className="text-[#FFD000]">Download</span>
-                  <span className="text-[#f02d4a]">Rule Book</span>
+                  <span className="text-[#fff]">Rule Book</span>
                 </span>
               </a>
             </div>
