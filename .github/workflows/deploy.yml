@@ -1,4 +1,4 @@
-name: Deploy via rsync over SSH
+name: Build & Deploy to cPanel via rsync
 
 on:
   push:
@@ -8,39 +8,57 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
-      - name: Install pnpm
-        run: npm install -g pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
+
+      - name: Cache pnpm store
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Build Next.js project
         run: pnpm run build
 
       - name: Setup SSH key
         run: |
-          echo "${{ secrets.SFTP_PRIVATE_KEY }}" > id_rsa
-          chmod 600 id_rsa
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SFTP_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          echo "StrictHostKeyChecking no" >> ~/.ssh/config
 
       - name: Test SSH connection
         env:
           SSH_USERNAME: ${{ secrets.SFTP_USERNAME }}
           SSH_HOST: ${{ secrets.SFTP_HOST }}
         run: |
-          ssh -i id_rsa -o StrictHostKeyChecking=no ${SSH_USERNAME}@${SSH_HOST} "echo SSH Connected"
+          ssh -i ~/.ssh/id_rsa ${SSH_USERNAME}@${SSH_HOST} "echo SSH Connected"
 
       - name: Deploy via rsync to public_html
         env:
           SSH_USERNAME: ${{ secrets.SFTP_USERNAME }}
           SSH_HOST: ${{ secrets.SFTP_HOST }}
         run: |
-          rsync -avz -e "ssh -i id_rsa -o StrictHostKeyChecking=no" out/ ${SSH_USERNAME}@${SSH_HOST}:public_html/
+          rsync -avz --delete -e "ssh -i ~/.ssh/id_rsa" out/ ${SSH_USERNAME}@${SSH_HOST}:public_html/
