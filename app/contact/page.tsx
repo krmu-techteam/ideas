@@ -49,7 +49,12 @@ export default function ContactPage() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          fullName: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message
+        }),
       });
 
       const data = await res.json();
