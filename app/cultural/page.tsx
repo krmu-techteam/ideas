@@ -200,7 +200,9 @@ export default function CulturalPage() {
                       />
                       {/* Top-Right Badge: Date / Day */}
                       <div className="absolute top-2.5 right-2.5 bg-[#081B4B]/85 backdrop-blur-xs text-[#00D2FF] text-[10.5px] font-mono uppercase tracking-wider px-2.5 py-0.5 rounded-[3px] border border-white/10 shadow-xs">
-                        {event.date?.includes("28")
+                        {event.date?.includes("27") && event.date?.includes("28")
+                          ? "Oct 27-28 (2 Days)"
+                          : event.date?.includes("28")
                           ? "Oct 28 (Day 2)"
                           : "Oct 27 (Day 1)"}
                       </div>
