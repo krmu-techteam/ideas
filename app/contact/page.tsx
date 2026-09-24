@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { MapPin, Mail, Phone, Send, Globe, Share2 } from "lucide-react";
+import { MapPin, Mail, Phone, Send, Globe, Share2, Loader2, CheckCircle2, AlertCircle } from "lucide-react";
 import LazyMap from "@/components/lazy-map";
 
 export default function ContactPage() {
@@ -13,6 +13,9 @@ export default function ContactPage() {
     subject: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const [responseMsg, setResponseMsg] = useState("");
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -24,14 +27,46 @@ export default function ContactPage() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:admissions@krmangalam.edu.in?subject=${encodeURIComponent(
-      formData.subject,
-    )}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`,
-    )}`;
-    window.location.href = mailtoLink;
+    setIsSubmitting(true);
+    setStatus("idle");
+    setResponseMsg("");
+
+    try {
+      const res = await fetch("/api/contact/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        setStatus("success");
+        setResponseMsg(
+          data.message || "Thank you! Your message has been sent successfully."
+        );
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        setStatus("error");
+        setResponseMsg(
+          data.error || "Failed to send your message. Please try again later."
+        );
+      }
+    } catch {
+      setStatus("error");
+      setResponseMsg("Network error. Please check your connection and try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -86,6 +121,33 @@ export default function ContactPage() {
                 </div>
 
                 <form onSubmit={handleSubmit} className="space-y-4">
+                  {status === "success" && (
+                    <div className="p-4 rounded-[6px] bg-emerald-50 border border-emerald-600/30 text-emerald-900 flex items-start gap-3 text-sm">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+                      <div>
+                        <p className="font-semibold text-emerald-950">
+                          Message Sent Successfully!
+                        </p>
+                        <p className="text-xs text-emerald-800 mt-0.5">
+                          {responseMsg}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+
+                  {status === "error" && (
+                    <div className="p-4 rounded-[6px] bg-red-50 border border-red-600/30 text-red-900 flex items-start gap-3 text-sm">
+                      <AlertCircle className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
+                      <div>
+                        <p className="font-semibold text-red-950">
+                          Failed to Send
+                        </p>
+                        <p className="text-xs text-red-800 mt-0.5">
+                          {responseMsg}
+                        </p>
+                      </div>
+                    </div>
+                  )}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-1.5">
                       <label
@@ -170,10 +232,20 @@ export default function ContactPage() {
 
                   <button
                     type="submit"
-                    className="font-serif h-11 w-full rounded-[3px] bg-[#14100b] hover:bg-white text-white font-semibold text-[15px] transition-colors flex items-center justify-center gap-2 shadow-2xs cursor-pointer"
+                    disabled={isSubmitting}
+                    className="font-serif h-11 w-full rounded-[3px] bg-[#14100b] hover:bg-neutral-800 disabled:bg-neutral-400 text-white font-semibold text-[15px] transition-colors flex items-center justify-center gap-2 shadow-2xs cursor-pointer disabled:cursor-not-allowed"
                   >
-                    <Send size={15} />
-                    <span>Send Message</span>
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 size={16} className="animate-spin" />
+                        <span>Sending Message...</span>
+                      </>
+                    ) : (
+                      <>
+                        <Send size={15} />
+                        <span>Send Message</span>
+                      </>
+                    )}
                   </button>
                 </form>
               </div>
