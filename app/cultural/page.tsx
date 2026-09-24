@@ -84,6 +84,9 @@ export default function CulturalPage() {
                 <MapPin size={13} className="text-[#00D2FF]" />
                 <span>Sohna Road, Gurugram, Delhi-NCR, Haryana</span>
               </div>
+            </div>
+
+            <div className="mt-5">
               <a
                 href="/rulebook.pdf"
                 target="_blank"
