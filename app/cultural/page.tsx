@@ -200,11 +200,12 @@ export default function CulturalPage() {
                       />
                       {/* Top-Right Badge: Date / Day */}
                       <div className="absolute top-2.5 right-2.5 bg-[#081B4B]/85 backdrop-blur-xs text-[#00D2FF] text-[10.5px] font-mono uppercase tracking-wider px-2.5 py-0.5 rounded-[3px] border border-white/10 shadow-xs">
-                        {event.date?.includes("27") && event.date?.includes("28")
-                          ? "Oct 27-28 (2 Days)"
+                        {event.date?.includes("27") &&
+                        event.date?.includes("28")
+                          ? "Oct 27-28"
                           : event.date?.includes("28")
-                          ? "Oct 28 (Day 2)"
-                          : "Oct 27 (Day 1)"}
+                            ? "Oct 28 (Day 2)"
+                            : "Oct 27 (Day 1)"}
                       </div>
                     </div>
 
@@ -243,7 +244,10 @@ export default function CulturalPage() {
                       {/* Divider & Footer (Location + Details →) */}
                       <div className="mt-4 pt-3.5 border-t border-blue-50 flex items-center justify-between text-[12px] text-slate-500">
                         <div className="flex items-center gap-1.5 truncate max-w-[70%] text-slate-600">
-                          <MapPin size={13} className="shrink-0 text-[#0062A2]" />
+                          <MapPin
+                            size={13}
+                            className="shrink-0 text-[#0062A2]"
+                          />
                           <span className="truncate">
                             {event.location || "Sunken Garden"}
                           </span>
