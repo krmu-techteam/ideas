@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "npm run clean && next build",
-    "clean": "rimraf .next out",
+    "build": "next build",
+    "clean": "rimraf .next",
     "predeploy": "next build",
     "deploy": "gh-pages -d out",
     "dev": "next dev",
