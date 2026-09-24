@@ -44,7 +44,7 @@ export default function ContactPage() {
     setResponseMsg("");
 
     try {
-      const res = await fetch("/api/contact/", {
+      const res = await fetch("https://forms.krmangalam.ac.in/form-api/contact-form.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -68,7 +68,7 @@ export default function ContactPage() {
       } else {
         setStatus("error");
         setResponseMsg(
-          data.error || "Failed to send your message. Please try again later.",
+          data.message || "Failed to send your message. Please try again later.",
         );
       }
     } catch {
