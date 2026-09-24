@@ -26,10 +26,10 @@ const stats = [
     color: "text-[#E11E46]",
   },
   {
-    value: 20000,
+    value: 25000,
     label: "Expected Footfall",
     sublabel: "Delhi-NCR & Beyond",
-    display: "20,000+",
+    display: "25,000+ ",
     color: "text-white",
   },
 ];

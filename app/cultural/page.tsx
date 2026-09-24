@@ -97,7 +97,7 @@ export default function CulturalPage() {
                 {/* Gradient Border with Transparent Center */}
                 <span
                   aria-hidden="true"
-                  className="absolute inset-0 rounded-full p-[1.5px] pointer-events-none"
+                  className="absolute inset-0 rounded-full p-[2px] pointer-events-none"
                   style={{
                     background:
                       "linear-gradient(90deg, #FFD000 0%, #FF6600 50%, #E51937 100%)",

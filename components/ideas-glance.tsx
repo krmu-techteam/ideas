@@ -129,7 +129,7 @@ export default function IdeasGlance() {
           <p className="text-[15px] sm:text-[16px] text-blue-100 leading-relaxed max-w-2xl mx-auto">
             IDEAS 4.0 is KRMU&apos;s flagship mega fest that celebrates
             innovation, academics, hands-on pedagogy, and cultural vibrancy. The
-            fest brings together over 20,000+ participants from NCR schools,
+            fest brings together over 25,000+ participants from NCR schools,
             pan-India universities, and startups.
           </p>
         </motion.div>

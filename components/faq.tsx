@@ -19,7 +19,7 @@ const faqs = [
   {
     question: "Who can participate in IDEAS 4.0?",
     answer:
-      "IDEAS 4.0 is open to school students (classes 9–12), college and university students from across India, and startups. We expect over 20,000+ participants this year across all categories.",
+      "IDEAS 4.0 is open to school students (classes 9–12), college and university students from across India, and startups. We expect over 25,000+  participants this year across all categories.",
   },
   {
     question: "What is the AI Arena?",

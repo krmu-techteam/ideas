@@ -36,7 +36,7 @@ const timelineEvents = [
     description:
       "KRMU's flagship fest celebrating innovation, academics, hands-on pedagogy, and cultural vibrancy with 120 canopies, 28 competitions, and ₹10 lakh prize pool",
     achievements: [
-      "20,000+ participants from NCR schools, pan-India universities, and startups",
+      "25,000+  participants from NCR schools, pan-India universities, and startups",
       "Enhanced engagement connecting diverse educational institutions",
       "Talent recognition and collaboration opportunities",
       "Long-term memorable impact and experience",
@@ -49,7 +49,7 @@ const timelineEvents = [
     description:
       "KRMU's mega innovation fest returning bigger and bolder with expanded competitions, hackathons, and dynamic showcases celebrating creativity and excellence",
     achievements: [
-      "20,000+ expected participants across schools and universities nationwide",
+      "25,000+  expected participants across schools and universities nationwide",
       "State-of-the-art innovation tracks, robotics & tech showcases",
       "Grand cultural performances and industry-academia networking",
       "Substantial prize pool and national recognition",

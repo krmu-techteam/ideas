@@ -183,9 +183,9 @@ export default function ContactSection() {
         >
           {[
             { number: "4.0", label: "Version" },
-            { number: "1000+", label: "Participants" },
-            { number: "50+", label: "Events" },
-            { number: "24/7", label: "Support" },
+            { number: "25000+", label: "Participants" },
+            { number: "19", label: "Events" },
+            { number: "120+", label: "Canopies" },
           ].map((stat, index) => (
             <div
               key={index}

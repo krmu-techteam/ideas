@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const siteConfig = {
   name: "IDEAS 4.0",
   description:
-    "KRMU's flagship mega fest celebrating innovation, academics, hands-on pedagogy, and cultural vibrancy. 120 canopies, 28 competitions, ₹10 lakh prize pool, 20,000+ participants.",
+    "KRMU's flagship mega fest celebrating innovation, academics, hands-on pedagogy, and cultural vibrancy. 120 canopies, 28 competitions, ₹10 lakh prize pool, 25,000+  participants.",
   url: "https://ideas.krmangalam.edu.in",
   ogImage: "https://ideas.krmangalam.edu.in/IDEAS_LOGO2.png",
   links: {
