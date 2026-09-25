@@ -44,18 +44,21 @@ export default function ContactPage() {
     setResponseMsg("");
 
     try {
-      const res = await fetch("https://forms.krmangalam.ac.in/form-api/contact-form.php", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const res = await fetch(
+        "https://forms.krmangalam.ac.in/form-api/contact-form.php",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            fullName: formData.name,
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+          }),
         },
-        body: JSON.stringify({
-          fullName: formData.name,
-          email: formData.email,
-          subject: formData.subject,
-          message: formData.message
-        }),
-      });
+      );
 
       const data = await res.json();
 
@@ -73,12 +76,15 @@ export default function ContactPage() {
       } else {
         setStatus("error");
         setResponseMsg(
-          data.message || "Failed to send your message. Please try again later.",
+          data.message ||
+            "Failed to send your message. Please try again later.",
         );
       }
     } catch {
       setStatus("error");
-      setResponseMsg("Network error. Please check your connection and try again.");
+      setResponseMsg(
+        "Network error. Please check your connection and try again.",
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -249,7 +255,10 @@ export default function ContactPage() {
                   >
                     {isSubmitting ? (
                       <>
-                        <Loader2 size={16} className="animate-spin text-[#00D2FF]" />
+                        <Loader2
+                          size={16}
+                          className="animate-spin text-[#00D2FF]"
+                        />
                         <span>Sending Message...</span>
                       </>
                     ) : (
@@ -462,9 +471,9 @@ export default function ContactPage() {
               href="https://maps.google.com/?q=K.R.+Mangalam+University,+Sohna+Road,+Gurugram,+Haryana"
               target="_blank"
               rel="noopener noreferrer"
-              className="self-start sm:self-auto inline-flex items-center gap-1.5 rounded-[4px] border border-[#0B256B] bg-white text-[#0B256B] hover:bg-[#0B256B] hover:text-white px-4 py-2.5 text-xs font-mono font-semibold uppercase tracking-wider transition-colors shadow-2xs"
+              className="self-start sm:self-auto inline-flex items-center gap-1.5 rounded-[4px] border border-[#0B256B] bg-white text-[#0B256B] hover:bg-transparent  px-4 py-2.5 text-xs font-mono font-semibold uppercase tracking-wider transition-colors shadow-2xs"
             >
-              <MapPin size={14} className="text-[#0B256B]" />
+              <MapPin size={14} className="text-[#0B256B] " />
               <span>Open in Google Maps</span>
             </a>
           </div>

@@ -211,7 +211,7 @@ export default function Footer() {
                         href="https://www.linkedin.com/in/yashraj-pahuja-28a34b325/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-1 text-white hover:text-blue-300 hover:bg-blue-400/10 rounded transition-all duration-200 touch-manipulation"
+                        className="p-1 text-white hover:text-white hover:bg-gray-600/10 rounded transition-all duration-200 touch-manipulation"
                         title="LinkedIn"
                       >
                         <Linkedin size={16} />
@@ -248,7 +248,7 @@ export default function Footer() {
                         href="https://www.linkedin.com/in/piyush-078455221/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-1 text-blue-400 hover:text-blue-300 hover:bg-blue-400/10 rounded transition-all duration-200 touch-manipulation"
+                        className="p-1 text-white hover:text-white hover:bg-gray-600/10 rounded transition-all duration-200 touch-manipulation"
                         title="LinkedIn"
                       >
                         <Linkedin size={16} />
