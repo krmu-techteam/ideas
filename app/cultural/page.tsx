@@ -88,7 +88,7 @@ export default function CulturalPage() {
 
             <div className="mt-5">
               <a
-                href="/rulebook.pdf"
+                href="/rule-book.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Download Official Rule Book (PDF)"
