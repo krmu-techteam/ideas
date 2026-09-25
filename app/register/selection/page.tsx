@@ -207,7 +207,7 @@ export default function RegistrationSelectionPage() {
             <Button
               asChild
               variant="outline"
-              className="border border-blue-200 bg-white hover:bg-blue-50 text-[#0B256B] font-semibold shadow-xs rounded-xl transition-colors px-6 py-2.5"
+              className="border border-blue-200 bg-white hover:bg-blue-50 hover:text-[#0062A2] text-[#0B256B] font-semibold shadow-xs rounded-xl transition-colors px-6 py-2.5"
             >
               <Link href="/">← Back to Home</Link>
             </Button>
