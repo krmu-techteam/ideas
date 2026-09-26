@@ -99,10 +99,11 @@ function parseTimes(slot?: string): { start?: string; end?: string } {
 }
 
 // Event image mapping - WebP assets for optimal loading
-const eventImages: { [key: string]: string } = {
+const eventImages: { [key: string]: string } = { 
   "crime scene investigation game": "/assets/upcoming-events/up-ev-2.webp",
   "robots race": "/events/Robo race.png",
-  "robo war (ai arena)": "/events/robo-war-ai-arena.webp",
+  // "robo war (ai arena)": "/events/robo-war-ai-arena.webp",
+  "robo war (ai arena)": "/assets/spotlights/robo-war-ai-arena.webp",
   "react to the situation": "/assets/upcoming-events/up-ev-9.webp",
   "react to situation": "/assets/upcoming-events/up-ev-9.webp",
   "button masala": "/events/Button Masala.png",
@@ -114,15 +115,18 @@ const eventImages: { [key: string]: string } = {
     "/events/Soap Carving - Carved Expression.png",
   "soap-carving-carved-expression":
     "/events/Soap Carving - Carved Expression.png",
-  "debate competition": "/events/debate.jpg",
+  // "debate competition": "/events/debate.jpg",
+  "debate competition": "/assets/spotlights/debate-competition.webp",
   "reelbaaz (30s reel making)": "/assets/upcoming-events/up-ev-13.webp",
   "group dance": "/events/Group Dance.png",
   "group-dance": "/events/Group Dance.png",
   "group-dance-2": "/assets/upcoming-events/up-ev-25.webp",
   "science quiz & puzzle solve based on ai theme":
     "/assets/upcoming-events/up-ev-17.webp",
+  // "science quiz & puzzle solve (ai theme)":
+  //   "/assets/upcoming-events/up-ev-17.webp",
   "science quiz & puzzle solve (ai theme)":
-    "/assets/upcoming-events/up-ev-17.webp",
+    "/assets/spotlights/science-quiz-puzzle-solve.webp",
   "poster/ collage making competition  (theme: know your laws)":
     "/assets/upcoming-events/up-ev-19.webp",
   "poster/ collage making competition (theme: know your laws)":
@@ -155,15 +159,15 @@ export const rawRows: RawRow[] = [
     "Name of Events": "Crime Scene Investigation Game",
     Department: "SBAS – School of Basic & Applied Sciences",
     Participation: "School Students / University Students",
-    "Time Slot": "10:00 AM - 12:30 PM",
+    "Time Slot": "10:00 AM - 12:30 PM", 
     "Venue Details": "B Block Lobby Ground Floor",
     "Coordinator Name": "Dr Sourabh and Mr Vaibhav",
     "Email ID / Mobile  Number":
       "Vaibhav Saini (8178695170), Arijit Adhikari (7217674411), Tanvee Vashishth (9625124803), Kanika Sudha (8630907218)",
     Date: "27–28 October 2026",
     Category: "Technical",
-    "Team Event/Individual": "TEAM",
-    "Team Size": "2–5",
+    "Team Event/Individual": "TEAM", 
+    "Team Size": "2–5", 
     Prize: "₹9,000 (4500+4500) 1000/1500/2000",
     Description:
       "A simulated crime scene investigation where participants collect and document evidence, prepare crime scene sketches, analyse clues and witness statements, build criminal profiles, and identify the culprit. Teams are evaluated on evidence search, sketching accuracy, storyline formulation, profiling, and the accuracy of their final verdict.",
@@ -560,7 +564,8 @@ export const rawRows: RawRow[] = [
     "Team Event/Individual": "SOLO / TEAM",
     "Team Size": "2–4",
     Prize: "₹4,500 (1000/1500/2000)",
-    Image: "/events/Agritech – AI Smart Farming Models.png",
+    // Image: "/events/Agritech – AI Smart Farming Models.png",
+    Image: "/assets/spotlights/agritech-ai-smart-farming-models.webp",
     Description:
       "A farming innovation competition where participants design and present models integrating IoT, sensors, drones, automation, AI, precision agriculture and smart irrigation. The event showcases technology-driven and climate-smart solutions focused on productivity, resource efficiency, sustainability and farmer profitability.",
     "Guidlines of  the Event":
