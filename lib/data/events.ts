@@ -103,7 +103,7 @@ const eventImages: { [key: string]: string } = {
   "crime scene investigation game": "/assets/upcoming-events/up-ev-2.webp",
   "robots race": "/events/Robo race.png",
   // "robo war (ai arena)": "/events/robo-war-ai-arena.webp",
-  "robo war (ai arena)": "/assets/spotlights/robo-war-ai-arena.webp",
+  "robo war (ai arena)": "/assets/spotlights/robo-war-ai-arena.webp", 
   "react to the situation": "/assets/upcoming-events/up-ev-9.webp",
   "react to situation": "/assets/upcoming-events/up-ev-9.webp",
   "button masala": "/events/Button Masala.png",
@@ -166,13 +166,13 @@ export const rawRows: RawRow[] = [
       "Vaibhav Saini (8178695170), Arijit Adhikari (7217674411), Tanvee Vashishth (9625124803), Kanika Sudha (8630907218)",
     Date: "27–28 October 2026",
     Category: "Technical",
-    "Team Event/Individual": "TEAM", 
+    "Team Event/Individual": "TEAM",  
     "Team Size": "2–5", 
     Prize: "₹9,000 (4500+4500) 1000/1500/2000",
     Description:
       "A simulated crime scene investigation where participants collect and document evidence, prepare crime scene sketches, analyse clues and witness statements, build criminal profiles, and identify the culprit. Teams are evaluated on evidence search, sketching accuracy, storyline formulation, profiling, and the accuracy of their final verdict.",
     "Guidlines of  the Event":
-      "1. Time Management\n• The investigation phase is strictly limited to 1 hour.\n• No team is allowed back into the crime scene after the 5-minute mark.\n\n2. Evidence Handling\n• Evidence must be photographed and logged before physical collection to preserve the integrity of the scene.\n\n3. Collaboration\n• Teams must divide tasks such as sketching, searching, and profiling effectively.\n• Participants must use the provided CS kits and raw materials appropriately.\n\n4. Conduct\n• Crossing barricades outside designated entry points or tampering with another team's scene will result in immediate point deductions.\n\n5. Team Size\n• Each team must consist of a minimum of 2 and a maximum of 5 members.",
+      "1. Time Management\n• The investigation phase is strictly limited to 1 hour. \n• No team is allowed back into the crime scene after the 5-minute mark.\n\n2. Evidence Handling\n• Evidence must be photographed and logged before physical collection to preserve the integrity of the scene.\n\n3. Collaboration\n• Teams must divide tasks such as sketching, searching, and profiling effectively.\n• Participants must use the provided CS kits and raw materials appropriately. \n\n4. Conduct\n• Crossing barricades outside designated entry points or tampering with another team's scene will result in immediate point deductions\n\n5. Team Size\n• Each team must consist of a minimum of 2 and a maximum of 5 members.",
     "Evaluation Pattern":
       "Teams are evaluated on evidence search, sketching accuracy, storyline formulation, profiling, and the accuracy of their final verdict.",
   },
@@ -199,11 +199,11 @@ export const rawRows: RawRow[] = [
     Category: "Technical",
     "Team Event/Individual": "SOLO / TEAM",
     "Team Size": "3–4",
-    Prize: "₹9,000 (4500+4500) 1000/1500/2000",
+    Prize: "₹9,000 (4500+4500) 1000/1500/2000", 
     Description:
       "A head-to-head robotic sprint on a purpose-built track featuring turns, straight runs, obstacles and ramps. Robots must follow the track without skipping checkpoints. Participants are evaluated on speed, design, navigation and technical complexity, with the robot completing the track first within the predefined time slot declared the winner.",
     "Guidlines of  the Event":
-      "1. Machine Specifications\n• The robot must be wireless.\n• Maximum dimensions and weight will be specified by the organisers, such as 30 × 30 cm and 5 kg.\n\n2. Track & Run\n• The track will include turns, straight paths, obstacles or ramps.\n• The track may be announced in advance or revealed on the spot.\n• Robots must follow the track without skipping checkpoints.\n• Touching the robot during a run, except for an official reset, may result in penalty points or disqualification.\n\n3. Evaluation\n• Judging is based on speed, design, navigation and technical complexity.\n• The robot completing the track first within the predefined time slot wins.",
+      "1. Machine Specifications\n• The robot must be wireless.\n• Maximum dimensions and weight will be specified by the organisers, such as 30 × 30 cm and 5 kg.\n\n2. Track & Run\n• The track will include turns, straight paths, obstacles or ramps.\n• The track may be announced in advance or revealed on the spot. \n• Robots must follow the track without skipping checkpoints. \n• Touching the robot during a run, except for an official reset, may result in penalty points or disqualification.\n\n3. Evaluation\n• Judging is based on speed, design, navigation and technical complexity.\n• The robot completing the track first within the predefined time slot wins.",
     "Evaluation Pattern":
       "Judging is based on speed, design, navigation and technical complexity. The robot completing the track first within the predefined time slot wins.",
   },
@@ -234,7 +234,7 @@ export const rawRows: RawRow[] = [
     Description:
       "A high-energy robotics gaming arena where student-built robots compete head-to-head in Sumo Battle, Robo Soccer and Task Arena challenges. Participants design, program and control their machines to outmanoeuvre opponents through strength, strategy and agility, showcasing innovation, teamwork and technical skill.",
     "Guidlines of  the Event":
-      "1. Robot Specifications\n• The robot must be wireless.\n• Maximum robot size and weight will be specified by the organisers, such as 40 × 40 cm and 10 kg.\n\n2. Match Formats\n• Robo Soccer: Score the maximum number of goals.\n• Sumo Battle: Push the opponent out of the arena.\n• Task Arena: Collect objects or complete missions in the fastest time.\n\n3. Arena Conduct\n• Robots must remain inside the arena at all times.\n• Leaving the arena may result in penalty or disqualification.\n• Each match will have a fixed time limit of 2–5 minutes.\n\n4. Evaluation\n• Teams will be judged on speed, design, navigation and technical complexity.",
+      "1. Robot Specifications\n• The robot must be wireless.\n• Maximum robot size and weight will be specified by the organisers, such as 40 × 40 cm and 10 kg.\n\n2. Match Formats\n• Robo Soccer: Score the maximum number of goals.\n• Sumo Battle: Push the opponent out of the arena.\n• Task Arena: Collect objects or complete missions in the fastest time.\n\n3. Arena Conduct\n• Robots must remain inside the arena at all times.\n• Leaving the arena may result in penalty or disqualification.\n• Each match will have a fixed time limit of 2–5 minutes. \n\n4. Evaluation\n• Teams will be judged on speed, design, navigation and technical complexity.",
     "Evaluation Pattern":
       "Teams will be judged on speed, design, navigation and technical complexity.",
   },
@@ -293,7 +293,7 @@ export const rawRows: RawRow[] = [
     Description:
       "A zero-waste fashion technique using buttons and elastic bands to shape garments without cutting or stitching. Participants learn the fundamentals of Button Masala before applying them in a creative competition, exploring material innovation, sustainability and original design thinking through a hands-on workshop-to-contest format.",
     "Guidlines of  the Event":
-      "1. Materials\n• Each participant receives basic materials including fabric, buttons, elastic or rubber bands, scissors and measuring tools.\n• Additional non-permanent or reusable materials may be brought with prior permission.\n\n2. Construction Rules\n• Fabric, buttons, elastic or rubber bands and other approved materials are provided by the organisers.\n• Primary construction must be achieved through Button Masala techniques.\n• Conventional stitching should not be used.\n• Participants should avoid unnecessary cutting and wastage of fabric.\n• Buttons and elastic should be integral to the construction, not merely decorative.\n• The final design should preferably be reversible, detachable, reusable or reconfigurable.",
+      "1. Materials\n• Each participant receives basic materials including fabric, buttons, elastic or rubber bands, scissors and measuring tools.\n• Additional non-permanent or reusable materials may be brought with prior permission.\n\n2. Construction Rules\n• Fabric, buttons, elastic or rubber bands and other approved materials are provided by the organisers.\n• Fabric, buttons, elastic or rubber bands and other approved materials are provided by the organisers.\n• Conventional stitching should not be used.\n• Participants should avoid unnecessary cutting and wastage of fabric.\n• Buttons and elastic should be integral to the construction, not merely decorative.\n• The final design should preferably be reversible, detachable, reusable or reconfigurable.",
     "Evaluation Pattern":
       "Creativity, sustainability, innovative application of Button Masala techniques, and concept presentation.",
   },
@@ -359,7 +359,7 @@ export const rawRows: RawRow[] = [
     Description:
       "A structured two-day debate competition with a fresh motion each day. Participants compete as For Speaker, Against Speaker or Interjector, developing argumentation, questioning, rebuttal, communication and critical-thinking skills.",
     "Guidlines of  the Event":
-      "1. Team Composition\n• Each team shall consist of:\n  - 1 For Speaker\n  - 1 Against Speaker\n  - 1 Interjector\n• Teams shall be randomly paired on the day of the competition.\n\n2. Format\n• A separate motion shall be announced for each day.\n• Each speaker shall have 1 minute 30 seconds for the opening statement.\n• This will be followed by 30 seconds of interjection and 30 seconds for response.\n• Interjections must directly address the speaker's arguments and remain relevant to the motion.\n• Participants must strictly follow the allotted time.\n\n3. Conduct\n• Personal attacks, discriminatory remarks, irrelevant arguments and unauthorised interruption are prohibited.\n\n4. Scoring\n• For Speakers, Against Speakers and Interjectors shall be evaluated separately.\n• A Winner and Runner-Up shall be awarded in each category.\n• The decision of the judging panel shall be final.",
+      "1. Team Composition\n• Each team shall consist of:\n  - 1 For Speaker\n  - 1 Against Speaker\n  - 1 Interjector\n• Teams shall be randomly paired on the day of the competition.\n\n2. Format\n• A separate motion shall be announced for each day\n• Each speaker shall have 1 minute 30 seconds for the opening statement.\n• This will be followed by 30 seconds of interjection and 30 seconds for response.\n• Interjections must directly address the speaker's arguments and remain relevant to the motion.\n• Participants must strictly follow the allotted time.\n\n3. Conduct\n• Personal attacks, discriminatory remarks, irrelevant arguments and unauthorised interruption are prohibited.\n\n4. Scoring\n• For Speakers, Against Speakers and Interjectors shall be evaluated separately.\n• A Winner and Runner-Up shall be awarded in each category.\n• The decision of the judging panel shall be final.",
     "Evaluation Pattern":
       "For Speakers, Against Speakers and Interjectors evaluated separately on argumentation, questioning, rebuttal, communication, and critical thinking.",
   },
@@ -472,7 +472,7 @@ export const rawRows: RawRow[] = [
     Description:
       "An AI-themed science quiz and puzzle-solving competition conducted across multiple rounds. The first two rounds are team-based, while the final round is individual, sharpening scientific awareness, logical reasoning, teamwork and quick thinking.",
     "Guidlines of  the Event":
-      "1. Format\n• The event runs across multiple rounds.\n• The first two rounds are conducted in teams.\n• The final round is conducted individually.\n• Participants must follow all instructions given by the organisers.\n\n2. Puzzle Round\n• The puzzle-solving round has a 5-minute time limit.\n• The fastest participant or team to solve the puzzle correctly receives the corresponding score.\n• A tie-breaker round may be conducted in case of a tie.\n\n3. Conduct\n• The decision of the jury or organising committee shall be final.",
+      "1. Format\n• The event runs across multiple rounds.\n• The first two rounds are conducted in teams.\n• The final round is conducted individually.\n• Participants must follow all instructions given by the organisers.\n\n2. Puzzle Round\n• The puzzle-solving round has a 5-minute time limit. \n• The fastest participant or team to solve the puzzle correctly receives the corresponding score.\n• A tie-breaker round may be conducted in case of a tie.\n3. Conduct\n• The decision of the jury or organising committee shall be final.",
     "Evaluation Pattern":
       "Scientific awareness, logical reasoning, puzzle-solving speed, accuracy, and quick thinking.",
   },
@@ -530,7 +530,7 @@ export const rawRows: RawRow[] = [
     Category: "Technical",
     "Team Event/Individual": "SOLO / TEAM",
     "Team Size": "As specified by organisers",
-    Prize: "₹9,000 (4500+4500) 1000/1500/2000",
+    Prize: "₹9,000 (4500+4500) 1000/1500/2000", 
     Image: "/events/Drone Race (AI Arena).png",
     Description:
       "A precision flying contest where manual or remote-controlled drones navigate a marked obstacle course containing hoops and zig-zag poles. Drones are judged on compact, efficient and innovative design and precision, with the fastest drone reaching the destination declared the winner.",
@@ -569,7 +569,7 @@ export const rawRows: RawRow[] = [
     Description:
       "A farming innovation competition where participants design and present models integrating IoT, sensors, drones, automation, AI, precision agriculture and smart irrigation. The event showcases technology-driven and climate-smart solutions focused on productivity, resource efficiency, sustainability and farmer profitability.",
     "Guidlines of  the Event":
-      "1. Guidelines\n• Participants may compete individually or in teams of up to 4 members.\n• The model must be original.\n• The model must be related to smart or sustainable farming and AI technologies.\n• Use of recycled or eco-friendly materials is encouraged.\n• Students must bring their own prepared model.\n• Model size must not exceed 3 × 2 feet.\n• Teams must follow safety guidelines and maintain fair play.\n• The judges' decisions are final.",
+      "1. Guidelines\n• Participants may compete individually or in teams of up to 4 members.\n• The model must be original.\n• The model must be related to smart or sustainable farming and AI technologies.\n• Use of recycled or eco-friendly materials is encouraged.\n• Students must bring their own prepared model.\n• Model size must not exceed 3 × 2 feet.\n• Teams must follow safety guidelines and maintain fair play.\n• The judges' decisions are final",
     "Evaluation Pattern":
       "Innovation, sustainability impact, technological integration (IoT, AI, automation), practical feasibility, and model presentation.",
   },
@@ -627,7 +627,7 @@ export const rawRows: RawRow[] = [
     Description:
       "A clue-based treasure hunt where participants solve puzzles and riddles across checkpoints to locate a hidden treasure. The activity develops teamwork, problem-solving, logical thinking and observation skills through a fast-paced technology-themed challenge.",
     "Guidlines of  the Event":
-      "1. Team Rules\n• Teams must stay together at all times.\n• Teams are not allowed to split up.\n• Each clue should logically lead to the next checkpoint.\n• Teams cannot skip clues or move ahead without solving them.\n\n2. Conduct & Boundaries\n• Participants must respect the environment.\n• Littering or disturbing nature is not permitted.\n• Smaller rewards may be included at checkpoints.\n• A grand prize may be provided at the end.",
+      "1. Team Rules\n• Teams must stay together at all times.\n• Teams are not allowed to split up.\n• Each clue should logically lead to the next checkpoint.\n• Teams cannot skip clues or move ahead without solving them.\n\n2. Conduct & Boundaries\n• Participants must respect the environment.\n• Littering or disturbing nature is not permitted.\n• Smaller rewards may be included at checkpoints.\n•	A grand prize may be provided at the end.",
     "Evaluation Pattern":
       "Fastest team to decipher all clues, solve technology puzzles at all checkpoints, and locate the final treasure.",
   },
@@ -659,7 +659,7 @@ export const rawRows: RawRow[] = [
     Description:
       "Pairs take the stage to showcase rhythm, coordination and creative expression through dance. The duet format highlights synchronised artistry and stage presence, with performances judged on choreography, energy, coordination and overall performance.",
     "Guidlines of  the Event":
-      "1. Performance Rules\n• Time limit is 2–2.5 minutes per performance.\n• Points are deducted for exceeding the time limit and organisers may stop the performance.\n• Any dance form is allowed.\n• Pre-recorded tracks must be submitted in advance.\n• Last-minute audio changes are not allowed.\n• Costumes and props are allowed.\n• Colours, gulal, water or any stage-damaging material are strictly prohibited and lead to disqualification.\n• Obscene or derogatory moves or lyrics are strictly prohibited.",
+      "1. Performance Rules\n• Time limit is 2–2.5 minutes per performance.\n• Points are deducted for exceeding the time limit and organisers may stop the performance.\n• Any dance form is allowed.\n• Pre-recorded tracks must be submitted in advance.\n• Last-minute audio changes are not allowed.\n• Costumes and props are allowed.\n• Colours, gulal, water or any stage-damaging material are strictly prohibited and lead to disqualification.\n•	Obscene or derogatory moves or lyrics are strictly prohibited.",
     "Evaluation Pattern":
       "Choreography, energy, coordination, synchronisation, stage presence, and overall performance.",
   },
@@ -691,7 +691,7 @@ export const rawRows: RawRow[] = [
     Description:
       "An innovation challenge empowering school students to turn creative ideas into working solutions using AI, machine learning, generative AI, robotics and IoT. The competition consists of an online ideation round followed by an offline AI Arena demonstration.",
     "Guidlines of  the Event":
-      "1. Format\n• The theme is Artificial Intelligence.\n• Teams must build an innovative solution to a real-world problem using AI.\n• Teams must consist of 2–4 students.\n• Round 1 – Online: Teams submit their idea, problem statement, solution and AI implementation plan with a short presentation or video within the deadline.\n• Shortlisted teams advance to Round 2 – AI Arena, held physically at K.R. Mangalam University.\n\n2. Round 2 Requirements\n• Teams must present and demonstrate a working AI-based software and/or hardware prototype before the judges.\n• Software, hardware, AI tools, APIs, ML models, generative AI, IoT or robotics may be used, provided AI is central to the solution.\n• Teams must bring all hardware, components, software and datasets required for the demonstration.\n• The final-round project must substantially match the Round 1 submission.\n• Major changes require organiser approval.\n\n3. Evaluation\n• Projects will be judged on innovation, originality and creativity.\n• Functionality, working prototype quality and real-world feasibility will be assessed.\n• Presentation quality and the ability to answer judges' questions will also be considered.",
+      "1. Format\n• The theme is Artificial Intelligence.\n• Teams must build an innovative solution to a real-world problem using AI.\n• Teams must consist of 2–4 students.\n• Round 1 – Online: Teams submit their idea, problem statement, solution and AI implementation plan with a short presentation or video within the deadline.\n• Shortlisted teams advance to Round 2 – AI Arena, held physically at K. R. Mangalam University.\n\n2. Round 2 Requirements\n• Teams must present and demonstrate a working AI-based software and/or hardware prototype before the judges.\n• Software, hardware, AI tools, APIs, ML models, generative AI, IoT or robotics may be used, provided AI is central to the solution.\n• Teams must bring all hardware, components, software and datasets required for the demonstration.\n• The final-round project must substantially match the Round 1 submission.\n• Major changes require organiser approval.\n\n3. Evaluation\n• Projects will be judged on innovation, originality and creativity.\n• Functionality, working prototype quality and real-world feasibility will be assessed.\n• Presentation quality and the ability to answer judges' questions will also be considered.",
     "Evaluation Pattern":
       "Innovation, originality, meaningful AI integration, working prototype functionality, real-world impact, and presentation.",
   },
@@ -714,7 +714,7 @@ export const rawRows: RawRow[] = [
     Description:
       "A robotic football match where two teams of robots compete to score goals. Each team fields 3–5 robots, with one robot potentially serving as goalkeeper. Robots must comply with safety requirements relating to battery, voltage, infrared emission and interference while competing under official supervision.",
     "Guidlines of  the Event":
-      "1. Match Format\n• Each soccer team may have a minimum of 3 and maximum of 8 members.\n• Each team must field 3–5 robots during a match.\n• One robot may serve as the goalkeeper.\n• The number of robots in a match may vary depending on the number of participating teams.\n• Each team must field at least 3 and at most 5 robots.\n• Matches will be played in a designated arena according to the setup and rules announced by the organising committee.\n\n2. Robot Safety Specifications\n• Robots must be sealed, non-explosive and electrically powered.\n• Battery, NiCad or dry cell may be used.\n• Voltage anywhere in the robot must not exceed 24V DC at any point during the match.\n• Robots must not emit infrared light.\n• Infrared-distance optical sensors may be used provided they do not affect other robots.\n• Infrared-reflecting materials must not be used externally.\n• Painted robots must have a matte finish.\n• A team claiming interference from an opposing robot must provide proof, which must be confirmed by a referee.\n\n3. Fair Play & Evaluation\n• Teams must follow all safety rules, game etiquette and match discipline.\n• Any robot violating safety norms or causing deliberate disruption may be penalised or disqualified by the judges.\n• The team with the highest number of goals at the end of the match will be declared the winner.",
+      "1. Match Format\n• Each soccer team may have a minimum of 3 and maximum of 8 members.\n• o	Each team must field 3–5 robots during a match.\n• One robot may serve as the goalkeeper.\n• The number of robots in a match may vary depending on the number of participating teams.\n• Each team must field at least 3 and at most 5 robots.\n• o	Matches will be played in a designated arena according to the setup and rules announced by the organising committee.\n\n2. Robot Safety Specifications\n• Robots must be sealed, non-explosive and electrically powered.\n• Battery, NiCad or dry cell may be used.\n• Voltage anywhere in the robot must not exceed 24V DC at any point during the match.\n• Robots must not emit infrared light.\n• Infrared-distance optical sensors may be used provided they do not affect other robots.\n• Infrared-reflecting materials must not be used externally.\n• Painted robots must have a matte finish.\n• A team claiming interference from an opposing robot must provide proof, which must be confirmed by a referee\n\n3. Fair Play & Evaluation\n• Teams must follow all safety rules, game etiquette and match discipline.\n• Any robot violating safety norms or causing deliberate disruption may be penalised or disqualified by the judges.\n• The team with the highest number of goals at the end of the match will be declared the winner.",
     "Evaluation Pattern":
       "Highest number of goals scored, adherence to safety and voltage rules, robot agility, and team tactics.",
   },
