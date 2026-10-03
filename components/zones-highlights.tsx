@@ -64,7 +64,7 @@ export default function ZonesHighlights() {
   return (
     <section
       id="zones-highlights"
-      className="py-16 bg-[#F4F9FD] text-[#0B256B]"
+      className="py-16 bg-[#E0F3FC]  text-[#0B256B]"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         {/* Title */}
@@ -81,7 +81,7 @@ export default function ZonesHighlights() {
         </motion.div>
 
         {/* Zones Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 font-poppins md:grid-cols-2 gap-6 sm:gap-8">
           {zones.map((zone, idx) => (
             <motion.div
               key={zone.title}
@@ -89,7 +89,7 @@ export default function ZonesHighlights() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="rounded-2xl border border-blue-100 bg-white p-6 sm:p-8 flex flex-col justify-between hover:border-[#0062A2] transition-colors duration-200 group"
+              className="rounded-2xl border border-blue-100 font-poppins bg-[#F8FCFF] p-6 sm:p-8 flex flex-col justify-between hover:border-[#0062A2] transition-colors duration-200 group"
             >
               <div>
                 <h3 className="text-2xl font-serif font-bold text-[#0B256B] mb-4">
@@ -104,10 +104,10 @@ export default function ZonesHighlights() {
                   <div className="space-y-3.5 pt-3 border-t border-blue-50">
                     {zone.details.map((item) => (
                       <div key={item.label} className="text-sm">
-                        <span className="font-semibold font-mono text-[#0062A2] block sm:inline">
+                        <span className="font-semibold font-poppins text-[#0062A2] block sm:inline">
                           {item.label}:{" "}
                         </span>
-                        <span className="text-slate-700">{item.value}</span>
+                        <span className="text-[#222222]">{item.value}</span>
                       </div>
                     ))}
                   </div>

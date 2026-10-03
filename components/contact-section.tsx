@@ -64,7 +64,7 @@ export default function ContactSection() {
                   <h3 className="font-semibold text-[#0B256B] mb-1">
                     Visit Us
                   </h3>
-                  <p className="text-slate-600">
+                  <p className="text-[#222]">
                     Sohna Road, Gurugram, Delhi-NCR, Haryana
                   </p>
                 </div>
@@ -80,7 +80,7 @@ export default function ContactSection() {
                   </h3>
                   <a
                     href="mailto:ideas@krmangalam.edu.in"
-                    className="text-[#0062A2] hover:underline transition-colors duration-300"
+                    className="text-[#222] hover:underline transition-colors duration-300"
                   >
                     ideas@krmangalam.edu.in
                   </a>
@@ -96,22 +96,22 @@ export default function ContactSection() {
                   <div className="flex flex-col text-sm text-slate-600">
                     <a
                       href="tel:01242867800"
-                      className="hover:text-[#0062A2] transition-colors duration-300 font-semibold text-[#0B256B]"
+                      className="hover:text-[#0062A2] transition-colors duration-300 font-semibold text-[#222]"
                     >
                       Landline: 0124-2867800
                     </a>
-                    <span className="font-semibold text-[#0B256B]">
+                    <span className="font-semibold text-[#222]">
                       Helpline:{" "}
                       <a
                         href="tel:+918448184864"
-                        className="text-[#0062A2] hover:underline transition-colors duration-300"
+                        className="text-[#222] hover:underline transition-colors duration-300"
                       >
                         8448184864
                       </a>{" "}
                       |{" "}
                       <a
                         href="tel:+918192888444"
-                        className="text-[#0062A2] hover:underline transition-colors duration-300"
+                        className="text-[#222] hover:underline transition-colors duration-300"
                       >
                         8192888444
                       </a>
@@ -128,7 +128,7 @@ export default function ContactSection() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <Card className="bg-gradient-to-br from-[#081B4B] via-[#00529B] to-[#00ACE9] border border-white/20 shadow-xl rounded-3xl overflow-hidden text-white">
+            <Card className="bg-gradient-to-br from-[#081B4B] via-[#00529B] to-[#00ACE9]  rounded-3xl overflow-hidden text-white">
               <CardContent className="p-8 md:p-10 text-center">
                 <div className="bg-white/10 border border-white/20 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white shadow-xs backdrop-blur-sm">
                   <Mail size={32} />
@@ -183,7 +183,7 @@ export default function ContactSection() {
         >
           {[
             { number: "4.0", label: "Version" },
-            { number: "25000+", label: "Participants" },
+            { number: "25,000+", label: "Participants" },
             { number: "19", label: "Events" },
             { number: "120+", label: "Canopies" },
           ].map((stat, index) => (
@@ -194,7 +194,7 @@ export default function ContactSection() {
               <div className="text-3xl md:text-4xl font-serif font-bold mb-1 text-[#0B256B]">
                 {stat.number}
               </div>
-              <div className="text-[#0062A2] text-xs font-semibold font-mono uppercase tracking-wider">
+              <div className="text-[#0062A2] text-xs font-semibold font-poppins uppercase tracking-wider">
                 {stat.label}
               </div>
             </div>

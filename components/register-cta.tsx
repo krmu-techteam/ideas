@@ -7,14 +7,14 @@ import { Button } from "@/components/ui/button";
 
 export default function RegisterCTA() {
   return (
-    <section className="py-8 sm:py-12 bg-[#F4F9FD] relative overflow-hidden">
+    <section className="py-8 sm:py-12 bg-[#E0F3FC] relative overflow-hidden">
       <div className="container mx-auto px-4 max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="relative rounded-3xl bg-gradient-to-r from-[#081B4B] via-[#00529B] to-[#00ACE9] text-white p-8 md:p-12 border border-white/20 overflow-hidden"
+          className="relative rounded-3xl bg-gradient-to-r from-[#081B4B] via-[#00529B] to-[#00ACE9] text-white p-8 md:p-12  overflow-hidden"
         >
           <div className="relative z-10 max-w-2xl mx-auto text-center flex flex-col items-center">
             {/* Heading */}
@@ -24,7 +24,7 @@ export default function RegisterCTA() {
 
             {/* Description */}
             <p className="text-blue-100 font-sans text-sm sm:text-base md:text-lg mb-8 leading-relaxed">
-              Register now for your favorite events and be part of this
+              Register now for your favourite events and be part of this
               incredible journey
             </p>
 

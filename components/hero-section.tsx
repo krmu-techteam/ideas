@@ -314,11 +314,13 @@ export default function HeroSection() {
                 The Innovation Carnival 2026
               </h2>
               <p className="text-base sm:text-lg text-slate-300 mb-8 max-w-2xl leading-relaxed">
-                IDEAS 4.0 is KRMU&apos;s flagship annual mega-fest that
-                celebrates innovation, academics, hands-on pedagogy, and
-                cultural vibrancy. Running for its fourth consecutive year, it
-                has established itself as one of the largest student-led
-                innovation festivals in the Delhi-NCR region.
+                IDEAS 4.0 is KRMU's flagship annual mega-fest that celebrates
+                innovation, academics, hands-on pedagogy, and cultural vibrancy.
+                This year, it is themed around Artificial Intelligence, where
+                you can explore AI project exhibitions, compete in hackathons,
+                pitch at the start-up showcase, and learn in expert
+                masterclasses. Now in its fourth year, it's one of Delhi-NCR's
+                largest student-run innovation fests.
               </p>
 
               {/* Meta badges */}
@@ -344,7 +346,7 @@ export default function HeroSection() {
                   <Button
                     asChild
                     size="lg"
-                    className="bg-[#E11E45] text-white font-bold min-h-[44px] text-[15px] px-7 rounded-xl transition-colors duration-300"
+                    className="bg-[#E11E45] border-2 border-[#E11E45] hover:bg-[#E11E45]/15 text-white font-bold min-h-[44px] text-[15px] px-7 rounded-xl transition-colors duration-300"
                   >
                     <Link href="/register/selection">Register Now</Link>
                   </Button>
@@ -490,12 +492,12 @@ export default function HeroSection() {
                 },
                 {
                   ver: "IDEAS 3.0",
-                  sub: "120 Canopies",
+                  sub: "Scale-Up",
                   image: "/ideas-version/Ideas 3.0.png",
                 },
                 {
                   ver: "IDEAS 4.0",
-                  sub: "Current • Mega Fest",
+                  sub: "Current • Mega Edition",
                   image: "/ideas-version/Ideas 4.0.png",
                   highlight: true,
                 },

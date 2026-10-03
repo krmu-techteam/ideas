@@ -34,14 +34,13 @@ export default function Footer() {
               />
             </Link>
             <p className="text-white text-sm leading-relaxed">
-              K.R. Mangalam University (KRMU), established in 2013 in Gurugram,
-              Haryana, is a forward-looking institution dedicated to excellence
-              in education, research, and innovation.
+              K.R. Mangalam University, Gurugram, is a hub for excellence in
+              education, research, and innovation.
             </p>
             <p className="text-white text-sm leading-relaxed">
-              As the proud organiser of IDEAS 4.0, KRMU continues its mission of
-              inspiring innovation, celebrating creativity, and empowering the
-              next generation.
+              As the proud organiser of the annual IDEAS carnival, KRMU is
+              committed to celebrating creativity and empowering the next
+              generation to turn ideas into impactful outcomes.
             </p>
             <div className="flex space-x-3 sm:space-x-4 pt-2 sm:pt-4">
               <Link
@@ -148,7 +147,7 @@ export default function Footer() {
                 <Mail size={18} className="text-white flex-shrink-0" />
                 <a
                   href="mailto:ideas@krmangalam.edu.in"
-                  className="text-white hover:text-gray-800 text-sm"
+                  className="text-white hover:text-gold-300 text-sm"
                 >
                   ideas@krmangalam.edu.in
                 </a>
@@ -158,13 +157,20 @@ export default function Footer() {
                 <div className="text-white text-sm flex flex-col">
                   <a
                     href="tel:01242867800"
-                    className="hover:text-gray-800 font-medium"
+                    className="hover:text-gold-300 font-medium"
                   >
                     Landline: 0124-2867800
                   </a>
                   <span className="text-[14px] text-white">
-                    Helpline: <a href="tel:+918448184864">8448184864</a> |
-                    <a href="tel:+918192888444">8192888444</a>
+                    Helpline:{" "}
+                    <a href="tel:+918448184864" className="hover:text-gold-300">
+                      8448184864
+                    </a>{" "}
+                    |
+                    <a href="tel:+918192888444" className="hover:text-gold-300">
+                      {" "}
+                      8192888444
+                    </a>
                   </span>
                 </div>
               </li>

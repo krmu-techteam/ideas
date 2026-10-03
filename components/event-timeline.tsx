@@ -9,32 +9,32 @@ const timelineEvents = [
     year: 2023,
     title: "IDEAS 1.0",
     description:
-      "The inaugural event featuring 80 canopies and 5,000+ participants",
+      "The inaugural event featuring 80 canopies and 5,000+ participants.",
     achievements: [
       "First inter-university innovation showcase",
       "20+ competitions across disciplines",
       "3 successful startup incubations",
     ],
-    image: "/ideas-version/Ideas 1.0.png",
+    image: "/ideas-version/1.jpg",
   },
   {
     year: 2024,
     title: "IDEAS 2.0",
     description:
-      "Held on July 17, 2024 - A year of expansion and refinement with broader participation, new thematic tracks (Agritech, Sustainability, Robotics), and stronger industry-academia collaboration.",
+      "Held on June 17, 2024 - a year of expansion and refinement with broader participation, new thematic tracks (Agritech, Sustainability, Robotics), and stronger industry-academia collaboration.",
     achievements: [
       "100+ canopy showcases across emerging domains",
       "Launch of sustainability & agritech focused clusters",
       "Robotics & drone arenas introduced",
       "Increased cross-university participation & mentorship engagements",
     ],
-    image: "/ideas-version/Ideas 2.0.png",
+    image: "/ideas-version/2.jpg",
   },
   {
     year: 2025,
     title: "IDEAS 3.0",
     description:
-      "KRMU's flagship fest celebrating innovation, academics, hands-on pedagogy, and cultural vibrancy with 120 canopies, 28 competitions, and ₹10 lakh prize pool",
+      "KRMU's flagship fest celebrating innovation, academics, hands-on pedagogy, and cultural vibrancy with 120 canopies, 28 competitions, and ₹10 lakh prize pool.",
     achievements: [
       "25,000+  participants from NCR schools, pan-India universities, and startups",
       "Enhanced engagement connecting diverse educational institutions",
@@ -47,7 +47,7 @@ const timelineEvents = [
     year: 2026,
     title: "IDEAS 4.0",
     description:
-      "KRMU's mega innovation fest returning bigger and bolder with expanded competitions, hackathons, and dynamic showcases celebrating creativity and excellence",
+      "KRMU's mega innovation fest returning bigger and bolder with expanded competitions, hackathons, and dynamic showcases celebrating creativity and excellence.",
     achievements: [
       "25,000+  expected participants across schools and universities nationwide",
       "State-of-the-art innovation tracks, robotics & tech showcases",
@@ -107,9 +107,9 @@ export default function EventTimeline() {
           </div>
           <p className="text-slate-600 max-w-3xl mx-auto text-base sm:text-[18px] leading-relaxed">
             From IDEAS 1.0 to IDEAS 4.0, witness the remarkable evolution of
-            KRMU&apos;s flagship innovation festival - transforming dreams into
+            KRMU's flagship innovation festival — transforming dreams into
             reality and fostering excellence in education, research, and
-            innovation
+            innovation.
           </p>
         </motion.div>
 

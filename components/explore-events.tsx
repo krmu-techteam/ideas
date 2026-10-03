@@ -29,7 +29,7 @@ const eventCategories = [
     title: "Cultural Events",
     badge: "Stage & Arts",
     description:
-      "Electrifying dance face-offs, live battle of bands, fashion showcases and dramatic theatricals.",
+      "Electrifying dance face-offs, live band battles, fashion showcases and dramatic theatricals.",
     icon: Music,
     href: "/cultural",
     badgeColor: "bg-[#7c3aed]",
@@ -88,9 +88,9 @@ export default function ExploreEvents() {
             Explore Events &amp; Tracks
           </h2>
           <p className="text-[15px] sm:text-[16px] font-sans leading-[1.6] text-slate-600 max-w-2xl mx-auto">
-            Discover 19 flagship competitions across 10 categories, events, and
-            interdisciplinary tracks designed to ignite innovation and
-            creativity.
+            Discover 19 flagship competitions across 10 categories, along with
+            events and interdisciplinary tracks designed to ignite innovation
+            and creativity.
           </p>
         </motion.div>
 

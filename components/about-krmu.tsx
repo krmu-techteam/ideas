@@ -62,7 +62,7 @@ export default function AboutKrmu() {
   return (
     <section
       ref={sectionRef}
-      className="py-16 bg-[#F4F9FD] relative overflow-hidden about-krmu-section"
+      className="pt-16 bg-[#A9D8FC] relative overflow-hidden about-krmu-section"
       suppressHydrationWarning
     >
       <div className="container mx-auto px-4 max-w-7xl">
@@ -74,9 +74,9 @@ export default function AboutKrmu() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#0B256B] mb-4 tracking-tight">
-            About K.R. Mangalam University (KRMU)
+            About K.R. Mangalam University
           </h2>
-          <div className="max-w-5xl mx-auto text-slate-700 space-y-4 text-[15px] sm:text-[16px] leading-relaxed">
+          <div className="max-w-5xl mx-auto text-[#222222] font-normal space-y-4 text-[15px] sm:text-[16px] leading-relaxed">
             <p>
               K.R. Mangalam University (KRMU) was established in 2013 in
               Gurugram, Haryana. It is a NAAC-accredited (Grade A)
@@ -110,15 +110,15 @@ export default function AboutKrmu() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
             >
-              <Card className="h-full bg-white transition-colors duration-200 border border-blue-100 rounded-2xl hover:border-[#0062A2] group">
+              <Card className="h-full bg-[#F8FCFF] transition-colors duration-200 border border-[#0B256B]/10 rounded-2xl hover:border-[#0B256B] group">
                 <CardContent className="p-6 text-center flex flex-col items-center h-full">
-                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center bg-blue-50 text-[#0062A2] border border-blue-100 group-hover:bg-[#0062A2] group-hover:text-white transition-colors duration-200 mb-4">
+                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center bg-blue-50 text-[#0B256B] border border-[#0B256B]/10 group-hover:bg-[#0B256B] group-hover:text-white transition-colors duration-200 mb-4">
                     {highlight.icon}
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-[#0B256B] group-hover:text-[#0062A2] transition-colors mb-3">
+                  <h3 className="text-xl font-serif font-bold text-[#0B256B]/90 group-hover:text-[#0B256B] transition-colors mb-3">
                     {highlight.title}
                   </h3>
-                  <p className="text-slate-600 leading-relaxed text-[14px]">
+                  <p className="text-[#222222] font-poppins font-normal leading-relaxed text-[14px]">
                     {highlight.description}
                   </p>
                 </CardContent>
@@ -128,7 +128,7 @@ export default function AboutKrmu() {
         </div>
 
         {/* Bottom Banner */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ delay: 0.5, duration: 0.8 }}
@@ -138,13 +138,13 @@ export default function AboutKrmu() {
             <h3 className="text-2xl sm:text-3xl font-serif font-bold mb-4 text-white">
               Proud Organizer of IDEAS 4.0
             </h3>
-            <p className="text-base sm:text-lg text-blue-100 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-[#0B256B]/10 leading-relaxed max-w-3xl mx-auto">
               As the proud organiser of IDEAS 4.0, KRMU continues its mission of
               inspiring innovation, celebrating creativity, and empowering the
               next generation to transform ideas into impactful outcomes.
             </p>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

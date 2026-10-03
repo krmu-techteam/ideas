@@ -41,7 +41,7 @@ const engagementPoints = [
   },
   {
     num: "04",
-    title: "Long-term Impact",
+    title: "Long-Term Impact",
     description:
       "Establishing IDEAS as an annual, memorable, and transformative innovation milestone.",
     icon: TrendingUp,
@@ -94,7 +94,7 @@ const ideasCards = [
     title: "Skill-Based",
     badge: "Hands-on Sprints",
     description:
-      "Hands-on interdisciplinary learning powered by strong industry and sponsor partnerships. Practical over theoretical.",
+      "Hands-on interdisciplinary learning powered by strong industry and sponsor partnerships, prioritising practical over theoretical knowledge.",
     icon: Wrench,
     badgeBg: "bg-[#EF6321] text-white",
     slug: "skill-based",
@@ -122,14 +122,14 @@ export default function IdeasGlance() {
 
           <div className="mb-4">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white tracking-tight leading-tight">
-              IDEAS 4.0 Glance
+              IDEAS 4.0 at a Glance
             </h2>
           </div>
 
           <p className="text-[15px] sm:text-[16px] text-blue-100 leading-relaxed max-w-2xl mx-auto">
             IDEAS 4.0 is KRMU&apos;s flagship mega fest that celebrates
             innovation, academics, hands-on pedagogy, and cultural vibrancy. The
-            fest brings together over 25,000+ participants from NCR schools,
+            fest brings together 25,000+ participants from NCR schools,
             pan-India universities, and startups.
           </p>
         </motion.div>

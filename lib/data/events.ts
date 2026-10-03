@@ -99,11 +99,11 @@ function parseTimes(slot?: string): { start?: string; end?: string } {
 }
 
 // Event image mapping - WebP assets for optimal loading
-const eventImages: { [key: string]: string } = { 
+const eventImages: { [key: string]: string } = {
   "crime scene investigation game": "/assets/upcoming-events/up-ev-2.webp",
   "robots race": "/events/Robo race.png",
   // "robo war (ai arena)": "/events/robo-war-ai-arena.webp",
-  "robo war (ai arena)": "/assets/spotlights/robo-war-ai-arena.webp", 
+  "robo war (ai arena)": "/assets/spotlights/robo-war-ai-arena.webp",
   "react to the situation": "/assets/upcoming-events/up-ev-9.webp",
   "react to situation": "/assets/upcoming-events/up-ev-9.webp",
   "button masala": "/events/Button Masala.png",
@@ -159,15 +159,15 @@ export const rawRows: RawRow[] = [
     "Name of Events": "Crime Scene Investigation Game",
     Department: "SBAS – School of Basic & Applied Sciences",
     Participation: "School Students / University Students",
-    "Time Slot": "10:00 AM - 12:30 PM", 
-    "Venue Details": "B Block Lobby Ground Floor",
+    "Time Slot": "10:00 AM - 12:30 PM",
+    "Venue Details": "B Block Lobby, Ground Floor",
     "Coordinator Name": "Dr Sourabh and Mr Vaibhav",
     "Email ID / Mobile  Number":
       "Vaibhav Saini (8178695170), Arijit Adhikari (7217674411), Tanvee Vashishth (9625124803), Kanika Sudha (8630907218)",
     Date: "27–28 October 2026",
     Category: "Technical",
-    "Team Event/Individual": "TEAM",  
-    "Team Size": "2–5", 
+    "Team Event/Individual": "TEAM",
+    "Team Size": "2–5",
     Prize: "₹9,000 (4500+4500) 1000/1500/2000",
     Description:
       "A simulated crime scene investigation where participants collect and document evidence, prepare crime scene sketches, analyse clues and witness statements, build criminal profiles, and identify the culprit. Teams are evaluated on evidence search, sketching accuracy, storyline formulation, profiling, and the accuracy of their final verdict.",
@@ -179,7 +179,7 @@ export const rawRows: RawRow[] = [
   {
     Participation: "University Students",
     "Time Slot": "2:00 PM - 4:00 PM",
-    "Venue Details": "B Block Lobby Ground Floor",
+    "Venue Details": "B Block Lobby, Ground Floor",
     "Coordinator Name": "Dr Sourabh and Mr Vaibhav",
     "Email ID / Mobile  Number":
       "Vaibhav Saini (8178695170), Arijit Adhikari (7217674411), Tanvee Vashishth (9625124803), Kanika Sudha (8630907218)",
@@ -192,14 +192,14 @@ export const rawRows: RawRow[] = [
     Department: "SOET – School of Engineering & Technology",
     Participation: "School Students / University Students",
     "Time Slot": "10:00 AM - 12:30 PM",
-    "Venue Details": "Basketball ground",
+    "Venue Details": "Basketball Ground",
     "Coordinator Name": "Mr.Gaurav Verma/Dr.Imran Siraj",
     "Email ID / Mobile  Number": "Tanush Tyagi, Tanishka",
     Date: "27–28 October 2026",
     Category: "Technical",
     "Team Event/Individual": "SOLO / TEAM",
     "Team Size": "3–4",
-    Prize: "₹9,000 (4500+4500) 1000/1500/2000", 
+    Prize: "₹9,000 (4500+4500) 1000/1500/2000",
     Description:
       "A head-to-head robotic sprint on a purpose-built track featuring turns, straight runs, obstacles and ramps. Robots must follow the track without skipping checkpoints. Participants are evaluated on speed, design, navigation and technical complexity, with the robot completing the track first within the predefined time slot declared the winner.",
     "Guidlines of  the Event":
@@ -222,7 +222,7 @@ export const rawRows: RawRow[] = [
     Department: "SOET – School of Engineering & Technology",
     Participation: "School Students / University Students",
     "Time Slot": "10:00 AM Onwards",
-    "Venue Details": "Basketball ground / AI Arena",
+    "Venue Details": "Basketball Ground / AI Arena",
     "Coordinator Name": "Mr.Gaurav Verma/Dr.Imran Siraj",
     "Email ID / Mobile  Number":
       "1) Umar Farooq, 2) Ayush Partap Singh, 3) Rudra Partap Singh, 4) Khushboo",
@@ -522,7 +522,7 @@ export const rawRows: RawRow[] = [
     Department: "SOET – School of Engineering & Technology",
     Participation: "School Students",
     "Time Slot": "9:30 AM Onwards",
-    "Venue Details": "Basketball ground",
+    "Venue Details": "Basketball Ground",
     "Coordinator Name":
       "Mr. Gaurav Verma / Dr. Imran Siraj / Dr Naman Gupta / Dr Digvijay",
     "Email ID / Mobile  Number": "Krish, Varun, Bhaumik",
@@ -530,7 +530,7 @@ export const rawRows: RawRow[] = [
     Category: "Technical",
     "Team Event/Individual": "SOLO / TEAM",
     "Team Size": "As specified by organisers",
-    Prize: "₹9,000 (4500+4500) 1000/1500/2000", 
+    Prize: "₹9,000 (4500+4500) 1000/1500/2000",
     Image: "/events/Drone Race (AI Arena).png",
     Description:
       "A precision flying contest where manual or remote-controlled drones navigate a marked obstacle course containing hoops and zig-zag poles. Drones are judged on compact, efficient and innovative design and precision, with the fastest drone reaching the destination declared the winner.",
@@ -580,7 +580,7 @@ export const rawRows: RawRow[] = [
     Department: "SOLA – School of Liberal Arts",
     Participation: "School Students",
     "Time Slot": "10:30 AM - 3:00 PM",
-    "Venue Details": "C Block Ground Floor TT Room",
+    "Venue Details": "C Block, Ground Floor, TT Room",
     "Coordinator Name":
       "Dr Amrita Ratnani (6394260965) / Dr Jyotsna Tyagi (9728509807)",
     "Email ID / Mobile  Number":
@@ -601,7 +601,7 @@ export const rawRows: RawRow[] = [
   {
     Participation: "University Students",
     "Time Slot": "10:30 AM - 3:00 PM",
-    "Venue Details": "C Block Dance Room",
+    "Venue Details": "C Block, Dance Room",
     "Coordinator Name":
       "Dr Amrita Ratnani (6394260965) / Dr Jyotsna Tyagi (9728509807)",
     "Email ID / Mobile  Number":
