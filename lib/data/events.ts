@@ -158,10 +158,10 @@ export const rawRows: RawRow[] = [
   {
     "Name of Events": "Crime Scene Investigation Game",
     Department: "SBAS – School of Basic & Applied Sciences",
-    Participation: "School Students / University Students",
+    Participation: "School Students",
     "Time Slot": "10:00 AM - 12:30 PM",
     "Venue Details": "B Block Lobby, Ground Floor",
-    "Coordinator Name": "Dr Sourabh and Mr Vaibhav",
+    "Coordinator Name": "Dr. Sourabh and Mr. Vaibhav",
     "Email ID / Mobile  Number":
       "Vaibhav Saini (8178695170), Arijit Adhikari (7217674411), Tanvee Vashishth (9625124803), Kanika Sudha (8630907218)",
     Date: "27–28 October 2026",
@@ -172,7 +172,7 @@ export const rawRows: RawRow[] = [
     Description:
       "A simulated crime scene investigation where participants collect and document evidence, prepare crime scene sketches, analyse clues and witness statements, build criminal profiles, and identify the culprit. Teams are evaluated on evidence search, sketching accuracy, storyline formulation, profiling, and the accuracy of their final verdict.",
     "Guidlines of  the Event":
-      "1. Time Management\n• The investigation phase is strictly limited to 1 hour. \n• No team is allowed back into the crime scene after the 5-minute mark.\n\n2. Evidence Handling\n• Evidence must be photographed and logged before physical collection to preserve the integrity of the scene.\n\n3. Collaboration\n• Teams must divide tasks such as sketching, searching, and profiling effectively.\n• Participants must use the provided CS kits and raw materials appropriately. \n\n4. Conduct\n• Crossing barricades outside designated entry points or tampering with another team's scene will result in immediate point deductions\n\n5. Team Size\n• Each team must consist of a minimum of 2 and a maximum of 5 members.",
+      "1. Time Management\n• The investigation phase is strictly limited to 1 hour. \n• No team is allowed to go back into the crime scene after the 5-minute mark.\n\n2. Evidence Handling\n• Evidence must be photographed and logged before physical collection to preserve the integrity of the scene.\n\n3. Collaboration\n• Teams must divide tasks such as sketching, searching, and profiling effectively.\n• Participants must use the provided CS kits and raw materials appropriately. \n\n4. Conduct\n• Crossing barricades outside designated entry points or tampering with another team's scene will result in immediate point deductions.\n\n5. Team Size\n• Each team must consist of a minimum of 2 and a maximum of 5 members.",
     "Evaluation Pattern":
       "Teams are evaluated on evidence search, sketching accuracy, storyline formulation, profiling, and the accuracy of their final verdict.",
   },
@@ -180,7 +180,7 @@ export const rawRows: RawRow[] = [
     Participation: "University Students",
     "Time Slot": "2:00 PM - 4:00 PM",
     "Venue Details": "B Block Lobby, Ground Floor",
-    "Coordinator Name": "Dr Sourabh and Mr Vaibhav",
+    "Coordinator Name": "Dr. Sourabh and Mr. Vaibhav",
     "Email ID / Mobile  Number":
       "Vaibhav Saini (8178695170), Arijit Adhikari (7217674411), Tanvee Vashishth (9625124803), Kanika Sudha (8630907218)",
     Prize: "₹9,000 (4500+4500) 1000/1500/2000",
@@ -190,7 +190,7 @@ export const rawRows: RawRow[] = [
   {
     "Name of Events": "Robots Race",
     Department: "SOET – School of Engineering & Technology",
-    Participation: "School Students / University Students",
+    Participation: "School Students",
     "Time Slot": "10:00 AM - 12:30 PM",
     "Venue Details": "Basketball Ground",
     "Coordinator Name": "Mr.Gaurav Verma/Dr.Imran Siraj",
@@ -201,7 +201,7 @@ export const rawRows: RawRow[] = [
     "Team Size": "3–4",
     Prize: "₹9,000 (4500+4500) 1000/1500/2000",
     Description:
-      "A head-to-head robotic sprint on a purpose-built track featuring turns, straight runs, obstacles and ramps. Robots must follow the track without skipping checkpoints. Participants are evaluated on speed, design, navigation and technical complexity, with the robot completing the track first within the predefined time slot declared the winner.",
+      "A head-to-head robotic sprint on a purpose-built track featuring turns, straight runs, obstacles and ramps. Robots must follow the track without skipping checkpoints. Participants are evaluated on speed, design, navigation and technical complexity, with the robot that completes the track first within the predefined time slot declared the winner.",
     "Guidlines of  the Event":
       "1. Machine Specifications\n• The robot must be wireless.\n• Maximum dimensions and weight will be specified by the organisers, such as 30 × 30 cm and 5 kg.\n\n2. Track & Run\n• The track will include turns, straight paths, obstacles or ramps.\n• The track may be announced in advance or revealed on the spot. \n• Robots must follow the track without skipping checkpoints. \n• Touching the robot during a run, except for an official reset, may result in penalty points or disqualification.\n\n3. Evaluation\n• Judging is based on speed, design, navigation and technical complexity.\n• The robot completing the track first within the predefined time slot wins.",
     "Evaluation Pattern":
@@ -220,7 +220,7 @@ export const rawRows: RawRow[] = [
   {
     "Name of Events": "Robo War (AI Arena)",
     Department: "SOET – School of Engineering & Technology",
-    Participation: "School Students / University Students",
+    Participation: "School Students",
     "Time Slot": "10:00 AM Onwards",
     "Venue Details": "Basketball Ground / AI Arena",
     "Coordinator Name": "Mr.Gaurav Verma/Dr.Imran Siraj",
@@ -234,9 +234,9 @@ export const rawRows: RawRow[] = [
     Description:
       "A high-energy robotics gaming arena where student-built robots compete head-to-head in Sumo Battle, Robo Soccer and Task Arena challenges. Participants design, program and control their machines to outmanoeuvre opponents through strength, strategy and agility, showcasing innovation, teamwork and technical skill.",
     "Guidlines of  the Event":
-      "1. Robot Specifications\n• The robot must be wireless.\n• Maximum robot size and weight will be specified by the organisers, such as 40 × 40 cm and 10 kg.\n\n2. Match Formats\n• Robo Soccer: Score the maximum number of goals.\n• Sumo Battle: Push the opponent out of the arena.\n• Task Arena: Collect objects or complete missions in the fastest time.\n\n3. Arena Conduct\n• Robots must remain inside the arena at all times.\n• Leaving the arena may result in penalty or disqualification.\n• Each match will have a fixed time limit of 2–5 minutes. \n\n4. Evaluation\n• Teams will be judged on speed, design, navigation and technical complexity.",
+      "1. Robot Specifications\n• The robot must be wireless.\n• Maximum robot size and weight will be specified by the organisers, such as 40 × 40 cm and 10 kg.\n\n2. Match Formats\n• Robo Soccer: Score the maximum number of goals.\n• Sumo Battle: Push the opponent out of the arena.\n• Task Arena: Collect objects or complete missions in the fastest time.\n\n3. Arena Conduct\n• Robots must remain inside the arena at all times.\n• Leaving the arena may result in penalty or disqualification.\n• Each match will have a fixed time limit of 2–5 minutes. \n\n4. Evaluation\n• Teams will be judged on speed, design, navigation goals scored and technical complexity.",
     "Evaluation Pattern":
-      "Teams will be judged on speed, design, navigation and technical complexity.",
+      "Teams will be judged on speed, design, navigation goals scored and technical complexity.",
   },
   {
     Participation: "University Students",
@@ -252,10 +252,10 @@ export const rawRows: RawRow[] = [
   {
     "Name of Events": "React to Situation",
     Department: "SOMC – School of Management & Commerce",
-    Participation: "School Students / University Students",
+    Participation: "School Students",
     "Time Slot": "9:30 AM - 12:00 PM",
     "Venue Details": "C415",
-    "Coordinator Name": "Dr. Anumeha, Dr. Sapna Rana",
+    "Coordinator Name": "Dr. Anumeha, Dr.  Sapna Rana",
     "Email ID / Mobile  Number": "Vandana, Mansi, Prince, Sameeksha",
     Date: "27–28 October 2026",
     Category: "Academic",
@@ -272,7 +272,7 @@ export const rawRows: RawRow[] = [
     Participation: "University Students",
     "Time Slot": "1:00 PM - 3:00 PM",
     "Venue Details": "C415",
-    "Coordinator Name": "Dr. Anumeha, Dr. Sapna Rana",
+    "Coordinator Name": "Dr. Anumeha, Dr.  Sapna Rana",
     "Email ID / Mobile  Number": "Vandana, Mansi, Prince, Sameeksha",
     Prize: "₹7,000 (3500+3500) 900/1100/1500",
   },
@@ -284,7 +284,7 @@ export const rawRows: RawRow[] = [
     Participation: "School Students",
     "Time Slot": "10:00 AM - 2:00 PM",
     "Venue Details": "C116 (Pattern Making Lab)",
-    "Coordinator Name": "Ms. Paramjeet Kaur / Dr Dinkar Kumavat (8826289725)",
+    "Coordinator Name": "Ms. Paramjeet Kaur / Dr. Dinkar Kumavat (8826289725)",
     "Email ID / Mobile  Number": "Himanshi Singla (9518495115)",
     Date: "27–28 October 2026",
     Category: "Academic",
@@ -295,7 +295,7 @@ export const rawRows: RawRow[] = [
     "Guidlines of  the Event":
       "1. Materials\n• Each participant receives basic materials including fabric, buttons, elastic or rubber bands, scissors and measuring tools.\n• Additional non-permanent or reusable materials may be brought with prior permission.\n\n2. Construction Rules\n• Fabric, buttons, elastic or rubber bands and other approved materials are provided by the organisers.\n• Fabric, buttons, elastic or rubber bands and other approved materials are provided by the organisers.\n• Conventional stitching should not be used.\n• Participants should avoid unnecessary cutting and wastage of fabric.\n• Buttons and elastic should be integral to the construction, not merely decorative.\n• The final design should preferably be reversible, detachable, reusable or reconfigurable.",
     "Evaluation Pattern":
-      "Creativity, sustainability, innovative application of Button Masala techniques, and concept presentation.",
+      "Participants are evaluated on creativity, sustainability, innovative application of Button Masala techniques, and concept presentation.",
   },
 
   // 6. SOAD - IMPRINT: The Art of Hand Block Printing
@@ -317,7 +317,7 @@ export const rawRows: RawRow[] = [
     "Guidlines of  the Event":
       "1. Workshop Guidelines\n• Use printing blocks carefully and handle all tools responsibly.\n• Maintain cleanliness and keep the work area organised throughout.\n• Do not exchange or misuse tools and materials without permission.\n• Clean the blocks, work surface and tools after completing the activity.\n• Follow the instructor's demonstration and safety guidelines throughout.",
     "Evaluation Pattern":
-      "Creativity, experimentation, craftsmanship, neatness, and block design execution.",
+      "Participants are evaluated on creativity, experimentation, craftsmanship, neatness, and block design execution.",
   },
 
   // 7. SOAD - Soap Carving – Carved Expression
@@ -339,7 +339,7 @@ export const rawRows: RawRow[] = [
     "Guidlines of  the Event":
       "1. Format\n• Each participant is given 2 hours to complete their soap carving artwork.\n• The competition theme will be announced at the start of the workshop.\n\n2. Materials & Originality\n• Soap and basic carving materials are provided by the organisers.\n• Each artwork must be original.\n• Pre-designed or pre-carved soap is not allowed.\n\n3. Conduct\n• Carving tools must be used carefully and according to all safety instructions.\n• Participants must complete their artwork independently.\n• Teachers, parents or accompanying persons may not assist.",
     "Evaluation Pattern":
-      "Originality, delicate detail, precision, craftsmanship, and completeness.",
+      "Participants are evaluated on originality, delicate detail, precision, craftsmanship, and completeness.",
   },
 
   // 8. SOLA - Debate Competition
@@ -359,9 +359,9 @@ export const rawRows: RawRow[] = [
     Description:
       "A structured two-day debate competition with a fresh motion each day. Participants compete as For Speaker, Against Speaker or Interjector, developing argumentation, questioning, rebuttal, communication and critical-thinking skills.",
     "Guidlines of  the Event":
-      "1. Team Composition\n• Each team shall consist of:\n  - 1 For Speaker\n  - 1 Against Speaker\n  - 1 Interjector\n• Teams shall be randomly paired on the day of the competition.\n\n2. Format\n• A separate motion shall be announced for each day\n• Each speaker shall have 1 minute 30 seconds for the opening statement.\n• This will be followed by 30 seconds of interjection and 30 seconds for response.\n• Interjections must directly address the speaker's arguments and remain relevant to the motion.\n• Participants must strictly follow the allotted time.\n\n3. Conduct\n• Personal attacks, discriminatory remarks, irrelevant arguments and unauthorised interruption are prohibited.\n\n4. Scoring\n• For Speakers, Against Speakers and Interjectors shall be evaluated separately.\n• A Winner and Runner-Up shall be awarded in each category.\n• The decision of the judging panel shall be final.",
+      "1. Team Composition\n• Each team shall consist of:\n  - 1 For Speaker\n  - 1 Against Speaker\n  - 1 Interjector\n• Teams shall be randomly paired on the day of the competition.\n\n2. Format\n• A separate motion shall be announced for each day.\n• Each speaker shall have 1 minute 30 seconds for the opening statement.\n• This will be followed by 30 seconds of interjection and 30 seconds for response.\n• Interjections must directly address the speaker's arguments and remain relevant to the motion.\n• Participants must strictly follow the allotted time.\n\n3. Conduct\n• Personal attacks, discriminatory remarks, irrelevant arguments and unauthorised interruption are prohibited.\n\n4. Scoring\n• For Speakers, Against Speakers and Interjectors shall be evaluated separately.\n• A Winner and Runner-up shall be awarded in each category.\n• The decision of the judging panel shall be final.",
     "Evaluation Pattern":
-      "For Speakers, Against Speakers and Interjectors evaluated separately on argumentation, questioning, rebuttal, communication, and critical thinking.",
+      "For Speakers, Against Speakers and Interjectors are evaluated separately on argumentation, questioning, rebuttal, communication, and critical thinking.",
   },
   {
     Participation: "University Students",
@@ -493,7 +493,7 @@ export const rawRows: RawRow[] = [
     "Time Slot": "10:00 AM - 11:00 AM",
     "Venue Details": "Multi purpose hall",
     "Coordinator Name":
-      "Dr. Ankita (9501474214) & Dr. Arti Sharma (9899073342)",
+      "Dr. Ankita (9501474214) & Dr.  Arti Sharma (9899073342)",
     "Email ID / Mobile  Number": "baibhavi, Ritika",
     Date: "27–28 October 2026",
     Category: "Academic",
@@ -511,7 +511,7 @@ export const rawRows: RawRow[] = [
     "Time Slot": "11:30 AM - 12:30 PM",
     "Venue Details": "Multi purpose hall",
     "Coordinator Name":
-      "Dr. Ankita (9501474214) & Dr. Arti Sharma (9899073342)",
+      "Dr. Ankita (9501474214) & Dr.  Arti Sharma (9899073342)",
     "Email ID / Mobile  Number": "baibhavi, Ritika",
     Prize: "₹4,500 (1000/1500/2000)",
   },
@@ -524,7 +524,7 @@ export const rawRows: RawRow[] = [
     "Time Slot": "9:30 AM Onwards",
     "Venue Details": "Basketball Ground",
     "Coordinator Name":
-      "Mr. Gaurav Verma / Dr. Imran Siraj / Dr Naman Gupta / Dr Digvijay",
+      "Mr. Gaurav Verma / Dr.  Imran Siraj / Dr. Naman Gupta / Dr. Digvijay",
     "Email ID / Mobile  Number": "Krish, Varun, Bhaumik",
     Date: "27–28 October 2026",
     Category: "Technical",
@@ -544,7 +544,7 @@ export const rawRows: RawRow[] = [
     "Time Slot": "1:30 PM Onwards",
     "Venue Details": "Basketball Ground / AI Arena",
     "Coordinator Name":
-      "Mr. Gaurav Verma / Dr. Imran Siraj / Dr Naman Gupta / Dr Digvijay",
+      "Mr. Gaurav Verma / Dr.  Imran Siraj / Dr. Naman Gupta / Dr. Digvijay",
     "Email ID / Mobile  Number": "Krish, Varun, Bhaumik",
     Prize: "₹9,000 (4500+4500) 1000/1500/2000",
   },
@@ -556,7 +556,7 @@ export const rawRows: RawRow[] = [
     Participation: "School Students",
     "Time Slot": "11:00 AM - 2:00 PM",
     "Venue Details": "C-306A",
-    "Coordinator Name": "Dr Jay Nath Patel and Dr Agnibha Sinha",
+    "Coordinator Name": "Dr Jay Nath Patel and Dr. Agnibha Sinha",
     "Email ID / Mobile  Number":
       "Divesh (9599724998), Shubham (9306630597), Anjali (9211964717), Lalit (9813634671)",
     Date: "27–28 October 2026",
@@ -582,7 +582,7 @@ export const rawRows: RawRow[] = [
     "Time Slot": "10:30 AM - 3:00 PM",
     "Venue Details": "C Block, Ground Floor, TT Room",
     "Coordinator Name":
-      "Dr Amrita Ratnani (6394260965) / Dr Jyotsna Tyagi (9728509807)",
+      "Dr Amrita Ratnani (6394260965) / Dr. Jyotsna Tyagi (9728509807)",
     "Email ID / Mobile  Number":
       "Manish Kumar- M.A. Sem- 3 (9654464361), Anushka Roy B.A. Sem 3 (8287372002)",
     Date: "27–28 October 2026",
@@ -603,7 +603,7 @@ export const rawRows: RawRow[] = [
     "Time Slot": "10:30 AM - 3:00 PM",
     "Venue Details": "C Block, Dance Room",
     "Coordinator Name":
-      "Dr Amrita Ratnani (6394260965) / Dr Jyotsna Tyagi (9728509807)",
+      "Dr Amrita Ratnani (6394260965) / Dr. Jyotsna Tyagi (9728509807)",
     "Email ID / Mobile  Number":
       "Manish Kumar- M.A. Sem- 3 (9654464361), Anushka Roy B.A. Sem 3 (8287372002)",
     Prize: "₹6,000 (3000+2000+1000)",
@@ -616,7 +616,7 @@ export const rawRows: RawRow[] = [
     Participation: "School Students",
     "Time Slot": "10:00 AM - 1:00 PM",
     "Venue Details": "Campus Ground / SOET Block",
-    "Coordinator Name": "Mr. Gaurav Verma / Dr. Imran Siraj",
+    "Coordinator Name": "Mr. Gaurav Verma / Dr.  Imran Siraj",
     "Email ID / Mobile  Number": "Krish, Varun, Bhaumik",
     Date: "27–28 October 2026",
     Category: "Technical",
@@ -635,7 +635,7 @@ export const rawRows: RawRow[] = [
     Participation: "University Students",
     "Time Slot": "1:30 PM - 4:00 PM",
     "Venue Details": "Campus Ground / SOET Block",
-    "Coordinator Name": "Mr. Gaurav Verma / Dr. Imran Siraj",
+    "Coordinator Name": "Mr. Gaurav Verma / Dr.  Imran Siraj",
     "Email ID / Mobile  Number": "Krish, Varun, Bhaumik",
     Prize: "₹4,500 (1000/1500/2000)",
   },
@@ -680,7 +680,8 @@ export const rawRows: RawRow[] = [
     Participation: "School Students",
     "Time Slot": "10:00 AM Onwards",
     "Venue Details": "AI Arena",
-    "Coordinator Name": "Dr. Amar Saraswat, Dr. Reenu Batra, Dr. Megha Sharma",
+    "Coordinator Name":
+      "Dr. Amar Saraswat, Dr.  Reenu Batra, Dr.  Megha Sharma",
     "Email ID / Mobile  Number": "Aditya Kumar Singh, Kartik Sharma",
     Date: "27–28 October 2026",
     Category: "Technical",
@@ -703,7 +704,7 @@ export const rawRows: RawRow[] = [
     Participation: "School Students",
     "Time Slot": "10:00 AM Onwards",
     "Venue Details": "Basketball Ground / AI Arena",
-    "Coordinator Name": "Mr. Gaurav Verma / Dr. Imran Siraj",
+    "Coordinator Name": "Mr. Gaurav Verma / Dr.  Imran Siraj",
     "Email ID / Mobile  Number": "Tanush Tyagi, Tanishka",
     Date: "27–28 October 2026",
     Category: "Academic",
@@ -722,7 +723,7 @@ export const rawRows: RawRow[] = [
     Participation: "University Students",
     "Time Slot": "1:30 PM Onwards",
     "Venue Details": "Basketball Ground / AI Arena",
-    "Coordinator Name": "Mr. Gaurav Verma / Dr. Imran Siraj",
+    "Coordinator Name": "Mr. Gaurav Verma / Dr.  Imran Siraj",
     "Email ID / Mobile  Number": "Tanush Tyagi, Tanishka",
     Prize: "₹9,000 (4500+4500) 1000/1500/2000",
   },

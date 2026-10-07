@@ -89,9 +89,9 @@ export default function EventDetailView({
             </h1>
 
             {/* Short Lede */}
-            <p className="mt-4 text-[16px] sm:text-[18px] leading-[1.65] text-blue-100 max-w-3xl">
+            {/* <p className="mt-4 text-[16px] sm:text-[18px] leading-[1.65] text-blue-100 max-w-3xl">
               {event.description}
-            </p>
+            </p> */}
 
             {/* Meta Line: Date, Venue & Share Button */}
             <div className="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-white/15 pt-6">

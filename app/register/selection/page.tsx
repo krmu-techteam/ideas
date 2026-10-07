@@ -158,10 +158,12 @@ export default function RegistrationSelectionPage() {
                     className="w-full bg-gradient-to-r from-[#0B256B] to-[#0062A2] hover:from-[#081B4B] hover:to-[#004B87] text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300 py-3.5 shadow-md shadow-blue-900/15"
                   >
                     <Link
-                      href="/register/university"
+                      href={
+                        "https://morbin.space/event/krmu-ideas-4-0?utm_source=website"
+                      }
                       className="flex items-center justify-center gap-2"
                     >
-                      <span>Register as University</span>
+                      <span>Register as University/Student</span>
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </Button>
