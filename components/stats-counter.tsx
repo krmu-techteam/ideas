@@ -15,7 +15,7 @@ const stats = [
     value: 25,
     label: "Competitions",
     sublabel: "10 Categories",
-    display: "25",
+    display: "25+",
     color: "text-white",
   },
   {
