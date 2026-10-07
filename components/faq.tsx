@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "What is IDEAS 4.0?",
     answer:
-      "IDEAS 4.0 is K.R. Mangalam University's flagship annual innovation fest, celebrating innovation, academics, hands-on learning, and culture. Now in its fourth edition, it is one of the largest student-led innovation festivals in Delhi-NCR, featuring 19 competitions, 120+ exhibition stalls, and a prize pool of ₹10 Lakh+.",
+      "IDEAS 4.0 is K.R. Mangalam University's flagship annual innovation fest, celebrating innovation, academics, hands-on learning, and culture. Now in its fourth edition, it is one of the largest student-led innovation festivals in Delhi-NCR, featuring 25+ competitions, 120+ exhibition stalls, and a prize pool of ₹10 Lakh+.",
   },
   {
     question: "When and where is IDEAS 4.0 happening?",

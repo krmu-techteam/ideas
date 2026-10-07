@@ -64,7 +64,7 @@ export default function RegistrationSelectionPage() {
                       <span className="text-[#0062A2] font-bold mr-2.5 shrink-0">
                         ✓
                       </span>
-                      <span>Access to 28 competitions</span>
+                      <span>Access to 25+ competitions</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-[#0062A2] font-bold mr-2.5 shrink-0">

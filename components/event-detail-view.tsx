@@ -290,7 +290,10 @@ export default function EventDetailView({
                 </div>
 
                 <div className="flex items-start gap-3 py-1">
-                  <MapPin size={16} className="text-[#0062A2] shrink-0 mt-0.5" />
+                  <MapPin
+                    size={16}
+                    className="text-[#0062A2] shrink-0 mt-0.5"
+                  />
                   <div>
                     <div className="text-[10.5px] font-mono uppercase tracking-wider text-slate-500">
                       Venue

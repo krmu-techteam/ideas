@@ -137,7 +137,7 @@ export default function ContactPage() {
                     GET IN TOUCH
                   </div>
                   <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#0B256B]">
-                    Send us a Message
+                    Send Us a Message
                   </h2>
                 </div>
 
@@ -372,7 +372,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-serif font-bold text-[#0B256B] text-sm mb-0.5">
-                        Admissions Email
+                        Email
                       </h3>
                       <a
                         href="mailto:ideas@krmangalam.edu.in"
