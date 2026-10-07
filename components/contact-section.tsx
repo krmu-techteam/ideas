@@ -184,7 +184,7 @@ export default function ContactSection() {
           {[
             { number: "4.0", label: "Version" },
             { number: "25,000+", label: "Participants" },
-            { number: "19", label: "Events" },
+            { number: "25+", label: "Events" },
             { number: "120+", label: "Canopies" },
           ].map((stat, index) => (
             <div

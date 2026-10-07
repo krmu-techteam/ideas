@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "What is the AI Arena?",
     answer:
-      "The AI Arena is the technology and competition hub of IDEAS 4.0. It hosts 19 competitions in robotics, AI, coding, drones, and other skill-based challenges — including flagship events like Robo War, Drone Race, Robots Race, Drone Obstacle Crossing, Gaming Arena, and the One Day Hackathon. It's the go-to zone for high-energy, hands-on tech competitions with a major share of the prize pool.",
+      "The AI Arena is the technology and competition hub of IDEAS 4.0. It hosts 25+ competitions in robotics, AI, coding, drones, and other skill-based challenges — including flagship events like Robo War, Drone Race, Robots Race, Drone Obstacle Crossing, Gaming Arena, and the One Day Hackathon. It's the go-to zone for high-energy, hands-on tech competitions with a major share of the prize pool.",
   },
   {
     question: "What is Innoverse?",
@@ -34,13 +34,13 @@ const faqs = [
   {
     question: "What is the prize pool for IDEAS 4.0?",
     answer:
-      "IDEAS 4.0 features a prize pool worth ₹10 Lakh+, distributed across 19 competitions in 10 categories, including technology, academics, arts, business, and culture.",
+      "IDEAS 4.0 features a prize pool worth ₹10 Lakh+, distributed across 25+ competitions in 10 categories, including technology, academics, arts, business, and culture.",
   },
   {
     question:
       "How many competitions are there, and what categories do they cover?",
     answer:
-      "There are 19 competitions across 10 categories: Law & Social Sciences, Technology & Engineering, Pharmacy, Creative Arts, Media & Communication, Innovation & Sustainability, Business, Science, Cultural, and Sports & Fitness. There's something for every interest, whether you're into tech, art, debate, dance, or business.",
+      "There are 25+ competitions across 10 categories: Law & Social Sciences, Technology & Engineering, Pharmacy, Creative Arts, Media & Communication, Innovation & Sustainability, Business, Science, Cultural, and Sports & Fitness. There's something for every interest, whether you're into tech, art, debate, dance, or business.",
   },
   {
     question: "How do I register for IDEAS 4.0?",
