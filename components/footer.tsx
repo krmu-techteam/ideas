@@ -125,7 +125,7 @@ export default function Footer() {
                   href="/#faq"
                   className="text-white hover:text-gold-300 transition-all duration-300 hover:translate-x-1 inline-block py-1 text-sm sm:text-base touch-manipulation"
                 >
-                  FAQ
+                  FAQs
                 </Link>
               </li>
             </ul>
