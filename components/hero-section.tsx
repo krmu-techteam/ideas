@@ -497,7 +497,7 @@ export default function HeroSection() {
                 },
                 {
                   ver: "IDEAS 4.0",
-                  sub: "Current • Mega Edition",
+                  sub: "Mega Edition",
                   image: "/ideas-version/Ideas 4.0.png",
                   highlight: true,
                 },

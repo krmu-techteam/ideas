@@ -95,7 +95,7 @@ export default function StatsCounter() {
     if (!isInView) return stat.display;
     const val = counts[index];
     if (index === 0) return `₹${val} Lakh+`;
-    if (index === 1) return `${val}`;
+    if (index === 1) return `${val}+`;
     if (index === 2) return `${val}+`;
     if (index === 3) return `${val.toLocaleString()}+`;
     return stat.display;
