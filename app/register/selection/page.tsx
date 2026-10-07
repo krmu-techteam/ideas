@@ -164,7 +164,7 @@ export default function RegistrationSelectionPage() {
                       className="flex items-center justify-center gap-2"
                       target="_blank"
                     >
-                      <span>Register as University/Student</span>
+                      <span>Register as University Student</span>
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </Button>
