@@ -193,7 +193,7 @@ export default function UniversityRegistrationPage() {
                       </span>
                     ) : (
                       <span className="flex items-center justify-center gap-2">
-                        <span>Register from Other University</span>
+                        <span>Register as Other University Student</span>
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                       </span>
                     )}

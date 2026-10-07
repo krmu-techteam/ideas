@@ -390,9 +390,9 @@ export const rawRows: RawRow[] = [
     Description:
       "A short-form content challenge where participants create and upload a 30–60-second Instagram reel on the given theme. Entries are judged on creativity, originality, storytelling and adherence to submission guidelines and community standards.",
     "Guidlines of  the Event":
-      "1. Submission Format\n• Reel duration should be 30–60 second.\n• Upload the reel on the participant's own Instagram account using #Ideas4.0, #KRMU and #SEMCE_KRMU.\n• Participants must tag @semce_krmu.\n• The reel must be downloaded and submitted with the Instagram link through the official submission form.\n• The submission title must be ReelBaaz.\n\n2. Content Guidelines\n• The reel must be original and creative.\n• Content must comply with Instagram Community Guidelines.\n• Plagiarism, violence, hate speech and inappropriate content are strictly prohibited.\n• Multiple entries are allowed, but each must be registered separately.\n• AI-generated or plagiarised content will lead to disqualification.\n\n3. Deadline\n• All reels must be uploaded and submitted within the specified submission period.\n• The jury's decision is final and binding.",
+      "1. Submission Format\n• Reel duration should be 30–60-second.\n• Participants must upload the reel on their own Instagram account using these hashtags: #Ideas4.0, #KRMU and #SEMCE_KRMU, and tag @semce_krmu.\n• Participants must tag @semce_krmu.\n• The reel must be downloaded and submitted with the Instagram link through the official submission form.\n• The submission title must be ReelBaaz.\n\n2. Content Guidelines\n• The reel must be original and creative.\n• Content must comply with Instagram Community Guidelines.\n• Plagiarism, violence, hate speech and inappropriate content are strictly prohibited.\n• Multiple entries are allowed, but each must be registered separately.\n• AI-generated or plagiarised content will lead to disqualification.\n\n3. Deadline\n• All reels must be uploaded and submitted within the specified submission period.\n• The jury's decision is final and binding.",
     "Evaluation Pattern":
-      "Creativity, originality, storytelling, video editing quality, and adherence to submission guidelines and community standards.",
+      "Participants are evaluated on creativity, originality, storytelling, video editing quality, and adherence to submission guidelines and community standards.",
   },
   {
     Participation: "University Students",
@@ -411,7 +411,7 @@ export const rawRows: RawRow[] = [
     Participation: "School Students",
     "Time Slot": "12:30 PM - 2:00 PM (Oct 27)",
     "Venue Details": "Sunken Garden",
-    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
+    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theatre Teacher)",
     "Email ID / Mobile  Number":
       "Nirdesh (9810624900), Garvit (9729648968), Prakhar (9084179257), Hanshika (9910079602)",
     Date: "27–28 October 2026",
@@ -431,7 +431,7 @@ export const rawRows: RawRow[] = [
     Participation: "University Students",
     "Time Slot": "2:00 PM - 3:30 PM (Oct 27)",
     "Venue Details": "Sunken Garden",
-    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
+    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theatre Teacher)",
     "Email ID / Mobile  Number":
       "Nirdesh (9810624900), Garvit (9729648968), Prakhar (9084179257), Hanshika (9910079602)",
     Prize: "₹4,500 (1000/1500/2000)",
@@ -440,7 +440,7 @@ export const rawRows: RawRow[] = [
     Participation: "School Students",
     "Time Slot": "9:30 AM - 11:00 AM (Oct 28)",
     "Venue Details": "Sunken Garden",
-    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
+    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theatre Teacher)",
     "Email ID / Mobile  Number":
       "Nigam (9625003139), Moksh (9211575767), Utkarsh (9220400574), Ananya (8368720719), Swapnil (9582327541)",
     Prize: "₹4,500 (1000/1500/2000)",
@@ -449,7 +449,7 @@ export const rawRows: RawRow[] = [
     Participation: "University Students",
     "Time Slot": "11:30 AM - 1:00 PM (Oct 28)",
     "Venue Details": "Sunken Garden",
-    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
+    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theatre Teacher)",
     "Email ID / Mobile  Number":
       "Nigam (9625003139), Moksh (9211575767), Utkarsh (9220400574), Ananya (8368720719), Swapnil (9582327541)",
     Prize: "₹4,500 (1000/1500/2000)",
@@ -461,7 +461,7 @@ export const rawRows: RawRow[] = [
     Department: "SMAS – School of Medical & Allied Sciences",
     Participation: "School Students",
     "Time Slot": "9:00 AM - 10:00 AM",
-    "Venue Details": "Multi purpose hall",
+    "Venue Details": "Multipurpose Hall",
     "Coordinator Name": "Dr. Swati Kaushik & Ms. Samiksha Mishra",
     "Email ID / Mobile  Number": "Piyush Jain (83073 74664), Ritika",
     Date: "27–28 October 2026",
@@ -474,12 +474,12 @@ export const rawRows: RawRow[] = [
     "Guidlines of  the Event":
       "1. Format\n• The event runs across multiple rounds.\n• The first two rounds are conducted in teams.\n• The final round is conducted individually.\n• Participants must follow all instructions given by the organisers.\n\n2. Puzzle Round\n• The puzzle-solving round has a 5-minute time limit. \n• The fastest participant or team to solve the puzzle correctly receives the corresponding score.\n• A tie-breaker round may be conducted in case of a tie.\n3. Conduct\n• The decision of the jury or organising committee shall be final.",
     "Evaluation Pattern":
-      "Scientific awareness, logical reasoning, puzzle-solving speed, accuracy, and quick thinking.",
+      "Participants will be evaluated on their scientific awareness, logical reasoning, puzzle-solving speed, accuracy, and quick thinking.",
   },
   {
     Participation: "University Students",
     "Time Slot": "12:30 PM - 1:30 PM",
-    "Venue Details": "Multi purpose hall",
+    "Venue Details": "Multipurpose Hall",
     "Coordinator Name": "Dr. Swati Kaushik & Ms. Samiksha Mishra",
     "Email ID / Mobile  Number": "Piyush Jain (83073 74664), Ritika",
     Prize: "₹4,500 (1000/1500/2000)",
@@ -491,10 +491,10 @@ export const rawRows: RawRow[] = [
     Department: "SOLS – School of Legal Studies",
     Participation: "School Students",
     "Time Slot": "10:00 AM - 11:00 AM",
-    "Venue Details": "Multi purpose hall",
+    "Venue Details": "Multipurpose Hall",
     "Coordinator Name":
       "Dr. Ankita (9501474214) & Dr.  Arti Sharma (9899073342)",
-    "Email ID / Mobile  Number": "baibhavi, Ritika",
+    "Email ID / Mobile  Number": "Baibhavi, Ritika",
     Date: "27–28 October 2026",
     Category: "Academic",
     "Team Event/Individual": "SOLO",
@@ -509,10 +509,10 @@ export const rawRows: RawRow[] = [
   {
     Participation: "University Students",
     "Time Slot": "11:30 AM - 12:30 PM",
-    "Venue Details": "Multi purpose hall",
+    "Venue Details": "Multipurpose Hall",
     "Coordinator Name":
       "Dr. Ankita (9501474214) & Dr.  Arti Sharma (9899073342)",
-    "Email ID / Mobile  Number": "baibhavi, Ritika",
+    "Email ID / Mobile  Number": "Baibhavi, Ritika",
     Prize: "₹4,500 (1000/1500/2000)",
   },
 
@@ -533,7 +533,7 @@ export const rawRows: RawRow[] = [
     Prize: "₹9,000 (4500+4500) 1000/1500/2000",
     Image: "/events/Drone Race (AI Arena).png",
     Description:
-      "A precision flying contest where manual or remote-controlled drones navigate a marked obstacle course containing hoops and zig-zag poles. Drones are judged on compact, efficient and innovative design and precision, with the fastest drone reaching the destination declared the winner.",
+      "A precision flying contest where manual or remote-controlled drones navigate a marked obstacle course of hoops and zig-zag poles. Drones are judged on compact, efficient and innovative design as well as precision, and the fastest drone to reach the destination wins.",
     "Guidlines of  the Event":
       "1. Drone Specifications\n• Drones may be manual or remote-controlled.\n• Maximum size and weight will be specified by the organisers, such as diagonal under 500 mm and weight under 2 kg.\n\n2. Course Rules\n• The obstacle course may include hoops or rings and zig-zag poles.\n• Drones must follow the marked obstacle path without skipping.\n\n3. Evaluation\n• Drones will be judged on compact, efficient and innovative design.\n• Precision in crossing the course will also be considered.\n• The drone that reaches the destination first wins.",
     "Evaluation Pattern":
@@ -556,7 +556,7 @@ export const rawRows: RawRow[] = [
     Participation: "School Students",
     "Time Slot": "11:00 AM - 2:00 PM",
     "Venue Details": "C-306A",
-    "Coordinator Name": "Dr Jay Nath Patel and Dr. Agnibha Sinha",
+    "Coordinator Name": "Dr. Jay Nath Patel and Dr. Agnibha Sinha",
     "Email ID / Mobile  Number":
       "Divesh (9599724998), Shubham (9306630597), Anjali (9211964717), Lalit (9813634671)",
     Date: "27–28 October 2026",
@@ -569,7 +569,7 @@ export const rawRows: RawRow[] = [
     Description:
       "A farming innovation competition where participants design and present models integrating IoT, sensors, drones, automation, AI, precision agriculture and smart irrigation. The event showcases technology-driven and climate-smart solutions focused on productivity, resource efficiency, sustainability and farmer profitability.",
     "Guidlines of  the Event":
-      "1. Guidelines\n• Participants may compete individually or in teams of up to 4 members.\n• The model must be original.\n• The model must be related to smart or sustainable farming and AI technologies.\n• Use of recycled or eco-friendly materials is encouraged.\n• Students must bring their own prepared model.\n• Model size must not exceed 3 × 2 feet.\n• Teams must follow safety guidelines and maintain fair play.\n• The judges' decisions are final",
+      "1. Guidelines\n• Participants may compete individually or in teams of up to 4 members.\n• The model must be original.\n• The model must be related to smart or sustainable farming and AI technologies.\n• Use of recycled or eco-friendly materials is encouraged.\n• Students must bring their own prepared model.\n• Model size must not exceed 3 × 2 feet.\n• Teams must follow safety guidelines and maintain fair play.\n• The judges' decisions are final.",
     "Evaluation Pattern":
       "Innovation, sustainability impact, technological integration (IoT, AI, automation), practical feasibility, and model presentation.",
   },
@@ -582,7 +582,7 @@ export const rawRows: RawRow[] = [
     "Time Slot": "10:30 AM - 3:00 PM",
     "Venue Details": "C Block, Ground Floor, TT Room",
     "Coordinator Name":
-      "Dr Amrita Ratnani (6394260965) / Dr. Jyotsna Tyagi (9728509807)",
+      "Dr. Amrita Ratnani (6394260965) / Dr. Jyotsna Tyagi (9728509807)",
     "Email ID / Mobile  Number":
       "Manish Kumar- M.A. Sem- 3 (9654464361), Anushka Roy B.A. Sem 3 (8287372002)",
     Date: "27–28 October 2026",
@@ -596,14 +596,14 @@ export const rawRows: RawRow[] = [
     "Guidlines of  the Event":
       "1. Team Composition\n• Participation is strictly in groups of 3 to 5 members.\n• Members must belong to the same school or university.\n\n2. Theme & Originality\n• All models and presentations must align with Zero Waste Innovation.\n• Projects should focus on sustainability, recycling and waste reduction.\n• The project must be original and student-developed.\n• Plagiarism or pre-made models will lead to immediate disqualification.\n\n3. Presentation\n• Each team gets 5–7 minutes to present and explain its model.\n• A short Q&A with the judges will follow the presentation.",
     "Evaluation Pattern":
-      "Sustainability impact, innovation, feasibility, prototype/model design, and presentation & Q&A quality.",
+      "Sustainability impact, innovation, feasibility, prototype/model design, and presentation and Q&A quality.",
   },
   {
     Participation: "University Students",
     "Time Slot": "10:30 AM - 3:00 PM",
     "Venue Details": "C Block, Dance Room",
     "Coordinator Name":
-      "Dr Amrita Ratnani (6394260965) / Dr. Jyotsna Tyagi (9728509807)",
+      "Dr. Amrita Ratnani (6394260965) / Dr. Jyotsna Tyagi (9728509807)",
     "Email ID / Mobile  Number":
       "Manish Kumar- M.A. Sem- 3 (9654464361), Anushka Roy B.A. Sem 3 (8287372002)",
     Prize: "₹6,000 (3000+2000+1000)",
@@ -629,7 +629,7 @@ export const rawRows: RawRow[] = [
     "Guidlines of  the Event":
       "1. Team Rules\n• Teams must stay together at all times.\n• Teams are not allowed to split up.\n• Each clue should logically lead to the next checkpoint.\n• Teams cannot skip clues or move ahead without solving them.\n\n2. Conduct & Boundaries\n• Participants must respect the environment.\n• Littering or disturbing nature is not permitted.\n• Smaller rewards may be included at checkpoints.\n•	A grand prize may be provided at the end.",
     "Evaluation Pattern":
-      "Fastest team to decipher all clues, solve technology puzzles at all checkpoints, and locate the final treasure.",
+      "The fastest team to decipher all clues, solve technology puzzles at all checkpoints, and locate the final treasure.",
   },
   {
     Participation: "University Students",
@@ -647,7 +647,7 @@ export const rawRows: RawRow[] = [
     Participation: "School Students",
     "Time Slot": "09:30 AM - 11:00 AM",
     "Venue Details": "Sunken Garden",
-    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
+    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theatre Teacher)",
     "Email ID / Mobile  Number":
       "Nirdesh (9810624900), Garvit (9729648968), Prakhar (9084179257), Hanshika (9910079602)",
     Date: "27–28 October 2026",
@@ -657,17 +657,17 @@ export const rawRows: RawRow[] = [
     Prize: "₹4,500 (1000/1500/2000)",
     Image: "/events/Duet Dance.png",
     Description:
-      "Pairs take the stage to showcase rhythm, coordination and creative expression through dance. The duet format highlights synchronised artistry and stage presence, with performances judged on choreography, energy, coordination and overall performance.",
+      "Pairs take the stage to showcase rhythm, coordination and creative expression through dance. The duet format highlights synchronised artistry and stage presence, with judging based on choreography, energy and overall impact.",
     "Guidlines of  the Event":
-      "1. Performance Rules\n• Time limit is 2–2.5 minutes per performance.\n• Points are deducted for exceeding the time limit and organisers may stop the performance.\n• Any dance form is allowed.\n• Pre-recorded tracks must be submitted in advance.\n• Last-minute audio changes are not allowed.\n• Costumes and props are allowed.\n• Colours, gulal, water or any stage-damaging material are strictly prohibited and lead to disqualification.\n•	Obscene or derogatory moves or lyrics are strictly prohibited.",
+      "1. Performance Rules\n• Time limit is 2–2.5 minutes per performance.\n• Points are deducted for exceeding the time limit and organisers may stop the performance.\n• Any dance form is allowed.\n• Pre-recorded tracks must be submitted in advance.\n• Last-minute audio changes are not allowed.\n• Costumes and props are allowed.\n• Colours, gulal, water and any other stage-damaging materials are strictly prohibited and may lead to disqualification.\n•	Obscene or derogatory moves or lyrics are strictly prohibited.",
     "Evaluation Pattern":
-      "Choreography, energy, coordination, synchronisation, stage presence, and overall performance.",
+      "Choreography, energy, coordination, synchronisation, stage presence, and overall impact.",
   },
   {
     Participation: "University Students",
     "Time Slot": "11:00 AM - 12:30 PM",
     "Venue Details": "Sunken Garden",
-    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theater Teacher)",
+    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theatre Teacher)",
     "Email ID / Mobile  Number":
       "Nirdesh (9810624900), Garvit (9729648968), Prakhar (9084179257), Hanshika (9910079602)",
     Prize: "₹4,500 (1000/1500/2000)",
@@ -681,7 +681,7 @@ export const rawRows: RawRow[] = [
     "Time Slot": "10:00 AM Onwards",
     "Venue Details": "AI Arena",
     "Coordinator Name":
-      "Dr. Amar Saraswat, Dr.  Reenu Batra, Dr.  Megha Sharma",
+      "Dr. Amar Saraswat, Dr.  Reenu Batra and Dr.  Megha Sharma",
     "Email ID / Mobile  Number": "Aditya Kumar Singh, Kartik Sharma",
     Date: "27–28 October 2026",
     Category: "Technical",
@@ -692,7 +692,7 @@ export const rawRows: RawRow[] = [
     Description:
       "An innovation challenge empowering school students to turn creative ideas into working solutions using AI, machine learning, generative AI, robotics and IoT. The competition consists of an online ideation round followed by an offline AI Arena demonstration.",
     "Guidlines of  the Event":
-      "1. Format\n• The theme is Artificial Intelligence.\n• Teams must build an innovative solution to a real-world problem using AI.\n• Teams must consist of 2–4 students.\n• Round 1 – Online: Teams submit their idea, problem statement, solution and AI implementation plan with a short presentation or video within the deadline.\n• Shortlisted teams advance to Round 2 – AI Arena, held physically at K. R. Mangalam University.\n\n2. Round 2 Requirements\n• Teams must present and demonstrate a working AI-based software and/or hardware prototype before the judges.\n• Software, hardware, AI tools, APIs, ML models, generative AI, IoT or robotics may be used, provided AI is central to the solution.\n• Teams must bring all hardware, components, software and datasets required for the demonstration.\n• The final-round project must substantially match the Round 1 submission.\n• Major changes require organiser approval.\n\n3. Evaluation\n• Projects will be judged on innovation, originality and creativity.\n• Functionality, working prototype quality and real-world feasibility will be assessed.\n• Presentation quality and the ability to answer judges' questions will also be considered.",
+      "1. Format\n• The theme is Artificial Intelligence.\n• Teams must build an innovative solution to a real-world problem using AI.\n• Teams must consist of 2–4 students.\n• Round 1 – Online: Teams submit their idea, problem statement, solution and AI implementation plan along with a short presentation or video within the deadline.\n• Shortlisted teams advance to Round 2 – AI Arena, held physically at K.R. Mangalam University.\n\n2. Round 2 Requirements\n• Teams must present and demonstrate a working AI-based software and/or hardware prototype before the judges.\n• Software, hardware, AI tools, APIs, ML models, generative AI, IoT or robotics may be used, provided AI is central to the solution.\n• Teams must bring all hardware, components, software and datasets required for the demonstration.\n• The final-round project must substantially match the Round 1 submission.\n• Major changes require organiser approval.\n\n3. Evaluation\n• Projects will be judged on innovation, originality and creativity.\n• Functionality, working prototype quality and real-world feasibility will be assessed.\n• Presentation quality and the ability to answer judges' questions will also be considered.",
     "Evaluation Pattern":
       "Innovation, originality, meaningful AI integration, working prototype functionality, real-world impact, and presentation.",
   },
@@ -715,9 +715,9 @@ export const rawRows: RawRow[] = [
     Description:
       "A robotic football match where two teams of robots compete to score goals. Each team fields 3–5 robots, with one robot potentially serving as goalkeeper. Robots must comply with safety requirements relating to battery, voltage, infrared emission and interference while competing under official supervision.",
     "Guidlines of  the Event":
-      "1. Match Format\n• Each soccer team may have a minimum of 3 and maximum of 8 members.\n• Each team must field 3–5 robots during a match.\n• One robot may serve as the goalkeeper.\n• The number of robots in a match may vary depending on the number of participating teams.\n• Each team must field at least 3 and at most 5 robots.\n• o	Matches will be played in a designated arena according to the setup and rules announced by the organising committee.\n\n2. Robot Safety Specifications\n• Robots must be sealed, non-explosive and electrically powered.\n• Battery, NiCad or dry cell may be used.\n• Voltage anywhere in the robot must not exceed 24V DC at any point during the match.\n• Robots must not emit infrared light.\n• Infrared-distance optical sensors may be used provided they do not affect other robots.\n• Infrared-reflecting materials must not be used externally.\n• Painted robots must have a matte finish.\n• A team claiming interference from an opposing robot must provide proof, which must be confirmed by a referee\n\n3. Fair Play & Evaluation\n• Teams must follow all safety rules, game etiquette and match discipline.\n• Any robot violating safety norms or causing deliberate disruption may be penalised or disqualified by the judges.\n• The team with the highest number of goals at the end of the match will be declared the winner.",
+      "1. Match Format\n• Each soccer team may have a minimum of 3 and a maximum of 8 members.\n• One robot may serve as the goalkeeper.\n• The number of robots in a match may vary depending on the number of participating teams.\n• Each team must field at least 3 and at most 5 robots.\n• Matches will be played in a designated arena according to the setup and rules announced by the organising committee.\n\n2. Robot Safety Specifications\n• Robots must be sealed, non-explosive and electrically powered.\n• Battery, NiCad or dry cell may be used.\n• Voltage anywhere in the robot must not exceed 24V DC at any point during the match.\n• Robots must not emit infrared light.\n• Infrared-distance optical sensors may be used provided they do not affect other robots.\n• Infrared-reflecting materials must not be used externally.\n• Painted robots must have a matte finish.\n• A team claiming interference from an opposing robot must provide proof, which must be confirmed by a referee.\n\n3. Fair Play & Evaluation\n• Teams must follow all safety rules, game etiquette and match discipline.\n• Any robot violating safety norms or causing deliberate disruption may be penalised or disqualified by the judges.\n• The team with the highest number of goals at the end of the match will be declared the winner.",
     "Evaluation Pattern":
-      "Highest number of goals scored, adherence to safety and voltage rules, robot agility, and team tactics.",
+      "The highest number of goals scored, adherence to safety and voltage rules, robot agility, and team tactics.",
   },
   {
     Participation: "University Students",

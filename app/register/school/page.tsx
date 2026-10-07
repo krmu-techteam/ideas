@@ -151,9 +151,9 @@ export default function SchoolRegistrationPage() {
                   </h2>
 
                   <p className="text-slate-600 mb-6 flex-grow text-sm md:text-base leading-relaxed">
-                    For individual school students participating in
-                    competitions, cultural events, and showcasing their talents
-                    at IDEAS 4.0.
+                    For individual school students participating in competitions
+                    and cultural events, and showcasing their talents at IDEAS
+                    4.0.
                   </p>
 
                   <ul className="text-left text-slate-700 mb-8 space-y-2.5 text-sm md:text-base w-full">
@@ -167,7 +167,7 @@ export default function SchoolRegistrationPage() {
                       <span className="text-[#0062A2] font-bold mr-2.5 shrink-0">
                         ✓
                       </span>
-                      <span>Access to 28 competitions</span>
+                      <span>Access to 25+ competitions</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-[#0062A2] font-bold mr-2.5 shrink-0">
