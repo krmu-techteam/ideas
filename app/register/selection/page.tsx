@@ -23,7 +23,7 @@ export default function RegistrationSelectionPage() {
               <span>IDEAS 4.0 REGISTRATION</span>
             </div>
             <h1 className="font-serif text-[clamp(32px,5vw,52px)] font-bold text-white mb-4 tracking-[-0.02em]">
-              Choose Your Registration Type
+              Select Your Registration Category
             </h1>
             <p className="text-base sm:text-lg text-blue-100 max-w-2xl mx-auto leading-relaxed">
               Select the appropriate registration category to get started with
