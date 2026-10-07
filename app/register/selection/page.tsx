@@ -162,6 +162,7 @@ export default function RegistrationSelectionPage() {
                         "https://morbin.space/event/krmu-ideas-4-0?utm_source=website"
                       }
                       className="flex items-center justify-center gap-2"
+                      target="_blank"
                     >
                       <span>Register as University/Student</span>
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
