@@ -12,10 +12,10 @@ const stats = [
     color: "text-[#E11E46]",
   },
   {
-    value: 19,
+    value: 25,
     label: "Competitions",
     sublabel: "10 Categories",
-    display: "19",
+    display: "25",
     color: "text-white",
   },
   {
