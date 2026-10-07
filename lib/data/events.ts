@@ -163,7 +163,7 @@ export const rawRows: RawRow[] = [
     "Venue Details": "B Block Lobby, Ground Floor",
     "Coordinator Name": "Dr. Sourabh and Mr. Vaibhav",
     "Email ID / Mobile  Number":
-      "Vaibhav Saini (8178695170), Arijit Adhikari (7217674411), Tanvee Vashishth (9625124803), Kanika Sudha (8630907218)",
+      "Vaibhav Saini, Arijit Adhikari, Tanvee Vashishth, Kanika Sudha",
     Date: "27–28 October 2026",
     Category: "Technical",
     "Team Event/Individual": "TEAM",
@@ -182,7 +182,7 @@ export const rawRows: RawRow[] = [
     "Venue Details": "B Block Lobby, Ground Floor",
     "Coordinator Name": "Dr. Sourabh and Mr. Vaibhav",
     "Email ID / Mobile  Number":
-      "Vaibhav Saini (8178695170), Arijit Adhikari (7217674411), Tanvee Vashishth (9625124803), Kanika Sudha (8630907218)",
+      "Vaibhav Saini, Arijit Adhikari, Tanvee Vashishth, Kanika Sudha",
     Prize: "₹9,000 (4500+4500) 1000/1500/2000",
   },
 
@@ -284,8 +284,8 @@ export const rawRows: RawRow[] = [
     Participation: "School Students",
     "Time Slot": "10:00 AM - 2:00 PM",
     "Venue Details": "C116 (Pattern Making Lab)",
-    "Coordinator Name": "Ms. Paramjeet Kaur / Dr. Dinkar Kumavat (8826289725)",
-    "Email ID / Mobile  Number": "Himanshi Singla (9518495115)",
+    "Coordinator Name": "Ms. Paramjeet Kaur / Dr. Dinkar Kumavat",
+    "Email ID / Mobile  Number": "Himanshi Singla",
     Date: "27–28 October 2026",
     Category: "Academic",
     "Team Event/Individual": "SOLO",
@@ -305,9 +305,8 @@ export const rawRows: RawRow[] = [
     Participation: "School Students",
     "Time Slot": "10:00 AM - 2:00 PM",
     "Venue Details": "C101 (Textile Lab)",
-    "Coordinator Name":
-      "Ms. Annu Yadav (9650468235) and Ms. Kanishka Singh (7408099898)",
-    "Email ID / Mobile  Number": "Kirty (7015376660)",
+    "Coordinator Name": "Ms. Annu Yadav and Ms. Kanishka Singh",
+    "Email ID / Mobile  Number": "Kirty",
     Date: "27–28 October 2026",
     Category: "Academic",
     "Team Event/Individual": "SOLO",
@@ -328,8 +327,8 @@ export const rawRows: RawRow[] = [
     "Time Slot": "10:00 AM - 1:00 PM",
     "Venue Details": "SOAD Studios / Campus Lab",
     "Coordinator Name":
-      "Mr. Deepanshu Sharma (9646617238) and Indrajeet Singh Pandit (9354271104) / Pravesh Tandon (9996813341)",
-    "Email ID / Mobile  Number": "Bhumika (9560990811), Anjali (8708776166)",
+      "Mr. Deepanshu Sharma and Indrajeet Singh Pandit / Pravesh Tandon",
+    "Email ID / Mobile  Number": "Bhumika, Anjali",
     Date: "27–28 October 2026",
     Category: "Academic",
     "Team Event/Individual": "SOLO",
@@ -350,7 +349,7 @@ export const rawRows: RawRow[] = [
     "Time Slot": "9:30 AM - 12:00 PM",
     "Venue Details": "A-213",
     "Coordinator Name": "Dr. Vagish Mishra",
-    "Email ID / Mobile  Number": "Manasvi, Harsimran, Tulsi (9717006092)",
+    "Email ID / Mobile  Number": "Manasvi, Harsimran, Tulsi",
     Date: "27–28 October 2026",
     Category: "Academic",
     "Team Event/Individual": "TEAM",
@@ -368,7 +367,7 @@ export const rawRows: RawRow[] = [
     "Time Slot": "1:30 PM - 3:30 PM",
     "Venue Details": "A-215",
     "Coordinator Name": "Dr. Vagish Mishra",
-    "Email ID / Mobile  Number": "Manasvi, Harsimran, Tulsi (9717006092)",
+    "Email ID / Mobile  Number": "Manasvi, Harsimran, Tulsi",
     Prize: "₹5,000 (Trophies)",
   },
 
@@ -379,7 +378,7 @@ export const rawRows: RawRow[] = [
     Participation: "School Students",
     "Time Slot": "10:30 AM - 12:00 PM",
     "Venue Details": "C113 (SEMCE Studio)",
-    "Coordinator Name": "Dr. Neha Arora (9541394959)",
+    "Coordinator Name": "Dr. Neha Arora",
     "Email ID / Mobile  Number":
       "Poorti Sharma, Palak Saini, Palak Verma, Sakshi Gupta, Kenneth and Manukriti Sharma",
     Date: "27–28 October 2026",
@@ -398,7 +397,7 @@ export const rawRows: RawRow[] = [
     Participation: "University Students",
     "Time Slot": "2:00 PM - 4:00 PM",
     "Venue Details": "C113 (SEMCE Studio)",
-    "Coordinator Name": "Dr. Neha Arora (9541394959)",
+    "Coordinator Name": "Dr. Neha Arora",
     "Email ID / Mobile  Number":
       "Poorti Sharma, Palak Saini, Palak Verma, Sakshi Gupta, Kenneth and Manukriti Sharma",
     Prize: "₹5,000 (2500+2500) 700/800/1000",
@@ -463,7 +462,7 @@ export const rawRows: RawRow[] = [
     "Time Slot": "9:00 AM - 10:00 AM",
     "Venue Details": "Multipurpose Hall",
     "Coordinator Name": "Dr. Swati Kaushik & Ms. Samiksha Mishra",
-    "Email ID / Mobile  Number": "Piyush Jain (83073 74664), Ritika",
+    "Email ID / Mobile  Number": "Piyush Jain, Ritika",
     Date: "27–28 October 2026",
     Category: "Academic",
     "Team Event/Individual": "SOLO / TEAM",
@@ -481,7 +480,7 @@ export const rawRows: RawRow[] = [
     "Time Slot": "12:30 PM - 1:30 PM",
     "Venue Details": "Multipurpose Hall",
     "Coordinator Name": "Dr. Swati Kaushik & Ms. Samiksha Mishra",
-    "Email ID / Mobile  Number": "Piyush Jain (83073 74664), Ritika",
+    "Email ID / Mobile  Number": "Piyush Jain, Ritika",
     Prize: "₹4,500 (1000/1500/2000)",
   },
 
@@ -492,8 +491,7 @@ export const rawRows: RawRow[] = [
     Participation: "School Students",
     "Time Slot": "10:00 AM - 11:00 AM",
     "Venue Details": "Multipurpose Hall",
-    "Coordinator Name":
-      "Dr. Ankita (9501474214) & Dr.  Arti Sharma (9899073342)",
+    "Coordinator Name": "Dr. Ankita & Dr.  Arti Sharma",
     "Email ID / Mobile  Number": "Baibhavi, Ritika",
     Date: "27–28 October 2026",
     Category: "Academic",
@@ -510,8 +508,7 @@ export const rawRows: RawRow[] = [
     Participation: "University Students",
     "Time Slot": "11:30 AM - 12:30 PM",
     "Venue Details": "Multipurpose Hall",
-    "Coordinator Name":
-      "Dr. Ankita (9501474214) & Dr.  Arti Sharma (9899073342)",
+    "Coordinator Name": "Dr. Ankita & Dr.  Arti Sharma",
     "Email ID / Mobile  Number": "Baibhavi, Ritika",
     Prize: "₹4,500 (1000/1500/2000)",
   },
@@ -557,8 +554,7 @@ export const rawRows: RawRow[] = [
     "Time Slot": "11:00 AM - 2:00 PM",
     "Venue Details": "C-306A",
     "Coordinator Name": "Dr. Jay Nath Patel and Dr. Agnibha Sinha",
-    "Email ID / Mobile  Number":
-      "Divesh (9599724998), Shubham (9306630597), Anjali (9211964717), Lalit (9813634671)",
+    "Email ID / Mobile  Number": "Divesh, Shubham, Anjali, Lalit",
     Date: "27–28 October 2026",
     Category: "Technical",
     "Team Event/Individual": "SOLO / TEAM",
@@ -581,10 +577,9 @@ export const rawRows: RawRow[] = [
     Participation: "School Students",
     "Time Slot": "10:30 AM - 3:00 PM",
     "Venue Details": "C Block, Ground Floor, TT Room",
-    "Coordinator Name":
-      "Dr. Amrita Ratnani (6394260965) / Dr. Jyotsna Tyagi (9728509807)",
+    "Coordinator Name": "Dr. Amrita Ratnani / Dr. Jyotsna Tyagi",
     "Email ID / Mobile  Number":
-      "Manish Kumar- M.A. Sem- 3 (9654464361), Anushka Roy B.A. Sem 3 (8287372002)",
+      "Manish Kumar- M.A. Sem- 3, Anushka Roy B.A. Sem 3",
     Date: "27–28 October 2026",
     Category: "Technical",
     "Team Event/Individual": "TEAM",
@@ -602,10 +597,9 @@ export const rawRows: RawRow[] = [
     Participation: "University Students",
     "Time Slot": "10:30 AM - 3:00 PM",
     "Venue Details": "C Block, Dance Room",
-    "Coordinator Name":
-      "Dr. Amrita Ratnani (6394260965) / Dr. Jyotsna Tyagi (9728509807)",
+    "Coordinator Name": "Dr. Amrita Ratnani / Dr. Jyotsna Tyagi",
     "Email ID / Mobile  Number":
-      "Manish Kumar- M.A. Sem- 3 (9654464361), Anushka Roy B.A. Sem 3 (8287372002)",
+      "Manish Kumar- M.A. Sem- 3, Anushka Roy B.A. Sem 3",
     Prize: "₹6,000 (3000+2000+1000)",
   },
 
