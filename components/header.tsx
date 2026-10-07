@@ -282,7 +282,7 @@ export default function Header() {
               onClick={handleFaqClick}
               className="px-3 py-1.5 rounded-lg text-sm font-medium transition-colors duration-200 text-white/90 hover:text-white"
             >
-              FAQ
+              FAQs
             </Link>
 
             {/* Red Register CTA Button */}
