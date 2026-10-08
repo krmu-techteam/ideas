@@ -289,9 +289,9 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 pt-32 sm:pt-36 pb-8 relative z-10">
+      <div className="container mx-auto px-4 pt-32 sm:pt-28 pb-8 relative z-10">
         {/* Grid for Left content and Right slider */}
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start lg:items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Left Block */}
           <div className="order-1 col-span-1 max-w-2xl">
             <motion.div
@@ -307,24 +307,23 @@ export default function HeroSection() {
                   width={3372}
                   height={1360}
                   priority
-                  className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto max-w-[340px] sm:max-w-[420px] md:max-w-[480px] object-contain select-none"
+                  className="h-14 sm:h-16 md:h-20 lg:h-24 w-auto max-w-[300px] sm:max-w-[360px] md:max-w-[420px] lg:max-w-[480px] object-contain select-none"
                 />
               </h1>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-serif font-semibold text-slate-100 mb-6 leading-tight">
                 The Innovation Carnival 2026
               </h2>
-              <p className="text-base sm:text-lg text-slate-300 mb-8 max-w-2xl leading-relaxed">
-                IDEAS 4.0 is KRMU's flagship annual mega-fest that celebrates
-                innovation, academics, hands-on pedagogy, and cultural vibrancy.
-                This year, it is themed around Artificial Intelligence, where
-                you can explore AI project exhibitions, compete in hackathons,
-                pitch at the start-up showcase, and learn in expert
-                masterclasses. Now in its fourth year, it's one of Delhi-NCR's
-                largest student-run innovation fests.
+              <p className="text-[16px] text-slate-300 mb-6 max-w-2xl leading-relaxed">
+                IDEAS 4.0 is KRMU’s flagship annual mega-fest celebrating
+                innovation, academics, hands-on learning, and culture. This
+                year’s AI theme features project exhibitions, hackathons,
+                start-up pitches, and expert masterclasses. Now in its fourth
+                year, it is one of Delhi-NCR’s largest student-run innovation
+                fests.
               </p>
 
               {/* Meta badges */}
-              <div className="flex flex-wrap gap-3 sm:gap-4 mb-8">
+              <div className="flex flex-wrap gap-3 sm:gap-4 mb-6">
                 <div className="flex items-center gap-2 text-xs sm:text-sm bg-white/5 border border-white/15 rounded-full px-4 py-2 text-slate-200 backdrop-blur-xs">
                   <Calendar size={16} className="text-[#00D2FF]" />
                   <span>October 27–28, 2026</span>
@@ -340,7 +339,7 @@ export default function HeroSection() {
               </div>
 
               {/* Buttons Grid Layout for Desktop and Mobile */}
-              <div className="mb-8 lg:mb-0">
+              <div>
                 {/* Desktop: Row layout */}
                 <div className="hidden lg:flex items-center gap-4 max-w-2xl">
                   <Button
@@ -354,7 +353,7 @@ export default function HeroSection() {
                     asChild
                     variant="outline"
                     size="lg"
-                    className="group bg-white/5 hover:bg-white/15 border border-white/20 hover:border-white/40 text-white font-medium min-h-[44px] px-6 rounded-xl  transition-colors duration-300"
+                    className="group bg-white/5 hover:bg-white/15 border border-white/20 hover:border-white/40 text-white font-medium min-h-[44px] px-6 rounded-xl transition-colors duration-300"
                   >
                     <Link
                       href="/all-events"
@@ -379,13 +378,13 @@ export default function HeroSection() {
                 </div>
 
                 {/* Mobile: Grid layout with better spacing */}
-                <div className="lg:hidden space-y-4 mb-8">
-                  {/* Row 1: Two buttons side by side with proper spacing */}
+                <div className="lg:hidden space-y-3">
+                  {/* Row 1: Two buttons side by side */}
                   <div className="grid grid-cols-2 gap-3 sm:gap-4">
                     <Button
                       asChild
                       size="lg"
-                      className="bg-[#E11E45] text-white font-bold min-h-[50px] text-sm px-4 rounded-xl border-0 transition-colors duration-300"
+                      className="bg-[#E11E45] text-white font-bold min-h-[48px] text-sm px-4 rounded-xl border-0 transition-colors duration-300"
                     >
                       <Link href="/register/selection">Register Now</Link>
                     </Button>
@@ -393,7 +392,7 @@ export default function HeroSection() {
                       asChild
                       variant="outline"
                       size="lg"
-                      className="group bg-white/5 hover:bg-white/15 border border-white/20 text-white font-semibold min-h-[50px] text-sm px-4 rounded-xl backdrop-blur-xs transition-colors duration-300"
+                      className="group bg-white/5 hover:bg-white/15 border border-white/20 text-white font-semibold min-h-[48px] text-sm px-4 rounded-xl backdrop-blur-xs transition-colors duration-300"
                     >
                       <Link
                         href="/all-events"
@@ -408,12 +407,12 @@ export default function HeroSection() {
                     </Button>
                   </div>
 
-                  {/* Row 2: One full-width button with spacing */}
+                  {/* Row 2: One full-width button with gradient border */}
                   <Link
                     href="/IDEAS4.0-Brochure.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group relative flex items-center justify-center gap-2 rounded-full px-6 min-h-[50px] w-full text-xs font-mono font-semibold uppercase tracking-wider text-white transition-colors duration-300 hover:bg-white/10"
+                    className="group relative flex items-center justify-center gap-2 rounded-full px-6 min-h-[46px] w-full text-xs font-mono font-semibold uppercase tracking-wider text-white transition-colors duration-300 hover:bg-white/10"
                   >
                     <span
                       aria-hidden="true"
@@ -432,21 +431,149 @@ export default function HeroSection() {
                   </Link>
                 </div>
               </div>
+
+              {/* Meet the Powerhouse Line-Up with equal gap above (mt-6) and below (pt-6) */}
+              <div className="w-full border-t border-white/15 mt-12 pt-8">
+                <h3 className="text-base sm:text-[18px] font-semibold text-slate-100 mb-4 tracking-wide">
+                  Meet the Powerhouse Line-Up
+                </h3>
+                <div className="flex flex-wrap items-center gap-6 sm:gap-10">
+                  {/* Manika Vishwakarma */}
+                  <div className="flex items-center gap-3.5 sm:gap-4">
+                    <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-40 md:h-40 rounded-full overflow-hidden shrink-0">
+                      <Image
+                        src="/home/hero-section/manika-vishwakarma.png"
+                        alt="Manika Vishwakarma"
+                        fill
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div className="text-sm sm:text-base font-medium text-slate-200 leading-snug">
+                      <div>Manika</div>
+                      <div>Vishwakarma</div>
+                    </div>
+                  </div>
+
+                  {/* Ayushman Pandita */}
+                  <div className="flex items-center gap-3.5 sm:gap-4">
+                    <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-40 md:h-40 rounded-full overflow-hidden shrink-0 bg-gradient-to-br from-[#073B3E] via-[#0C6A6D] to-[#073B3E]">
+                      <Image
+                        src="/home/hero-section/ayushman-pandita.png"
+                        alt="Ayushman Pandita"
+                        fill
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div className="text-sm sm:text-base font-medium text-slate-200 leading-snug">
+                      <div>Ayushman</div>
+                      <div>Pandita</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </motion.div>
           </div>
 
           {/* Right Block - Desktop Slider */}
-          <div className="order-2 lg:order-2 hidden lg:flex relative items-center justify-center px-4 sm:px-0 w-full">
+          <div className="order-2 lg:order-2 hidden lg:flex flex-col relative items-center justify-center px-4 sm:px-0 w-full">
             {showSlider && (
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6 }}
-                className="relative rounded-[2px] shadow-none w-full"
+                className="relative rounded-[2px] shadow-none w-full mb-6"
               >
                 <ImageSlider />
               </motion.div>
             )}
+
+            {/* Evolution of IDEAS */}
+            <div className="w-full flex flex-col items-center">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="h-[1px] w-12 sm:w-16 bg-gradient-to-r from-transparent to-white/70" />
+                <h4 className="text-[11px] sm:text-xs font-semibold uppercase tracking-widest text-slate-200">
+                  EVOLUTION OF IDEAS
+                </h4>
+                <span className="h-[1px] w-12 sm:w-16 bg-gradient-to-l from-transparent to-white/70" />
+              </div>
+
+              <div
+                className="w-full flex items-center justify-center gap-2 sm:gap-3 md:gap-5 overflow-x-auto pt-1 pb-2 px-1 scroll-smooth"
+                aria-label="Evolution timeline"
+              >
+                {[
+                  {
+                    ver: "IDEAS 1.0",
+                    sub: "Foundation",
+                    image: "/ideas-version/Ideas 1.0.png",
+                  },
+                  {
+                    ver: "IDEAS 2.0",
+                    sub: "Expansion",
+                    image: "/ideas-version/Ideas 2.0.png",
+                  },
+                  {
+                    ver: "IDEAS 3.0",
+                    sub: "Scale-Up",
+                    image: "/ideas-version/Ideas 3.0.png",
+                  },
+                  {
+                    ver: "IDEAS 4.0",
+                    sub: "Mega Edition",
+                    image: "/ideas-version/Ideas 4.0.png",
+                    highlight: true,
+                  },
+                ].map((item, idx, arr) => (
+                  <div
+                    key={item.ver}
+                    className="flex items-center gap-2 sm:gap-3 md:gap-5 shrink-0"
+                  >
+                    <div className="flex flex-col items-center text-center">
+                      <div
+                        className={`relative w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 flex items-center justify-center overflow-hidden mb-1.5 ${
+                          item.highlight
+                            ? "border-[#00D2FF] ring-2 ring-[#00D2FF]/40"
+                            : "border-white/50 bg-transparent"
+                        }`}
+                      >
+                        <img
+                          src={item.image}
+                          alt={item.ver}
+                          className="w-full h-full object-cover rounded-full"
+                          loading="lazy"
+                        />
+                      </div>
+                      <p
+                        className={`text-xs font-semibold leading-tight ${
+                          item.highlight
+                            ? "text-[#00D2FF] font-bold"
+                            : "text-white"
+                        }`}
+                      >
+                        {item.ver}
+                      </p>
+                      <p
+                        className={`text-[10px] mt-0.5 ${
+                          item.highlight
+                            ? "text-[#00D2FF]/90 font-medium"
+                            : "text-white/80"
+                        }`}
+                      >
+                        {item.sub}
+                      </p>
+                    </div>
+                    {idx < arr.length - 1 && (
+                      <div
+                        className="text-white/40 mb-6 shrink-0"
+                        aria-hidden="true"
+                      >
+                        <ArrowRight size={14} className="text-[#00D2FF]/80" />
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* Mobile Slider - Order 3 for mobile stacking */}
@@ -456,100 +583,98 @@ export default function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="relative w-full flex justify-center mb-8 rounded-[2px] shadow-none"
+                className="relative w-full flex justify-center mb-6 rounded-[2px] shadow-none"
               >
                 <ImageSlider />
               </motion.div>
             )}
-          </div>
-        </div>
 
-        {/* Evolution of IDEAS - Inside container, after grid */}
-        <div className="mt-8 pb-4">
-          <div className="flex flex-col items-center">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="h-[1px] w-16 bg-gradient-to-r from-transparent to-white" />
-              <h4 className="text-xs font-semibold uppercase tracking-widest text-white">
-                Evolution of IDEAS
-              </h4>
-              <span className="h-[1px] w-16 bg-gradient-to-l from-transparent to-white" />
-            </div>
+            {/* Evolution of IDEAS Mobile */}
+            <div className="w-full flex flex-col items-center mt-4">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="h-[1px] w-12 sm:w-16 bg-gradient-to-r from-transparent to-white/70" />
+                <h4 className="text-[11px] sm:text-xs font-semibold uppercase tracking-widest text-slate-200">
+                  EVOLUTION OF IDEAS
+                </h4>
+                <span className="h-[1px] w-12 sm:w-16 bg-gradient-to-l from-transparent to-white/70" />
+              </div>
 
-            <div
-              className="w-full flex items-center justify-center gap-2 sm:gap-4 md:gap-6 max-w-3xl overflow-x-auto pt-4 pb-3 px-3 scroll-smooth"
-              aria-label="Evolution timeline"
-            >
-              {[
-                {
-                  ver: "IDEAS 1.0",
-                  sub: "Foundation",
-                  image: "/ideas-version/Ideas 1.0.png",
-                },
-                {
-                  ver: "IDEAS 2.0",
-                  sub: "Expansion",
-                  image: "/ideas-version/Ideas 2.0.png",
-                },
-                {
-                  ver: "IDEAS 3.0",
-                  sub: "Scale-Up",
-                  image: "/ideas-version/Ideas 3.0.png",
-                },
-                {
-                  ver: "IDEAS 4.0",
-                  sub: "Mega Edition",
-                  image: "/ideas-version/Ideas 4.0.png",
-                  highlight: true,
-                },
-              ].map((item, idx, arr) => (
-                <div
-                  key={item.ver}
-                  className="flex items-center gap-2 sm:gap-4 md:gap-6 shrink-0"
-                >
-                  <div className="flex flex-col items-center text-center">
-                    <div
-                      className={`relative w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 flex items-center justify-center overflow-hidden mb-2 ${
-                        item.highlight
-                          ? "border-[#00D2FF] ring-2 ring-[#00D2FF]/40"
-                          : "border-white/50 bg-transparent"
-                      }`}
-                    >
-                      <img
-                        src={item.image}
-                        alt={item.ver}
-                        className="w-full h-full object-cover rounded-full"
-                        loading="lazy"
-                      />
+              <div
+                className="w-full flex items-center justify-center gap-2 sm:gap-3 md:gap-5 overflow-x-auto pt-1 pb-2 px-1 scroll-smooth"
+                aria-label="Evolution timeline"
+              >
+                {[
+                  {
+                    ver: "IDEAS 1.0",
+                    sub: "Foundation",
+                    image: "/ideas-version/Ideas 1.0.png",
+                  },
+                  {
+                    ver: "IDEAS 2.0",
+                    sub: "Expansion",
+                    image: "/ideas-version/Ideas 2.0.png",
+                  },
+                  {
+                    ver: "IDEAS 3.0",
+                    sub: "Scale-Up",
+                    image: "/ideas-version/Ideas 3.0.png",
+                  },
+                  {
+                    ver: "IDEAS 4.0",
+                    sub: "Mega Edition",
+                    image: "/ideas-version/Ideas 4.0.png",
+                    highlight: true,
+                  },
+                ].map((item, idx, arr) => (
+                  <div
+                    key={item.ver}
+                    className="flex items-center gap-2 sm:gap-3 md:gap-5 shrink-0"
+                  >
+                    <div className="flex flex-col items-center text-center">
+                      <div
+                        className={`relative w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 flex items-center justify-center overflow-hidden mb-1.5 ${
+                          item.highlight
+                            ? "border-[#00D2FF] ring-2 ring-[#00D2FF]/40"
+                            : "border-white/50 bg-transparent"
+                        }`}
+                      >
+                        <img
+                          src={item.image}
+                          alt={item.ver}
+                          className="w-full h-full object-cover rounded-full"
+                          loading="lazy"
+                        />
+                      </div>
+                      <p
+                        className={`text-xs font-semibold leading-tight ${
+                          item.highlight
+                            ? "text-[#00D2FF] font-bold"
+                            : "text-white"
+                        }`}
+                      >
+                        {item.ver}
+                      </p>
+                      <p
+                        className={`text-[10px] mt-0.5 ${
+                          item.highlight
+                            ? "text-[#00D2FF]/90 font-medium"
+                            : "text-white/80"
+                        }`}
+                      >
+                        {item.sub}
+                      </p>
                     </div>
-                    <p
-                      className={`text-xs font-semibold leading-tight ${
-                        item.highlight
-                          ? "text-[#00D2FF] font-bold"
-                          : "text-white"
-                      }`}
-                    >
-                      {item.ver}
-                    </p>
-                    <p
-                      className={`text-[10px] mt-0.5 ${
-                        item.highlight
-                          ? "text-[#00D2FF]/90 font-medium"
-                          : "text-white/80"
-                      }`}
-                    >
-                      {item.sub}
-                    </p>
+                    {idx < arr.length - 1 && (
+                      <div
+                        className="text-white/40 mb-6 shrink-0"
+                        aria-hidden="true"
+                      >
+                        <ArrowRight size={14} className="text-[#00D2FF]/80" />
+                      </div>
+                    )}
                   </div>
-                  {idx < arr.length - 1 && (
-                    <div
-                      className="text-white/40 mb-6 shrink-0"
-                      aria-hidden="true"
-                    >
-                      <ArrowRight size={14} className="text-[#00D2FF]/80" />
-                    </div>
-                  )}
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
