@@ -21,7 +21,7 @@ const timelineEvents = [
     year: 2024,
     title: "IDEAS 2.0",
     description:
-      "Held on June 17, 2024 - a year of expansion and refinement with broader participation, new thematic tracks (Agritech, Sustainability, Robotics), and stronger industry-academia collaboration.",
+      "Held on July 17, 2024 - a year of expansion and refinement with broader participation, new thematic tracks (Agritech, Sustainability, Robotics), and stronger industry-academia collaboration.",
     achievements: [
       "100+ canopy showcases across emerging domains",
       "Launch of sustainability & agritech focused clusters",
