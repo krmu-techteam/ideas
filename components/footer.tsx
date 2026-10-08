@@ -287,7 +287,7 @@ export default function Footer() {
                 &copy; {new Date().getFullYear()} K.R. Mangalam University. All
                 rights reserved.
               </p>
-              <p className="flex items-center gap-2">
+              {/* <p className="flex items-center gap-2">
                 <Link
                   href="#"
                   className="hover:text-white touch-manipulation py-1"
@@ -301,7 +301,7 @@ export default function Footer() {
                 >
                   Terms of Service
                 </Link>
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
