@@ -103,7 +103,7 @@ const eventImages: { [key: string]: string } = {
   "crime scene investigation game": "/assets/upcoming-events/up-ev-2.webp",
   "robots race": "/events/Robo race.png",
   // "robo war (ai arena)": "/events/robo-war-ai-arena.webp",
-  "robo war (ai arena)": "/assets/spotlights/robo-war-ai-arena.webp",
+  "robo war (ai arena)": "/events/robo war-.png",
   "react to the situation": "/assets/upcoming-events/up-ev-9.webp",
   "react to situation": "/assets/upcoming-events/up-ev-9.webp",
   "button masala": "/events/Button Masala.png",
@@ -148,7 +148,7 @@ const eventImages: { [key: string]: string } = {
   "the beverage arena": "/assets/upcoming-events/up-ev-8.webp",
   "the beverage arena (teams represent countries and create signature beverages from those regions)":
     "/assets/upcoming-events/up-ev-8.webp",
-  "robo soccer": "/assets/upcoming-events/up-ev-14.webp",
+  "robo soccer": "/assets/spotlights/robo-war-ai-arena.webp",
   "young ai innovators hackathon": "/assets/upcoming-events/up-ev-2.webp",
 };
 
@@ -676,7 +676,7 @@ export const rawRows: RawRow[] = [
     "Team Event/Individual": "TEAM",
     "Team Size": "3–8",
     Prize: "₹9,000 (4500+4500) 1000/1500/2000",
-    Image: "/assets/upcoming-events/up-ev-14.webp",
+    Image: "/assets/spotlights/robo-war-ai-arena.webp",
     Description:
       "A robotic football match where two teams of robots compete to score goals. Each team fields 3–5 robots, with one robot potentially serving as goalkeeper. Robots must comply with safety requirements relating to battery, voltage, infrared emission and interference while competing under official supervision.",
     "Guidlines of  the Event":
