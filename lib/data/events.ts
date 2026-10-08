@@ -415,9 +415,9 @@ export const rawRows: RawRow[] = [
     Description:
       "Teams of three to eight take the stage in an open-format dance battle spanning contemporary, hip-hop, classical and fusion styles. The event focuses on creativity, coordination, rhythm, energy, teamwork and stage presence.",
     "Guidlines of  the Event":
-      "1. Performance Rules\n• Time limit is 2:00–2:30 minutes per performance.\n• Points are deducted for exceeding the time limit and organisers may stop the performance.\n• Any dance form is allowed.\n• Pre-recorded audio tracks must be submitted at least 3 days before the event.\n• Last-minute audio changes are not allowed.\n• Costumes and props are allowed.\n• Colours, gulal, water or any stage-damaging material are strictly prohibited and may lead to disqualification.\n• Obscene or derogatory moves or lyrics are strictly prohibited.",
+      "1. Performance Rules\n• Time limit is 2 to 2.5 minutes per performance.\n• Points are deducted for exceeding the time limit and organisers may stop the performance.\n• Any dance form is allowed.\n• Pre-recorded audio tracks must be submitted at least 3 days before the event.\n• Last-minute audio changes are not allowed.\n• Costumes and props are allowed.\n• Colours, gulal, water or any stage-damaging material are strictly prohibited and may lead to disqualification.\n• Obscene or derogatory moves or lyrics are strictly prohibited.",
     "Evaluation Pattern":
-      "Choreography, synchronization, rhythm, costume coordination, stage presence, and crowd impact.",
+      "Choreography, synchronisation, rhythm, costume coordination, stage presence, and crowd impact.",
   },
 
   {
