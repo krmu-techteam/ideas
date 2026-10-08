@@ -15,7 +15,7 @@ const timelineEvents = [
       "20+ competitions across disciplines",
       "3 successful startup incubations",
     ],
-    image: "/ideas-version/1.jpg",
+    image: "/ideas-version/01.png",
   },
   {
     year: 2024,
@@ -28,7 +28,7 @@ const timelineEvents = [
       "Robotics & drone arenas introduced",
       "Increased cross-university participation & mentorship engagements",
     ],
-    image: "/ideas-version/2.jpg",
+    image: "/ideas-version/02.png",
   },
   {
     year: 2025,
@@ -113,7 +113,7 @@ export default function EventTimeline() {
           </p>
         </motion.div>
 
-        <div className="relative max-w-6xl mx-auto">
+        <div className="relative max-w-5xl mx-auto">
           {/* Enhanced Timeline line with gradient - visible on md screens */}
           <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-[#081B4B] via-[#0062A2] to-[#00ACE9] rounded-full z-0"></div>
 
@@ -137,17 +137,17 @@ export default function EventTimeline() {
                 {/* Content Box (Left or Right) */}
                 <div className="w-full md:w-1/2 px-2 sm:px-4 md:px-8 flex">
                   <Card
-                    className={`w-full h-full flex flex-col justify-between transition-colors duration-200 overflow-hidden rounded-2xl ${
+                    className={`w-full h-full flex flex-col justify-between transition-colors duration-200 overflow-hidden rounded-[4px] ${
                       event.isCurrent
                         ? "border-2 border-[#00ACE9] bg-white"
-                        : "bg-white text-slate-800 border border-blue-100 hover:border-[#0062A2]"
+                        : "bg-white text-slate-800 border border-blue-100"
                     }`}
                   >
-                    <CardContent className="p-6 sm:p-8 flex flex-col h-full justify-between">
+                    <CardContent className="py-4 px-6 flex flex-col h-full justify-between">
                       <div>
                         <div className="flex flex-wrap items-center gap-3 mb-5">
                           <div
-                            className={`text-lg sm:text-xl font-bold px-5 py-2 rounded-full ${
+                            className={`text-lg sm:text-lg font-bold px-4 py-1 rounded-full ${
                               event.isCurrent
                                 ? "bg-gradient-to-r from-[#081B4B] via-[#00529B] to-[#00ACE9] text-white font-extrabold"
                                 : "bg-gradient-to-r from-[#0B256B] to-[#0062A2] text-white"
@@ -164,13 +164,13 @@ export default function EventTimeline() {
                             </span>
                           )}
                         </div>
-                        <p className="text-slate-600 mb-6 text-base sm:text-[16px] leading-relaxed">
+                        <p className="text-black mb-4 text-[15px] sm:text-[16px]">
                           {event.description}
                         </p>
                       </div>
 
                       <div className="space-y-3 pt-4 border-t border-blue-50 mt-auto">
-                        <h4 className="font-semibold text-[#0B256B] text-sm sm:text-base tracking-wide uppercase font-mono">
+                        <h4 className="font-semibold text-[#0B256B] text-[15px] sm:text-[16px] tracking-wide uppercase font-mono">
                           Key Achievements:
                         </h4>
                         <ul className="space-y-2.5">
@@ -189,10 +189,10 @@ export default function EventTimeline() {
                               }}
                               className="flex items-start list-none"
                             >
-                              <span className="text-[#0062A2] mr-2.5 text-base leading-tight mt-0.5 shrink-0">
+                              <span className="text-[#0062A2] mr-2.5 text-[16px] leading-tight mt-0.5 shrink-0">
                                 ✦
                               </span>
-                              <span className="text-slate-700 text-sm sm:text-base leading-relaxed">
+                              <span className="text-black text-[15px] sm:text-[16px]">
                                 {achievement}
                               </span>
                             </motion.li>
@@ -215,11 +215,11 @@ export default function EventTimeline() {
                     transition={{ delay: index * 0.25 + 0.15, duration: 0.7 }}
                     className="w-full h-full flex group relative"
                   >
-                    <div className="w-full h-full flex items-center justify-center relative">
+                    <div className="w-full   h-full flex items-center justify-center relative">
                       <img
                         src={event.image || "/placeholder.svg"}
                         alt={event.title}
-                        className="w-full h-full max-h-[380px] md:max-h-[440px] object-contain object-center transform group-hover:scale-105 transition-transform duration-700"
+                        className="w-full h-full max-h-[380px] md:max-h-[440px] object-contain object-center"
                       />
                     </div>
                   </motion.div>

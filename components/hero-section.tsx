@@ -331,7 +331,7 @@ export default function HeroSection() {
                 </div>
                 <div className="flex items-center gap-2 text-xs sm:text-sm bg-white/5 border border-white/15 rounded-full px-4 py-2 text-slate-200 backdrop-blur-xs">
                   <Users size={16} className="text-[#00D2FF]" />
-                  <span>120 Canopies</span>
+                  <span>120+ Canopies</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs sm:text-sm bg-white/5 border border-white/15 rounded-full px-4 py-2 text-slate-200 backdrop-blur-xs">
                   <MapPin size={16} className="text-[#00D2FF]" />

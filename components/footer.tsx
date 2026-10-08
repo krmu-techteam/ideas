@@ -190,8 +190,8 @@ export default function Footer() {
         </div>
 
         {/* Developer Credits */}
-        <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-white/20">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-gray-300 mb-8">
+        <div className="mt-8 sm:mt-12 border-t border-white/20">
+          {/* <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-gray-300 mb-8">
             <div className="text-center md:text-left">
               <p className="font-semibold text-white mb-3">
                 Built & Crafted By
@@ -212,7 +212,7 @@ export default function Footer() {
                       Yashraj Pahuja
                     </span>
                     <div className="flex items-center gap-2">
-                      {/* <span className="inline-block px-2 py-0.5 rounded bg-primary/20 text-primary text-xs font-medium">Dev 1</span> */}
+                   
                       <a
                         href="https://www.linkedin.com/in/yashraj-pahuja-28a34b325/"
                         target="_blank"
@@ -249,7 +249,7 @@ export default function Footer() {
                       Piyush Sharma
                     </span>
                     <div className="flex items-center gap-2">
-                      {/* <span className="inline-block px-2 py-0.5 rounded bg-primary/20 text-primary text-xs font-medium">Dev 2</span> */}
+                   
                       <a
                         href="https://www.linkedin.com/in/piyush-078455221/"
                         target="_blank"
@@ -280,8 +280,8 @@ export default function Footer() {
                 collaboration.
               </p>
             </div>
-          </div>
-          <div className=" text-right textwhite text-xs sm:text-sm border-t border-white/20">
+          </div> */}
+          <div className=" text-right textwhite text-xs sm:text-sm">
             <div className="flex justify-end items-center gap-6 mt-2">
               <p suppressHydrationWarning>
                 &copy; {new Date().getFullYear()} K.R. Mangalam University. All

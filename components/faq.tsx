@@ -29,7 +29,7 @@ const faqs = [
   {
     question: "What is Innoverse?",
     answer:
-      "Innoverse is the exhibition and showcase zone of IDEAS 4.0 — the largest physical zone at the event. It brings together 120+ stalls featuring startups, student projects, tech products, and innovative ideas, offering a great space for networking and discovery.",
+      "Innoverse is the exhibition and showcase zone of IDEAS 4.0 - a marketplace of ideas, startups, and innovation. As the largest physical zone of the event, it features 120+ canopies showcasing student projects, startup demonstrations, tech products, talent displays, and innovative ideas under one roof.",
   },
   {
     question: "What is the prize pool for IDEAS 4.0?",
@@ -93,7 +93,7 @@ const faqs = [
   {
     question: "What is the schedule/flow of the event once I arrive?",
     answer:
-      "Entry — Arrive at the welcome gate from 9:15 AM.\nRegistration — Collect your event kit, schedule, and access pass at the on-site desk.\nExplore Innoverse — Visit the 120+ exhibition stalls.\nCompete in AI Arena / Your Events — Attend your pre-selected competitions at their scheduled time and venue.\nPrize Distribution — Join the grand closing ceremony celebrating all winners.",
+      "Entry — Arrive at the welcome gate from 9:15 AM.\nRegistration — Collect your event kit, schedule, and access pass at the on-site desk.\nExplore Innoverse — Visit the 120+ exhibition canopies.\nCompete in AI Arena / Your Events — Attend your pre-selected competitions at their scheduled time and venue.\nPrize Distribution — Join the grand closing ceremony celebrating all winners.",
   },
   {
     question:

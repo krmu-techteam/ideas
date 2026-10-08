@@ -195,7 +195,7 @@ export const rawRows: RawRow[] = [
     "Venue Details": "Basketball Ground",
     "Coordinator Name": "Mr.Gaurav Verma/Dr.Imran Siraj",
     "Email ID / Mobile  Number": "Tanush Tyagi, Tanishka",
-    Date: "27–28 October 2026",
+    Date: "28 October 2026",
     Category: "Technical",
     "Team Event/Individual": "SOLO / TEAM",
     "Team Size": "3–4",
@@ -226,7 +226,7 @@ export const rawRows: RawRow[] = [
     "Coordinator Name": "Mr.Gaurav Verma/Dr.Imran Siraj",
     "Email ID / Mobile  Number":
       "1) Umar Farooq, 2) Ayush Partap Singh, 3) Rudra Partap Singh, 4) Khushboo",
-    Date: "27–28 October 2026",
+    Date: "27 October 2026",
     Category: "Technical",
     "Team Event/Individual": "SOLO / TEAM",
     "Team Size": "3–4",
@@ -411,8 +411,7 @@ export const rawRows: RawRow[] = [
     "Time Slot": "12:30 PM - 2:00 PM (Oct 27)",
     "Venue Details": "Sunken Garden",
     "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theatre Teacher)",
-    "Email ID / Mobile  Number":
-      "Nirdesh (9810624900), Garvit (9729648968), Prakhar (9084179257), Hanshika (9910079602)",
+    "Email ID / Mobile  Number": "Nirdesh, Garvit, Prakhar, Hanshika",
     Date: "27–28 October 2026",
     Category: "Cultural",
     "Team Event/Individual": "TEAM",
@@ -426,31 +425,13 @@ export const rawRows: RawRow[] = [
     "Evaluation Pattern":
       "Choreography, synchronization, rhythm, costume coordination, stage presence, and crowd impact.",
   },
-  {
-    Participation: "University Students",
-    "Time Slot": "2:00 PM - 3:30 PM (Oct 27)",
-    "Venue Details": "Sunken Garden",
-    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theatre Teacher)",
-    "Email ID / Mobile  Number":
-      "Nirdesh (9810624900), Garvit (9729648968), Prakhar (9084179257), Hanshika (9910079602)",
-    Prize: "₹4,500 (1000/1500/2000)",
-  },
+
   {
     Participation: "School Students",
     "Time Slot": "9:30 AM - 11:00 AM (Oct 28)",
     "Venue Details": "Sunken Garden",
     "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theatre Teacher)",
-    "Email ID / Mobile  Number":
-      "Nigam (9625003139), Moksh (9211575767), Utkarsh (9220400574), Ananya (8368720719), Swapnil (9582327541)",
-    Prize: "₹4,500 (1000/1500/2000)",
-  },
-  {
-    Participation: "University Students",
-    "Time Slot": "11:30 AM - 1:00 PM (Oct 28)",
-    "Venue Details": "Sunken Garden",
-    "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theatre Teacher)",
-    "Email ID / Mobile  Number":
-      "Nigam (9625003139), Moksh (9211575767), Utkarsh (9220400574), Ananya (8368720719), Swapnil (9582327541)",
+    "Email ID / Mobile  Number": "Nigam, Moksh, Utkarsh, Ananya, Swapnil",
     Prize: "₹4,500 (1000/1500/2000)",
   },
 
@@ -642,8 +623,7 @@ export const rawRows: RawRow[] = [
     "Time Slot": "09:30 AM - 11:00 AM",
     "Venue Details": "Sunken Garden",
     "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theatre Teacher)",
-    "Email ID / Mobile  Number":
-      "Nirdesh (9810624900), Garvit (9729648968), Prakhar (9084179257), Hanshika (9910079602)",
+    "Email ID / Mobile  Number": "Nirdesh, Garvit, Prakhar, Hanshika",
     Date: "27–28 October 2026",
     Category: "Cultural",
     "Team Event/Individual": "Duet",
@@ -662,8 +642,7 @@ export const rawRows: RawRow[] = [
     "Time Slot": "11:00 AM - 12:30 PM",
     "Venue Details": "Sunken Garden",
     "Coordinator Name": "Mr. Yash Jaoria / Mr. Raj (Dance and Theatre Teacher)",
-    "Email ID / Mobile  Number":
-      "Nirdesh (9810624900), Garvit (9729648968), Prakhar (9084179257), Hanshika (9910079602)",
+    "Email ID / Mobile  Number": "Nirdesh, Garvit, Prakhar, Hanshika",
     Prize: "₹4,500 (1000/1500/2000)",
   },
 
@@ -700,7 +679,7 @@ export const rawRows: RawRow[] = [
     "Venue Details": "Basketball Ground / AI Arena",
     "Coordinator Name": "Mr. Gaurav Verma / Dr.  Imran Siraj",
     "Email ID / Mobile  Number": "Tanush Tyagi, Tanishka",
-    Date: "27–28 October 2026",
+    Date: "28 October 2026",
     Category: "Academic",
     "Team Event/Individual": "TEAM",
     "Team Size": "3–8",

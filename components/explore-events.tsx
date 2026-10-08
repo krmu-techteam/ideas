@@ -34,36 +34,6 @@ const eventCategories = [
     href: "/cultural",
     badgeColor: "bg-[#7c3aed]",
   },
-  // {
-  //   num: "03",
-  //   title: "Innovation Track",
-  //   badge: "Disruption",
-  //   description:
-  //     "Cutting-edge startup pitches, deep-tech research demonstrations and prototype expositions.",
-  //   icon: Rocket,
-  //   href: "/ideas/innovation",
-  //   badgeColor: "bg-[#0f766e]",
-  // },
-  // {
-  //   num: "04",
-  //   title: "Skill-Based Track",
-  //   badge: "Hands-on",
-  //   description:
-  //     "Hands-on masterclasses, industry-certified bootcamps, workshops and live technical sprints.",
-  //   icon: Target,
-  //   href: "/ideas/skill-based",
-  //   badgeColor: "bg-[#EF6321]",
-  // },
-  // {
-  //   num: "05",
-  //   title: "Extension Track",
-  //   badge: "Community",
-  //   description:
-  //     "High-impact social outreach, sustainability initiatives, and community-driven field projects.",
-  //   icon: Globe2,
-  //   href: "/ideas/extension",
-  //   badgeColor: "bg-[#0284c7]",
-  // },
 ];
 
 export default function ExploreEvents() {
@@ -88,7 +58,7 @@ export default function ExploreEvents() {
             Explore Events &amp; Tracks
           </h2>
           <p className="text-[15px] sm:text-[16px] font-sans leading-[1.6] text-slate-600 max-w-2xl mx-auto">
-            Discover 19 flagship competitions across 10 categories, along with
+            Discover 25+ flagship competitions across 10 categories, along with
             events and interdisciplinary tracks designed to ignite innovation
             and creativity.
           </p>
@@ -108,8 +78,8 @@ export default function ExploreEvents() {
                 className="h-full"
               >
                 <Link
-                  href={""}
-                  // href={category.href}
+                  // href={""}
+                  href={category.href}
                   className="group relative flex flex-col justify-between h-full p-6 rounded-xl bg-white border border-blue-100 hover:border-[#0062A2] transition-colors duration-200 antialiased [backface-visibility:hidden]"
                 >
                   <div>

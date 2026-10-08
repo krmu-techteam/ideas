@@ -6,11 +6,11 @@ const zones = [
   {
     title: "4.1 AI Arena",
     description:
-      "The AI Arena is the technology and competition hub of IDEAS 4.0. It hosts 19 curated competitions spanning robotics, AI, coding, and skill-based challenges. It is the primary venue for power-packed, high-energy contests where participants compete for a share of the ₹10 Lakh+ prize pool.",
+      "The AI Arena is the technology and competition hub of IDEAS 4.0. It hosts 25+ curated competitions spanning robotics, AI, coding, and skill-based challenges. It is the primary venue for power-packed, high-energy contests where participants compete for a share of the ₹10 Lakh+ prize pool.",
     details: [
       {
         label: "Number of Competitions",
-        value: "19 (across 10 categories)",
+        value: "25+ (across 10 categories)",
       },
       {
         label: "Focus Areas",
