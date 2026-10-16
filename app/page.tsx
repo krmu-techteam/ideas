@@ -5,7 +5,19 @@ import StatsCounter from "@/components/stats-counter";
 // Register and explore are now loaded eagerly before other sections
 import dynamic from "next/dynamic";
 
-// Eager load: Register CTA and Explore Events (critical for user engagement)
+// Eager load: AI Arena Experience, Ideathon Two Days, Register CTA and Explore Events
+const AiArenaExperience = dynamic(
+  () => import("@/components/ai-arena-experience"),
+  {
+    ssr: true,
+  },
+);
+const IdeathonTwoDays = dynamic(
+  () => import("@/components/ideathon-two-days"),
+  {
+    ssr: true,
+  },
+);
 const RegisterCTA = dynamic(() => import("@/components/register-cta"), {
   ssr: true,
 });
@@ -60,6 +72,13 @@ export default function Home() {
 
       <div style={{ contentVisibility: "auto", containIntrinsicSize: "600px" }}>
         <RegisterCTA />
+      </div>
+      <div style={{ contentVisibility: "auto", containIntrinsicSize: "800px" }}>
+        <AiArenaExperience />
+      </div>
+
+      <div style={{ contentVisibility: "auto", containIntrinsicSize: "600px" }}>
+        <IdeathonTwoDays />
       </div>
 
       <div style={{ contentVisibility: "auto", containIntrinsicSize: "800px" }}>
