@@ -625,10 +625,14 @@ export default function AiArenaPage() {
             initial={{ opacity: 0, y: 28 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.65, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+            transition={{
+              duration: 0.65,
+              delay: 0.1,
+              ease: [0.22, 1, 0.36, 1],
+            }}
           >
             <button
-              className="card rc"
+              className={`card rc ${currentTab === "race" ? "active" : ""}`}
               role="tab"
               id="t-race"
               aria-selected={currentTab === "race"}
@@ -645,19 +649,29 @@ export default function AiArenaPage() {
                   height={380}
                   className="rc-img"
                 />
+                <span className="rc-badge">01 / VELOCITY</span>
+                {currentTab === "race" && (
+                  <span className="rc-active-pill">
+                    <span className="rc-active-dot" /> ACTIVE
+                  </span>
+                )}
               </div>
               <div className="rc-body">
-                <span className="tag c">01 / Velocity</span>
                 <h3>Robo Race</h3>
                 <p>
                   Speed meets precision as autonomous machines push engineering
                   into motion.
                 </p>
-                <em>View rulebook ↓</em>
+                <div className="rc-action">
+                  <span className="rc-link">
+                    {currentTab === "race" ? "Active Rulebook ↓" : "View Rulebook →"}
+                  </span>
+                </div>
               </div>
+              {currentTab === "race" && <div className="rc-indicator" />}
             </button>
             <button
-              className="card rc"
+              className={`card rc ${currentTab === "war" ? "active" : ""}`}
               role="tab"
               id="t-war"
               aria-selected={currentTab === "war"}
@@ -674,19 +688,29 @@ export default function AiArenaPage() {
                   height={380}
                   className="rc-img"
                 />
+                <span className="rc-badge">02 / IMPACT</span>
+                {currentTab === "war" && (
+                  <span className="rc-active-pill">
+                    <span className="rc-active-dot" /> ACTIVE
+                  </span>
+                )}
               </div>
               <div className="rc-body">
-                <span className="tag c">02 / Impact</span>
                 <h3>Robo War</h3>
                 <p>
                   Strategy and engineering collide in a showcase of controlled
                   robotic combat.
                 </p>
-                <em>View rulebook ↓</em>
+                <div className="rc-action">
+                  <span className="rc-link">
+                    {currentTab === "war" ? "Active Rulebook ↓" : "View Rulebook →"}
+                  </span>
+                </div>
               </div>
+              {currentTab === "war" && <div className="rc-indicator" />}
             </button>
             <button
-              className="card rc"
+              className={`card rc ${currentTab === "soccer" ? "active" : ""}`}
               role="tab"
               id="t-soccer"
               aria-selected={currentTab === "soccer"}
@@ -703,16 +727,26 @@ export default function AiArenaPage() {
                   height={380}
                   className="rc-img"
                 />
+                <span className="rc-badge">03 / COLLABORATION</span>
+                {currentTab === "soccer" && (
+                  <span className="rc-active-pill">
+                    <span className="rc-active-dot" /> ACTIVE
+                  </span>
+                )}
               </div>
               <div className="rc-body">
-                <span className="tag c">03 / Collaboration</span>
                 <h3>Robo Soccer</h3>
                 <p>
                   Teamwork, perception and robotic agility take the field
                   together.
                 </p>
-                <em>View rulebook ↓</em>
+                <div className="rc-action">
+                  <span className="rc-link">
+                    {currentTab === "soccer" ? "Active Rulebook ↓" : "View Rulebook →"}
+                  </span>
+                </div>
               </div>
+              {currentTab === "soccer" && <div className="rc-indicator" />}
             </button>
           </motion.div>
 
@@ -725,16 +759,17 @@ export default function AiArenaPage() {
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.6, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+            transition={{
+              duration: 0.6,
+              delay: 0.15,
+              ease: [0.22, 1, 0.36, 1],
+            }}
           >
             <div className="top">
               <div>
                 <span className="tag">{activeTabData.tag}</span>
                 <h3>{activeTabData.t}</h3>
               </div>
-              <span className="draft">
-                Draft · subject to official approval
-              </span>
             </div>
 
             <div className="chips">
@@ -813,7 +848,11 @@ export default function AiArenaPage() {
             initial={{ opacity: 0, y: 28 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.65, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+            transition={{
+              duration: 0.65,
+              delay: 0.1,
+              ease: [0.22, 1, 0.36, 1],
+            }}
           >
             {/* Day 1 - Tech */}
             <article className="card day d1">
@@ -1231,7 +1270,11 @@ export default function AiArenaPage() {
             initial={{ opacity: 0, y: 28 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.65, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+            transition={{
+              duration: 0.65,
+              delay: 0.1,
+              ease: [0.22, 1, 0.36, 1],
+            }}
           >
             {/* Panel discussion */}
             <article className="card sx k">
@@ -1422,7 +1465,11 @@ export default function AiArenaPage() {
             initial={{ opacity: 0, y: 28 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.65, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+            transition={{
+              duration: 0.65,
+              delay: 0.1,
+              ease: [0.22, 1, 0.36, 1],
+            }}
           >
             <article className="card ex">
               <span className="tag c">01 / Robotics</span>

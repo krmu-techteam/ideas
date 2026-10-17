@@ -12,12 +12,7 @@ const AiArenaExperience = dynamic(
     ssr: true,
   },
 );
-const IdeathonTwoDays = dynamic(
-  () => import("@/components/ideathon-two-days"),
-  {
-    ssr: true,
-  },
-);
+
 const RegisterCTA = dynamic(() => import("@/components/register-cta"), {
   ssr: true,
 });
@@ -75,10 +70,6 @@ export default function Home() {
       </div>
       <div style={{ contentVisibility: "auto", containIntrinsicSize: "800px" }}>
         <AiArenaExperience />
-      </div>
-
-      <div style={{ contentVisibility: "auto", containIntrinsicSize: "600px" }}>
-        <IdeathonTwoDays />
       </div>
 
       <div style={{ contentVisibility: "auto", containIntrinsicSize: "800px" }}>
