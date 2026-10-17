@@ -157,6 +157,18 @@ export default function Header() {
               Home
             </Link>
 
+            <Link
+              href="/ai-arena"
+              className={cn(
+                "px-3 py-1.5 rounded-lg text-sm font-medium transition-colors duration-200",
+                pathname === "/ai-arena"
+                  ? "text-[#6ff5f0] font-semibold"
+                  : "text-white/90 hover:text-[#6ff5f0]",
+              )}
+            >
+              AI Arena
+            </Link>
+
             {/* IDEAS Dropdown with Forgiving Hover Bridge */}
             {SHOW_IDEAS_MENU && (
               <div
@@ -345,6 +357,19 @@ export default function Header() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
+            </Link>
+
+            <Link
+              href="/ai-arena"
+              className={cn(
+                "font-medium py-2.5 px-3.5 rounded-lg transition-colors text-sm",
+                pathname === "/ai-arena"
+                  ? "text-[#6ff5f0] font-semibold"
+                  : "text-slate-300 hover:bg-white/10 hover:text-[#6ff5f0]",
+              )}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              AI Arena
             </Link>
 
             {/* Mobile IDEAS Section */}

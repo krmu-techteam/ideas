@@ -71,34 +71,37 @@ export default function AiArenaExperience() {
               experience firsthand.
             </p>
 
-
+            {/* CTA Button */}
+            <div className="mb-4">
+              <Button
+                asChild
+                className="bg-gradient-to-r from-[#00E5FF] to-blue-600 hover:from-[#6ff5f0] hover:to-blue-500 text-slate-950 font-bold text-sm sm:text-base px-7 py-5 rounded-lg shadow-lg shadow-cyan-500/20 transition-all duration-200 group/btn"
+              >
+                <Link href="/ai-arena" className="inline-flex items-center gap-2">
+                  <span>Explore AI Arena</span>
+                  <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+            </div>
           </motion.div>
 
-          {/* Right Column: Dummy Image Frame */}
+          {/* Right Column: Image */}
           <motion.div
             initial={{ opacity: 0, x: 24 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="lg:col-span-6"
+            className="lg:col-span-6 flex items-center justify-center"
           >
-            <div className="relative rounded-2xl overflow-hidden group">
-              {/* Dummy Image */}
-              <div className="relative aspect-[4/3] sm:aspect-[16/11] w-full overflow-hidden">
-                <Image
-                  src="/Futuristic-Robots-Face-Off.png"
-                  alt="AI Arena - Human Curiosity x Machine Possibility"
-                  fill
-                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  priority
-                />
-
-
-              </div>
-
-
-
+            <div className="relative aspect-[4/3] sm:aspect-[16/11] w-full">
+              <Image
+                src="/Futuristic-Robots-Face-Off.png"
+                alt="AI Arena - Human Curiosity x Machine Possibility"
+                fill
+                className="object-contain object-center select-none"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
             </div>
           </motion.div>
         </div>
