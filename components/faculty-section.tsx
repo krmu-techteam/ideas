@@ -43,7 +43,6 @@ export default function FacultySection() {
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-sky-100/30 rounded-full blur-3xl pointer-events-none" />
 
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 relative z-10">
-        
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200/80 text-[#00529B] text-xs font-semibold uppercase tracking-wider mb-4 shadow-xs">
@@ -57,11 +56,6 @@ export default function FacultySection() {
               Faculty & Mentors
             </span>
           </h2>
-
-          <p className="mt-3.5 text-[15px] sm:text-[16px] leading-relaxed text-slate-600 font-sans max-w-2xl mx-auto">
-            Meet the visionary academicians, research pioneers, and esteemed
-            mentors guiding innovation, excellence, and learning at IDEAS 4.0.
-          </p>
         </div>
 
         {/* Faculty Cards Grid */}
@@ -72,7 +66,11 @@ export default function FacultySection() {
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.6, delay: index * 0.15, ease: "easeOut" }}
+              transition={{
+                duration: 0.6,
+                delay: index * 0.15,
+                ease: "easeOut",
+              }}
               className="group relative bg-white rounded-2xl p-7 border border-blue-100/90 shadow-[0_4px_20px_rgba(0,82,155,0.06)] hover:shadow-[0_16px_40px_rgba(0,82,155,0.12)] hover:border-blue-300 transition-all duration-300 flex flex-col items-center text-center"
             >
               {/* Badge */}
@@ -112,7 +110,6 @@ export default function FacultySection() {
             </motion.div>
           ))}
         </div>
-
       </div>
     </section>
   );
