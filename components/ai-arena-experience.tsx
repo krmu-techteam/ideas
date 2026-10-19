@@ -87,7 +87,7 @@ export default function AiArenaExperience() {
           >
             <div className="relative aspect-[4/3] sm:aspect-[16/11] w-full max-w-[620px]">
               <Image
-                src="/Futuristic-Robots-Face-Off.png"
+                src="/ideas/hero/robo.png"
                 alt="AI Arena - Human Curiosity x Machine Possibility"
                 fill
                 className="object-contain object-center select-none"

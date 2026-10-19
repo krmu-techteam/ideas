@@ -45,6 +45,12 @@ const LazyUpcomingEvents = dynamic(
 const LazyIncubationHub = dynamic(() => import("@/components/incubation-hub"), {
   loading: () => <div className="py-16" />,
 });
+const LazyFacultySection = dynamic(
+  () => import("@/components/faculty-section"),
+  {
+    loading: () => <div className="py-16" />,
+  },
+);
 const LazyFaq = dynamic(() => import("@/components/faq"), {
   loading: () => <div className="py-16" />,
 });
@@ -99,6 +105,11 @@ export default function Home() {
 
       <div style={{ contentVisibility: "auto", containIntrinsicSize: "800px" }}>
         <LazyIncubationHub />
+      </div>
+
+      {/* Faculty Section - placed right above FAQ */}
+      <div style={{ contentVisibility: "auto", containIntrinsicSize: "750px" }}>
+        <LazyFacultySection />
       </div>
 
       <div
