@@ -9,7 +9,7 @@ export default function HeroSection() {
   return (
     <section
       aria-label="Hero Section"
-      className="relative w-full min-h-screen lg:min-h-[880px] xl:min-h-[940px] flex items-center justify-center overflow-hidden text-white pt-[76px] sm:pt-[84px] lg:pt-[70px] pb-12 lg:pb-10 bg-[#080404]"
+      className="relative w-full min-h-screen lg:min-h-[880px] xl:min-h-[880px] flex items-center justify-center overflow-hidden text-white pt-[76px] sm:pt-[84px] lg:pt-[70px] pb-12 lg:pb-4 bg-[#080404]"
     >
       <div className="absolute inset-0 pointer-events-none select-none overflow-hidden">
         <Image
@@ -39,7 +39,7 @@ export default function HeroSection() {
       </div>
 
       {/* Main Container - 1440px Layout */}
-      <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+      <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-24 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center">
           {/* Left Column: 5 Columns out of 12 */}
           <div className="lg:col-span-5 pt-2 lg:pt-0">
@@ -139,6 +139,23 @@ export default function HeroSection() {
                     <div className="w-full h-[5px] bg-[#E7C268]" />
                     <p className="mt-2 text-[12px] sm:text-[13.5px] font-normal text-[#E7C268] text-center tracking-wide whitespace-nowrap">
                       Ayushman Pandita
+                    </p>
+                  </div>
+                  {/* Gaurav Taneja */}
+                  <div className=" flex-col hidden items-center group w-[145px] sm:w-[160px]">
+                    <div className="relative w-full h-[135px] sm:h-[150px] flex items-end justify-center">
+                      <Image
+                        src="/ideas/hero/men2.png"
+                        alt="Gaurav Taneja"
+                        width={181}
+                        height={187}
+                        className="w-auto h-full object-contain object-bottom"
+                      />
+                    </div>
+                    {/* Golden Underline */}
+                    <div className="w-full h-[5px] bg-[#E7C268]" />
+                    <p className="mt-2 text-[12px] sm:text-[13.5px] font-normal text-[#E7C268] text-center tracking-wide whitespace-nowrap">
+                      Gaurav Taneja
                     </p>
                   </div>
                 </div>
