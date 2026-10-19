@@ -1110,6 +1110,46 @@
   margin-top: auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.ai-arena-page .tabs .rc .rc-reg-btn {
+  font: 800 11px var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #020c1b;
+  background: linear-gradient(135deg, #00d2ff 0%, #38bdf8 100%);
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--cyan);
+  box-shadow: 0 0 14px rgba(0, 210, 255, 0.4);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  z-index: 3;
+}
+
+.ai-arena-page .tabs .rc .rc-reg-btn:hover {
+  background: #ffffff;
+  color: #020c1b;
+  border-color: #ffffff;
+  box-shadow: 0 0 22px rgba(0, 210, 255, 0.8), 0 0 8px #ffffff;
+  transform: translateY(-2px);
+}
+
+.ai-arena-page .tabs .rc .rc-reg-btn .rc-arrow {
+  transition: transform 0.2s ease;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.ai-arena-page .tabs .rc .rc-reg-btn:hover .rc-arrow {
+  transform: translate(2px, -2px);
 }
 
 .ai-arena-page .tabs .rc .rc-link {
@@ -1121,7 +1161,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 12px;
+  padding: 7px 11px;
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -1135,11 +1175,11 @@
 
 .ai-arena-page .tabs .rc.active .rc-link,
 .ai-arena-page .tabs .rc[aria-selected="true"] .rc-link {
-  color: #020c1b;
-  background: var(--cyan);
-  border-color: var(--cyan);
+  color: var(--cyan);
+  background: rgba(0, 210, 255, 0.12);
+  border-color: rgba(0, 210, 255, 0.45);
   font-weight: 800;
-  box-shadow: 0 0 14px rgba(0, 210, 255, 0.45);
+  box-shadow: 0 0 12px rgba(0, 210, 255, 0.25);
 }
 
 /* Panel Enhancement */
@@ -1160,9 +1200,44 @@
   justify-content: space-between;
   gap: 24px;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   padding-bottom: 24px;
   border-bottom: 1px solid rgba(0, 210, 255, 0.15);
+}
+
+.ai-arena-page .panel .panel-reg-btn {
+  font: 800 12px var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #020c1b;
+  background: linear-gradient(135deg, #00d2ff 0%, #38bdf8 100%);
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: 1px solid var(--cyan);
+  box-shadow: 0 0 18px rgba(0, 210, 255, 0.45);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.ai-arena-page .panel .panel-reg-btn:hover {
+  background: #ffffff;
+  color: #020c1b;
+  border-color: #ffffff;
+  box-shadow: 0 0 28px rgba(0, 210, 255, 0.85), 0 0 10px #ffffff;
+  transform: translateY(-2px);
+}
+
+.ai-arena-page .panel .panel-reg-btn .btn-arrow {
+  transition: transform 0.2s ease;
+  font-size: 14px;
+}
+
+.ai-arena-page .panel .panel-reg-btn:hover .btn-arrow {
+  transform: translate(2px, -2px);
 }
 
 .ai-arena-page .panel h3 {

@@ -631,14 +631,20 @@ export default function AiArenaPage() {
               ease: [0.22, 1, 0.36, 1],
             }}
           >
-            <button
+            <div
               className={`card rc ${currentTab === "race" ? "active" : ""}`}
               role="tab"
               id="t-race"
               aria-selected={currentTab === "race"}
               aria-controls="rules"
               onClick={() => setCurrentTab("race")}
-              onKeyDown={(e) => handleKeyDown(e, 0)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  setCurrentTab("race");
+                } else {
+                  handleKeyDown(e, 0);
+                }
+              }}
               tabIndex={0}
             >
               <div className="rc-thumb">
@@ -663,21 +669,37 @@ export default function AiArenaPage() {
                   into motion.
                 </p>
                 <div className="rc-action">
+                  <a
+                    href="https://morbin.space/event/krmu-ideas-4-0?utm_source=website"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rc-reg-btn"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <span>Register Now</span>
+                    <span className="rc-arrow">↗</span>
+                  </a>
                   <span className="rc-link">
-                    {currentTab === "race" ? "Active Rulebook ↓" : "View Rulebook →"}
+                    {currentTab === "race" ? "Active Rulebook ↓" : "View Rules →"}
                   </span>
                 </div>
               </div>
               {currentTab === "race" && <div className="rc-indicator" />}
-            </button>
-            <button
+            </div>
+            <div
               className={`card rc ${currentTab === "war" ? "active" : ""}`}
               role="tab"
               id="t-war"
               aria-selected={currentTab === "war"}
               aria-controls="rules"
               onClick={() => setCurrentTab("war")}
-              onKeyDown={(e) => handleKeyDown(e, 1)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  setCurrentTab("war");
+                } else {
+                  handleKeyDown(e, 1);
+                }
+              }}
               tabIndex={0}
             >
               <div className="rc-thumb">
@@ -702,21 +724,37 @@ export default function AiArenaPage() {
                   robotic combat.
                 </p>
                 <div className="rc-action">
+                  <a
+                    href="https://morbin.space/event/krmu-ideas-4-0?utm_source=website"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rc-reg-btn"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <span>Register Now</span>
+                    <span className="rc-arrow">↗</span>
+                  </a>
                   <span className="rc-link">
-                    {currentTab === "war" ? "Active Rulebook ↓" : "View Rulebook →"}
+                    {currentTab === "war" ? "Active Rulebook ↓" : "View Rules →"}
                   </span>
                 </div>
               </div>
               {currentTab === "war" && <div className="rc-indicator" />}
-            </button>
-            <button
+            </div>
+            <div
               className={`card rc ${currentTab === "soccer" ? "active" : ""}`}
               role="tab"
               id="t-soccer"
               aria-selected={currentTab === "soccer"}
               aria-controls="rules"
               onClick={() => setCurrentTab("soccer")}
-              onKeyDown={(e) => handleKeyDown(e, 2)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  setCurrentTab("soccer");
+                } else {
+                  handleKeyDown(e, 2);
+                }
+              }}
               tabIndex={0}
             >
               <div className="rc-thumb">
@@ -741,13 +779,23 @@ export default function AiArenaPage() {
                   together.
                 </p>
                 <div className="rc-action">
+                  <a
+                    href="https://morbin.space/event/krmu-ideas-4-0?utm_source=website"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rc-reg-btn"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <span>Register Now</span>
+                    <span className="rc-arrow">↗</span>
+                  </a>
                   <span className="rc-link">
-                    {currentTab === "soccer" ? "Active Rulebook ↓" : "View Rulebook →"}
+                    {currentTab === "soccer" ? "Active Rulebook ↓" : "View Rules →"}
                   </span>
                 </div>
               </div>
               {currentTab === "soccer" && <div className="rc-indicator" />}
-            </button>
+            </div>
           </motion.div>
 
           <motion.div
@@ -770,6 +818,15 @@ export default function AiArenaPage() {
                 <span className="tag">{activeTabData.tag}</span>
                 <h3>{activeTabData.t}</h3>
               </div>
+              <a
+                href="https://morbin.space/event/krmu-ideas-4-0?utm_source=website"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="panel-reg-btn"
+              >
+                <span>Register Now</span>
+                <span className="btn-arrow">↗</span>
+              </a>
             </div>
 
             <div className="chips">

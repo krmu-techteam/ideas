@@ -36,25 +36,13 @@ export default function FacultySection() {
     <section
       id="faculty"
       aria-label="Distinguished Faculty & Mentors"
-      className="py-20 bg-gradient-to-b from-[#F4F9FD] via-white to-[#F4F9FD] border-t border-blue-50 relative overflow-hidden"
+      className="pb-20 bg-gradient-to-b from-[#F4F9FD] via-white to-[#F4F9FD] border-t border-blue-50 relative overflow-hidden"
     >
-      {/* Background Decorative Accents */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-blue-100/40 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-sky-100/30 rounded-full blur-3xl pointer-events-none" />
-
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 relative z-10">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200/80 text-[#00529B] text-xs font-semibold uppercase tracking-wider mb-4 shadow-xs">
-            <Sparkles className="w-3.5 h-3.5 text-[#00ACE9]" />
-            <span>Academic Leadership & Mentors</span>
-          </div>
-
           <h2 className="font-serif text-[clamp(30px,4.5vw,46px)] font-bold tracking-[-0.02em] text-[#0B256B] leading-[1.15]">
-            Distinguished{" "}
-            <span className="italic font-serif font-normal text-[#00ACE9]">
-              Faculty & Mentors
-            </span>
+            Guest Speaker
           </h2>
         </div>
 
