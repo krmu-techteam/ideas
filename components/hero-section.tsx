@@ -142,14 +142,14 @@ export default function HeroSection() {
                     </p>
                   </div>
                   {/* Gaurav Taneja */}
-                  <div className=" flex-col items-center group w-[145px] sm:w-[160px]">
+                  <div className="flex flex-col items-center group w-[145px] sm:w-[150px]">
                     <div className="relative w-full h-[135px] sm:h-[150px] flex items-end justify-center">
                       <Image
                         src="/home/hero-section/gaurav-taneja.png"
                         alt="Gaurav Taneja"
-                        width={181}
-                        height={187}
-                        className="w-auto h-full object-contain object-bottom"
+                        width={238}
+                        height={190}
+                        className="w-auto h-full max-w-none object-contain object-bottom translate-x-2 sm:translate-x-2.5"
                       />
                     </div>
                     {/* Golden Underline */}
