@@ -142,10 +142,10 @@ export default function HeroSection() {
                     </p>
                   </div>
                   {/* Gaurav Taneja */}
-                  <div className=" flex-col hidden items-center group w-[145px] sm:w-[160px]">
+                  <div className=" flex-col items-center group w-[145px] sm:w-[160px]">
                     <div className="relative w-full h-[135px] sm:h-[150px] flex items-end justify-center">
                       <Image
-                        src="/ideas/hero/men2.png"
+                        src="/home/hero-section/gaurav-taneja.png"
                         alt="Gaurav Taneja"
                         width={181}
                         height={187}
