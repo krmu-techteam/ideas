@@ -107,13 +107,13 @@ export default function HeroSection() {
 
                 <div className="flex items-end gap-6 sm:gap-8 lg:gap-10">
                   {/* Manika Vishwakarma */}
-                  <div className="flex flex-col items-center group w-[145px] sm:w-[160px]">
+                  <div className="flex flex-col items-center group w-[145px] sm:w-[150px]">
                     <div className="relative w-full h-[135px] sm:h-[150px] flex items-end justify-center">
                       <Image
                         src="/ideas/hero/girl1.png"
                         alt="Manika Vishwakarma"
-                        width={147}
-                        height={187}
+                        width={238}
+                        height={190}
                         className="w-auto h-full object-contain object-bottom"
                       />
                     </div>
@@ -125,13 +125,13 @@ export default function HeroSection() {
                   </div>
 
                   {/* Ayushman Pandita */}
-                  <div className="flex flex-col items-center group w-[145px] sm:w-[160px]">
+                  <div className="flex flex-col items-center group w-[145px] sm:w-[150px]">
                     <div className="relative w-full h-[135px] sm:h-[150px] flex items-end justify-center">
                       <Image
                         src="/ideas/hero/men1.png"
                         alt="Ayushman Pandita"
-                        width={181}
-                        height={187}
+                        width={238}
+                        height={190}
                         className="w-auto h-full object-contain object-bottom"
                       />
                     </div>
@@ -149,7 +149,7 @@ export default function HeroSection() {
                         alt="Gaurav Taneja"
                         width={238}
                         height={190}
-                        className="w-auto h-full max-w-none object-contain object-bottom translate-x-2 sm:translate-x-2.5"
+                        className="w-auto h-[120px] sm:h-[132px] max-w-none object-contain object-bottom translate-x-2.5 sm:translate-x-3 scale-x-105"
                       />
                     </div>
                     {/* Golden Underline */}
